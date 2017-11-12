@@ -1,0 +1,5 @@
+government = legion
+technology_group = tech_caesars_legion
+religion = secular
+primary_culture = new_california
+capital = 1

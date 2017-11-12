@@ -1,0 +1,19 @@
+government = the_think_tank
+technology_group = tech_robot
+religion = robotics
+primary_culture = robot
+capital = 4016
+
+historical_rival = TNK
+
+2282.1.1 = {
+	monarch = {
+		name = "Mobius"
+        dynasty = " "
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+    clear_scripted_personalities = yes
+    add_ruler_personality = immortal_personality
+}

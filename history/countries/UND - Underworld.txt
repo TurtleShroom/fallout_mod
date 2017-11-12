@@ -1,0 +1,14 @@
+government = diplomatic_settlement
+technology_group = tech_ghoul
+religion = secular
+primary_culture = underworld
+capital = 43
+
+2282.1.1 = {
+	monarch = {
+		name = "Barrows"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}

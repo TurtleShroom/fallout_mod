@@ -1,0 +1,7 @@
+# Lost Hills over Chinatown Chapter
+vassal = {
+	first = BOS
+	second = VBO
+	start_date = 2281.1.1
+	end_date = 2300.1.1
+}

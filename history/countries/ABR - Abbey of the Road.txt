@@ -1,0 +1,14 @@
+government = administrative_settlement
+technology_group = tech_raider
+religion = baptist 
+primary_culture = raider 
+capital = 1
+
+2282.1.1 = {
+	monarch = {
+		name = "Leibowitz"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

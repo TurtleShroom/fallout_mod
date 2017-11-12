@@ -1,0 +1,14 @@
+government = military_settlement
+technology_group = tech_wastelander
+religion = catholic
+primary_culture = mexico
+capital = 203
+
+2282.1.1 = {
+	monarch = {
+		name = "Juan"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

@@ -1,0 +1,268 @@
+
+# Technology
+technology_rank_0 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		is_variable_equal = {
+            which = tech_level
+            value = 0
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 1
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 0
+        }
+	}
+
+	technology_cost = 1
+}
+
+technology_rank_1 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 0
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 2
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 1
+        }
+	}
+
+	technology_cost = 0.9
+}
+
+technology_rank_2 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 1
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 3
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 2
+        }
+	}
+
+	technology_cost = 0.8
+}
+
+technology_rank_3 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 2
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 4
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 3
+        }
+	}
+
+	technology_cost = 0.7
+}
+
+technology_rank_4 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 3
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 5
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 4
+        }
+	}
+
+	technology_cost = 0.6
+}
+
+technology_rank_5 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 4
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 6
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 5
+        }
+	}
+
+	technology_cost = 0.5
+}
+
+technology_rank_6 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 5
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 7
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 6
+        }
+	}
+
+	technology_cost = 0.4
+}
+
+technology_rank_7 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 6
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 8
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 7
+        }
+	}
+
+	technology_cost = 0.3
+}
+
+technology_rank_8 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 7
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 9
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 8
+        }
+	}
+
+	technology_cost = 0.2
+    
+    monarch_admin_power = 1
+    monarch_diplomatic_power = 1
+    monarch_military_power = 1
+}
+
+technology_rank_9 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 8
+        }
+        NOT = {
+            check_variable = {
+                which = tech_level
+                value = 10
+            }
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 9
+        }
+	}
+
+	technology_cost = 0.1
+    monarch_admin_power = 2
+    monarch_diplomatic_power = 2
+    monarch_military_power = 2
+}
+
+technology_rank_10 = {
+	potential = {
+        has_global_flag = research_capacity_enabled
+		check_variable = {
+            which = tech_level
+            value = 9
+        }
+	}
+	trigger = {
+		is_variable_equal = {
+            which = tech_level
+            value = 10
+        }
+	}
+
+	monarch_admin_power = 3
+    monarch_diplomatic_power = 3
+    monarch_military_power = 3
+}

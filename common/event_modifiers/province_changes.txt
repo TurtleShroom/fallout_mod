@@ -1,0 +1,153 @@
+conflict_cooldown = { }
+
+abandoned_settlement = {
+	local_tax_modifier = -1
+	local_manpower_modifier = -1
+	local_production_efficiency = -1
+}
+
+ghoul_settlers = {
+    local_unrest = -1
+}
+
+enslavement = {
+    local_culture_conversion_cost = -0.75
+    local_missionary_strength = 0.1
+    local_unrest = -10
+}
+
+new_can_scorched = {
+    allowed_num_of_buildings = -1
+	local_development_cost = 0.2
+	local_colonial_growth = -10
+	local_production_efficiency = -0.25
+}
+
+stockmen_ass_mod = {
+	trade_goods_size = 0.1
+	trade_goods_size_modifier = 0.25
+	local_unrest = 12
+	local_autonomy = 0.15
+}
+
+repub_farm_com_mod = {
+	trade_goods_size = 0.1
+	trade_goods_size_modifier = 0.25
+	local_unrest = 12
+	local_autonomy = 0.15
+}
+
+meg_ref_mod = {
+    trade_goods_size = -1
+    trade_goods_size_modifier = -0.10
+	local_unrest = 2
+}
+
+cazador_attack = {
+    local_manpower_modifier = -0.5
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_colonial_growth = -10
+    local_monthly_devastation = 0.5
+    supply_limit_modifier = -0.1
+}
+
+coyote_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+deathclaw_attack = {
+    local_manpower_modifier = -0.5
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_colonial_growth = -10
+    local_monthly_devastation = 0.5
+    supply_limit_modifier = -0.1
+}
+
+trog_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+yao_guai_attack = {
+    local_manpower_modifier = -0.5
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_colonial_growth = -10
+    local_monthly_devastation = 0.5
+    supply_limit_modifier = -0.1
+}
+
+mole_rat_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+brahmin_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+centaur_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+bloatfly_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+giant_ant_attack = {
+    local_manpower_modifier = -0.5
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_colonial_growth = -10
+    local_monthly_devastation = 0.5
+    supply_limit_modifier = -0.1
+}
+
+radroach_attack = {
+    local_manpower_modifier = -0.25
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_colonial_growth = -5
+    local_monthly_devastation = 0.25
+    supply_limit_modifier = -0.05
+}
+
+radscorpion_attack = {
+    local_manpower_modifier = -0.5
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_colonial_growth = -10
+    local_monthly_devastation = 0.5
+    supply_limit_modifier = -0.1
+}
+

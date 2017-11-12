@@ -1,0 +1,53 @@
+government = federal_republic
+technology_group = tech_ncr
+religion = secular
+primary_culture = new_california
+capital = 2956
+
+historical_rival = CAE
+historical_rival = ENC
+historical_rival = BOS
+historical_rival = CAE
+historical_rival = GRK
+
+
+2282.1.1 = {
+	monarch = {
+		name = "Aaron"
+		dynasty = "Kimball"
+		adm = 3
+		dip = 2
+		mil = 4
+        birth_date = 2235.1.1
+	}
+	define_general = {
+		name = "Lee Oliver"
+		fire = 4
+		shock = 4
+		manuever = 4
+		siege = 3
+	}
+	define_general = {
+		name = "Cassandra Moore"
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 1
+	}
+	define_general = {
+		name = "Hanlon"
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 0
+	}
+	define_general = {
+		name = "James Hsu"
+		fire = 1
+		shock = 1
+		manuever = 2
+		siege = 0
+	}
+	
+	add_army_tradition = 50
+}

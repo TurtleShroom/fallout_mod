@@ -1,0 +1,20 @@
+legion_howitzer = {
+	land_morale = -0.1
+}
+
+mojave_focus = {
+	land_forcelimit_modifier = 0.1
+	land_maintenance_modifier = -0.1
+}
+
+west_coast_focus = {
+	build_cost = -0.1
+	development_cost = -0.1
+}
+
+power_of_the_courier = {
+	land_morale = 0.2
+	land_maintenance_modifier = -0.2
+	siege_ability = 0.1
+}
+

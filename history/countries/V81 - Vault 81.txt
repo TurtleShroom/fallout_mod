@@ -1,0 +1,14 @@
+government = vault
+technology_group = tech_vault_dweller
+religion = secular
+primary_culture = vault_dweller
+capital = 538
+
+2282.1.1 = {
+	monarch = {
+		name = "Gwen McNamara"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}

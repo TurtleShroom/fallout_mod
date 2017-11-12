@@ -1,0 +1,129 @@
+dependency = {
+	subject_type = "sphere"
+	first = INS # The Institute
+	second = B03 # Diamond City
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = B09 # Followers of the Apocalypse
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = NEC # Necropolis
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = NRN # Vault City
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = VAU # Vault City
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = B10 # Slag
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = MOD # Modoc
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = DEN # The Den
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NCR
+	second = A02 # Arroyo
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = CAE
+	second = WLS # White Legs
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = BMW # Brotherhood Midwest
+	second = PEO # Peoria
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = BMW # Brotherhood Midwest
+	second = BRW # Brahmin Wood
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NWD
+	second = B68
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NWD
+	second = B69
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NWD
+	second = B67
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+
+dependency = {
+	subject_type = "sphere"
+	first = NWD
+	second = B70
+	start_date = 2280.1.1
+	end_date = 3000.1.1
+}
+

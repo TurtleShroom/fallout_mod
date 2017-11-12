@@ -1,0 +1,15 @@
+government = military_settlement
+technology_group = tech_ghoul
+religion = ghoul_tribalism
+primary_culture = ghoul 
+capital = 4033
+
+2282.1.1 = {
+	monarch = {
+		name = "Roy"
+		dynasty = "Phillips"
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}

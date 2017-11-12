@@ -1,0 +1,14 @@
+government = military_settlement
+technology_group = tech_raider
+religion = tribalism	
+primary_culture = washington_raider
+capital = 14
+
+2282.1.1 = {
+	monarch = {
+		name = "Red"
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}

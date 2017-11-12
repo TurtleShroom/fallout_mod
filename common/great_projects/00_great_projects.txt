@@ -1,0 +1,16 @@
+#the_fence = {
+#	province = 2632
+#
+#	is_canal = yes
+#	time = 12
+#	
+#	modifier = {
+#		local_development_cost = -0.25
+#	}
+#}
+
+#
+#2632 = {
+#    add_great_project = the_fence
+#}
+#

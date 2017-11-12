@@ -1,0 +1,15 @@
+government = military_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = railroad
+capital = 3041
+
+2282.1.1 = {
+	monarch = {
+		name = "Desdemona"
+		adm = 6
+		dip = 4
+		mil = 5
+        birth_date = 2257.1.1
+	}
+}

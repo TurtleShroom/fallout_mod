@@ -1,0 +1,24 @@
+government = the_institute
+technology_group = tech_commonwealth
+religion = secular
+primary_culture = institute
+capital = 545
+fixed_capital = 545
+
+add_faction = facilities
+add_faction = bioscience
+add_faction = advanced_systems 
+add_faction = synth_retention_bureau
+add_faction = robotics
+
+2282.1.1= {
+	monarch = {
+		name = "Shaun"
+		dynasty = "Young"
+		birth_date = 2230.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+

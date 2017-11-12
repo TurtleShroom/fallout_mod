@@ -1,0 +1,105 @@
+﻿l_german:
+ # Decisions
+ permit_slavery_title: "Permit Slavery"
+ permit_slavery_desc: "Permit the act of slavery within our lands."
+ 
+ prohibit_slavery_title: "Prohibit Slavery"
+ prohibit_slavery_desc: "Prohibit the act of slavery within our lands."
+ 
+ slave_check_title: "Administration of Slaves"
+ slave_check_desc: "Hover to check slave count, as well as an explanation of how the system works."
+ 
+ hasten_construction_projects_title: "Hasten Construction Projects"
+ hasten_construction_projects_desc: "Send slaves to our construction sites to speed up progress. Some will be killed in the process."
+ 
+ send_slave_labour_title: "Utilise Slave Labour"
+ send_slave_labour_desc: "Send slaves to our factories and outposts as labourers. Some will be killed in the process."
+ 
+ crack_down_on_rebellious_slaves_title: "Crackdown on Dissidents"
+ crack_down_on_rebellious_slaves_desc: "Root out dissidence in our slave population. This will be seen as a show of force. Some will be killed in this process."
+ 
+ distribute_slaves_to_nobles_title: "Distribute Slaves to Lieutenants"
+ distribute_slaves_to_nobles_desc: "Instead of gold, send slaves to our most influential lieutenants as means to quell their discontent. Some will be killed in this process."
+ 
+ train_slave_soldiers_title: "Train Slave Soldiers"
+ train_slave_soldiers_desc: "Send some of our slave population to our training camps to become soldiers. Some will be killed in this process."
+ 
+ # Variables
+ slave_count: "Slaves"
+ 
+ # Tooltips
+ slave_collection_tt: "\n§YCollection§!\nSlaves are collected in successful battles won by your armies. They may also be acquired through slave raids."
+ slave_usage_tt: "\n§YUsage§!\nOnce you have acquired a number of slaves, you may use them to commit several unique actions. These actions will kill your slaves but in return grant you great benefits."
+ 
+ SLAVERY_NOW_PERMITTED: "By permitting Slavery, all known nations that prohibit Slavery will have §R-50§! opinion of you."
+ 
+ SLAVERY_NOW_PROHIBITED: "By prohibiting Slavery, all known nations that permit Slavery will have §R-50§! opinion of you."
+ 
+ SLAVERY_CHECK: "You currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ 
+ subtract_slaves_25_tt: "You lose §R25§! Slaves."
+ subtract_slaves_50_tt: "You lose §R50§! Slaves."
+ subtract_slaves_75_tt: "You lose §R75§! Slaves."
+ subtract_slaves_100_tt: "You lose §R100§! Slaves."
+ 
+ add_slaves_25_tt: "You gain §G25§! Slaves."
+ add_slaves_50_tt: "You gain §G50§! Slaves."
+ add_slaves_75_tt: "You gain §G75§! Slaves."
+ add_slaves_100_tt: "You gain §G100§! Slaves."
+ 
+ removed_slaves_tt: "You have lost all your Slaves."
+ restored_slaves_tt: "You have recaptured the majority of your Slaves."
+ 
+ # Opinion Modifiers
+ permits_slavery: "Permits Slavery"
+ prohibits_slavery: "Prohibits Slavery"
+ 
+ # Modifiers
+ slavery_permitted: "Slavery Permitted"
+ desc_slavery_permitted: ""
+ slavery_prohibited: "Slavery Prohibited"
+ desc_slavery_prohibited: ""
+ 
+ slavery_construction: "Slave Builders"
+ desc_slavery_construction: "We are using slave builders."
+ 
+ slavery_production: "Slave Labourers"
+ desc_slavery_production: "We are using slave labourers."
+ 
+ slave_raid: "Slave Raid"
+ desc_slave_raid: "This province was raided for slaves."
+ 
+ # Disasters
+ slave_rebellion: "Slave Rebellion"
+
+ # Events
+ slavery.2.title: "Victory over $FROMCOUNTRY$"
+ slavery.2.desc: "Our victory over $FROMCOUNTRY$ in a recent battle has led to numerous prisoners of war being collected. What shall we do with them?\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ slavery.2.option.a: "Make them slaves"
+ slavery.2.option.b: "Ransom them"
+ slavery.2.option.c: "Slay them"
+ 
+ slavery.3.title: "Slaves of War"
+ slavery.3.desc: "Our victory over $FROMCOUNTRY$ in a recent battle has led to the acquisition of numerous slavery. They will be sent back the capital for processing.\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ slavery.3.option.a: "Good work"
+ 
+ slavery.4.title: "Slaver's Haul"
+ slavery.4.desc: "A band of misfits and vagabonds have been captured by one of our slavers. They've offered them to us for a fair price.\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ slavery.4.option.a: "Great"
+ 
+ slave_rebellion.1.title: "Slave Rebellion!"
+ slave_rebellion.1.desc: "Our weakness has been exploited by our snivelling slaves. They have risen up in rebellion in [Root.Capital.GetName] and demand freedom. Their show of force is cute, but let us show them true might."
+ slave_rebellion.1.option.a: "Crush them!"
+ 
+ slave_rebellion.2.title: "Slave Rebellion Over"
+ slave_rebellion.2.desc: "The rebellious slaves have been dealt with, and their successors are shaping up to be far more obedient. Let us not allow ourselves to be exposed like that again."
+ slave_rebellion.2.option.a: "Hurrah!"
+ 
+ slave_rebellion.3.title: "Slave Sympathizers"
+ slave_rebellion.3.desc: "It appears that a contingent of our populace harbour slave sympathies. They've risen up in support of the rebellious slaves, and are assaulting our fortifications!"
+ slave_rebellion.3.option.a: "Pitiful worms!"
+ 
+ slave_rebellion.4.title: "Slave Assault"
+ slave_rebellion.4.desc: "A contingent of slaves held in a local settlement have caught wind of the slave rebellion in the capital, and have mustered up the mettle to rise up themselves! They must be stopped before this snowballs out of hand."
+ slave_rebellion.4.option.a: "Pathetic!"
+ 

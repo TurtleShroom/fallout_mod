@@ -1,0 +1,7 @@
+immortality = {
+    prestige = 1
+}
+
+sick = {
+    prestige = -1
+}

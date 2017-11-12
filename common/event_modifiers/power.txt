@@ -1,0 +1,13 @@
+# Markers
+generation_done = { }
+consumption_done = { }
+power_spend_cooldown = { }
+
+# Events
+efficient_generation = { 
+    global_unrest = -1 
+}
+
+inefficient_generation = { 
+    global_unrest = 1 
+}

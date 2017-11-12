@@ -1,0 +1,97 @@
+namespace = toleration
+
+country_event = {
+	id = toleration.1
+	title = "toleration.1.title"
+	desc = "toleration.1.desc"
+	picture = SACKED_CARAVAN_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        uses_patriarch_authority = yes
+	}
+	
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - toleration.1" }
+        }
+    }
+    
+	option = {
+		name = toleration.1.option.a
+        
+        add_adm_power = -100
+	}	
+    
+    option = {
+		name = toleration.1.option.b
+        
+        add_patriarch_authority = -0.1
+	}	
+}	
+
+country_event = {
+	id = toleration.2
+	title = "toleration.2.title"
+	desc = "toleration.2.desc"
+	picture = MORMON_FORT_INSIDE_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        uses_patriarch_authority = yes
+	}
+	
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - toleration.2" }
+        }
+    }
+    
+	option = {
+		name = toleration.2.option.a
+        
+        add_patriarch_authority = 0.1
+	}	
+    
+    option = {
+		name = toleration.2.option.b
+        
+        add_adm_power = 100
+	}	
+}	
+
+country_event = {
+	id = toleration.3
+	title = "toleration.3.title"
+	desc = "toleration.3.desc"
+	picture = DOC_MITCHELL_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        uses_patriarch_authority = yes
+	}
+	
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - toleration.3" }
+        }
+    }
+    
+	option = {
+		name = toleration.3.option.a
+        
+        add_patriarch_authority = -0.1
+        add_dip_power = 100
+	}	
+    
+    option = {
+		name = toleration.3.option.b
+        
+        add_patriarch_authority = 0.1
+        add_dip_power = -100
+	}	
+}	
+

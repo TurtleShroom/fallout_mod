@@ -1,0 +1,17 @@
+government = military_republic
+technology_group = tech_wastelander
+religion = secular
+primary_culture = baja
+capital = 83
+
+historical_friend = NCR
+
+2282.1.1 = {
+	monarch = {
+		name = "Artemio"
+		dynasty = "Del Olmo"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

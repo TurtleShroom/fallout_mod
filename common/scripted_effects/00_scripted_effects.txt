@@ -1,0 +1,6 @@
+grant_immortality = {
+    add_ruler_modifier = {
+        name = immortality
+        duration = -1
+    }
+}

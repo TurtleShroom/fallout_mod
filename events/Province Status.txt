@@ -1,0 +1,198 @@
+namespace = province_status
+
+# Township of [Root.GetName]
+province_event = {
+	id = province_status.1
+	title = "province_status.1.title"
+	desc = "province_status.1.desc"
+	picture = DIAMOND_CITY_eventPicture
+    
+	trigger = { 
+        NOT = { has_province_modifier = pf_town }
+        NOT = { has_province_modifier = pf_city }
+        NOT = { has_province_modifier = pf_metropolis }
+        development = 15
+	}
+	
+    mean_time_to_happen = { months = 120 }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.Owner.GetName] - [Root.GetName] - province_status.1" }
+            
+            add_province_modifier = {
+                name = pf_town
+                duration = -1
+            }
+        }
+    }
+    
+	option = {
+		name = province_status.1.option.a
+        
+        tooltip = {
+            add_province_modifier = {
+                name = pf_town
+                duration = -1
+            }
+        }
+	}	
+}	
+
+# Township of [Root.GetName] lost!
+province_event = {
+	id = province_status.2
+	title = "province_status.2.title"
+	desc = "province_status.2.desc"
+	picture = ENCAMPMENT_eventPicture
+    
+	trigger = { 
+        has_province_modifier = pf_town
+        OR = {
+            NOT = { development = 15 }
+            devastation = 30
+        }
+	}
+	
+    mean_time_to_happen = { months = 12 }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.Owner.GetName] - [Root.GetName] - province_status.2" }
+        }
+    }
+    
+	option = {
+		name = province_status.2.option.a
+        
+        remove_province_modifier = pf_town
+	}	
+}	
+
+# Cityship of [Root.GetName]
+province_event = {
+	id = province_status.3
+	title = "province_status.3.title"
+	desc = "province_status.3.desc"
+	picture = DIAMOND_CITY_eventPicture
+    
+	trigger = { 
+        has_province_modifier = pf_town
+        NOT = { has_province_modifier = pf_metropolis }
+        NOT = { has_province_modifier = pf_city }
+        development = 20
+	}
+	
+    mean_time_to_happen = { months = 120 }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.Owner.GetName] - [Root.GetName] - province_status.3" }
+            
+            if = {
+                limit = {
+                    has_province_modifier = pf_town
+                }
+                remove_province_modifier = pf_town
+            }
+            
+            add_province_modifier = {
+                name = pf_city
+                duration = -1
+            }
+        }
+    }
+    
+	option = {
+		name = province_status.3.option.a
+        
+        tooltip = {
+            add_province_modifier = {
+                name = pf_city
+                duration = -1
+            }
+        }
+	}	
+}	
+
+# Cityship of [Root.GetName] lost!
+province_event = {
+	id = province_status.4
+	title = "province_status.4.title"
+	desc = "province_status.4.desc"
+	picture = ENCAMPMENT_eventPicture
+    
+	trigger = { 
+        has_province_modifier = pf_city
+        OR = {
+            NOT = { development = 20 }
+            devastation = 50
+        }
+	}
+	
+    mean_time_to_happen = { months = 12 }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.Owner.GetName] - [Root.GetName] - province_status.4" }
+        }
+    }
+    
+	option = {
+		name = province_status.4.option.a
+        
+        remove_province_modifier = pf_city
+	}	
+}	
+
+# Metropolis of [Root.GetName]
+province_event = {
+	id = province_status.5
+	title = "province_status.5.title"
+	desc = "province_status.5.desc"
+	picture = DIAMOND_CITY_eventPicture
+    
+	trigger = { 
+        has_province_modifier = pf_city
+        NOT = { has_province_modifier = pf_metropolis }
+        development = 25
+	}
+	
+    mean_time_to_happen = { months = 120 }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.Owner.GetName] - [Root.GetName] - province_status.5" }
+            
+            if = {
+                limit = {
+                    has_province_modifier = pf_town
+                }
+                remove_province_modifier = pf_town
+            }
+            
+            if = {
+                limit = {
+                    has_province_modifier = pf_city
+                }
+                remove_province_modifier = pf_city
+            }
+            
+            add_province_modifier = {
+                name = pf_metropolis
+                duration = -1
+            }
+        }
+    }
+    
+	option = {
+		name = province_status.5.option.a
+        
+        tooltip = {
+            add_province_modifier = {
+                name = pf_metropolis
+                duration = -1
+            }
+        }
+	}	
+}

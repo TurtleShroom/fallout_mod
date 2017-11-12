@@ -1,0 +1,16 @@
+government = trade_tribe
+technology_group = tech_tribal
+religion = totemism 
+primary_culture = snajan 
+capital = 632
+
+2282.1.1 = {
+	monarch = {
+		name = "Sonoma"
+        dynasty = "the Visionary"
+		adm = 5
+		dip = 4
+		mil = 3
+        female = yes
+	}
+}

@@ -1,0 +1,17 @@
+set_variable = { which = province_id value = 337  }
+
+owner = TWM
+controller = TWM
+add_core = TWM
+is_city = yes
+
+base_tax = 4
+base_production = 1
+base_manpower = 3
+
+culture = twin_mother
+religion = tribalism
+
+hre = no
+trade_goods = clean_water
+

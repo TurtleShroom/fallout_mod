@@ -1,0 +1,14 @@
+government = diplomatic_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = goodneighbour
+capital = 968
+
+2282.1.1 = {
+	monarch = {
+		name = "John Hancock"
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}

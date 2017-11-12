@@ -1,0 +1,151 @@
+﻿l_spanish:
+ # Variables
+ tech_level: "Technology Rank"
+ scientific_capacity: "Research Capacity"
+ 
+ EXPLAIN_SCIENTIFIC_CAPACITY: "Research Capacity controls your nation's Technology Cost modifier.\n\nThis is expressed through your nation's Scientific Knowledge, which is viewable in the Triggered Modifiers window."
+ 
+ research_collection_tt: "\n§YCollection§!\nResearch Capacity is generated through the §Y'Focus on Scientific Advancement'§! decision and random events."
+ research_usage_tt: "\n§YUsage§!\nOnce you have acquired a number of Research Capacity points, you may use them to conduct research with the §Y'Conduct Groundbreaking Research'§! decision. This gives you a chance to increase your Scientific Knowledge, reducing your technology cost modifier."
+ research_knowledge_tt: "\n§YScientific Knowledge§!\nYou can see your current level of Scientific Knowledge in the triggered modifiers window. As you increase your level, your technology cost modifier will go down by 10% each time, until you have zero additional cost."
+ 
+ CURRENT_SCIENTIFIC_KNOWLEDGE: "Technology Rank: §Y[Root.tech_level.GetValue]§!"
+ CURRENT_RESEARCH_CAPACITY: "You currently have §Y[Root.scientific_capacity.GetValue]§! Research Capacity."
+ 
+ ADD_TECH_LEVEL: "Gain §G1§! rank in Scientific Knowledge."
+ LOSE_TECH_LEVEL: "Lose §R1§! rank in Scientific Knowledge."
+ 
+ # Decisions
+ conduct_experimental_research_title: "Conduct Groundbreaking Research"
+ conduct_experimental_research_desc: "Undergo a program of groundbreaking science, delving deeper into the mysteries of the world. Success will improve our scientific knowledge across our nation."
+ 
+ focus_on_scientific_advancement_title: "Focus on Scientific Advancement"
+ focus_on_scientific_advancement_desc: "Invest our energies into scientific research solely. Will reduce the effectiveness of our administrative, diplomatic and military sectors."
+ 
+ research_check_title: "Administration of Science"
+ research_check_desc: "Hover to check research capacity and technology level, as well as an explanation of how the system works."
+ 
+ # Events
+ research_capacity.2.title: "Experimental Research"
+ research_capacity.2.desc: "Our scientists are researching vigorously, and all efforts are focused on their current speciality. Let us see if they produce any novel research and if so what effect it will have on our nation."
+ research_capacity.2.option.a: "Await the report"
+ 
+ research_capacity.3.title: "Discovery!"
+ research_capacity.3.desc: "Our scientists have succeeded in their research and our nation benefits collectively from their findings."
+ research_capacity.3.option.a: "Ooo, interesting..."
+ 
+ research_capacity.4.title: "Failure!"
+ research_capacity.4.desc: "Our scientists have failed in their research. Our research capacity has been wasted in this fruitless endeavour."
+ research_capacity.4.option.a: "Waste of time..."
+ 
+ research_capacity.10.title: "Eureka!"
+ research_capacity.10.desc: "One of our prominent scientists has had an eureka moment. Their insight has greatly increased our research capacity.\n\nCurrent Research Capacity: [Root.scientific_capacity.GetValue]"
+ research_capacity.10.option.a: "Wonderful"
+
+ research_capacity.11.title: "Knowledge Rot"
+ research_capacity.11.desc: "Our scientists have become complacent, and their thoughts rigid. Their lack of motivation has decreased our research capacity.\n\nCurrent Research Capacity: [Root.scientific_capacity.GetValue]"
+ research_capacity.11.option.a: "Oh dear."
+ 
+ research_capacity.12.title: "Feuding Scientists"
+ research_capacity.12.desc: "Two teams of scientists have begun feuding over who originally thought of the experiment they're working on. Both want to claim ownership, and therefore recognition for the success of the project.\n\nCurrent Research Capacity: [Root.scientific_capacity.GetValue]"
+ research_capacity.12.option.a: "Acknowledge both"
+ research_capacity.12.option.b: "Acknowledge neither"
+ 
+ research_capacity.13.title: "Divergent Thoughts"
+ research_capacity.13.desc: "A group of rogue scientists have begun spreading rebellious thoughts within our scientific circles. Unfortunately, many of our best scientists have been ensnared by this rhetoric, and cutting them out would harm our efforts.\n\nCurrent Research Capacity: [Root.scientific_capacity.GetValue]"
+ research_capacity.13.option.a: "Accept the influences for now"
+ research_capacity.13.option.b: "Purge the rogue scientists"
+ 
+ research_capacity.14.title: "Dangerous Implications"
+ research_capacity.14.desc: "A top-secret research group has made an unsettling discovery regarding the behaviour of humans. To allow this information out would damage the stability of our nation, but the head of the research group insists the information should be public.\n\nCurrent Research Capacity: [Root.scientific_capacity.GetValue]"
+ research_capacity.14.option.a: "Let it go public"
+ research_capacity.14.option.b: "Suppress the information"
+ 
+ research_capacity.15.title: "Unified Efforts"
+ research_capacity.15.desc: "Too often our scientific efforts are duplicated due to inefficient organisation due to poor bureaucracy. Let us reform the management in our science divisions and unify our efforts.\n\nCurrent Research Capacity: [Root.scientific_capacity.GetValue]"
+ research_capacity.15.option.a: "Reform"
+ research_capacity.15.option.b: "Continue as normal"
+ 
+ # Discoveries
+ NO_SPECIALIST_DISCOVERY: "Regular Discovery"
+ DISCOVERY_MATHEMATICS: "Exceptional discovery in Mathematics"
+ DISCOVERY_BIOLOGY: "Exceptional discovery in Biology"
+ DISCOVERY_CHEMISTRY: "Exceptional discovery in Chemistry"
+ DISCOVERY_COMPUTING: "Exceptional discovery in Computing"
+ DISCOVERY_PHYSICS: "Exceptional discovery in Physics"
+ 
+ RESET_SCIENTIFIC_CAPACITY: "Research Capacity is exhausted."
+ GAIN_5_SCIENTIFIC_CAPACITY: "Gain §G5§! Research Capacity."
+ GAIN_10_SCIENTIFIC_CAPACITY: "Gain §G10§! Research Capacity."
+ LOSE_5_SCIENTIFIC_CAPACITY: "Lose §R5§! Research Capacity."
+ LOSE_10_SCIENTIFIC_CAPACITY: "Lose §R10§! Research Capacity."
+ 
+ research_capacity.5.title: "Discovery in Mathematics"
+ research_capacity.5.desc: "A proof for the Navier-Stokes smoothness has been produced. This will help improve our understanding of turbulence and will improve the capabilities of our air fleet."
+ research_capacity.5.option.a: "Ooo, interesting..."
+ 
+ discovery_mathematics: "Navier-Stokes smoothness"
+ desc_discovery_mathematics: "A proof for the Navier-Stokes smoothness has been produced. This will help improve our understanding of turbulence and will improve the capabilities of our air fleet."
+ 
+ research_capacity.6.title: "Discovery in Biology"
+ research_capacity.6.desc: "The link between biology and consciousness has been resolved. The once elusive problem has been solved, and our biological interfaces can now integrate with humans far better."
+ research_capacity.6.option.a: "Ooo, interesting..."
+ 
+ discovery_biology: "Origin of Consciousness"
+ desc_discovery_biology: "The link between biology and consciousness has been resolved. The once elusive problem has been solved, and our biological interfaces can now integrate with humans far better."
+ 
+ research_capacity.7.title: "Discovery in Chemistry"
+ research_capacity.7.desc: "The existence of an element with an atomic number of 138 has been discovered. The implications of this are far-reaching, as such an element has elections travelling faster than the speed of light."
+ research_capacity.7.option.a: "Ooo, interesting..."
+ 
+ discovery_chemistry: "Element 138"
+ desc_discovery_chemistry: "The existence of an element with an atomic number of 138 has been discovered. The implications of this are far-reaching, as such an element has elections travelling faster than the speed of light."
+
+ research_capacity.8.title: "Discovery in Computer Science"
+ research_capacity.8.desc: "P versus NP asks whether every problem whose solution can be quickly verified by a computer can also be quickly solved by a computer. A proof regarding this problem has been created and has proved P equals NP. This discovery means we can easily bypass enemy cryptographical systems, and many of our prediction algorithms are vastly more efficient."
+ research_capacity.8.option.a: "Ooo, interesting..."
+ 
+ discovery_computing: "P equals NP"
+ desc_discovery_computing: "P versus NP asks whether every problem whose solution can be quickly verified by a computer can also be quickly solved by a computer. A proof regarding this problem has been created and has proved P equals NP. This discovery means we can easily bypass enemy cryptographical systems, and many of our prediction algorithms are vastly more efficient."
+ 
+ research_capacity.9.title: "Discovery in Physics"
+ research_capacity.9.desc: "Conclusive proof of why time has a direction has been discovered. This understanding will greatly help our research into other areas."
+ research_capacity.9.option.a: "Ooo, interesting..."
+ 
+ discovery_physics: "Arrow of Time"
+ desc_discovery_physics: "Conclusive proof of why time has a direction has been discovered. This understanding will greatly help our research into other areas."
+ 
+ # Triggered modifiers
+ technology_rank_0: "Scientific Knowledge"
+ desc_technology_rank_0: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_1: "Scientific Knowledge"
+ desc_technology_rank_1: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_2: "Scientific Knowledge"
+ desc_technology_rank_2: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_3: "Scientific Knowledge"
+ desc_technology_rank_3: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_4: "Scientific Knowledge"
+ desc_technology_rank_4: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_5: "Scientific Knowledge"
+ desc_technology_rank_5: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_6: "Scientific Knowledge"
+ desc_technology_rank_6: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_7: "Scientific Knowledge"
+ desc_technology_rank_7: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_8: "Scientific Knowledge"
+ desc_technology_rank_8: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_9: "Scientific Knowledge"
+ desc_technology_rank_9: "Our current scientific knowledge and its effect on our technology costs."
+ 
+ technology_rank_10: "Scientific Knowledge"
+ desc_technology_rank_10: "We have reached the maximum level of scientific knowledge available."
+ 

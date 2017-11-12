@@ -1,0 +1,15 @@
+government = war_tribe
+technology_group = tech_tribal
+religion = totemism
+primary_culture = tribal
+capital = 1
+
+2282.1.1 = {
+	monarch = {
+		name = "Eljah"
+		dynasty = "Rock"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

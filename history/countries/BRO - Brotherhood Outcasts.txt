@@ -1,0 +1,16 @@
+government = administrative_brotherhood_order
+technology_group = tech_bos
+religion = creatorism
+primary_culture = brotherhood_outcasts
+capital = 47
+
+historical_rival = BEC
+
+2282.1.1 = {
+	monarch = {
+		name = "Casdin"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}

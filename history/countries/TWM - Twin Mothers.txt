@@ -1,0 +1,17 @@
+government = religious_tribe
+technology_group = tech_tribal
+religion = tribalism
+primary_culture = twin_mother
+capital = 337
+
+unlock_cult = tribal_ancestor_worship
+unlock_cult = tribal_nature_worship
+
+2282.1.1 = {
+	monarch = {
+		name = "Remi"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

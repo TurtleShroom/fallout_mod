@@ -1,0 +1,14 @@
+government = military_settlement
+technology_group = tech_ncr
+religion = secular
+primary_culture = ranger
+capital = 1
+
+2282.1.1 = {
+	monarch = {
+		name = "Hanlon"
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}

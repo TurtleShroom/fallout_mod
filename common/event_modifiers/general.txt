@@ -1,0 +1,244 @@
+#############################################################
+###                    Event Modifiers                    ###
+#############################################################
+ashur_vision = {
+	build_cost = -0.1
+	development_cost = -0.1	
+	discipline = 0.025 
+}
+
+for_america = {
+    technology_cost = -0.1
+}
+
+research_labs_destroyed = {
+	technology_cost = 0.5
+}
+
+wildlife_enraged = {
+	land_morale = -0.1
+}
+
+poor_communications = {
+	land_morale = -0.05
+}
+
+research_lab_raided = {
+	idea_cost = 0.1
+}
+
+autodoc = {
+	legitimacy = -0.5
+	republican_tradition = -0.5
+}
+
+eviscerated = {
+	land_morale = -0.05
+}
+
+westside_story_ncr = {
+	discipline = 0.05
+	global_tax_income = 12
+}
+
+westside_story_new_vegas = {
+	improve_relation_modifier = 0.1
+	diplomatic_upkeep = 1
+	global_tax_income = 24
+}
+
+westside_story_independence = {
+	land_morale = 0.1
+}
+
+disgrunted_settlers = {
+	local_unrest = 2
+	local_autonomy = 0.02
+	local_tax_modifier = -0.1
+	local_production_efficiency = -0.1
+	local_manpower_modifier = -0.1
+}
+
+damaged_population = {
+	local_manpower_modifier = -0.75
+	local_production_efficiency = -0.75
+	local_tax_modifier = -0.75
+}
+
+damaged_population_global = {
+	global_manpower_modifier = -0.75
+	global_tax_modifier = -0.75
+}
+
+fm_conversion_zeal = {
+	global_missionary_strength = 0.1
+}
+
+forced_conscription = {
+	local_manpower_modifier = -0.5
+	local_unrest = 10
+}
+
+additional_merchant = {
+	merchants = 1
+}
+
+overseer_for_life = {          #Ruler Modifier 
+	global_unrest = 5
+}
+
+fusion_reactor = {
+    global_tax_income = 600
+}
+
+defence_system_cooldown = {
+    global_tax_income = -120
+}
+
+loboto_bmt = {
+    global_manpower_modifier = 0.25 
+	hostile_attrition = 2
+}
+
+cyberdog_bmt = {
+    global_regiment_recruit_speed = -0.15
+	war_exhaustion = -0.1
+}
+
+hvy_construction_bmt = {
+    build_cost = -0.20
+    build_time = -0.20
+}
+
+cyberdog_psy = {
+    land_morale = 0.05
+}
+
+cyberdog_facility = {
+    local_manpower_modifier = 0.2
+	regiment_recruit_speed = -0.1
+}
+
+cuckoo_nest = {
+	local_missionary_strength = -0.05 
+}
+
+exper_dev_one = {
+    local_manpower_modifier = -0.2
+	local_production_efficiency = -0.2
+    local_tax_modifier = -0.2
+}
+
+hex_result = {
+    local_manpower_modifier = 0.2
+	local_production_efficiency = 0.2
+    local_tax_modifier = 0.2
+}
+
+robo_scorp_bmt = {
+    global_manpower_modifier = 0.25    
+    land_morale = 0.10 
+}
+
+esp_bmt = {
+    global_spy_defence = 0.2
+	spy_offence = 0.2
+}
+
+bootleg_gang = {
+	local_unrest = 3
+	trade_goods_size = 0.025 
+}
+
+son_of_mars = {
+	free_leader_pool = 1
+	global_missionary_strength = 0.02
+	province_warscore_cost = -0.1	
+}
+
+caesar_successor = {
+    legitimacy = 1
+}
+
+tribal_successor = {
+    legitimacy = -1
+}
+
+legion_birth = {
+    global_manpower_modifier = 0.10
+	manpower_recovery_speed = 0.20
+    global_unrest = 3
+ }
+ 
+strug_str = {
+	land_morale = -0.05
+	global_unrest = 8
+    culture_conversion_cost = 0.25
+	global_autonomy = 0.05 
+}
+
+legion_monster_east = {
+    discipline = 0.025 
+	shock_damage = 0.5
+	ae_impact = 0.05
+}
+
+legion_pheonix_oa = {
+    leader_land_manuever = 1
+    infantry_power = 0.1
+    yearly_corruption = 0.05
+}
+
+vagrants = {
+    province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.15 
+	local_autonomy = 0.05 
+	local_unrest = 3
+}
+
+museum_of_tech = {
+	local_institution_spread = 0.20
+	local_development_cost = -0.05
+}
+
+VAU_PIPBOY_PROGRAMMER  = {
+	land_attrition = -0.25
+	idea_cost = -0.02
+}
+
+VAU_LAUNDRY_CANNON = {
+	artillery_power = 0.1
+}
+
+VAU_DEP_SYNDROME = {
+	global_unrest = 1
+	colonist_placement_chance = 0.05
+	production_efficiency = -0.05
+}
+
+VAU_DEP_SYNDROME_MEDICATED = {
+	global_unrest = 4
+}
+
+indoctrinated_by_mars = {
+    global_missionary_strength = 0.03
+}
+
+drug_purge_cooldown = { }
+minting_cooldown = { }
+
+atomic_suits = {
+    global_colonial_growth = 10
+}
+
+disaster_cooldown = {}
+
+tribal_origins = {
+    legitimacy = -2
+}
+
+aqua_cura = {
+    local_unrest = -1
+    province_trade_power_modifier = 0.20
+    local_tax_modifier = -0.05
+}

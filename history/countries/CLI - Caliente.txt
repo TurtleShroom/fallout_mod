@@ -1,0 +1,6 @@
+government = commune
+technology_group = tech_wastelander
+religion = tribalism	
+primary_culture = caliente
+capital = 560
+

@@ -1,0 +1,18 @@
+government = war_tribe
+technology_group = tech_ghoul
+religion = tribalism 
+primary_culture = marked_men 
+capital = 4046
+
+historical_rival = NCR
+historical_rival = CAE
+
+
+2282.1.1 = {
+	monarch = {
+		name = "Bonesaw"
+		adm = 2
+		dip = 0
+		mil = 5
+	}
+}

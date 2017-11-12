@@ -1,0 +1,24 @@
+country_decisions = {
+    research_hazmat_suits = {
+		potential = {
+            NOT = { has_country_modifier = atomic_suits }
+		}
+		allow =  {
+            adm_power = 100
+            full_idea_group = exploration_ideas
+		}
+	  	effect = {
+            custom_tooltip = UNLOCK_IRRADIATED_WASTELAND_COLONISATION
+            
+			add_country_modifier = {
+                name = atomic_suits
+                duration = -1
+            }
+            
+            add_adm_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+government = diplomatic_settlement
+technology_group = tech_hubologist
+religion = hubology
+primary_culture = hubologist
+capital = 384
+
+historical_rival = SHI 
+
+2282.1.1 = {
+	monarch = {
+		name = "Noble"
+		dynasty = "Ig"
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}

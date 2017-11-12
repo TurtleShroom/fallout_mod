@@ -1,0 +1,23 @@
+mk_i_securitron_army = {
+	potential = {
+		tag = NVG
+		NOT = { has_country_modifier = power_of_the_courier }
+	}
+	trigger = {
+		tag = NVG
+		NOT = { has_country_modifier = power_of_the_courier }
+	}
+	land_forcelimit = 5
+}
+
+mk_iI_securitron_army = {
+	potential = {
+		tag = NVG
+	}
+	trigger = {
+		tag = NVG
+		has_country_modifier = power_of_the_courier
+	}
+	land_forcelimit = 10
+}
+

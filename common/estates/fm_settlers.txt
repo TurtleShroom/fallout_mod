@@ -1,0 +1,857 @@
+estate_settlers =
+{
+	icon = 2
+	
+	color = { 214 109 123 }
+	
+	# Is estate kept in control of province on conquest?
+	keep_on_conquest = no
+	
+	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
+	min_territory = 0
+	min_provinces_to_want_territory = 5
+    
+	# If true, country will get estate
+	trigger = {	
+        
+	}
+	
+	# If true, province can be granted to estate
+	province_trigger = {
+		always = yes
+	}	
+	
+	# Min autonomy in estate provinces
+	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	country_modifier_happy = {
+		colonist_placement_chance = 0.15
+        global_colonial_growth = 25
+	}
+	country_modifier_neutral = {
+		colonist_placement_chance = 0.05
+        global_colonial_growth = 5
+	}	
+	country_modifier_angry = {
+        colonist_placement_chance = -0.15
+        global_colonial_growth = -25
+	}
+	
+	# These do not scale, but only applied in provinces owned by the estate
+	province_modifier_happy = {
+		local_unrest = -4
+	}
+	province_modifier_neutral = {
+		local_unrest = -1
+	}	
+	province_modifier_angry = {
+		local_unrest = 5
+	}		
+	
+	# Influence modifiers
+	base_influence = 30
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_bureaucrats_disaster
+				has_disaster = estate_officers_disaster
+                has_disaster = estate_caravanners_disaster
+                has_disaster = estate_scientists_disaster
+                has_disaster = estate_faith_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	
+	# Loyalty modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_bureaucrats_disaster
+				has_disaster = estate_officers_disaster
+                has_disaster = estate_caravanners_disaster
+                has_disaster = estate_scientists_disaster
+                has_disaster = estate_faith_disaster
+			}
+		}
+		loyalty = -20
+	}
+
+	loyalty_modifier = {
+		desc = EST_VAL_VERY_STABLE
+		trigger = {
+            stability = 3
+		}
+		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_STABLE
+        trigger = {
+            stability = 2
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_NOT_STABLE
+        trigger = {
+            NOT = { stability = 0 }
+		}
+		loyalty = -5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_VERY_UNSTABLE
+        trigger = {
+            NOT = { stability = -2 }
+		}
+		loyalty = -10
+	}
+
+	#Alternative naming of estates
+	custom_name = {
+		desc = estate_initiates
+		trigger = {
+			technology_group = tech_bos
+		}
+	}
+
+    custom_name = {
+		desc = estate_plebeians
+		trigger = {
+			tag = CAE
+		}
+	}
+    
+    custom_name = {
+		desc = estate_workers
+		trigger = {
+			OR = {
+                technology_group = tech_tribal
+                technology_group = tech_raider
+                technology_group = tech_super_mutant
+                technology_group = tech_great_khan
+                technology_group = tech_swampfolk
+                technology_group = tech_rodent
+                technology_group = tech_children
+                technology_group = tech_triggermen
+                technology_group = tech_the_kings
+            }
+            NOT = { has_country_modifier = slavery_permitted }
+		}
+	}
+    
+    custom_name = {
+		desc = estate_slaves
+		trigger = {
+			OR = {
+                technology_group = tech_tribal
+                technology_group = tech_raider
+                technology_group = tech_super_mutant
+                technology_group = tech_great_khan
+                technology_group = tech_swampfolk
+                technology_group = tech_rodent
+                technology_group = tech_children
+                technology_group = tech_triggermen
+                technology_group = tech_the_kings
+            }
+            has_country_modifier = slavery_permitted
+		}
+	}
+
+	# For province assignment
+	ai_grant_province = {
+		factor = 1	
+		modifier = {
+			factor = 0.5
+			development = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { development = 10 }
+		}				
+		modifier = {
+			factor = 0.75
+			has_owner_culture = yes
+		}
+		modifier = {
+			factor = 0.75
+			province_trade_power = 5
+		}			
+		modifier = {
+			factor = 0.75
+			province_trade_power = 10
+		}			
+	}	
+	
+    # Demand Assistance
+    # years: 20
+    # trigger:
+    #   loyalty: 30
+    #   influence: 25
+    # effect: 
+    #   add_adm_power (more with higher influence)
+    interaction = {
+		name = "GARNER_LEGITIMACY"
+		icon = 2
+		
+		years_between_use = 20
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_settlers
+				influence = 25
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used GARNER_LEGITIMACY settler estate action" }
+			if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_settlers
+                            influence = 25
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_settlers
+                        influence = 0
+                    }
+                }
+                
+                add_legitimacy = 5
+                add_republican_tradition = 5
+                add_devotion = 5
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_settlers
+                            influence = 40
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_settlers
+                        influence = 25
+                    }
+                }
+                
+                add_legitimacy = 10
+                add_republican_tradition = 10
+                add_devotion = 10
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_settlers
+                            influence = 60
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_settlers
+                        influence = 40
+                    }
+                }
+                
+                add_legitimacy = 15
+                add_republican_tradition = 15
+                add_devotion = 15
+            }
+            if = {
+                limit = {
+                    estate_influence = {
+                        estate = estate_settlers
+                        influence = 60
+                    }
+                }
+                
+                add_legitimacy = 20
+                add_republican_tradition = 20
+                add_devotion = 20
+            }
+            add_estate_loyalty = {
+				estate = estate_settlers
+				loyalty = -20
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+			modifier = {
+				factor = 0
+				NOT = {
+                    estate_loyalty = {
+                        estate = estate_settlers
+                        loyalty = 60
+                    }			
+                }
+			}			
+		}
+	}
+    
+    # Make Investment
+    # years: 10
+    # trigger:
+    #   always
+    # effect:
+    #   lose years of income -0.1
+    #   add 15 loyalty
+    interaction = {
+		name = "MAKE_INVESTMENT"
+		icon = 6
+		
+		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+			always = yes
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used MAKE_INVESTMENT settler estate action" }
+			add_years_of_income = -0.25
+			add_estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 15
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 2 }				
+			}
+			modifier = {
+				factor = 0
+				estate_loyalty = {
+					estate = estate_settlers
+					loyalty = 40
+				}
+			}			
+		}		
+	}
+    
+    # Seek Support
+    # years: 20
+    # trigger:
+    #   always
+    # effect:
+    #   lose prestige/government points
+    #   add 10 influence
+    #   add 15 loyalty
+    interaction = {
+		name = "SEEK_SUPPORT"
+		icon = 7
+		
+		years_between_use = 20
+		
+		trigger = {
+			always = yes
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used SEEK_SUPPORT settler estate action" }
+			add_prestige = -5
+			add_legitimacy = -5
+			add_republican_tradition = -3
+			add_devotion = -3
+
+			add_estate_influence_modifier = {
+				estate = estate_settlers
+				desc = EST_VAL_SOUGHT_SUPPORT
+				influence = 10
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 15
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+            
+			modifier = {
+				factor = 0
+				NOT = {
+                    estate_loyalty = {
+                        estate = estate_settlers
+                        loyalty = 30
+                    }			
+                }
+			}
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_settlers
+					influence = 40
+				}						
+			}			
+		}
+	}
+    
+    # Oust Undesirables
+    # years: 20
+    # trigger:
+    #   always
+    # effect:
+    #   -20 influence
+    #   -15 loyalty
+    interaction = {
+		name = "OUST_UNDESIRABLES"
+		icon = 10
+		
+		years_between_use = 20
+		
+		trigger = {
+			always = yes
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used OUST_UNDESIRABLES settler estate action" }
+			add_estate_influence_modifier = {
+				estate = estate_settlers
+				desc = EST_VAL_OUSTED_UNDESIRABLES
+				influence = -20
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_settlers
+				loyalty = -15
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = {
+                    estate_influence = {
+                        estate = estate_settlers
+                        influence = 80
+                    }	
+                }
+			}			
+		}
+	}
+    
+    # Recruit Artist
+    # years: 30
+    # trigger:
+    #   influence: 40
+    # effect:
+    #   + advisor
+    #   15 influence
+    interaction = {
+		name = "RECRUIT_ARTIST"
+		icon = 25
+		
+		years_between_use = 30
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_settlers
+				influence = 40
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used RECRUIT_ARTIST settler estate action" }
+			if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = artist
+					skill = 3
+					discount = yes
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = artist
+					skill = 2
+					discount = yes
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_settlers
+				desc = EST_VAL_RECRUITED_ADVISOR
+				influence = 15
+				duration = 10950
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                estate_influence = {
+                    estate = estate_settlers
+                    influence = 40
+                }
+            }
+		}
+	}
+    
+    # Recruit Rumourmonger
+    # years: 30
+    # trigger:
+    #   influence: 40
+    # effect:
+    #   + advisor
+    #   15 influence
+    interaction = {
+		name = "RECRUIT_RUMOURMONGER"
+		icon = 25
+		
+		years_between_use = 30
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_settlers
+				influence = 40
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used RECRUIT_RUMOURMONGER settler estate action" }
+			if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = spymaster
+					skill = 3
+					discount = yes
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = spymaster
+					skill = 2
+					discount = yes
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_settlers
+				desc = EST_VAL_RECRUITED_ADVISOR
+				influence = 15
+				duration = 10950
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                estate_influence = {
+                    estate = estate_settlers
+                    influence = 40
+                }
+            }
+		}
+	}
+    
+    # Establish Settlement
+    # years: 10
+    # trigger:
+    #   possible colony
+    #   loyalty: 30
+    #   influence: 25
+    # effect: 
+    #   -10 loyalty
+    #   new colony in random uncolonized province
+    interaction = {
+		name = "ESTABLISH_SETTLEMENT"
+		icon = 16
+		
+		years_between_use = 20
+		
+		potential = {
+            any_owned_province = {
+                any_empty_neighbor_province = {
+                    is_empty = yes
+                    base_manpower = 1
+                    base_production = 1
+                    base_tax = 1
+                }
+            }
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used ESTABLISH_SETTLEMENT settler estate action" }
+			estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_settlers
+				influence = 25
+			}
+		}
+		
+		effect = {
+            set_country_flag = create_settlement
+            custom_tooltip = tt_create_settlement
+            #country_event = { id = fallout_estates.11 }
+
+			add_estate_influence_modifier = {
+				estate = estate_settlers
+				desc = EST_VAL_ESTABLISHED_SETTLEMENT
+				influence = 10
+				duration = 7300
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {
+				factor = 0
+				estate_influence = {
+                    estate = estate_settlers
+                    influence = 40
+                }
+			}	
+		}
+	}
+    
+    # Quell Unrest
+    # years: 20
+    # trigger:
+    #   loyalty: 30
+    #   influence: 25
+    # effect:
+    #   -2 unrest
+    #   15 influence
+    interaction = {
+		name = "QUELL_UNREST"
+		icon = 135
+		
+		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_settlers
+				influence = 25
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used QUELL_UNREST settler estate action" }
+            add_country_modifier = {
+                name = quelling_unrest
+                duration = 3650
+            }
+
+			add_estate_influence_modifier = {
+				estate = estate_settlers
+				desc = EST_VAL_QUELLING_UNREST
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                estate_influence = {
+                    estate = estate_settlers
+                    influence = 40
+                }
+            }
+            
+            modifier = {   
+                factor = 0
+                NOT = {
+                    any_owned_province = {
+                        unrest = 2
+                    }
+                }
+            }
+		}
+	}
+    
+    # Extract Wealth
+    # years: 20
+    #   loyalty: 30
+    #   influence: 25
+    # effect:
+    #   -20 loyalty
+    #   +1 years of income
+    interaction = {
+		name = "EXTRACT_WEALTH"
+		icon = 105
+		
+		years_between_use = 20
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_settlers
+				influence = 25
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used EXTRACT_WEALTH settler estate action" }
+            add_estate_loyalty = {
+				estate = estate_settlers
+				loyalty = -20
+			}
+            
+            add_years_of_income = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                NOT = {
+                    estate_loyalty = {
+                        estate = estate_settlers
+                        loyalty = 60
+                    }
+                }
+            }
+            
+            modifier = {
+                factor = 0
+                years_of_income = 2
+            }
+		}
+	}
+    
+    # Dispatch Settlers
+    # years: 5
+    # trigger:
+    #   loyalty: 30
+    #   influence: 25
+    # effect:
+    #   +1 colonists
+    interaction = {
+		name = "DISPATCH_SETTLERS"
+		icon = 76
+		
+		years_between_use = 5
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_settlers
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_settlers
+				influence = 25
+			}
+            any_owned_province = {
+                is_colony = yes
+            }
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used DISPATCH_SETTLERS settler estate action" }
+            set_country_flag = sent_settlers
+            custom_tooltip = tt_send_settlers
+
+			add_estate_loyalty = {
+				estate = estate_settlers
+				loyalty = -20
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                NOT = {
+                    estate_loyalty = {
+                        estate = estate_settlers
+                        loyalty = 60
+                    }
+                }
+            }
+		}
+	}
+    
+    # Discover Lost Teachings
+    interaction = {
+		name = "DISCOVER_LOST_TEXTS"
+		icon = 8
+		
+		years_between_use = 5
+		
+		potential = {
+			NOT = { has_disaster = estate_settlers_disaster }
+		}
+		
+		trigger = {
+            years_of_income = 1
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used DISCOVER_LOST_TEXTS settler estate action" }
+            add_years_of_income = -1
+            
+            set_country_flag = search_for_lost_texts
+            custom_tooltip = tt_lost_texts
+            #country_event = { id = LOST_RELIGIONS.1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

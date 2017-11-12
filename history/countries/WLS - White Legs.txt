@@ -1,0 +1,23 @@
+government = war_tribe
+technology_group = tech_tribal
+religion = zion_tribal
+primary_culture = white_leg
+capital = 111
+
+secondary_religion = cult_of_mars 
+
+historical_friend = CAE
+historical_rival = DED
+historical_rival = SOR
+
+unlock_cult = tribal_cannibalism_worship
+unlock_cult = tribal_nature_worship
+
+2282.1.1 = {
+	monarch = {
+		name = "Salt-Upon-Wounds"
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}

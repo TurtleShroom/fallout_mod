@@ -1,0 +1,14 @@
+government = military_settlement
+technology_group = tech_raider
+religion = tribalism
+primary_culture = gunner
+capital = 540
+
+2282.1.1 = {
+	monarch = {
+		name = "Wes"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}

@@ -1,0 +1,2 @@
+mercantilism = 0.1
+technology_group = tech_raider

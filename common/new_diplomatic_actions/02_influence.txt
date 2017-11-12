@@ -1,0 +1,55 @@
+#---------------------------------------
+# Integrate Sphere
+#---------------------------------------
+integrate_sphere = {
+	category = influence
+	
+	alert_index = 40
+	alert_tooltip = integrate_sphere_alert_tooltip
+	
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_subject = no
+		FROM = {
+            is_subject_of_type = sphere
+			is_subject = yes
+            is_subject_of = ROOT
+		}
+	}
+    
+	is_allowed = {
+        FROM = {
+            has_opinion = {
+                who = ROOT
+                value = 190
+            }
+        }
+	}
+	on_accept = {
+		inherit = FROM
+	}
+	on_decline =
+	{
+
+	}
+	
+	ai_acceptance = {
+        add_entry = {
+			name = OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = THIS
+			}
+			#divide_variable = { which = ai_value value = 4 }
+		}
+	}
+	ai_will_do = {
+		FROM = {
+            ai = yes
+        }
+	}
+}
+

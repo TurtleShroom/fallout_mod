@@ -1,0 +1,15 @@
+the_howitizer = {
+	potential = {
+		tag = NCR
+        exists = CAE
+	}
+
+	trigger = {
+        CAE = { 
+            has_country_modifier = howitizer_firing_pin
+        }
+	}
+    
+    fire_damage_received = 0.25
+    shock_damage_received = 0.25
+}

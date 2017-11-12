@@ -1,0 +1,15 @@
+government = military_settlement
+technology_group = tech_rodent
+religion = secular	
+primary_culture = mole_rat
+capital = 1
+
+2282.1.1 = {
+	monarch = {
+		name = "Brain"
+		dynasty = "Ra'at"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}

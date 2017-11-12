@@ -1,0 +1,127 @@
+country_decisions = {
+	open_the_lucky_38 = {
+		potential = {
+			NOT = { has_global_flag = lucky_38_built }
+			owns_core_province = 2954
+			tag = NVG
+			2954 = {
+				NOT = { has_building = lucky38 }
+			}
+		}
+		allow = {
+			treasury = 1000
+			total_development = 35
+			2954 = {
+			    NOT = { has_construction = building } 
+				num_free_building_slots = 1
+			}
+			
+		}
+		
+		effect = {
+			add_treasury = -1000
+			set_global_flag = lucky_38_built
+			2954 = {
+				add_building_construction = {
+                    building = lucky38
+                    speed = 1 
+                    cost = 0 
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reopen_the_bison_steve_casino = {
+		potential = {
+			118 = {
+				NOT = { has_building = the_bison_steve_casino }
+			}
+			NOT = { has_global_flag = opened_the_bison_steve_casino }
+			owns_core_province = 118
+		}
+		allow =  {
+			treasury = 500
+			118 = {
+			    num_free_building_slots = 1
+			}
+		}
+	  	effect = {
+			add_treasury = -500
+			118 = {
+				add_building_construction = {
+                    building = the_bison_steve_casino
+                    speed = 1 
+                    cost = 0 
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	restore_lincoln_memorial = {
+		potential = {
+			NOT = { has_global_flag = restored_lincoln_memorial }
+            owns_core_province = 2985
+			2985 = {
+				NOT = { has_building = lincoln_memorial }
+			}
+		}
+		allow = {
+			treasury = 500
+			2985 = {
+			    NOT = { has_construction = building } 
+				num_free_building_slots = 1
+			}
+		}
+		
+		effect = {
+			add_treasury = -500
+			set_global_flag = restored_lincoln_memorial
+			2985 = {
+				add_building_construction = {
+                    building = lincoln_memorial
+                    speed = 1 
+                    cost = 0 
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    freeside_clean = {
+		potential = {
+			NOT = { has_global_flag = cleaned_freeside }
+            owns_core_province = 284
+			284  = {
+				NOT = { has_building = silver_rush }
+				NOT = { has_building = atomic_wrangler  }
+			}
+		}
+		allow = {
+			treasury = 250
+			284 = {
+				num_free_building_slots = 1
+			}
+		}
+		
+		effect = {
+			add_treasury = -250
+			set_global_flag = cleaned_freeside
+			country_event = { id = FALLOUT_FREESIDE.1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

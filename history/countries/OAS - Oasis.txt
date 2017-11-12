@@ -1,0 +1,14 @@
+government = diplomatic_settlement
+technology_group = tech_wastelander
+religion = fetishism
+primary_culture = oasis
+capital = 18
+
+2282.1.1 = {
+	monarch = {
+		name = "Birch"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

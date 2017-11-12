@@ -1,0 +1,16 @@
+government = military_settlement 
+technology_group = tech_raider
+religion = tribalism	
+primary_culture = raider
+capital = 1
+
+2282.1.1 = {
+	monarch = {
+		name = "Sonora"
+		dynasty = "Cruz"
+		adm = 3
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}

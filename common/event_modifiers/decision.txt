@@ -1,0 +1,180 @@
+
+anti_savage_edict = {
+	global_missionary_strength = 0.02
+	tolerance_heathen = -1
+	tolerance_heretic = -1
+}
+
+roaming_preachers = {
+	global_unrest = -1
+	improve_relation_modifier = 0.1
+	stability_cost_modifier = 0.05
+}
+
+
+free_debate = {
+	idea_cost = -0.05
+}
+
+funding_research = {
+	technology_cost = -0.05
+}
+
+local_art = {
+	global_unrest = -2
+}
+
+settlement_tax = {
+	global_tax_modifier = 0.1
+	global_unrest = 1
+}
+
+promoted_tolerance = {
+	years_of_nationalism = -5
+	global_spy_defence = -0.5
+}
+
+managed_debts = {
+	inflation_reduction = 0.05
+}
+
+crushing_dissidents = {
+	culture_conversion_cost = -0.25
+	global_unrest = 1
+}
+
+strengthened_ties = {
+	diplomatic_upkeep = 1
+}
+
+coastal_trade = {
+	trade_range_modifier = 0.25
+	global_foreign_trade_power = 0.1
+}
+
+super_mutant_trade = {
+	merchants = 1
+}
+
+propaganda = {
+	enemy_core_creation = 0.5
+	diplomatic_annexation_cost = -0.25
+}
+
+encouraged_corporations = {
+	build_cost = -0.2
+}
+
+wasteland_explorers = {
+	global_colonial_growth = 25
+}
+
+corporal_punishment = {
+	land_morale = 0.1
+	recover_army_morale_speed = -0.05
+}
+
+scrapped_the_barrel = {
+	global_manpower_modifier = 0.33
+	discipline = -0.025
+}
+
+new_officers = {
+	free_leader_pool = 1
+}
+
+no_retreat = {
+	infantry_power = 0.1
+}
+
+more_mercenaries = {
+	possible_mercenaries = 1.0
+}
+
+reinforced_bunkers = {
+	hostile_attrition = 1
+	land_attrition = -0.1
+}
+
+simulated_battles = {
+	army_tradition = 1
+}
+
+super_mutant_tech = {
+	infantry_power = 0.1
+}
+
+the_great_western_peace = {
+	stability_cost_modifier = -0.1
+	years_of_nationalism = -5
+}
+
+the_glory_of_rome = {
+    prestige = 1
+    legitimacy = 1
+}
+
+the_capitol = {
+	technology_cost = -0.05
+}
+
+unified_brotherhood = {
+	idea_cost = -0.05
+    technology_cost = -0.05
+}
+
+ghoul_sanctuary = {
+	stability_cost_modifier = -0.1
+	global_unrest = -1
+}
+
+super_mutant_base = {
+	infantry_power = 0.1
+	infantry_cost = -0.1
+}
+
+original_directive = {
+	diplomatic_reputation = 3
+	dip_tech_cost_modifier = -0.1
+	adm_tech_cost_modifier = -0.1
+}
+
+brotherhood_fascist_directive = {
+	discipline = 0.1
+	diplomatic_reputation = -3
+	mil_tech_cost_modifier = -0.25
+	dip_tech_cost_modifier = 0.25
+	adm_tech_cost_modifier = 0.25
+}
+
+opened_the_lucky_38 = {
+	local_tax_modifier = 0.1
+}
+
+joe_eagle = {
+	prestige = 1
+}
+
+sammy_tuck = {
+	mercenary_cost = -0.25
+}
+
+lil_bot = {
+	technology_cost = -0.025
+}
+
+randy = {
+	war_exhaustion_cost = -0.15
+}
+
+old_james = {
+	stability_cost_modifier = -0.1
+}
+
+unstable_state = {
+	global_unrest = 5
+}
+
+atomic_suits = {
+    colonist_placement_chance = 0.05 
+}

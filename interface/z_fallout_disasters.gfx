@@ -1,0 +1,64 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_disaster_estate_bureaucrats_disaster"
+		texturefile = "gfx//interface//disasters//estate_bureaucrats_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_estate_settlers_disaster"
+		texturefile = "gfx//interface//disasters//estate_settlers_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_estate_officers_disaster"
+		texturefile = "gfx//interface//disasters//estate_officers_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_estate_caravanners_disaster"
+		texturefile = "gfx//interface//disasters//estate_caravanners_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_estate_scientists_disaster"
+		texturefile = "gfx//interface//disasters//estate_scientists_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_estate_faith_disaster"
+		texturefile = "gfx//interface//disasters//estate_faith_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_legion_turmoil"
+		texturefile = "gfx//interface//disasters//legion_collapse.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_power_crisis"
+		texturefile = "gfx//interface//disasters//power_crisis.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_disaster_slave_rebellion"
+		texturefile = "gfx//interface//disasters//slave_rebellion.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

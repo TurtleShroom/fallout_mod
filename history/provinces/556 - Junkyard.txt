@@ -1,0 +1,17 @@
+set_variable = { which = province_id value = 556  }
+
+owner = GEC
+controller = GEC
+add_core = GEC
+
+is_city = yes
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = gecko
+religion = ghoul_tribalism
+
+trade_goods = steel
+hre = no
+

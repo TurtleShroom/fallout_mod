@@ -1,0 +1,18 @@
+government = war_tribe
+technology_group = tech_raider
+religion = tribalism
+primary_culture = coldwater
+capital = 2988
+
+unlock_cult = tribal_ancestor_worship
+unlock_cult = tribal_cannibalism_worship
+
+2282.1.1 = {
+	monarch = {
+		name = "Willoughby"
+		dynasty = "Otis"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

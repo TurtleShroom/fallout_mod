@@ -1,0 +1,58 @@
+spreading_ideology = {
+    prestige_decay = -0.02
+}
+
+five_year_plan = {
+    production_efficiency = 0.25
+    core_creation = -0.15
+}
+
+promoted_freethinking = {
+    idea_cost = -0.25
+}
+
+cultivated_bureaucracy = {
+    advisor_pool = 2
+    advisor_cost = -0.25
+}
+
+bolstered_frontier = {
+    colonist_placement_chance = 0.15
+    colonists = 1
+}
+
+exploring_the_wastes = {
+    native_uprising_chance = -0.5
+    range = 0.5
+}   
+
+reinforced_defences = {
+    defensiveness = 0.5
+    shock_damage_received = -0.25
+    fire_damage_received = -0.25
+}
+
+isolated_external_influences = {
+    global_spy_defence = 1.0
+    hostile_attrition = 2
+}
+
+enforced_uniformity = {
+    culture_conversion_cost = -0.25
+    global_missionary_strength = 0.05
+}
+
+enspoused_self_sacrifice = {
+    infantry_power = 0.1
+    manpower_recovery_speed = 0.1
+}
+
+extolled_virtues = {
+    prestige = 2
+    global_autonomy = -0.1
+}
+
+called_parades = {
+    global_unrest = -4
+    stability_cost_modifier = -0.2
+}

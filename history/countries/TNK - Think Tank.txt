@@ -1,0 +1,20 @@
+government = the_think_tank
+technology_group = tech_robot
+religion = robotics
+primary_culture = robot
+capital = 4010
+
+historical_rival = FBZ
+
+2282.1.1 = {
+	monarch = {
+		name = "Klein"
+        dynasty = " "
+		adm = 6
+		dip = 2
+		mil = 5
+	}
+    clear_scripted_personalities = yes
+    add_ruler_personality = immortal_personality
+}
+

@@ -1,0 +1,46 @@
+institution_policy_cooldown = { 
+}
+
+institution_access_open = {
+    imperial_authority_value = 1
+    global_spy_defence = -1
+}
+
+institution_access_restricted = {
+    global_institution_spread = -0.5
+    global_spy_defence = -0.5
+    imperial_authority_value = 0.5
+}
+
+institution_access_closed = {
+    global_institution_spread = -1
+    imperial_authority_value = -1
+}
+
+institution_data_breach = {
+    prestige = -2
+}
+
+robco_primary_vault = {
+    prestige = 1
+}
+
+repconn_primary_vault = {
+    prestige = 1
+}
+
+fev_data_banks = {
+    prestige = 1
+}
+
+power_armor_schematics = {
+    prestige = 1
+}
+
+vault_tec_primary_vault = {
+    prestige = 1
+}
+
+geck_data_banks = {
+    prestige = 1
+}

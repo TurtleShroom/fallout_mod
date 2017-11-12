@@ -1,0 +1,14 @@
+government = military_settlement
+technology_group = tech_wastelander
+religion = tribalism
+primary_culture = andale
+capital = 48
+
+2282.1.1 = {
+	monarch = {
+		name = "John"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

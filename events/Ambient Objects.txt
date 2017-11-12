@@ -1,0 +1,49 @@
+namespace = ambient_objects
+
+country_event = {
+	id = ambient_objects.1
+	title = ambient_objects.1.title
+	desc = ambient_objects.1.desc
+    picture = BIG_MT_CINEMATIC_eventPicture
+
+    is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ambient_objects.1" }
+        }
+    }
+    
+	option = {
+		name = ambient_objects.1.option.a
+ 
+        show_ambient_object = Megaton_Nuke
+        #show_ambient_object = ShadySands_Nuke
+        #show_ambient_object = Flagstaff_Nuke
+	}
+}
+
+country_event = {
+	id = ambient_objects.2
+	title = ambient_objects.1.title
+	desc = ambient_objects.1.desc
+    picture = BIG_MT_CINEMATIC_eventPicture
+
+    is_triggered_only = yes
+    hidden = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ambient_objects.2" }
+        }
+    }
+    
+	option = {
+		name = ambient_objects.1.option.a
+ 
+        hide_ambient_object = Megaton_Nuke
+        #hide_ambient_object = ShadySands_Nuke
+        #hide_ambient_object = Flagstaff_Nuke
+	}
+}

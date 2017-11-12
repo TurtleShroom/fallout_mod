@@ -1,0 +1,15 @@
+government = administrative_settlement
+technology_group = tech_ghoul
+religion = secular
+primary_culture = macomb
+capital = 2996
+
+2282.1.1 = {
+	monarch = {
+		name = "Carl"
+		dynasty = "Gary"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

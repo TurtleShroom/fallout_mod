@@ -1,0 +1,51 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_age_fallout_bg"
+		texturefile = "gfx//interface//ui//background//age_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_post_war_age"
+		texturefile = "gfx//interface//ages//post_war_age.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_30_development_city_fallout"
+		texturefile = "gfx//interface//ages//obj_metropolis.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_west_coast_dominance"
+		texturefile = "gfx//interface//ages//obj_abandoned_railway_yard.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_east_coast_dominance"
+		texturefile = "gfx//interface//ages//obj_ruined_town.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_midwest_dominance"
+		texturefile = "gfx//interface//ages//obj_ruined_village.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_south_dominance"
+		texturefile = "gfx//interface//ages//obj_ruined_street.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_mexico_dominance"
+		texturefile = "gfx//interface//ages//obj_wasteland.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_obj_canada_dominance"
+		texturefile = "gfx//interface//ages//obj_stripped_forest.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_ab_colonial_growth"
+		texturefile = "gfx//interface//ages//ab_colonial_growth.dds"
+	}
+}

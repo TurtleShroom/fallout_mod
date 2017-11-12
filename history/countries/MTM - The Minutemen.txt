@@ -1,0 +1,15 @@
+government = miltia_gov
+technology_group = tech_wastelander
+religion = secular
+primary_culture = minutemen
+capital = 3027
+
+2282.1.1 = {
+	monarch = {
+		name = "Joe"
+        dynasty = "Becker"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}

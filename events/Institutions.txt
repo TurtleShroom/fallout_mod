@@ -1,0 +1,437 @@
+namespace = fallout_institutions
+
+# Data access setup
+country_event = {
+	id = fallout_institutions.100
+	title = fallout_institutions.100.title
+	desc = fallout_institutions.100.desc
+	picture = ENCAMPMENT_eventPicture
+	
+	is_triggered_only = yes
+    hidden = yes
+    
+    trigger = {
+        NOT = { has_country_flag = setup_data_access }
+    }
+    
+    immediate = {
+        set_country_flag = setup_data_access
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.100" }
+        }
+    }
+
+    option = {
+		name = fallout_institutions.100.option.a
+    
+        add_country_modifier = {
+            name = institution_access_closed
+            duration = -1
+        }
+    }
+}
+
+# Bottlecaps
+country_event = {
+	id = fallout_institutions.1
+	title = fallout_institutions.1.title
+	desc = fallout_institutions.1.desc
+    picture = FEMALE_SHOPKEEPER_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        capital_scope = {
+            NOT = { bottlecaps = 100 }
+        }
+        stability = 0
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.1" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.1.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = bottlecaps
+                value = 25
+            }
+        }
+	}
+}
+
+# RobCo
+country_event = {
+	id = fallout_institutions.2
+	title = fallout_institutions.2.title
+	desc = fallout_institutions.2.desc
+    picture = SCIENCE_TOWER_CLEAR_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        has_institution = bottlecaps
+        capital_scope = {
+            NOT = { robco = 100 }
+        }
+        stability = 0
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.2" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.2.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = robco
+                value = 25
+            }
+        }
+	}
+}
+
+# REPCONN
+country_event = {   
+	id = fallout_institutions.3
+	title = fallout_institutions.3.title
+	desc = fallout_institutions.3.desc
+    picture = REPCONN_SITE_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        has_institution = bottlecaps
+        capital_scope = {
+            NOT = { repconn = 100 }
+        }
+        stability = 0
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.3" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.3.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = repconn
+                value = 25
+            }
+        }
+	}
+}
+
+# FEV
+country_event = {
+	id = fallout_institutions.4
+	title = fallout_institutions.4.title
+	desc = fallout_institutions.4.desc
+    picture = GRAVEYARD_RADSTORM_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            has_institution = robco
+            has_institution = repconn
+        }
+        capital_scope = {
+            NOT = { fev = 100 }
+        }
+        stability = 0
+        is_year = 2350
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.4" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.4.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = fev
+                value = 25
+            }
+        }
+	}
+}
+
+# Power Armor
+country_event = {
+	id = fallout_institutions.5
+	title = fallout_institutions.5.title
+	desc = fallout_institutions.5.desc
+    picture = BOS_BUNKER_ENTRANCE_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            has_institution = robco
+            has_institution = repconn
+        }
+        capital_scope = {
+            NOT = { power_armor = 100 }
+        }
+        stability = 0
+        is_year = 2350
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.5" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.5.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = power_armor
+                value = 25
+            }
+        }
+	}
+}
+
+# Vault-Tec
+country_event = {
+	id = fallout_institutions.6
+	title = fallout_institutions.6.title
+	desc = fallout_institutions.6.desc
+    picture = VAULT_ENTRANCE_CLEAR_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            has_institution = power_armor
+            has_institution = fev
+        }
+        capital_scope = {
+            NOT = { vault_tec = 100 }
+        }
+        stability = 0
+        is_year = 2400
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.6" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.6.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = vault_tec
+                value = 25
+            }
+        }
+	}
+}
+
+# GECK
+country_event = {
+	id = fallout_institutions.7
+	title = fallout_institutions.7.title
+	desc = fallout_institutions.7.desc
+    picture = VAULT_DOOR_INSIDE_eventPicture
+
+	is_triggered_only = yes
+
+    trigger = {
+        has_institution = vault_tec
+        capital_scope = {
+            NOT = { geck = 100 }
+        }
+        stability = 0
+        is_year = 2400
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.7" }
+        }
+    }
+    
+	option = {
+		name = fallout_institutions.7.option.a
+		
+        capital_scope = {
+            add_institution_embracement = {
+                which = geck
+                value = 25
+            }
+        }
+	}
+}
+
+# Data Access
+country_event = {
+	id = fallout_institutions.10
+	title = fallout_institutions.10.title
+	desc = fallout_institutions.10.desc
+    picture = INS_CONSOLE_eventPicture
+
+	is_triggered_only = yes
+    
+    immediate = {
+        remove_country_modifier = institution_access_open
+        remove_country_modifier = institution_access_restricted
+        remove_country_modifier = institution_access_closed
+        
+    }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.10" }
+        }
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = institution_policy_cooldown
+                duration = 3650
+                hidden = yes
+            }
+        }
+    }
+    
+    # Open
+	option = {
+		name = fallout_institutions.10.option.a
+		
+        add_country_modifier = {
+            name = institution_access_open
+            duration = -1
+        }
+        
+        ai_chance = {
+            factor = 33
+            
+            modifier = {
+                factor = 100
+                
+                OR = {
+                    tag = CIP # Ciphers
+                    tag = BRO # Brotherhood Outcasts
+                    tag = MTM # The Minutemen
+                    tag = RRD # The Railroad
+                }
+            }
+        }
+	}
+    
+    # Restricted
+    option = {
+		name = fallout_institutions.10.option.b
+		
+        add_country_modifier = {
+            name = institution_access_restricted
+            duration = -1
+        }
+        
+        ai_chance = {
+            factor = 33
+            
+            modifier = {
+                factor = 100
+                
+                tag = SHI
+            }
+        }
+	}
+    
+    # Closed
+    option = {
+		name = fallout_institutions.10.option.c
+        
+        add_country_modifier = {
+            name = institution_access_closed
+            duration = -1
+        }
+        
+        ai_chance = {
+            factor = 33
+            
+            modifier = {
+                factor = 100
+                
+                OR = {
+                    tag = ENC # Enclave
+                    tag = INS # The Institute
+                    tag = TNK
+                    tag = FBZ
+                    AND = {
+                        technology_group = tech_bos
+                        NOT = { tag = BRO }
+                    }
+                }
+            }
+        }
+	}
+}
+
+country_event = {
+	id = fallout_institutions.11
+	title = fallout_institutions.11.title
+	desc = fallout_institutions.11.desc
+    picture = INS_CONSOLE_eventPicture
+
+	is_triggered_only = yes
+    
+    immediate = {
+        remove_country_modifier = institution_access_open
+        remove_country_modifier = institution_access_restricted
+        remove_country_modifier = institution_access_closed
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_institutions.11" }
+        }
+    }
+    
+    # Data Breach
+	option = {
+		name = fallout_institutions.11.option.a
+		
+        add_country_modifier = {
+            name = institution_data_breach
+            duration = 3650
+        }
+        
+        add_country_modifier = {
+            name = institution_access_open
+            duration = -1
+        }
+        
+        remove_country_modifier = institution_policy_cooldown
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = institution_policy_cooldown
+                duration = 3650
+                hidden = yes
+            }
+        }
+	}
+}

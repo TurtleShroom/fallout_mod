@@ -1,0 +1,17 @@
+government = vault
+technology_group = tech_vault_dweller
+religion = secular
+primary_culture = vault_dweller
+capital = 2982
+
+historical_rival = GEC
+
+2282.1.1 = {
+	monarch = {
+		name = "Marvin"
+		dynasty = "Sargent"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

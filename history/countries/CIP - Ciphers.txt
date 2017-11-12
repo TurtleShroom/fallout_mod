@@ -1,0 +1,14 @@
+government = administrative_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = cipher
+capital = 3015
+
+2282.1.1 = {
+	monarch = {
+		name = "Cypher"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

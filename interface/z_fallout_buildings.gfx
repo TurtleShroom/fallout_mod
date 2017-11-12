@@ -1,0 +1,200 @@
+spriteTypes = {	
+
+    spriteType = {
+		name = "GFX_museum"
+		texturefile = "gfx//interface//buildings//fm_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school"
+		texturefile = "gfx//interface//buildings//fm_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_workshop"
+		texturefile = "gfx//interface//buildings//fm_workshop.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_office_block"
+		texturefile = "gfx//interface//buildings//fm_office_block.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_jail"
+		texturefile = "gfx//interface//buildings//fm_jail.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_market"
+		texturefile = "gfx//interface//buildings//fm_market.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_farm"
+		texturefile = "gfx//interface//buildings//fm_farm.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_munitions_storage"
+		texturefile = "gfx//interface//buildings//fm_munitions_storage.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_barracks"
+		texturefile = "gfx//interface//buildings//fm_barracks.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_armory"
+		texturefile = "gfx//interface//buildings//fm_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_camp"
+		texturefile = "gfx//interface//buildings//fm_military_camp.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_tower"
+		texturefile = "gfx//interface//buildings//fm_guard_tower.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rubble_defences"
+		texturefile = "gfx//interface//buildings//fm_rubble_defences.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_concrete_defences"
+		texturefile = "gfx//interface//buildings//fm_concrete_defences.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_steel_defences"
+		texturefile = "gfx//interface//buildings//fm_steel_defences.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_titanium_defences"
+		texturefile = "gfx//interface//buildings//fm_titanium_defences.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_command_centre"
+		texturefile = "gfx//interface//buildings//fm_command_centre.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_casino"
+		texturefile = "gfx//interface//buildings//fm_casino.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_embassy"
+		texturefile = "gfx//interface//buildings//fm_embassy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_police_hq"
+		texturefile = "gfx//interface//buildings//fm_police_hq.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_research_lab"
+		texturefile = "gfx//interface//buildings//fm_research_lab.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_artillery_array"
+		texturefile = "gfx//interface//buildings//fm_artillery_array.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_factory"
+		texturefile = "gfx//interface//buildings//fm_factory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_wharf"
+		texturefile = "gfx//interface//buildings//fm_wharf.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_correctional_facility"
+		texturefile = "gfx//interface//buildings//fm_correctional_facility.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_temple"
+		texturefile = "gfx//interface//buildings//fm_temple.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_town_hall"
+		texturefile = "gfx//interface//buildings//fm_town_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fm_simulation_centre"
+		texturefile = "gfx//interface//buildings//fm_simulation_centre.tga"
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_dockyard"
+		texturefile = "gfx//interface//buildings//fm_dockyard.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_fm_arsenal"
+		texturefile = "gfx//interface//buildings//fm_arsenal.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_road"
+		texturefile = "gfx//interface//buildings//fm_road.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_service_post"
+		texturefile = "gfx//interface//buildings//fm_service_post.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_military_depot"
+		texturefile = "gfx//interface//buildings//fm_military_depot.tga"
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_lucky38"
+		texturefile = "gfx//interface//buildings//lucky38.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_the_bison_steve_casino"
+		texturefile = "gfx//interface//buildings//the_bison_steve_casino.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_lincoln_memorial"
+		texturefile = "gfx//interface//buildings//lincoln_memorial.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_ranger_unification_statue"
+		texturefile = "gfx//interface//buildings//ranger_unification_statue.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_atomic_wrangler"
+		texturefile = "gfx//interface//buildings//the_bison_steve_casino.tga"
+		loadType = "INGAME"
+	}
+    spriteType = {
+		name = "GFX_silver_rush"
+		texturefile = "gfx//interface//buildings//the_bison_steve_casino.tga"
+		loadType = "INGAME"
+	}
+}

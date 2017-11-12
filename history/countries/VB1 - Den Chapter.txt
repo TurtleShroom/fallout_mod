@@ -1,0 +1,18 @@
+government = administrative_brotherhood_order
+technology_group = tech_bos
+religion = creatorism
+primary_culture = den_chapter
+capital = 1
+
+historical_friend = BMW
+historical_friend = BOS
+
+2282.1.1 = {
+	monarch = {
+		name = "Henry"
+		dynasty = "Cross"
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}

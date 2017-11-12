@@ -1,0 +1,14 @@
+government = diplomatic_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = westside
+capital = 262
+
+2282.1.1 = {
+	monarch = {
+		name = "Jim"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}

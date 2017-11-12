@@ -1,0 +1,17 @@
+government = diplomatic_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = primm
+capital = 118
+
+historical_friend = NCR
+
+2282.1.1 = {
+	monarch = {
+		name = "Jay"
+		dynasty = "Viper"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}

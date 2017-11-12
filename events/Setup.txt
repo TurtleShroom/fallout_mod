@@ -1,0 +1,131 @@
+namespace = setup
+
+# if = { limit = { has_global_flag = enable_event_logging } log = \1 }
+
+country_event = {
+	id = setup.1
+	title = setup.1.title
+	desc = setup.1.desc
+	picture = ASSASSINATION_eventPicture
+	
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_global_flag = completed_setup }
+    }
+
+    immediate = {
+        set_global_flag = completed_setup
+    }
+
+    option = {
+        name = setup.1.option.a
+        
+        # --- Logging flags
+        #   Comment these for release builds
+        #   Enabling these will spam the game.log
+        #set_global_flag = enable_onaction_logging
+        #set_global_flag = enable_event_logging
+        #set_global_flag = enable_common_logging
+        
+        # Power system
+        # set_global_flag = power_enabled
+        
+        # Research Capacity system
+        set_global_flag = research_capacity_enabled
+
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global Setup" }
+    }  
+}
+
+country_event = {
+	id = setup.2
+	title = setup.1.title
+	desc = setup.1.desc
+	picture = ASSASSINATION_eventPicture
+	
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_country_flag = completed_country_setup }
+    }
+
+    immediate = {
+        set_country_flag = completed_country_setup
+    }
+
+    option = {
+        name = setup.1.option.a
+
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Start Setup" }
+
+        set_country_flag = show_meta_decisions 
+        set_country_flag = show_formation_decisions
+        set_country_flag = show_advisor_decisions
+        set_country_flag = show_institution_decisions
+    }  
+}
+
+country_event = {
+	id = setup.3
+	title = setup.3.title
+	desc = setup.3.desc
+	picture = ASSASSINATION_eventPicture
+	
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_global_flag = completed_processor_setup }
+    }
+
+    immediate = {
+        set_global_flag = completed_processor_setup
+    }
+
+    option = {
+        name = setup.1.option.a
+
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Processor Setup" }
+
+        random_country = {
+            limit = { ai = yes }
+            set_country_flag = processor
+        }
+    }  
+}
+
+# If processor dies, designate another
+country_event = {
+	id = setup.4
+	title = setup.4.title
+	desc = setup.4.desc
+	picture = ASSASSINATION_eventPicture
+	
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            any_country = {
+                has_country_flag = processor
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+    
+    option = {
+        name = setup.1.option.a
+
+        if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Processor Re-designate" }
+
+        random_country = {
+            limit = { ai = yes }
+            set_country_flag = processor
+        }
+    }  
+}

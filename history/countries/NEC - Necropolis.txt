@@ -1,0 +1,17 @@
+government = diplomatic_settlement
+technology_group = tech_ghoul
+religion = secular
+primary_culture = necropolis
+capital = 2478
+
+historical_friend = NCR
+
+2282.1.1 = {
+	monarch = {
+		name = "Vere"
+		dynasty = "Holt"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

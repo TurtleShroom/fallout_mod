@@ -1,0 +1,17 @@
+government = diplomatic_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = rivet_city
+capital = 953
+
+historical_friend = BEC
+
+2282.1.1 = {
+	monarch = {
+		name = "Horace"
+		dynasty = "Pinkerton"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}

@@ -1,0 +1,14 @@
+government = war_tribe
+technology_group = tech_super_mutant
+religion = mutant_tribalism
+primary_culture = super_mutant 
+capital = 38
+
+2282.1.1 = {
+	monarch = {
+		name = "Simp"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

@@ -1,0 +1,81 @@
+country_decisions = {
+    conduct_experimental_research = {
+		major = yes
+		potential = {
+            has_global_flag = research_capacity_enabled
+			NOT = { check_variable = { which = tech_level value = 10 } }
+		}
+		allow = {
+            check_variable = { which = scientific_capacity value = 100 }
+		}
+		effect = {
+            country_event = { id = research_capacity.2 }
+            default_scientific_capacity = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    focus_on_scientific_advancement = {
+		potential = {
+            has_global_flag = research_capacity_enabled
+			check_variable = { which = scientific_capacity value = 0 }
+		}
+		allow = {
+            adm_power = 50
+            dip_power = 50
+            mil_power = 50
+		}
+		effect = {
+            add_adm_power = -50
+            add_dip_power = -50
+            add_mil_power = -50
+            add_scientific_capacity_5 = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+            
+            modifier = {
+                factor = 10
+                AND = {
+                    adm_power = 250
+                    dip_power = 250
+                    mil_power = 250
+                }
+            }
+		}
+	}
+    
+    research_check = {
+		major = yes
+		potential = {
+			ai = no
+            has_global_flag = research_capacity_enabled
+		}
+		allow = {
+            hidden_trigger = {
+                always = no
+            }
+            custom_trigger_tooltip = {
+                tooltip = CURRENT_RESEARCH_CAPACITY
+  
+                check_variable = {
+                    which = scientific_capacity
+                    value = 0
+                }
+            }
+		}
+		effect = {
+            custom_tooltip = research_collection_tt
+            custom_tooltip = research_usage_tt
+            custom_tooltip = research_knowledge_tt
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

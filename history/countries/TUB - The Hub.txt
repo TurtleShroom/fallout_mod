@@ -1,0 +1,14 @@
+government = diplomatic_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = new_california
+capital = 2962
+
+2093.1.1 = {
+	monarch = {
+		name = "Angus"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}

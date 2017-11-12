@@ -1,0 +1,14 @@
+government = administrative_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = diamond_city
+capital = 539
+
+2282.1.1 = {
+	monarch = {
+		name = "Mayor McDonough"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}

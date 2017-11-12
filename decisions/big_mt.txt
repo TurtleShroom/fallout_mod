@@ -1,0 +1,40 @@
+country_decisions = {
+    destroy_the_fence = {
+		potential = {
+            OR = {
+                tag = FBZ
+                tag = TNK
+            }
+            has_discovered = 4015
+            NOT = { has_country_flag = destroying_fence }
+        }
+        
+		allow =  {
+            OR = {
+                adm_tech = 10
+                dip_tech = 10
+                mil_tech = 10
+            }
+			4015 = {
+                has_province_modifier = bmt_block
+            }
+			years_of_income = 2
+		}
+	  	effect = {
+            set_country_flag = destroying_fence
+			add_years_of_income = -2
+            hidden_effect = {
+                west_coast_superregion = {
+                    discover_country = ROOT
+                }
+            }
+            
+            4015 = {
+                remove_province_modifier = bmt_block
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,503 @@
+namespace = research_capacity
+
+# Default technology levels
+country_event = {
+	id = research_capacity.1
+	title = research_capacity.1.title
+	desc = research_capacity.1.desc
+	picture = BIG_MT_THE_SINK_eventPicture
+	
+	is_triggered_only = yes
+    hidden = yes
+    
+    trigger = {
+        NOT = { has_country_flag = setup_tech }
+    }
+    
+    immediate = {
+        set_country_flag = setup_tech
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.1" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.1.option.a
+        
+        set_variable = {
+            which = scientific_capacity
+            value = 0
+        }
+        
+        if = {
+            limit = {
+                OR = {
+                    technology_group = tech_robot
+                    technology_group = tech_commonwealth
+                    technology_group = tech_enclave
+                    technology_group = tech_shi
+                    technology_group = tech_alien
+                }
+            }
+            set_variable = {
+                which = tech_level
+                value = 8
+            }
+            else = {
+                if = {
+                    limit = {
+                        OR = {
+                            technology_group = tech_bos
+                            technology_group = tech_new_vegas
+                        }
+                    }
+                    set_variable = {
+                        which = tech_level
+                        value = 6
+                    }
+                    else = {
+                        if = {
+                            limit = {
+                                OR = {
+                                    technology_group = tech_ncr
+                                    technology_group = tech_vault_dweller
+                                }
+                            }
+                            set_variable = {
+                                which = tech_level
+                                value = 5
+                            }
+                            else = {
+                                if = {
+                                    limit = {
+                                        OR = {
+                                            technology_group = tech_wastelander
+                                            technology_group = tech_ghoul
+                                            technology_group = tech_caesars_legion
+                                            technology_group = tech_hubologist 
+                                        }
+                                    }
+                                    set_variable = {
+                                        which = tech_level
+                                        value = 3
+                                    }
+                                    else = {
+                                        set_variable = {
+                                            which = tech_level
+                                            value = 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+# "Experiemental Research"
+country_event = {
+	id = research_capacity.2
+	title = research_capacity.2.title
+	desc = research_capacity.2.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.2" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.2.option.a
+
+        hidden_effect = {
+            random_list = {
+                25 = {
+                    country_event = { id = research_capacity.3 days = 90 }
+                }
+                5 = {
+                    country_event = { id = research_capacity.5 days = 90 }
+                }
+                5 = {
+                    country_event = { id = research_capacity.6 days = 90 }
+                }
+                5 = {
+                    country_event = { id = research_capacity.7 days = 90 }
+                }
+                5 = {
+                    country_event = { id = research_capacity.8 days = 90 }
+                }
+                5 = {
+                    country_event = { id = research_capacity.9 days = 90 }
+                }
+                50 = {
+                    country_event = { id = research_capacity.4 days = 90 }
+                }
+            }
+        }
+	}
+}
+
+# Discovery!
+country_event = {
+	id = research_capacity.3
+	title = research_capacity.3.title
+	desc = research_capacity.3.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.3" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.3.option.a
+
+        add_tech_level = yes
+        
+        add_prestige = 10
+    }
+}
+
+# Mathematics
+country_event = {
+	id = research_capacity.5
+	title = research_capacity.5.title
+	desc = research_capacity.5.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.5" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.5.option.a
+
+        add_tech_level = yes
+        
+        if = { limit = { NOT = { has_country_modifier = discovery_mathematics } }
+            add_country_modifier = {
+                name = discovery_mathematics
+                duration = -1
+            }
+        }
+        
+        add_prestige = 10
+    }
+}
+
+# Biology
+country_event = {
+	id = research_capacity.6
+	title = research_capacity.6.title
+	desc = research_capacity.6.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.6" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.6.option.a
+
+        add_tech_level = yes
+        
+        if = { limit = { NOT = { has_country_modifier = discovery_biology } }
+            add_country_modifier = {
+                name = discovery_biology
+                duration = -1
+            }
+        }
+        
+        add_prestige = 10
+    }
+}
+
+# Chemistry
+country_event = {
+	id = research_capacity.7
+	title = research_capacity.7.title
+	desc = research_capacity.7.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.7" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.7.option.a
+
+        add_tech_level = yes
+        
+        if = { limit = { NOT = { has_country_modifier = discovery_chemistry } }
+            add_country_modifier = {
+                name = discovery_chemistry
+                duration = -1
+            }
+        }
+        
+        add_prestige = 10
+    }
+}
+
+# Computer Science
+country_event = {
+	id = research_capacity.8
+	title = research_capacity.8.title
+	desc = research_capacity.8.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.8" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.8.option.a
+
+        add_tech_level = yes
+        
+        if = { limit = { NOT = { has_country_modifier = discovery_computing } }
+            add_country_modifier = {
+                name = discovery_computing
+                duration = -1
+            }
+        }
+        
+        add_prestige = 10
+    }
+}
+
+# Physics
+country_event = {
+	id = research_capacity.9
+	title = research_capacity.9.title
+	desc = research_capacity.9.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.9" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.9.option.a
+
+        add_tech_level = yes
+        
+        if = { limit = { NOT = { has_country_modifier = discovery_physics } }
+            add_country_modifier = {
+                name = discovery_physics
+                duration = -1
+            }
+        }
+        
+        add_prestige = 10
+    }
+}
+
+# Failure!
+country_event = {
+	id = research_capacity.4
+	title = research_capacity.4.title
+	desc = research_capacity.4.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.10" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.4.option.a
+
+        add_prestige = -10
+	}
+}
+
+# Eureka!
+country_event = {
+	id = research_capacity.10
+	title = research_capacity.10.title
+	desc = research_capacity.10.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.11" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.10.option.a
+
+        add_scientific_capacity_10 = yes
+	}
+}
+
+# Knowledge Rot
+country_event = {
+	id = research_capacity.11
+	title = research_capacity.11.title
+	desc = research_capacity.11.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.11" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.11.option.a
+
+        lose_scientific_capacity_10 = yes
+	}
+}
+
+# Feuding Scientists
+country_event = {
+	id = research_capacity.12
+	title = research_capacity.12.title
+	desc = research_capacity.12.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.12" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.12.option.a
+
+        add_dip_power = -50
+	}
+    
+    option = {
+		name = research_capacity.12.option.b
+
+        lose_scientific_capacity_5 = yes
+	}
+}
+
+# Divergent Thoughts
+country_event = {
+	id = research_capacity.13
+	title = research_capacity.13.title
+	desc = research_capacity.13.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.13" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.13.option.a
+
+        add_scientific_capacity_5 = yes
+        add_adm_power = -50
+	}
+    
+    option = {
+		name = research_capacity.13.option.b
+
+        lose_scientific_capacity_5 = yes
+	}
+}
+
+# Dangerous Implications
+country_event = {
+	id = research_capacity.14
+	title = research_capacity.14.title
+	desc = research_capacity.14.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.14" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.14.option.a
+
+        add_stability = -1
+	}
+    
+    option = {
+		name = research_capacity.14.option.b
+
+        lose_scientific_capacity_5 = yes
+	}
+}
+
+# Unified Efforts
+country_event = {
+	id = research_capacity.15
+	title = research_capacity.15.title
+	desc = research_capacity.15.desc
+	picture = INS_LAB_eventPicture
+	
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.15" }
+        }
+    }
+    
+    option = {
+		name = research_capacity.15.option.a
+
+        add_adm_power = -50
+        add_scientific_capacity_5 = yes
+	}
+    
+    option = {
+		name = research_capacity.15.option.b
+
+        lose_scientific_capacity_5 = yes
+	}
+}

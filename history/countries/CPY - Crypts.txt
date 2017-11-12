@@ -1,0 +1,6 @@
+government = war_tribe
+technology_group = tech_raider
+religion = secular
+primary_culture = raider
+capital = 1
+

@@ -1,0 +1,20 @@
+discovery_mathematics = {
+    movement_speed = 0.25
+}
+
+discovery_biology = {
+    global_colonial_growth = 25
+}
+
+discovery_chemistry = {
+    land_morale = 0.1
+}
+
+discovery_computing = {
+    all_power_cost = -0.1
+}
+
+discovery_physics = {
+    idea_cost = -0.1
+}
+

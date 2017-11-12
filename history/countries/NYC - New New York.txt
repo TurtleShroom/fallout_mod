@@ -1,0 +1,15 @@
+government = administrative_settlement
+technology_group = tech_wastelander
+religion = secular
+primary_culture = new_yorker
+capital = 3046
+
+2282.1.1 = {
+	monarch = {
+		name = "Linton"
+		dynasty = "Eldred"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

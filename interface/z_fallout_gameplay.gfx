@@ -1,0 +1,136 @@
+spriteTypes = {	
+    #-------------------------------------------------------------------------------------
+	# Religion
+	#-------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_icon_religion"
+		texturefile = "gfx//interface//gameplay//icon_religion.tga"             # 64px
+		noOfFrames = 40
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_icon_religion_small"
+		texturefile = "gfx//interface//gameplay//icon_religion_small.tga"       # 32px
+		noOfFrames = 40
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_religion_icon_strip"
+		texturefile = "gfx//interface//gameplay//icon_religion_small.dds"       # 32px
+		transparencecheck = yes
+		noOfFrames = 40
+	}
+	
+	spriteType = {
+		name = "GFX_province_view_religion"
+		texturefile = "gfx//interface//gameplay//province_view_religion.tga"    # 44px
+		noOfFrames = 40
+		loadType = "INGAME"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GFX_country_icon_religion"
+		texturefile = "gfx//interface//gameplay//country_icon_religion.dds"   # 56px
+		noOfFrames = 40
+	}
+    
+    #-------------------------------------------------------------------------------------
+    # Patriarchy Icons
+    #-------------------------------------------------------------------------------------
+    spriteType = {
+		name = "GFX_icon_none"
+		texturefile = "gfx//interface//gameplay//focus_slot_bg.dds"
+	}	
+    
+    spriteType = {
+		name = "GFX_russian_icons_strip"
+		texturefile = "gfx//interface//gameplay//building_icon_strip.dds"     # 58px
+		noOfFrames = 13
+	}	
+    
+	spriteType = {
+		name = "GFX_patriarchy_slot"
+		texturefile = "gfx//interface//gameplay//patriarchy_slot.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_patriarch_icon"
+		texturefile = "gfx//interface//gameplay//patriarch_icon.dds"
+		noOfFrames = 2
+	}
+    
+    #-------------------------------------------------------------------------------------
+	# Tradegoods
+	#-------------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_resource_icon"
+		texturefile = "gfx//interface//gameplay//resources.tga"               # 64px
+		noOfFrames = 28
+		loadType = "INGAME"
+		
+	}
+	spriteType = {
+		name = "GFX_resource_icon_transparent"
+		texturefile = "gfx//interface//gameplay//resources.tga"               # 64px
+		noOfFrames = 28
+		loadType = "INGAME"
+		
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_resource_icon_small"
+		texturefile = "gfx//interface//gameplay//resources_small.dds"         # 32px
+		noOfFrames = 28
+		loadType = "INGAME"
+	}	
+    
+    #-------------------------------------------------------------------------------------
+	# Technology Groups
+	#-------------------------------------------------------------------------------------
+    spriteType = {
+		name = "GFX_tech_group_strip"
+		texturefile = "gfx//interface//gameplay//tech_group_strip_alt.dds"
+		transparencecheck = yes	
+		noOfFrames = 24
+	}
+    
+    #----------------------------------------------
+    # Edicts
+    #----------------------------------------------
+    spriteType = {
+		name = "GFX_edict_bg_alt"
+		texturefile = "gfx//interface//ui//background//edict_bg_alt.dds"
+	}
+    
+    #----------------------------------------------
+    # Frontier
+    #----------------------------------------------
+    spriteType = {
+		name = "GFX_siberian_mechanic_button"
+		texturefile = "gfx//interface//gameplay//frontier_mechanic_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+    #----------------------------------------------
+    # Native Icons
+    #----------------------------------------------
+    spriteType = {
+		name = "GFX_natives"
+		texturefile = "gfx//interface//gameplay//natives.dds"
+		noOfFrames = 30
+		loadType = "INGAME"
+	}
+    
+    #----------------------------------------------
+    # Blessings
+    #----------------------------------------------
+    spriteType = {
+		name = "GFX_holy_site_default"
+		texturefile = "gfx//interface//gameplay//bunker.dds"
+	}
+}

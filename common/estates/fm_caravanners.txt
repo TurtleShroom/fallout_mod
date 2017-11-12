@@ -1,0 +1,748 @@
+estate_caravanners =
+{
+	icon = 4
+	
+	color = { 120 65 180 }
+	
+	# Is estate kept in control of province on conquest?
+	keep_on_conquest = no
+	
+	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
+	min_territory = 0
+	min_provinces_to_want_territory = 5
+    
+	# If true, country will get estate
+	trigger = {	
+        
+	}
+	
+	# If true, province can be granted to estate
+	province_trigger = {
+		always = yes
+	}	
+	
+	# Min autonomy in estate provinces
+	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_manpower_modifier
+
+	country_modifier_happy = {
+		global_trade_goods_size_modifier = 0.2 
+		caravan_power = 0.2
+	}
+	country_modifier_neutral = {
+		global_trade_goods_size_modifier = 0.1
+        caravan_power = 0.1
+	}	
+	country_modifier_angry = {
+		global_trade_goods_size_modifier = -0.2 
+		caravan_power = -0.2
+	}
+	
+	# These do not scale, but only applied in provinces owned by the estate
+	province_modifier_happy = {
+		province_trade_power_modifier = 0.5
+	}
+	province_modifier_neutral = {
+		province_trade_power_modifier = 0.25
+	}	
+	province_modifier_angry = {
+		local_unrest = 5
+	}		
+	
+	# Influence modifiers
+	base_influence = 20
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_bureaucrats_disaster
+				has_disaster = estate_settlers_disaster
+                has_disaster = estate_officers_disaster
+                has_disaster = estate_scientists_disaster
+                has_disaster = estate_faith_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	
+	# Loyalty modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_bureaucrats_disaster
+				has_disaster = estate_settlers_disaster
+                has_disaster = estate_officers_disaster
+                has_disaster = estate_scientists_disaster
+                has_disaster = estate_faith_disaster
+			}
+		}
+		loyalty = -20
+	}
+
+	loyalty_modifier = {
+		desc = EST_VAL_VERY_MERCANTILISM
+		trigger = {
+            mercantilism = 50
+		}
+		loyalty = 10
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_HIGH_MERCANTILISM
+        trigger = {
+            mercantilism = 30
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_LOW_MERCANTILISM
+        trigger = {
+            NOT = { mercantilism = 20 }
+		}
+		loyalty = -5
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_VERY_LOW_MERCANTILISM
+        trigger = {
+            NOT = { mercantilism = 5 }
+		}
+		loyalty = -10
+	}
+
+    # Custom names
+    custom_name = {
+		desc = estate_mercantores
+		trigger = {
+			tag = CAE
+		}
+	}
+
+	# For province assignment
+	ai_grant_province = {
+		factor = 1	
+		modifier = {
+			factor = 0.5
+			development = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { development = 10 }
+		}				
+		modifier = {
+			factor = 0.75
+			has_owner_culture = yes
+		}
+		modifier = {
+			factor = 0.75
+			province_trade_power = 5
+		}			
+		modifier = {
+			factor = 0.75
+			province_trade_power = 10
+		}			
+	}	
+	
+    # Demand Assistance
+    # years: 20
+    # trigger:
+    #   loyalty: 30
+    #   influence: 25
+    # effect: 
+    #   add_adm_power (more with higher influence)
+    interaction = {
+		name = "DEMAND_ASSISTANCE"
+		icon = 2
+		
+		years_between_use = 20
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_caravanners
+				influence = 25
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used DEMAND_ASSISTANCE caravanners estate action" }
+			if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 25
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 0
+                    }
+                }
+                
+                add_dip_power = 50
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 40
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 25
+                    }
+                }
+                
+                add_dip_power = 100
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 60
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 40
+                    }
+                }
+                
+                add_dip_power = 150
+            }
+            if = {
+                limit = {
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 60
+                    }
+                }
+                
+                add_dip_power = 200
+            }
+            add_estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = -20
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+			modifier = {
+				factor = 0
+				NOT = {
+                    estate_loyalty = {
+                        estate = estate_caravanners
+                        loyalty = 60
+                    }			
+                }
+			}			
+		}
+	}
+    
+    # Make Investment
+    # years: 10
+    # trigger:
+    #   always
+    # effect:
+    #   lose years of income -0.1
+    #   add 15 loyalty
+    interaction = {
+		name = "MAKE_INVESTMENT"
+		icon = 6
+		
+		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_caravanners_disaster }
+		}
+		
+		trigger = {
+			always = yes
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used MAKE_INVESTMENT caravanners estate action" }
+			add_years_of_income = -0.25
+			add_estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = 15
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.5 }				
+			}
+			modifier = {
+				factor = 0
+				estate_loyalty = {
+					estate = estate_caravanners
+					loyalty = 40
+				}
+			}			
+		}		
+	}
+    
+    # Seek Support
+    # years: 20
+    # trigger:
+    #   always
+    # effect:
+    #   lose prestige/government points
+    #   add 10 influence
+    #   add 15 loyalty
+    interaction = {
+		name = "SEEK_SUPPORT"
+		icon = 7
+		
+		years_between_use = 20
+		
+		trigger = {
+			always = yes
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used SEEK_SUPPORT caravanners estate action" }
+			add_prestige = -5
+			add_legitimacy = -5
+			add_republican_tradition = -3
+			add_devotion = -3
+
+			add_estate_influence_modifier = {
+				estate = estate_caravanners
+				desc = EST_VAL_SOUGHT_SUPPORT
+				influence = 10
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = 15
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+            
+			modifier = {
+				factor = 0
+				NOT = {
+                    estate_loyalty = {
+                        estate = estate_settlers
+                        loyalty = 30
+                    }			
+                }
+			}
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_settlers
+					influence = 40
+				}						
+			}			
+		}
+	}
+    
+    # Oust Undesirables
+    # years: 20
+    # trigger:
+    #   always
+    # effect:
+    #   -20 influence
+    #   -15 loyalty
+    interaction = {
+		name = "OUST_UNDESIRABLES"
+		icon = 10
+		
+		years_between_use = 20
+		
+		trigger = {
+			always = yes
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used OUST_UNDESIRABLES caravanners estate action" }
+			add_estate_influence_modifier = {
+				estate = estate_caravanners
+				desc = EST_VAL_OUSTED_UNDESIRABLES
+				influence = -20
+				duration = 7300
+			}
+			add_estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = -15
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = {
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 80
+                    }	
+                }
+			}			
+		}
+	}
+    
+    # Recruit Trader
+    # years: 30
+    # trigger:
+    #   influence: 40
+    # effect:
+    #   + advisor
+    #   15 influence
+    interaction = {
+		name = "RECRUIT_TRADER"
+		icon = 25
+		
+		years_between_use = 30
+		
+		potential = {
+			NOT = { has_disaster = estate_caravanners_disaster }
+		}
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_caravanners
+				influence = 40
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used RECRUIT_TRADER caravanners estate action" }
+			if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = trader
+					skill = 3
+					discount = yes
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = trader
+					skill = 2
+					discount = yes
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_caravanners
+				desc = EST_VAL_RECRUITED_ADVISOR
+				influence = 15
+				duration = 10950
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                estate_influence = {
+                    estate = estate_caravanners
+                    influence = 40
+                }
+            }
+		}
+	}
+    
+    # Recruit Governor
+    # years: 30
+    # trigger:
+    #   influence: 40
+    # effect:
+    #   + advisor
+    #   15 influence
+    interaction = {
+		name = "RECRUIT_GOVERNOR"
+		icon = 25
+		
+		years_between_use = 30
+		
+		potential = {
+			NOT = { has_disaster = estate_caravanners_disaster }
+		}
+		
+		trigger = {
+			estate_influence = {
+				estate = estate_caravanners
+				influence = 40
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used RECRUIT_GOVERNOR caravanners estate action" }
+			if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = colonial_governor
+					skill = 3
+					discount = yes
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = colonial_governor
+					skill = 2
+					discount = yes
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_caravanners
+				desc = EST_VAL_RECRUITED_ADVISOR
+				influence = 15
+				duration = 10950
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                estate_influence = {
+                    estate = estate_caravanners
+                    influence = 40
+                }
+            }
+		}
+	}
+    
+    # Promote Mercantilism
+    # years: 15
+    # trigger:
+    #   loyalty: 30
+    #   influence: 25
+    # effect:
+    #   5 mercantilism
+    #   10 influence
+    interaction = {
+		name = "PROMOTE_MERCANTILISM"
+		icon = 78
+		
+		years_between_use = 10
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_caravanners
+				influence = 25
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used PROMOTE_MERCANTILISM caravanners estate action" }
+			if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 25
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 0
+                    }
+                }
+                
+                add_mercantilism = 2
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 40
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 25
+                    }
+                }
+                
+                add_mercantilism = 4
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 60
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 40
+                    }
+                }
+                
+                add_mercantilism = 6
+            }
+            if = {
+                limit = {
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 60
+                    }
+                }
+                
+                add_mercantilism = 8
+            }
+
+            add_estate_influence_modifier = {
+				estate = estate_caravanners
+				desc = EST_VAL_PROMOTED_MERCANTILISM
+				influence = 10
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                estate_influence = {
+                    estate = estate_caravanners
+                    influence = 50
+                }
+            }
+		}
+	}
+    
+    # Divert Stock
+    # years: 10
+    # trigger:
+    #   loyalty: 30
+    #   influence: 25
+    # effect:
+    #   1 years of income
+    #   -20 loyalty
+    interaction = {
+		name = "DIVERT_STOCK"
+		icon = 77
+		
+		years_between_use = 10
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = 30
+			}	
+			estate_influence = {
+				estate = estate_caravanners
+				influence = 25
+			}
+		}
+		
+		effect = {
+            if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used DIVERT_STOCK caravanners estate action" }
+			if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 25
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 0
+                    }
+                }
+                
+                add_years_of_income = 0.5
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 40
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 25
+                    }
+                }
+                
+                add_years_of_income = 1
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        estate_influence = {
+                            estate = estate_caravanners
+                            influence = 60
+                        }
+                    }
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 40
+                    }
+                }
+                
+                add_years_of_income = 1.5
+            }
+            if = {
+                limit = {
+                    estate_influence = {
+                        estate = estate_caravanners
+                        influence = 60
+                    }
+                }
+                
+                add_years_of_income = 2
+            }
+
+            add_estate_loyalty = {
+				estate = estate_caravanners
+				loyalty = -20
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {   
+                factor = 0
+                NOT = { 
+                    estate_loyalty = {
+                        estate = estate_caravanners
+                        loyalty = 60
+                    }
+                }
+            }
+		}
+	}
+    
+}

@@ -1,0 +1,14 @@
+government = military_settlement 
+technology_group = tech_raider
+religion = tribalism	
+primary_culture = wastelander
+capital = 1
+
+2282.1.1 = {
+	monarch = {
+		name = "Vance"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}

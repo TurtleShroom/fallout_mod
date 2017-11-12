@@ -1,0 +1,136 @@
+namespace = ncr
+
+# "Future of the NCR"
+country_event = {
+	id = ncr.1
+	title = ncr.1.title
+	desc = ncr.1.desc
+    picture = NCR_STATUE_eventPicture
+	
+	trigger = {
+		tag = NCR
+        NOT = { has_global_flag = ncr_focus }
+	}
+	
+    immediate = {
+        set_global_flag = ncr_focus
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ncr.1" }
+        }
+    }
+    
+	option = {
+		name = ncr.1.option.a
+		
+		add_country_modifier = {
+			name = mojave_focus
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = ncr.1.option.b
+	
+		add_country_modifier = {
+			name = west_coast_focus
+			duration = 9125
+		}
+	}
+}
+
+# "The Ranger Unification Treaty" 
+country_event = {
+	id = ncr.2
+	title = ncr.2.title
+	desc = ncr.2.desc
+    picture = NCR_STATUE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = NCR
+		owns = 266 
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ncr.2" }
+        }
+    }
+    
+	option = {
+		name = ncr.2.option.a
+        
+        add_treasury = -100
+        
+		266 = {
+		    add_building = ranger_unification_statue
+		}
+	}
+	
+	option = {
+		name = ncr.2.option.b
+
+        add_prestige = -10
+	}
+}
+
+# "Collapse of the Ranger Unification Treaty"
+country_event = {
+	id = ncr.3
+	title = ncr.3.title
+	desc = ncr.3.desc
+    picture = NCR_STATUE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NCR = {
+		    NOT = {
+		        owns = 266
+            }
+        }
+        tag = NCR 		
+	}
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ncr.3" }
+        }
+    }
+    
+	option = {
+		name = ncr.3.option.a
+        
+		266 = {
+		    remove_building = ranger_unification_statue
+		}
+	}
+}
+
+# Individual Prosperity
+# Many mourn the loss of collective survival thanks to the growth of the NCR's economic base.
+
+# Unemployment Wanes
+
+# High Unemployment
+
+# Fortune on the Frontier
+
+# Demands of the Brahmin Barons
+
+# Brahmin Barons restrict supply
+
+# Governor from the Hub
+
+# Senator from Shady
+
+# Senator from Los Angeles
+
+# Senator from Maxson
+
+# Senator from Dayglow

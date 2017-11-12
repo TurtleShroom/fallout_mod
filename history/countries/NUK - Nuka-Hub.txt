@@ -1,0 +1,15 @@
+government = religious_tribe
+technology_group = tech_hubologist
+religion = hubology	
+primary_culture = hubologist
+capital = 3052
+
+2282.1.1 = {
+	monarch = {
+		name = "Dara"
+        dynasty = "Hubbell"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}

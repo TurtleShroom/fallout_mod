@@ -1,0 +1,387 @@
+namespace = courier
+
+# "Difficult Choices"
+country_event = {
+    id = courier.1
+    title = courier.1.title
+    desc = courier.1.desc
+    picture = DOC_MITCHELL_eventPicture
+
+    fire_only_once = yes
+    
+    trigger = {
+        tag = NVG
+        NOT = { has_global_flag = new_vegas_friends_picked }
+	}
+	
+    immediate = {
+        set_global_flag = new_vegas_friends_picked
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - courier.1" }
+        }
+    }
+    
+    # NCR
+    option = {
+        name = courier.1.option.a
+        
+        NCR = {
+            add_opinion = {
+                who = ROOT
+                modifier = good_relations
+            }
+            remove_historical_rival = ROOT
+        }
+        add_opinion = {
+            who = NCR
+            modifier = good_relations
+        }
+            
+        create_alliance = NCR
+        remove_historical_rival = NCR
+        
+        ai_chance = {
+            factor = 40
+        }
+    }
+    
+    # Legion
+    option = {
+        name = courier.1.option.b
+        
+        CAE = {
+            add_opinion = {
+                who = ROOT
+                modifier = good_relations
+            }
+            remove_historical_rival = ROOT
+        }
+        add_opinion = {
+            who = CAE
+            modifier = good_relations
+        }
+            
+        create_alliance = CAE
+        remove_historical_rival = CAE
+        
+        ai_chance = {
+            factor = 40
+        }
+    }
+    
+    # Self
+    option = {
+        name = courier.1.option.c
+    
+        add_prestige = 10
+        
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+# "The Courier"
+country_event = {
+    id = courier.2
+    title = courier.2.title
+    desc = courier.2.desc
+    picture = HOOVER_DAM_eventPicture
+    
+    trigger = {
+        has_global_flag = new_vegas_friends_picked
+        OR = {
+            tag = NCR
+            tag = NVG
+            tag = CAE
+        }
+        NOT = { has_country_flag = courier_option_picked }
+    }   
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - courier.2" }
+        }
+        hidden_effect = {
+            set_country_flag = courier_option_picked
+        }
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+    }
+    
+    option = {
+        name = courier.2.option.a
+        
+        add_treasury = -1000
+        
+        set_country_flag = courier_bribed_heavily
+
+        ai_chance = {
+            factor = 0
+        }
+    }
+    
+    option = {
+        name = courier.2.option.b
+        
+        add_treasury = -250
+        
+        set_country_flag = courier_bribed_lightly
+        
+        ai_chance = {
+            factor = 50
+        }
+    }
+    
+    option = {
+        name = courier.2.option.c
+        
+        set_country_flag = courier_ignored
+
+        ai_chance = {
+            factor = 50
+        }
+    }
+}
+
+# The Courier's Choice logic event
+country_event = {
+    id = courier.3
+    title = courier.3.title
+    desc = courier.3.desc
+    picture = HOOVER_DAM_eventPicture
+    
+    hidden = yes
+    
+    trigger = {
+        tag = NCR
+        NCR = {
+            has_country_flag = courier_option_picked
+        }
+        NVG = {
+            has_country_flag = courier_option_picked
+        }
+        CAE = {
+            has_country_flag = courier_option_picked
+        }
+        NOT = { has_global_flag = courier_has_picked }
+    }
+    
+    immediate = {
+        set_global_flag = courier_has_picked
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - courier.3" }
+        }
+    }
+    
+    option = {
+        name = courier.3.option.a
+    
+        # courier_bribed_heavily
+        # courier_bribed_lightly
+        # courier_ignored
+        random_list = {
+            33 = { NCR = { save_event_target_as = winner } }
+            33 = { CAE = { save_event_target_as = winner } }
+            33 = { NVG = { save_event_target_as = winner } }
+        }
+        
+        if = {
+            limit = {
+                NCR = { has_country_flag = courier_bribed_heavily }
+            }
+            random = {
+                chance = 50
+                NCR = { save_event_target_as = winner }
+                log = "Winner changed to NCR (50)"
+            }
+        }
+        if = {
+            limit = {
+                CAE = { has_country_flag = courier_bribed_heavily }
+            }
+            random = {
+                chance = 50
+                CAE = { save_event_target_as = winner }
+                log = "Winner changed to CAE (50)"
+            }
+        }
+        if = {
+            limit = {
+                NVG = { has_country_flag = courier_bribed_heavily }
+            }
+            random = {
+                chance = 50
+                NVG = { save_event_target_as = winner }
+                log = "Winner changed to NVG (50)"
+            }
+        }
+        if = {
+            limit = {
+                NCR = { has_country_flag = courier_bribed_lightly }
+            }
+            random = {
+                chance = 25
+                NCR = { save_event_target_as = winner }
+                log = "Winner changed to NCR (25)"
+            }
+        }
+        if = {
+            limit = {
+                CAE = { has_country_flag = courier_bribed_lightly }
+            }
+            random = {
+                chance = 25
+                CAE = { save_event_target_as = winner }
+                log = "Winner changed to CAE (25)"
+            }
+        }
+        if = {
+            limit = {
+                NVG = { has_country_flag = courier_bribed_lightly }
+            }
+            random = {
+                chance = 25
+                NVG = { save_event_target_as = winner }
+                log = "Winner changed to NVG (25)"
+            }
+        }
+        if = {
+            limit = {
+                NCR = { has_country_flag = courier_ignored }
+            }
+            random = {
+                chance = 10
+                NCR = { save_event_target_as = winner }
+                log = "Winner changed to NCR (10)"
+            }
+        } 
+        if = {
+            limit = {
+                CAE = { has_country_flag = courier_ignored }
+            }
+            random = {
+                chance = 10
+                CAE = { save_event_target_as = winner }
+                log = "Winner changed to CAE (10)"
+            }
+        }
+        if = {
+            limit = {
+                NVG = { has_country_flag = courier_ignored }
+            }
+            random = {
+                chance = 10
+                NVG = { save_event_target_as = winner }
+                log = "Winner changed to NVG (10)"
+            }
+        }
+        
+        event_target:winner = {
+            log = "[This.GetName] wins Courier pick"
+        }
+        
+        random_list = {
+            80 = {
+                log = "Country gets Courier bonus"
+                event_target:winner = {
+                    country_event = { 
+                        id = courier.4
+                    }
+                }
+            }
+            20 = {
+                log = "No-one gets Courier bonus"
+                NCR = {
+                    country_event = { 
+                        id = courier.5
+                    }
+                }
+            }
+        }
+    }
+}
+
+# The Courier's Choice 
+#    The courier has decided to help [From.GetName]
+#    Occurs 3 months after 'The Courier'
+#    Grants +morale, +manpower, +adm bonus
+country_event = {
+    id = courier.4
+    title = courier.4.title
+    desc = courier.4.desc
+    picture = HOOVER_DAM_eventPicture
+    
+    is_triggered_only = yes
+    major = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - courier.4" }
+        }
+    }
+    
+    option = {
+        name = courier.4.option.a
+
+        add_country_modifier = {
+            name = power_of_the_courier
+            duration = 3650
+        }
+    }
+}
+
+# The Courier's Choice
+#    The courier has decided to help himself!
+country_event = {
+    id = courier.5
+    title = courier.5.title
+    desc = courier.5.desc
+    picture = HOOVER_DAM_eventPicture
+    
+    is_triggered_only = yes
+    major = yes
+    
+    immediate = {
+        set_global_flag = courier_event_over
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - courier.5" }
+        }
+    }
+    
+    option = {
+        name = courier.5.option.a
+    
+        set_global_flag = courier_helped_himself
+    }
+}
+
+country_event = {
+    id = courier.6
+    title = courier.6.title
+    desc = courier.6.desc
+    picture = HOOVER_DAM_eventPicture
+    
+    trigger = {
+        capital_scope = {
+            superregion = west_coast_superregion
+        }
+        had_global_flag = {
+            flag = courier_helped_himself
+            days = 3650
+        }
+    }
+    major = yes
+    
+    immediate = {
+        clr_global_flag = courier_helped_himself
+    }
+    
+    option = {
+        name = courier.6.option.a
+    
+    }
+}
+

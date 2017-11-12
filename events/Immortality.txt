@@ -1,0 +1,137 @@
+namespace = immortality
+
+country_event = {
+	id = immortality.1
+	title = immortality.1.title
+	desc = immortality.1.desc
+	picture = ENCAMPMENT_eventPicture
+	
+	is_triggered_only = yes
+    hidden = yes
+    
+    trigger = {
+        NOT = { has_country_flag = setup_immortality }
+    }
+    
+    immediate = {
+        set_country_flag = setup_immortality
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - immortality.1" }
+        }
+    }
+
+    option = {
+		name = immortality.1.option.a
+    
+        if = {
+            limit = {
+                OR = {
+                    technology_group = tech_alien
+                    technology_group = tech_shi
+                    technology_group = tech_new_vegas
+                    technology_group = tech_robot
+                }
+            }
+            grant_immortality = yes
+        }
+    }
+}
+
+
+# Event incase immortal tag fails (game is magically in that way)
+country_event = {
+	id = immortality.2
+	title = immortality.2.title
+	desc = immortality.2.desc
+    picture = THINK_TANK_eventPicture
+
+    hidden = yes
+    
+	trigger = {
+        OR = {
+            AND = {
+                tag = TNK
+                NOT = { has_ruler = "Klein" }
+            }
+            AND = {
+                tag = FBZ
+                NOT = { has_ruler = "Mobius" }
+            }
+            AND = {
+                tag = SHI
+                NOT = { has_ruler = "Shi" }
+            }
+            AND = {
+                tag = NVG
+                NOT = { has_ruler = "Robert" }
+            }
+        }
+	}
+
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - immortality.1" }
+        }
+    }
+    
+    mean_time_to_happen = {
+		months = 1
+    }
+    
+	option = {
+		name = immortality.2.option.a
+		
+        if = {
+            limit = {
+                tag = TNK
+            }
+            define_ruler = {
+                name = "Klein"
+                dynasty = " "
+                adm = 6
+                dip = 2
+                mil = 5
+            }
+            add_ruler_personality = immortal_personality
+        }
+        if = {
+            limit = {
+                tag = FBZ
+            }
+            define_ruler = {
+                name = "Mobius"
+                dynasty = " "
+                adm = 3
+                dip = 3
+                mil = 6
+            }
+            add_ruler_personality = immortal_personality
+        }
+        if = {
+            limit = {
+                tag = SHI
+            }
+            define_ruler = {
+                name = "Shi"
+                dynasty = " "
+                adm = 6
+                dip = 6
+                mil = 6
+            }
+            add_ruler_personality = immortal_personality
+        }
+        if = {
+            limit = {
+                tag = NVG
+            }
+            define_ruler = {
+                name = "Robert"
+                dynasty = "House"
+                adm = 6
+                dip = 6
+                mil = 6
+            }
+            add_ruler_personality = immortal_personality
+        }
+	}
+}
