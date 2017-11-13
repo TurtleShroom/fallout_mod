@@ -2,6 +2,12 @@
  #-------------------------------------------------------------------
  # Event Modifiers                    
  #-------------------------------------------------------------------
+ bos_ncr_currency_crisis: "NCR Currency Crisis"
+ desc_bos_ncr_currency_crisis: "Wars with the Brotherhood of Steel have cause significant damage to the NCR dollar and the gold supporting it"
+ 
+ sunnyvale_ruins: "Sunnyvale Ruins"
+ desc_sunnyvale_ruins: "Sunnyvale was one of Prewar Americas technological centers before the great war, now reduced to hazardous ruins."
+ 
  radroach_attack: "Radroach Attack"
  desc_radroach_attack: "This province was recently attacked by radroaches."
 

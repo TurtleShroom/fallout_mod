@@ -2963,7 +2963,7 @@
  PROV2964:0 "Bitter Springs"
  PROV2965:0 "Hidden Valley"
  PROV2966:0 "HELIOS One"
- PROV2967:0 "Nellis Air Force Base"
+ PROV2967:0 "Nellis"
  PROV2968:0 "Mount Charleston"
  PROV2969:0 "Dead Horse Caves"
  PROV2970:0 "The Den"
@@ -3188,5 +3188,9 @@
  PROV4048: "Canyon wreckage"
  PROV4049: "Cave of Abaddon"
  PROV4050: "The Aerie"
+ PROV4051: "Nellis Airforce Base"
+ PROV4052: "Sloan"
+ PROV4053: "Vault 19"
+ 
  
  

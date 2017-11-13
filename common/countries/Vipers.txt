@@ -1,6 +1,6 @@
 graphical_culture = americangfx
 
-color = { 133 163 162  }
+color = { 100 185 64 }
 
 monarch_names = {
 	"Jacob" = 100

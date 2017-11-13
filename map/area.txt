@@ -79,8 +79,8 @@ bitterwater_area = {
 	75 390 392 403 2979
 }
 
-death_valley_area = {   
-    422 85 45
+death_valley_area = { 
+	422 85 45
 }
 
 divide_area = {
@@ -137,11 +137,11 @@ north_vegas_area = {
 }
 
 goodsprings_area = { 
-	117 118 265
+	117 118 265 
 }
 
 new_vegas_area = { 
-	261 262 263 284 309 2954
+	261 262 263 284 309 2954 
 }
 
 helios_area = { 
@@ -157,7 +157,7 @@ nipton_area = {
 }
 
 east_vegas_area = { 
-	122 267 273 2964 2967 
+	122 267 273 2964 2967 4051
 }
 
 boulder_city_area = { 
@@ -165,11 +165,11 @@ boulder_city_area = {
 }
 
 black_mountain_area = { 
-	253 264 268
+	253 264 268 4052
 }
  
 west_vegas_area = { 
-	123 285 557 2968
+	123 285 557 2968 4053
 }
 
 utah_passage_area = {

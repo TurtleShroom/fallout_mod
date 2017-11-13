@@ -703,21 +703,21 @@ spriteTypes = {
 		name = "GFX_russian_ability_ADM"
 		texturefile = "gfx//interface//ui//button//russian_adm_button.dds"
         loadType = "INGAME"
-		transparencecheck = yes	
+		#transparencecheck = yes	
 	}
     
     textSpriteType = {
 		name = "GFX_russian_ability_DIP"
 		texturefile = "gfx//interface//ui//button//russian_dip_button.dds"
         loadType = "INGAME"
-		transparencecheck = yes	
+		#transparencecheck = yes	
 	}
     
     textSpriteType = {
 		name = "GFX_russian_ability_MIL"
 		texturefile = "gfx//interface//ui//button//russian_mil_button.dds"
         loadType = "INGAME"
-		transparencecheck = yes	
+		#transparencecheck = yes	
 	}
     
     # For countryview tabs that use scaling positions. These exact names must be used for the backgrounds, as the internal code for the scaling appears to look for them. Changing the name results in the game defaulting to the vanilla background.

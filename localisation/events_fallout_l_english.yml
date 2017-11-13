@@ -21,6 +21,14 @@
  raiders.1.option.a: ""
 
  #----------------------------------------------------------------------
+ # Lost Hills BOS
+ #----------------------------------------------------------------------
+ los_bos.1.title: "Resuming the Resource War"
+ los_bos.1.desc: "The Brotherhoods defeat in the First Brotherhood War greatly diminished the strength of the unity of the Brotherhood, further splintering the command structures of the Brotherhood leadership. \n\nThe recent display of NCR aggression risks the eradication of what was once the most important Brotherhood Chapter. \n\nIn the first war, our tactics of attacking the Gold Reserves of the NCR proved successful in crippling the NCR economy, raising the question of if we should revive the tactic of old or relying on our military might."
+ los_bos.1.option.a: "Strike their economy"
+ los_bos.1.option.b: "We will win without such measures"
+ 
+ #----------------------------------------------------------------------
  # Diplomatic Actions
  #----------------------------------------------------------------------
  diplomatic_actions.1.title: "Assassination"
@@ -84,6 +92,32 @@
  ncr.3.desc: "With the loss of the Mojave Outpost, our connection to the Desert Rangers has collapsed. Although many remain in our army, much more see our failure in Nevada as the end of the treaty. As our reliance on each other ends, savages tear down the Unification statue and celebrate at its demise."
  ncr.3.option.a: "The republic will endure" 
 
+ ncr.4.title: "Economic Sabotage"
+ ncr.4.desc: "Our war with the Lost Hills Brotherhood Chapter has taken a turn for the worse after the Brotherhood conducted precision strikes against economically important gold mines. \n\nThe cowardly act replicates the events of the last NCR-Brotherhood war where the Brotherhood caused significant economic damage to California’s economy. \n\nThe ripple effect caused by this strike will cause significant damage to both our economy and currency controls."
+ ncr.4.option.a: "We will have our revenge!"
+
+ ncr.5.title: "NCR Gold Recovery Act"
+ ncr.5.desc: "With the support of the senators, we have passed a bill to restore the Great Wanamingo Mine to its former glory. \n\nThis change should offer significant benefits for the country and express our steadfast resilience against the Brotherhood menace!"
+ ncr.5.option.a: "A good day for all Californians"
+ 
+ #----------------------------------------------------------------------
+ # Sloan
+ #----------------------------------------------------------------------
+ sloan.1.title: "Don't Make a Beggar of Me"
+ sloan.1.desc: "For months, its been suggested that Chomps Lewis has been smuggling drugs through the Great Khans and shady NCR operatives. \n\nChomps accidentaly let evidence spill when he was overheard in a conversation with a mysterious figure. \n\nMany within Sloan disagree with Chomps drug dealing, wanting for a return of the Quarrying business or at least less sleazy operations."
+ sloan.1.option.a: "Turn a blind eye..."
+ sloan.1.option.b: "Let the merchant Jas take over"
+ sloan.1.option.c: "Force a return to Quarrying!"
+
+ sloan.2.title: "A Pitstop to New Vegas"
+ sloan.2.desc: "Sloan has typically been one of the only towns along Interstate 15 placing it in an important position as one of two major routes to New Vegas. \n\nAlthough the area has became significantly more dangerous with heightening tensions in the region, by converting the mess hall into a bar we might be able to make Sloan an attractive stop for those seeking to visit New Vegas in more peaceful times."
+ sloan.2.option.a: "A change for the better"
+ sloan.2.option.b: "Shape it into a 'bed and breakfast' like back in Modoc"
+ 
+ sloan.3.title: "Chem Package Arrived"
+ sloan.3.desc: "We have long maintained secret drug smuggling operations with an operative from Sloan, which was one of the more lucrative routes south of Vegas. \n\nFor a long time this trade went silent, forcing a reliance on trade with groups such as the Fiends. \n\nOne of our scouts Melissa Lewis, returned today with a shipment of drugs from the south, signalling a return of trade in the region and opening new frontiers into the future."
+ sloan.3.option.a: "Hurrah"
+ 
  #----------------------------------
  # West Coast
  #----------------------------------
@@ -227,6 +261,34 @@
  new_vegas.6.title: "The Omertas Attack"
  new_vegas.6.desc: "To the sounds of explosions, The Strip was shaken in a surprise attack by the Omertas, although quickly contained they caused significant damage!"
  new_vegas.6.option.a: "Scoundrels!"
+ 
+ new_vegas.7.title: "Tops Looking For New Talent"
+ new_vegas.7.desc: "The Chairmen are looking for new talent to perform in The Aces in front of gamblers visiting The Tops. Although they have found some members they have barely penetrated the potential talent hiding in wait around the Wasteland. Tommy Torini has asked for our help in attracting talent on their behalf."
+ new_vegas.7.option.a: "They can fund themselves!"
+ new_vegas.7.option.b: "Billy Knight is a good comedian"
+ new_vegas.7.option.c: "Bruce Isaac's singing experiance qualifies him"
+ new_vegas.7.option.e: "The Lonesome Drifter would make a fine addition"
+ 
+ new_vegas.8.title: "Missing Brahmin Baron Heir!"
+ new_vegas.8.desc: "The wealthy Brahmin Baron Heck Gunderson’s son has disappeared whilst visiting the Ultra Luxe. Gunderson’s wealth and influence in the NCR and beyond makes this disappearance a highly precarious situation for New Vegas and calls for an investigation. \n\nDue to our contract with the Three Families, we don’t have the right to send secretions in to force a resolution here, so we will have to rely on more covert measures if we intend on discovering the cause of the disappearance."
+ new_vegas.8.option.a: "Best not disturb the families"
+ new_vegas.8.option.b: "Hire a private investigator"
+ new_vegas.8.option.c: "Have the Courier investigate"
+ 
+ new_vegas.9.title: "Beyond the Beef"
+ new_vegas.9.desc: "Our investigation into the disappearance of Heck Gunderson’s son has revealed a sinister underbelly to the White Glove Society. The society was planning on butchering his son and serving him for food to fulfill the cannibalistic urges of several of the society’s members. \n\nThis proposes a dilemma, as not only is this a violation of our agreement with them but it also risks tarnishing the reputation of the Strip if found out!"
+ new_vegas.9.option.a: "Turn a blind eye"
+ new_vegas.9.option.b: "Work with Marjorie to deal with the issue"
+ new_vegas.9.option.c: "Denounce them"
+ new_vegas.9.option.e: "Inform the Gunderson’s"
+ 
+ new_vegas.10.title: "Investigator Murdered!"
+ new_vegas.10.desc: "The investigator we hired to uncover the whereabouts of the Gunderson heir has resulted in failure. The investigator was found face first in a steam booth with multiple wounds to the skull, likely assassinated by the very faction behind the disappearance."
+ new_vegas.10.option.a: "Drats"
+ 
+ new_vegas.12.title: "Hurricane Heck Clears House!"
+ new_vegas.12.desc: "Heck Gunderson and a hired hand stormed the Ultraluxe today, slaughtering every White Glove Society member they could find. They cited the cannibalistic practises of the Family as justification, thanking Mr House and associates for revealing their crime. \n\nIn return for not being mowed down by securatrons, Gunderson has promised to engage in potential business with the strip in the future."
+ new_vegas.12.option.a: "Thats one way of dealing with the problem"
  
  #----------------------------------
  # Province Discoveries
@@ -561,7 +623,7 @@
  vault_governmentS.10.option.a: "The G.O.A.T knows best" 
  
  vault_government.11.title: "Vault depressive syndrome epidemic"
- vault_government.11.desc: "Vault depressive syndrome (VDS) is a condition that causes its sufferers to yearn to escape the confines of the Vault in favour of the outside leading to a depressive state. Although it is foolish to want to leave the Vault, the allure to see the heartland of America is hard for even the best doctor to remedy."
+ vault_government.11.desc: "Vault depressive syndrome (VDS) is a condition that causes its sufferers to yearn to escape the confines of the Vault in favour of the outside leading to a depressive state. \n\nAlthough it is foolish to want to leave the Vault, the allure to see the heartland of America is hard for even the best doctor to remedy."
  vault_governmentS.11.option.a: "We can't take the patriot out of the man"
  vault_governmentS.11.option.b: "The Vault is their home" 
 

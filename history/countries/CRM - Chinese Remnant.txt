@@ -2,7 +2,7 @@ government = commune
 technology_group = tech_ghoul
 religion = ghoul_tribalism 
 primary_culture = ghoul
-capital = 40
+capital = 4034
 
 2282.1.1 = {
 	monarch = {

@@ -2,7 +2,7 @@ government = military_settlement
 technology_group = tech_raider
 religion = tribalism	
 primary_culture = raider
-capital = 1
+capital = 4037
 
 2282.1.1 = {
 	monarch = {

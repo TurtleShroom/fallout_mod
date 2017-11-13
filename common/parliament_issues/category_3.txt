@@ -256,3 +256,27 @@ enforce_equality_law = {
 		factor = 1	
 	}	
 }
+
+post_brotherhood_revive_gwm = {
+	category = 3
+
+	allow = {
+		has_country_flag = bos_war_sab_great_wan
+	}
+	
+	effect = {
+        clr_country_flag = bos_war_sab_great_wan
+		country_event = { id = ncr.5 }
+	}
+	
+	modifier = {
+	}
+	
+	chance = {
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1	
+	}	
+}

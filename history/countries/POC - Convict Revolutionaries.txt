@@ -1,0 +1,17 @@
+government = war_tribe
+technology_group = tech_raider
+religion = secular
+primary_culture = powder_ganger
+capital = 4053
+
+historical_rival = NCR 
+
+2282.1.1 = {
+	monarch = {
+		name = "Samuel"
+		dynasty = "Cooke"
+		adm = 1
+		dip = 4
+		mil = 6
+	}
+}

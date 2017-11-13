@@ -2,7 +2,7 @@ government = administrative_brotherhood_order
 technology_group = tech_bos
 religion = creatorism
 primary_culture = chinatown_chapter
-capital = 1
+capital = 73
 
 historical_friend = BMW
 historical_friend = BOS

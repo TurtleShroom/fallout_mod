@@ -68,14 +68,14 @@ country_decisions = {
 	restore_lincoln_memorial = {
 		potential = {
 			NOT = { has_global_flag = restored_lincoln_memorial }
-            owns_core_province = 2985
-			2985 = {
+            owns_core_province = 4039 
+			4039 = {
 				NOT = { has_building = lincoln_memorial }
 			}
 		}
 		allow = {
 			treasury = 500
-			2985 = {
+			4039 = {
 			    NOT = { has_construction = building } 
 				num_free_building_slots = 1
 			}
@@ -84,7 +84,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -500
 			set_global_flag = restored_lincoln_memorial
-			2985 = {
+			4039 = {
 				add_building_construction = {
                     building = lincoln_memorial
                     speed = 1 

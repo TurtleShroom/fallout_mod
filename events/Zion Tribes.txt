@@ -219,7 +219,7 @@ country_event = {
 #	}	
 #}
 
-# Revert Sorrows and Dead Horses to Mormomism if player lacks The Cossacks (for secondary religion mechanic)
+# "TRIGGERS ON START" 
 country_event = {
 	id = zion.7
 	title = zion.7.title
@@ -229,26 +229,25 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
     
-    trigger = {
-        NOT = { has_dlc = "The Cossacks" }
-        OR = {
-            tag = SOR
-            tag = DED
-        }
-        NOT = { has_global_flag = checked_secondary_religion_presence }
-    }
-    
 	immediate = {
         hidden_effect = {
             if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - zion.7" }
-            set_global_flag = checked_secondary_religion_presence
+			if = {
+				limit = {
+					NOT = { has_dlc = "The Cossacks" }		
+				}
+				SOR = {
+		    		change_religion = mormon 
+				}
+				DED = {
+		    		change_religion = mormon 
+				}
+			}
         }
     }
     
 	option = {	
 		name = zion.7.option.a
-        
-        change_religion = mormon
 	}	
 }
 
@@ -278,6 +277,8 @@ country_event = {
         hidden_effect = {
             CAE = { country_event = { id = zion.9 days = 30 } }
 		}
+        custom_tooltip = zion_send_envoy_tt
+        
 		ai_chance = {
 			factor = 100
 		}
@@ -297,7 +298,7 @@ country_event = {
 	id = zion.9
 	title = zion.9.title
 	desc = zion.9.desc
-	picture = THE_BURNED_MAN_eventPicture
+	picture = ZION_ROCKY_PASS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -357,7 +358,7 @@ country_event = {
 	id = zion.10
 	title = zion.10.title
 	desc = zion.10.desc
-	picture = THE_BURNED_MAN_eventPicture
+	picture = ZION_ROCKY_PASS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -386,7 +387,7 @@ country_event = {
 	id = zion.11
 	title = zion.11.title
 	desc = zion.11.desc
-	picture = THE_BURNED_MAN_eventPicture
+	picture = ZION_ROCKY_PASS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -417,7 +418,7 @@ country_event = {
 	id = zion.12
 	title = zion.12.title
 	desc = zion.12.desc
-	picture = THE_BURNED_MAN_eventPicture
+	picture = ZION_ROCKY_PASS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -443,7 +444,7 @@ country_event = {
 	id = zion.13
 	title = zion.13.title
 	desc = zion.13.desc
-	picture = THE_BURNED_MAN_eventPicture
+	picture = ZION_ROCKY_PASS_eventPicture
 	
 	is_triggered_only = yes
 	

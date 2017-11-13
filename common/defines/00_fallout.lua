@@ -15,6 +15,7 @@ NDefines.NCountry.LEGITIMACY_DYNASTY_CHANGE = 50
 NDefines.NCountry.TECH_TIME_COST = 0.3		                -- tech grow with 20% cost over time.
 NDefines.NCountry.TECH_AHEAD_OF_TIME = 0.1		            -- per year ahead.
 NDefines.NCountry.PS_ESTABLISH_SIBERIAN_FRONTIER = 50
+NDefines.NCountry.PS_FACTION_BOOST = 30 -- 10
 
 -- NDefines.NEconomy.MAX_BUILDING_SLOTS = 12
 -- NDefines.NEconomy.EDICTS_COST_INCREASE = 1.0 

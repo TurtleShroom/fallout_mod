@@ -162,6 +162,7 @@ country_event = {
    		 	    }
 		    }
 	    }	
+		custom_tooltip = vault_goat_start
     }		
 }	
 
@@ -273,7 +274,7 @@ country_event = {
     
 	option = {
 		name = vault_governmentS.7.option.a     
-        add_yearly_manpower = -0.35
+        add_yearly_manpower = 0.50
 	}		
 }
 

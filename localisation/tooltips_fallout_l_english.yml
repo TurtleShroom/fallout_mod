@@ -48,6 +48,14 @@
  
  CANNOT_CLAIM_DEFENDER_OF_THE_FAITH: "§YSecular§! nations cannot claim §YDefender of the Faith§!."
  
+ vault_goat_start: "The class of §Y[GetYear]§! will be assessed for ideal occupational placement."
+ 
+ zion_send_envoy_tt: "An envoy will travel to Caesar's camp."
+ 
+ vegas_wind_blowing_tt: "Wind gathers strength..."
+  
+ bos_strike_ncr_economy_tt: "The saboteurs roll out..."
+ 
  #------------------------------------------
  # Ownership
  #------------------------------------------

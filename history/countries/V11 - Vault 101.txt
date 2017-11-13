@@ -2,7 +2,7 @@ government = vault
 technology_group = tech_vault_dweller
 religion = secular	
 primary_culture = vault_dweller
-capital = 1
+capital = 13
 
 2282.1.1 = {
 	monarch = {

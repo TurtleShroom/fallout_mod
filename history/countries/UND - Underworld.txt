@@ -2,7 +2,7 @@ government = diplomatic_settlement
 technology_group = tech_ghoul
 religion = secular
 primary_culture = underworld
-capital = 43
+capital = 50
 
 2282.1.1 = {
 	monarch = {

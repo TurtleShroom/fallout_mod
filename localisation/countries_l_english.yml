@@ -268,7 +268,6 @@
  CUB_ADJ: "Cuban"
  SWF: "Swampfolk"
  SWF_ADJ: "Swampfolk"
- 
  ST1: "Scavanger Team One"
  ST1_ADJ: "Scavanger"
  GD1: "Californian Marked Men"
@@ -277,6 +276,12 @@
  GD2_ADJ: "Legionary Marked Men"
  WTN: "Warrington"
  WTN_ADJ: "Warrinian"
+ POC: "Convict Revolutionaries"
+ POC_ADJ: "Convict Revolutionary"
+ SLN: "Sloan"
+ SLN_ADJ: "Sloan"
+ VIP: "Vipers"
+ VIP_ADJ: "Vipers"
  
  SIN: "Sinaloa"
  SIN_ADJ: "Sinaloa"

@@ -112,6 +112,103 @@ country_event = {
 	}
 }
 
+# "Second NCR-Brotherhood War - Ecconomic Sabotage"
+country_event = {
+	id = ncr.4
+	title = ncr.4.title
+	desc = ncr.4.desc
+    picture = WASTELAND_HILLS_eventPicture
+	
+	fire_only_once = yes
+
+    is_triggered_only = yes
+    
+	major = yes
+	
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ncr.4" }
+        }
+    }
+    
+	option = {
+		name = ncr.4.option.a
+		trigger = { 		
+		    NCR = {
+				has_parliament = yes
+			}   
+		}
+		add_inflation = 5
+		add_years_of_income = -0.25
+		add_country_modifier = {
+            name = bos_ncr_currency_crisis
+            duration = 2250
+        }
+		if = {
+		    limit = {
+			    owns = 4028 
+			}
+			set_country_flag = bos_war_sab_great_wan
+			4028 = {
+			    add_base_production = -5
+				change_trade_goods = radioactive_waste 
+			}
+		}
+	}
+	
+	option = {
+		name = ncr.4.option.a
+		trigger = { 		
+		    NCR = {
+				has_parliament = no
+			}   
+		}
+		add_country_modifier = {
+            name = bos_ncr_currency_crisis
+            duration = 2250
+        }
+		add_inflation = 5
+		add_years_of_income = -0.25
+		if = {
+		    limit = {
+			    owns = 4028
+			}
+			set_country_flag = bos_war_sab_great_wan
+			4028 = {
+			    add_base_production = -5
+				change_trade_goods = radioactive_waste 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ncr.5
+	title = ncr.5.title
+	desc = ncr.5.desc
+    picture = NCR_STATUE_eventPicture
+
+    is_triggered_only = yes
+    
+    trigger = {
+        owns_core_province = 4028
+    }
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - ncr.5" }
+        }
+    }
+    
+	option = {
+		name = ncr.5.option.a
+		4028 = {
+			add_base_production = 5
+			change_trade_goods = gold
+		}
+	}
+}
+
 # Individual Prosperity
 # Many mourn the loss of collective survival thanks to the growth of the NCR's economic base.
 

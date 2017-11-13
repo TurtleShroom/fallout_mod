@@ -24,6 +24,7 @@
  resupply_garrisons: "§YSupply Garrisons§!"
  salvage_artillery: "§YSalvage Prewar Artillery§!"
  salvage_battleship: "§YSalvage Prewar Battleships§!"
+ post_brotherhood_revive_gwm: "§YNCR Gold Recovery Act§!" 
  
  # Bribes
  lose_adm: "Administrative Support"

@@ -526,7 +526,8 @@ fm_arsenal = {
 # local_movement_speed
 road = {
 	cost = 100
-
+    time = 12
+    
 	modifier = {
 		local_friendly_movement_speed = 0.5
         local_hostile_movement_speed = -0.1
@@ -562,6 +563,7 @@ road = {
 # local_spy_defence
 service_post = {
 	cost = 100
+    time = 12
 
 	modifier = {
 		local_unrest = -1
@@ -598,7 +600,8 @@ service_post = {
 # supply_limit
 military_depot = {
 	cost = 100
-
+    time = 12
+    
 	modifier = {
 		garrison_growth = 0.5
         supply_limit = 1
