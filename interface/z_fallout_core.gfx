@@ -1,5 +1,76 @@
 spriteTypes = {	
     #---------------------------------------------------
+    # Progress Bars
+    #---------------------------------------------------
+    progressbartype = {
+		name = "GFX_metal_progressbar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\ui\\progress_bar//progress_bar_118_22_green.dds"
+		textureFile2 = "gfx\\interface\\ui\\progress_bar//progress_bar_118_22_black.dds"
+		size = { x = 118 y = 22 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+    
+    spriteType = {
+		name = "GFX_infobox_progressbar_frame"
+		textureFile = "gfx//interface//ui//progress_bar//infobox_progressbar_frame.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_dummy_bar"
+		textureFile = "gfx//interface//ui//progress_bar//dummy_bar.dds"
+	}
+    
+    # Long
+    spriteType = {
+		name = "GFX_diplo_chance_progressbar_frame"
+		textureFile = "gfx//interface//ui//progress_bar//long_progressbar_frame.dds"
+	}
+    
+    progressbartype = {
+		name = "GFX_diplo_chance_progressbar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx\\interface\\ui\\progress_bar//progress_bar_250_22_green.dds"
+		textureFile2 = "gfx\\interface\\ui\\progress_bar//progress_bar_250_22_red.dds"
+		size = { x = 250 y = 22 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+    
+    # Feedback
+    progressbartype = {
+		name = "GFX_diplo_feedback_progress_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx//interface//ui//progress_bar//progress_bar_250_22_none.dds"
+		textureFile2 = "gfx//interface//ui//progress_bar//progress_bar_250_22_green.dds"
+		size = { x = 250 y = 22 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+    
+    #---------------------------------------------------
+    # Checkboxes
+    #---------------------------------------------------
+    spriteType = {
+		name = "GFX_checkbox_small"
+		texturefile = "gfx//interface//ui//checkbox//checkbox_small.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_checkbox_small_green"
+		texturefile = "gfx//interface//ui//checkbox//checkbox_small_green.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_checkbox_small_red"
+		texturefile = "gfx//interface//ui//checkbox//checkbox_small_red.dds"
+		noOfFrames = 2
+	}  
+    
+    #---------------------------------------------------
     # Backgrounds
     #---------------------------------------------------
     spriteType = {
@@ -84,14 +155,74 @@ spriteTypes = {
 	}
     
     spriteType = {
+		name = "GFX_subject_header"
+		texturefile = "gfx/interface/ui//background//diplo_popup_header_bg_short.dds"
+	}
+    
+    spriteType = {
 		name = "GFX_header_center_text_bg_large"
 		texturefile = "gfx/interface/ui//background//diplo_popup_header_bg_large.dds"
 	}
     
     #---------------------------------------------------
-    # Buttons
+    # Buttons / Icons
     #---------------------------------------------------
-    # Estates
+    # --------------- Subject View
+    spriteType = {
+		name = "GFX_subject_name_sort_button"
+		texturefile = "gfx//interface//ui//button//name_sort_button.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_subject_relation_sort_button"
+		texturefile = "gfx//interface//ui//button//opinion_sort_button.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_subject_income_sort_button"
+		texturefile = "gfx//interface//ui//button//cash_sort_button.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_subject_tariff_sort_button"
+		texturefile = "gfx//interface//ui//button//subject_tariff_sort_button.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_subject_liberty_desire_sort_button"
+		texturefile = "gfx//interface//ui//button//estate_loyalty_sort_button.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_subject_armysize_sort_button"
+		texturefile = "gfx//interface//ui//button//estate_influence_sort_button.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_subject_focus_alt"
+		texturefile = "gfx/interface/ui/button/subject_focuses_small.dds"
+		noOfFrames = 6
+	}
+    
+    spriteType = {
+		name = "GFX_subject_tribute_alt"
+		texturefile = "gfx/interface/ui/button/subject_tributes_small.dds"
+		noOfFrames = 6
+	}
+    
+    spriteType = {
+		name = "GFX_subject_focus"
+		texturefile = "gfx/interface/ui/button/big_button_232_6_frame.dds"
+		noOfFrames = 6
+	}
+
+	spriteType = {
+		name = "GFX_subject_tribute"
+		texturefile = "gfx/interface/ui/button/big_button_232_6_frame.dds"
+		noOfFrames = 6
+	}
+    
+    # --------------- Estates
     spriteType = {
 		name = "GFX_estate_loyalty_sort_button"
 		texturefile = "gfx//interface//ui//button//estate_loyalty_sort_button.dds"
@@ -110,7 +241,7 @@ spriteTypes = {
 		texturefile = "gfx//interface//ui//icons//estate_action_icon.dds"
 	}
     
-    # Diplomacy
+    # --------------- Diplomacy
     textSpriteType = {
 		name = "GFX_diplomacy_action_category_button"
 		texturefile = "gfx//interface//ui//button//284_block_button.dds"
@@ -221,21 +352,34 @@ spriteTypes = {
 		texturefile = "gfx//interface//ui//button//prepare_for_war_button.dds"
 	}
     
-    
-    
-    # Court
+    # --------------- Court
     spriteType = {
 		name = "GFX_dismiss_advisor_button"
 		texturefile = "gfx//interface//ui//button//fire_advisor_button.dds"
 	}
     
-    # Event Window
+    # --------------- General
     spriteType = {
-		name = "GFX_event_button_600"
-		texturefile = "gfx//interface//ui//button//event_button_600.dds"
+		name = "GFX_adm_power_button"
+		texturefile = "gfx//interface//ui//button//adm_power_button.dds"
+	}
+    spriteType = {
+		name = "GFX_dip_power_button"
+		texturefile = "gfx//interface//ui//button//dip_power_button.dds"
+	}
+    spriteType = {
+		name = "GFX_mil_power_button"
+		texturefile = "gfx//interface//ui//button//mil_power_button.dds"
+	}
+    spriteType = {
+		name = "GFX_manpower_button"
+		texturefile = "gfx//interface//ui//button//manpower_button.dds"
+	}
+    spriteType = {
+		name = "GFX_stability_button"
+		texturefile = "gfx//interface//ui//button//stability_button.dds"
 	}
     
-    # General
     textSpriteType = {
 		name = "GFX_toggle_button"
 		texturefile = "gfx//interface//ui//button//200_toggle_button.dds"
@@ -425,6 +569,44 @@ spriteTypes = {
 	}
     
     spriteType = {
+		name = "GFX_trust_icon"
+		texturefile = "gfx//interface//ui//icons//trust_icon.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_favour_icon"
+		texturefile = "gfx//interface//ui//icons//favour_icon.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_attitude_icons_strip"
+		texturefile = "gfx//interface//ui//icons//attitude_icons_strip.dds"
+		noOfFrames = 15
+	}
+    
+    spriteType = {
+		name = "GFX_improve_relation_icon"
+		texturefile = "gfx//interface//ui//icons//improve_relations_icon.dds"
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_num_of_relations_icon"
+		texturefile = "gfx//interface//ui//icons//num_of_relations_icon.dds"
+		loadType = "INGAME"
+	}
+    
+    spriteType = {
+		name = "GFX_dip_rep_icon"
+		texturefile = "gfx//interface//ui//icons//dip_rep_icon.dds"
+		loadType = "INGAME"
+	}
+    
+    #---------------------------------------------------
+    # Overrides
+    #---------------------------------------------------
+    # --------------- Country View Tabs
+    spriteType = {
 		name = "GFX_tab_court"
 		texturefile = "gfx//interface//ui//button//tab_court.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -528,144 +710,7 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
     
-    #---------------------------------------------------
-    # Progress Bars
-    #---------------------------------------------------
-    progressbartype = {
-		name = "GFX_metal_progressbar"
-		color = { 0.0 0.5 0.0 }
-		colortwo = { 1.0 0.0 0.0 }
-		textureFile1 = "gfx\\interface\\ui\\progress_bar//progress_bar_118_22_green.dds"
-		textureFile2 = "gfx\\interface\\ui\\progress_bar//progress_bar_118_22_black.dds"
-		size = { x = 118 y = 22 }
-		effectFile = "gfx/FX/progress.lua"
-	}
-    
-    spriteType = {
-		name = "GFX_infobox_progressbar_frame"
-		textureFile = "gfx//interface//ui//progress_bar//infobox_progressbar_frame.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_dummy_bar"
-		textureFile = "gfx//interface//ui//progress_bar//dummy_bar.dds"
-	}
-    
-    # Long
-    spriteType = {
-		name = "GFX_diplo_chance_progressbar_frame"
-		textureFile = "gfx//interface//ui//progress_bar//long_progressbar_frame.dds"
-	}
-    
-    progressbartype = {
-		name = "GFX_diplo_chance_progressbar"
-		color = { 1.0 0.0 0.0 }
-		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx\\interface\\ui\\progress_bar//progress_bar_250_22_green.dds"
-		textureFile2 = "gfx\\interface\\ui\\progress_bar//progress_bar_250_22_red.dds"
-		size = { x = 250 y = 22 }
-		effectFile = "gfx/FX/progress.lua"
-	}
-    
-    # Feedback
-    progressbartype = {
-		name = "GFX_diplo_feedback_progress_bar"
-		color = { 0.0 0.0 0.0 }
-		colortwo = { 0.0 0.0 0.0 }
-		textureFile1 = "gfx//interface//ui//progress_bar//progress_bar_250_22_none.dds"
-		textureFile2 = "gfx//interface//ui//progress_bar//progress_bar_250_22_green.dds"
-		size = { x = 250 y = 22 }
-		effectFile = "gfx/FX/progress.lua"
-	}
-    
-    #---------------------------------------------------
-    # Icons
-    #---------------------------------------------------
-    spriteType = {
-		name = "GFX_trust_icon"
-		texturefile = "gfx//interface//ui//icons//trust_icon.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_favour_icon"
-		texturefile = "gfx//interface//ui//icons//favour_icon.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_attitude_icons_strip"
-		texturefile = "gfx//interface//ui//icons//attitude_icons_strip.dds"
-		noOfFrames = 15
-	}
-    
-    spriteType = {
-		name = "GFX_improve_relation_icon"
-		texturefile = "gfx//interface//ui//icons//improve_relations_icon.dds"
-		loadType = "INGAME"
-	}
-    
-    spriteType = {
-		name = "GFX_num_of_relations_icon"
-		texturefile = "gfx//interface//ui//icons//num_of_relations_icon.dds"
-		loadType = "INGAME"
-	}
-    
-    spriteType = {
-		name = "GFX_dip_rep_icon"
-		texturefile = "gfx//interface//ui//icons//dip_rep_icon.dds"
-		loadType = "INGAME"
-	}
-    
-    spriteType = {
-		name = "GFX_advisor_noAdvisorType"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate.lua"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_advisor_noAdvisorType_female"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-		loadType = "INGAME"
-	}
-    
-    
-    
-    spriteType = {
-		name = "GFX_icon_legitimacy"
-		texturefile = "gfx//interface//ui//icons//icon_legitimacy.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 5
-	}
-    
-    #---------------------------------------------------
-    # Checkboxes
-    #---------------------------------------------------
-    spriteType = {
-		name = "GFX_checkbox_small"
-		texturefile = "gfx//interface//ui//checkbox//checkbox_small.dds"
-		noOfFrames = 2
-	}
-	
-	spriteType = {
-		name = "GFX_checkbox_small_green"
-		texturefile = "gfx//interface//ui//checkbox//checkbox_small_green.dds"
-		noOfFrames = 2
-	}
-	
-	spriteType = {
-		name = "GFX_checkbox_small_red"
-		texturefile = "gfx//interface//ui//checkbox//checkbox_small_red.dds"
-		noOfFrames = 2
-	}  
-    
-    #---------------------------------------------------
-    # Overrides
-    #---------------------------------------------------
-    # Listbox
+    # --------------- Listbox
     spriteType = {
 		name = "GFX_scroll_drager"
 		texturefile = "gfx/interface/scroll_drager.dds"
@@ -698,7 +743,7 @@ spriteTypes = {
 		borderSize = { x=4 y=4 }
 	}
     
-    # Government
+    # --------------- Government
     textSpriteType = {
 		name = "GFX_russian_ability_ADM"
 		texturefile = "gfx//interface//ui//button//russian_adm_button.dds"
@@ -854,6 +899,30 @@ spriteTypes = {
 		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
         loadType = "INGAME"
 		transparencecheck = yes
+	}
+    
+    spriteType = {
+		name = "GFX_advisor_noAdvisorType"
+		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+    spriteType = {
+		name = "GFX_icon_legitimacy"
+		texturefile = "gfx//interface//ui//icons//icon_legitimacy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 5
 	}
 }
 

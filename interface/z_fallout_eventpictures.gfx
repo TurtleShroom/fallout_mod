@@ -836,4 +836,11 @@ spriteTypes = {
 		
 		clicksound = click
 	}
+    
+    spriteType = {
+		name = "GFX_event_button_600"
+		texturefile = "gfx//interface//ui//button//event_button_600.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		clicksound = click
+	}
 }

@@ -333,8 +333,8 @@ guiTypes = {
 		iconType =
 		{
 			name ="subject_overlay_bg"
-			spriteType = "GFX_country_subject_list_overlay_bg"
-			position = { x= 10 y = 130 }
+			spriteType = "GFX_header_center_text_bg"
+			position = { x= 10 y = -9999 }
 			Orientation = "UPPER_LEFT"
 
 		}
@@ -342,8 +342,8 @@ guiTypes = {
 		smoothListboxType = {
 			name = "subjects_listbox"
 			backGround = ""
-			position = { x=18 y=160 }
-			size = { x=500 y=242 }
+			position = { x=30 y=260 }
+			size = { x=500 y=300 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 2.5
@@ -353,14 +353,14 @@ guiTypes = {
 
 		iconType = {
 			name = "liberty_desire_icon"
-			spriteType = "GFX_liberty_icon"
-			position = { x = 470 y = 136 }
-			Orientation = UPPER_LEFT
+			spriteType = "GFX_header_center_text_bg"
+			position = { x = -260 y = 180 }
+			Orientation = CENTER
 		}
 
 		instantTextBoxType = {
 			name = "liberty_desire_value"
-			position = { x = 492 y = 137 }
+			position = { x = 490 y = 250 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -372,21 +372,21 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "interactions"
-			position = { x = 20 y = 136 }
+			position = { x = 270 y = 310 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "ONGOING_INTERACTIONS"	
 			maxHeight = 60
-			maxWidth = 450
+			maxWidth = 420
 			format = left
 		}
 		
 		smoothListboxType = {
 			name = "interactions_listbox"
 			backGround = ""
-			position = { x=0 y=161 }
-			size = { x=603 y=242 }
+			position = { x=250 y=340 }
+			size = { x=603 y=200 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 2.5
@@ -422,56 +422,58 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "sort_subjects_button"
-			position = { x = 18 y = 139 }
-			quadTextureSprite ="GFX_sort_subjects_button"	
+			position = { x = 780 y = -9999 }
+			quadTextureSprite ="GFX_button_default"
+			buttonText = "NAME"
+			buttonFont = "vic_18"		
 		}		
 		
 		guiButtonType = {
 			name = "sort_name_button"
-			position = { x = 67 y = 139 }
-			quadTextureSprite ="GFX_sort_button_128"
-			buttonText = "NAME"
-			buttonFont = "vic_18"		
+			position = { x = 30 y = 220 }
+			quadTextureSprite ="GFX_subject_name_sort_button"	
 		}
 
 		guiButtonType = {
 			name = "sort_relation_button"
-			position = { x = 203 y = 139 }
-			quadTextureSprite ="GFX_sort_opinion_button"	
+			position = { x = 80 y = 220 }
+			quadTextureSprite ="GFX_subject_relation_sort_button"
 		}		
 		
 		guiButtonType = {
 			name = "sort_income_button"
-			position = { x = 242 y = 139 }
-			quadTextureSprite ="GFX_sort_income_button"	
+			position = { x = 130 y = 220 }
+			quadTextureSprite ="GFX_subject_income_sort_button"
 		}	
 
 		guiButtonType = {
 			name = "sort_tariff_button"
-			position = { x = 293 y = 139 }
-			quadTextureSprite ="GFX_sort_tariff_button"	
+			position = { x = 180 y = 220 }
+			quadTextureSprite ="GFX_subject_tariff_sort_button"	
 		}	
 
 		guiButtonType = {
 			name = "sort_liberty_desire_button"
-			position = { x = 331 y = 139 }
-			quadTextureSprite ="GFX_sort_union_break_button"	
+			position = { x = 230 y = 220 }
+			quadTextureSprite ="GFX_subject_liberty_desire_sort_button"	
 		}
 		guiButtonType = {
 			name = "sort_armysize_button"
-			position = { x = 369 y = 139 }
-			quadTextureSprite ="GFX_sort_armysize_button"	
+			position = { x = 280 y = 220 }
+			quadTextureSprite ="GFX_subject_armysize_sort_button"
 		}
 		
 		guiButtonType = {
 			name = "sort_bonus_button"
-			position = { x = 395 y = 139 }
-			quadTextureSprite ="GFX_sort_bonus_button"	
+			position = { x = 740 y = -9999 }
+			quadTextureSprite ="GFX_button_default"
+			buttonText = "Bonus"
+			buttonFont = "vic_18"	
 		}	
 		
 		guiButtonType = {
 			name = "sort_action_button"
-			position = { x = 433 y = 139 }
+			position = { x = 433 y = -9999 }
 			quadTextureSprite ="GFX_sort_button_100"
 			buttonText = "INTERACTIONS"
 			buttonFont = "vic_18"
@@ -486,11 +488,75 @@ guiTypes = {
 			dontRender = ""
 			horizontalBorder = ""
 
+            iconType =
+			{
+				name ="vassal_income_header"
+				spriteType = "GFX_button_200"
+				position = { x= 40 y = 280 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="vassal_income_bg_1"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 260 y = 282 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="vassal_income_bg_2"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 380 y = 282 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="colony_income_header"
+				spriteType = "GFX_button_200"
+				position = { x= 40 y = 330 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="colony_income_bg_1"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 260 y = 332 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="colony_income_bg_2"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 380 y = 332 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="total_income_header"
+				spriteType = "GFX_button_200"
+				position = { x= 40 y = 380 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="total_income_bg_1"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 260 y = 382 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			iconType =
 			{
 				name ="tariff_income"
 				spriteType = "GFX_tariff_income"
-				position = { x= 209 y = 439 }
+				position = { x= 55 y = -9999 }
 				Orientation = "UPPER_LEFT"
 			}
 
@@ -498,13 +564,13 @@ guiTypes = {
 			{
 				name ="vassal_income"
 				spriteType = "GFX_vassal_income"
-				position = { x= 209 y = 477 }
+				position = { x= 295 y = -9999 }
 				Orientation = "UPPER_LEFT"
 			}			
 
 			instantTextBoxType = {
 				name = "colony_income_label"
-				position = { x = 65 y = 437 }
+				position = { x = 30 y = 334 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -516,7 +582,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "colony_income_efficiency_value"
-				position = { x = 208 y = 439 }
+				position = { x = 260 y = 331 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -528,7 +594,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "colony_income_value"
-				position = { x = 323 y = 439 }
+				position = { x = 400 y = 331 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -540,7 +606,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "vassal_income_label"
-				position = { x = 65 y = 475 }
+				position = { x = 25 y = 284 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -552,7 +618,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "vassal_income_efficiency_value"
-				position = { x = 208 y = 475 }
+				position = { x = 260 y = 281 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -564,7 +630,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "vassal_income_value"
-				position = { x = 323 y = 474 }
+				position = { x = 400 y = 281 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -576,7 +642,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "total_subjects_income_label"
-				position = { x = 136 y = 523 }
+				position = { x = 30 y = 384 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
@@ -588,59 +654,67 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "total_subjects_income"
-				position = { x = 323 y = 524 }
+				position = { x = 260 y = 381 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 4 y = 4}	
 				text = "0.0"	
-				maxWidth = 110
+				maxWidth = 90
 				maxHeight = 32
-				format = centre
+				format = right
 			}
 
 			guiButtonType = {
 				name = "release_colony"
-				position = { x=465 y=500}
-				quadTextureSprite ="GFX_release_colony_button"	
+				position = { x=270 y=440}
+				quadTextureSprite ="GFX_fm_big_button"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""			
 				clicksound = click
+                buttonText = "Release Colony"
+                buttonFont = "vic_22"
 			}
 			
 			guiButtonType = {
 				name = "subject_military_focus"
-				position = { x=465 y=450 }
-				quadTextureSprite ="GFX_subject_military_focus_button"	
+				position = { x=30 y=440 }
+				quadTextureSprite ="GFX_fm_big_button"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""			
 				clicksound = click
+                buttonText = "Set Military Focus"
+                buttonFont = "vic_22"
 			}
 			
 			guiButtonType = {
 				name = "toggle_overlord"
-				position = { x=39 y=427 }
-				quadTextureSprite ="GFX_toggle_overlord_button"	
+				position = { x=510 y=440 }
+				quadTextureSprite ="GFX_fm_big_button"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""			
 				clicksound = click
+                buttonText = "Toggle Overlord"
+                buttonFont = "vic_22"
 			}
 		}
 
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 514 y = -1 }
-			quadTextureSprite ="GFX_closebutton2"	
+			position = { x = 400 y = 970 }
+			quadTextureSprite ="GFX_button_default"	
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_LEFT"
 			clicksound = close_window
-		}	
+            buttonText = "Close"
+            buttonFont = "vic_22"
+		}
 		
 		instantTextBoxType = {
 			name = "window_title"
-			position = { x = 15 y = 78 }
+			position = { x = 250 y = 10 }
 			textureFile = ""
 			font = "vic_29s"
 			borderSize = {x = 4 y = 4}	
@@ -714,7 +788,7 @@ guiTypes = {
 		windowType = {
 			name = "subject_military_focus_window"
 			backGround=""
-			position = { x=520 y=455 }
+			position = { x=30 y=60 }
 			size = { x=360 y=60 }
 			moveable = 0
 			dontRender = ""
@@ -732,61 +806,73 @@ guiTypes = {
 			{
 				name ="background"
 				spriteType = "GFX_subjects_buttons_bg"
-				position = { x= -4 y = -4 }
+				position = { x= -4 y = -9999 }
 			}
 			
 			guiButtonType =
 			{
 				name ="focus_select_button_no_focus"
 				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 0 y = 0 }
+				position = { x = 0 y = 440 }
 				Orientation = "UPPER_LEFT"
-				frame = 1
+                buttonText = "No Focus"
+                buttonFont = "vic_22"
+                frame = 1
 			}
 			
 			guiButtonType =
 			{
 				name ="focus_select_button_supportive"
 				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 40 y = 0 }
+				position = { x = 240 y = 440 }
 				Orientation = "UPPER_LEFT"
-				frame = 3
+				buttonText = "Supportive"
+                buttonFont = "vic_22"
+                frame = 2
 			}
 			
 			guiButtonType =
 			{
 				name ="focus_select_button_aggressive"
 				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 80 y = 0 }
+				position = { x = 480 y = 440 }
 				Orientation = "UPPER_LEFT"
-				frame = 2
+				buttonText = "Aggressive"
+                buttonFont = "vic_22"
+                frame = 3
 			}
 			
 			guiButtonType =
 			{
 				name ="focus_select_button_passive"
 				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 0 y = 46 }
+				position = { x = 0 y = 500 }
 				Orientation = "UPPER_LEFT"
-				frame = 4
+				buttonText = "Passive"
+                buttonFont = "vic_22"
+                frame = 4
 			}
 			
 			guiButtonType =
 			{
 				name ="focus_select_button_defensive"
 				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 40 y = 46 }
+				position = { x = 240 y = 500 }
 				Orientation = "UPPER_LEFT"
-				frame = 5
+				buttonText = "Defensive"
+                buttonFont = "vic_22"
+                frame = 5
 			}
 			
 			guiButtonType =
 			{
 				name ="focus_select_button_siege"
 				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 80 y = 46 }
+				position = { x = 480 y = 500 }
 				Orientation = "UPPER_LEFT"
-				frame = 6
+				buttonText = "Siege"
+                buttonFont = "vic_22"
+                frame = 6
 			}
 		}
 		
@@ -850,8 +936,8 @@ guiTypes = {
 		windowType = {
 			name = "selected_subject_window"
 			backGround=""
-			position = { x=550 y=120 }	
-			size = { x=282 y=242 }
+			position = { x=540 y=220 }		
+			size = { x=600 y=100 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder= ""
@@ -860,56 +946,54 @@ guiTypes = {
 		
 			iconType = {
 				name ="subject_actions_bg"
-				if_resolution = {
-					max_height = 1079
-					spriteType = "GFX_subjects_extension_bg"
-				}
-				if_resolution = {
-					min_height = 1080
-					spriteType = "GFX_subjects_extension_bg_huge"
-				}
-				position = { x= 0 y = 0 }
+				spriteType = "GFX_side_panel_bg"
+				position = { x= 0 y = -9999 }
 				Orientation = "UPPER_LEFT"
 			}
 
 			iconType = {
 				name ="subject_actions_blank_bg"
-				spriteType = "GFX_subjects_extension_blank_bg"
-				position = { x= 0 y = 0 }
+				spriteType = "GFX_side_panel_bg"
+				position = { x= 0 y = -9999 }
 				Orientation = "UPPER_LEFT"
 			}
 			
+            iconType = {
+				name ="subject_header_bg"
+				spriteType = "GFX_subject_header"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			guiButtonType = {
 				name = "close_button"
-				position = { x = 270 y = -10 }
-				quadTextureSprite ="GFX_closebutton2"
-				shortcut = "ESCAPE"
-				Orientation = "UPPER_LEFT"
-				clicksound = close_window
+				position = { x=120 y =-9999}
+				quadTextureSprite ="GFX_button_default"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DOMESTIC_BACK"
+				buttonFont = "vic_22"
+				shortcut = "z"			
+				extra_shortcut = "ESCAPE"
+				clicksound = back_click
 			}			
 		
 			smoothListboxType = {
 				name = "list"
 				backGround = ""
-				position = { x = 12 y = 210 }
-				if_resolution = {
-					max_height = 1079
-					size = { x = 255 y = 216 }
-				}
-				if_resolution = {
-					min_height = 1080
-					size = { x = 255 y = 396 }
-				}
+				position = { x = 110 y = 310 }
+				size = { x = 255 y = 390 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2.5
-				scrollbartype = "standardlistbox_slider"
+				scrollbartype = "standardlistbox_noslider"
 				borderSize = {x = 0 y = 0}
 			}
 			
 			instantTextBoxType = {
 				name = "subject_name"
-				position = { x = 52 y = 10 }
+				position = { x = 100 y = 24 }
 				format = left
 				font = "vic_22"
 				maxWidth = 220
@@ -921,33 +1005,21 @@ guiTypes = {
 			iconType = {
 				name = "flag"
 				spriteType = "GFX_shield_small"
-				position = { x= 5 y = 3 }
+				position = { x= 25 y = 20 }
 			}
 			
 			iconType = {
 				name = "subject_type"
 				spriteType = "GFX_subject_colony_icon"
-				position = { x= 20 y = 3 }
+				position = { x= 380 y = 20 }
 			}
-			
-#			instantTextBoxType = {
-#				name = "focus_label"
-#				position = { x = 174 y = 78 }
-#				format = left
-#				font = "vic_22"
-#				text = "Military Focus:"
-#				maxWidth = 120
-#				maxHeight = 32	
-#				Orientation = "UPPER_LEFT"
-#				fixedsize = yes
-#			}
-
-			# Military focus buttons
+            
+			# Military focus buttons 45
 			guiButtonType =
 			{
 				name ="focus_select_button_no_focus"
-				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 15 y = 162 }
+				quadTextureSprite= "GFX_subject_focus_alt"
+				position = { x = 100 y = 250 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
@@ -955,8 +1027,8 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="focus_select_button_supportive"
-				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 60 y = 162 }
+				quadTextureSprite= "GFX_subject_focus_alt"
+				position = { x = 145 y = 250 }
 				Orientation = "UPPER_LEFT"
 				frame = 3
 			}
@@ -964,8 +1036,8 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="focus_select_button_aggressive"
-				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 105 y = 162 }
+				quadTextureSprite= "GFX_subject_focus_alt"
+				position = { x = 190 y = 250 }
 				Orientation = "UPPER_LEFT"
 				frame = 2
 			}
@@ -973,8 +1045,8 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="focus_select_button_passive"
-				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 150 y = 162 }
+				quadTextureSprite= "GFX_subject_focus_alt"
+				position = { x = 235 y = 250 }
 				Orientation = "UPPER_LEFT"
 				frame = 4
 			}
@@ -982,8 +1054,8 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="focus_select_button_defensive"
-				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 195 y = 162 }
+				quadTextureSprite= "GFX_subject_focus_alt"
+				position = { x = 280 y = 250 }
 				Orientation = "UPPER_LEFT"
 				frame = 5
 			}
@@ -991,8 +1063,8 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="focus_select_button_siege"
-				quadTextureSprite= "GFX_subject_focus"
-				position = { x = 240 y = 162 }
+				quadTextureSprite= "GFX_subject_focus_alt"
+				position = { x = 325 y = 250 }
 				Orientation = "UPPER_LEFT"
 				frame = 6
 			}
@@ -1001,63 +1073,91 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="tribute_select_button_none"
-				quadTextureSprite= "GFX_subject_tribute"
-				position = { x = 15 y = 162 }
+				quadTextureSprite= "GFX_subject_tribute_alt"
+				position = { x = 100 y = 250 }
 				Orientation = "UPPER_LEFT"
+                buttonText = "None"
+                buttonFont = "vic_22"
 				frame = 1
 			}
 			guiButtonType =
 			{
 				name ="tribute_select_button_cash"
-				quadTextureSprite= "GFX_subject_tribute"
-				position = { x = 60 y = 162 }
+				quadTextureSprite= "GFX_subject_tribute_alt"
+				position = { x = 145 y = 250 }
 				Orientation = "UPPER_LEFT"
+                buttonText = "Cash"
+                buttonFont = "vic_22"
 				frame = 2
 			}
 			guiButtonType =
 			{
 				name ="tribute_select_button_adm"
-				quadTextureSprite= "GFX_subject_tribute"
-				position = { x = 105 y = 162 }
+				quadTextureSprite= "GFX_subject_tribute_alt"
+				position = { x = 190 y = 250 }
 				Orientation = "UPPER_LEFT"
+                buttonText = "Administrative Power"
+                buttonFont = "vic_22"
 				frame = 3
 			}
 			guiButtonType =
 			{
 				name ="tribute_select_button_dip"
-				quadTextureSprite= "GFX_subject_tribute"
-				position = { x = 150 y = 162 }
+				quadTextureSprite= "GFX_subject_tribute_alt"
+				position = { x = 235 y = 250 }
 				Orientation = "UPPER_LEFT"
+                buttonText = "Diplomatic Power"
+                buttonFont = "vic_22"
 				frame = 4
 			}
 			guiButtonType =
 			{
 				name ="tribute_select_button_mil"
-				quadTextureSprite= "GFX_subject_tribute"
-				position = { x = 195 y = 162 }
+				quadTextureSprite= "GFX_subject_tribute_alt"
+				position = { x = 280 y = 250 }
 				Orientation = "UPPER_LEFT"
+                buttonText = "Military Power"
+                buttonFont = "vic_22"
 				frame = 5
 			}
 			guiButtonType =
 			{
 				name ="tribute_select_button_manpower"
-				quadTextureSprite= "GFX_subject_tribute"
-				position = { x = 240 y = 162 }
+				quadTextureSprite= "GFX_subject_tribute_alt"
+				position = { x = 325 y = 250 }
 				Orientation = "UPPER_LEFT"
+                buttonText = "Manpower"
+                buttonFont = "vic_22"
 				frame = 6
 			}
 			
+            iconType =
+			{
+				name ="development_icon_bg"
+				spriteType = "GFX_32_sq_button"
+				position = { x= 22 y = 80 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			iconType =
 			{
 				name ="development_icon"
 				spriteType = "GFX_development_icon"
-				position = { x= 22 y = 38 }
+				position = { x= 22 y = 81 }
 				Orientation = "UPPER_LEFT"
 			}
 			
+            iconType =
+			{
+				name ="development_value_bg"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 65 y = 80 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			instantTextBoxType = {
 				name = "development"
-				position = { x = 46 y = 44 }
+				position = { x = 85 y = 83 }
 				format = right
 				font = "vic_22"
 				text = "99,999"
@@ -1067,17 +1167,33 @@ guiTypes = {
 				fixedsize = yes
 			}
 			
+            iconType =
+			{
+				name ="manpower_icon_bg"
+				spriteType = "GFX_32_sq_button"
+				position = { x= 22 y = 120 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			iconType =
 			{
 				name ="manpower_icon"
 				spriteType = "GFX_icon_manpower"
-				position = { x= 22 y = 68 }
+				position = { x= 23 y = 122 }
 				Orientation = "UPPER_LEFT"
 			}
 			
+            iconType =
+			{
+				name ="manpower_value_bg"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 65 y = 120 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			instantTextBoxType = {
 				name = "manpower"
-				position = { x = 46 y = 72 }
+				position = { x = 85 y = 123 }
 				format = right
 				font = "vic_22"
 				text = "9,999,999"
@@ -1087,17 +1203,33 @@ guiTypes = {
 				fixedsize = yes
 			}
 			
+            iconType =
+			{
+				name ="sailors_icon_bg"
+				spriteType = "GFX_32_sq_button"
+				position = { x= 22 y = 160 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			iconType =
 			{
 				name ="sailors_icon"
 				spriteType = "GFX_icon_sailors"
-				position = { x= 22 y = 98 }
+				position = { x= 23 y = 163 }
 				Orientation = "UPPER_LEFT"
 			}
 			
+            iconType =
+			{
+				name ="sailor_value_bg"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 65 y = 160 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			instantTextBoxType = {
 				name = "sailors"
-				position = { x = 46 y = 100 }
+				position = { x = 85 y = 163 }
 				format = right
 				font = "vic_22"
 				text = "99,999"
@@ -1107,18 +1239,34 @@ guiTypes = {
 				fixedsize = yes
 			}
 			
+            iconType =
+			{
+				name ="gov_value_bg"
+				spriteType = "GFX_pitted_bg_100"
+				position = { x= 65 y = 200 }
+				Orientation = "UPPER_LEFT"
+			}
+            
+            iconType =
+			{
+				name ="legitimacy_icon_bg"
+				spriteType = "GFX_32_sq_button"
+				position = { x= 22 y = 200 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			iconType =
 			{
 				name ="legitimacy_icon"
 				spriteType = "GFX_icon_legitimacy"
-				position = { x= 22 y = 126 }
+				position = { x= 24 y = 202 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
 			
 			instantTextBoxType = {
 				name = "legitimacy_value"
-				position = { x = 46 y = 128 }
+				position = { x = 85 y = 203 }
 				format = right
 				font = "vic_22"
 				text = "100"
@@ -1132,14 +1280,14 @@ guiTypes = {
 			{
 				name ="republic_icon"
 				spriteType = "GFX_icon_legitimacy"
-				position = { x= 22 y = 126 }
+				position = { x= 24 y = 202 }
 				Orientation = "UPPER_LEFT"
 				frame = 2
 			}
 			
 			instantTextBoxType = {
 				name = "republic_value"
-				position = { x = 46 y = 128 }
+				position = { x = 85 y = 203 }
 				format = right
 				font = "vic_22"
 				text = "100"
@@ -1153,14 +1301,14 @@ guiTypes = {
 			{
 				name ="devotion_icon"
 				spriteType = "GFX_icon_legitimacy"
-				position = { x= 22 y = 126 }
+				position = { x= 24 y = 202 }
 				Orientation = "UPPER_LEFT"
 				frame = 3
 			}
 			
 			instantTextBoxType = {
 				name = "devotion_value"
-				position = { x = 46 y = 128 }
+				position = { x = 85 y = 203 }
 				format = right
 				font = "vic_22"
 				text = "100"
@@ -1174,14 +1322,14 @@ guiTypes = {
 			{
 				name ="meritocracy_icon"
 				spriteType = "GFX_icon_legitimacy"
-				position = { x= 22 y = 126 }
+				position = { x= 24 y = 202 }
 				Orientation = "UPPER_LEFT"
 				frame = 5
 			}
 			
 			instantTextBoxType = {
 				name = "meritocracy_value"
-				position = { x = 46 y = 128 }
+				position = { x = 85 y = 203 }
 				format = right
 				font = "vic_22"
 				text = "13"
@@ -1195,14 +1343,14 @@ guiTypes = {
 			{
 				name ="unity_icon"
 				spriteType = "GFX_icon_legitimacy"
-				position = { x= 22 y = 126 }
+				position = { x= 24 y = 202 }
 				Orientation = "UPPER_LEFT"
 				frame = 4
 			}
 			
 			instantTextBoxType = {
 				name = "unity_value"
-				position = { x = 46 y = 128 }
+				position = { x = 85 y = 203 }
 				format = right
 				font = "vic_22"
 				text = "100"
@@ -1212,18 +1360,33 @@ guiTypes = {
 				fixedsize = yes
 			}
 
-			
+			iconType =
+			{
+				name ="treasury_icon_bg"
+				spriteType = "GFX_32_sq_button"
+				position = { x= 180 y = 80 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			iconType =
 			{
 				name ="treasury_icon"
 				spriteType = "GFX_icon_gold_strip"
-				position = { x= 136 y = 41 }
+				position = { x= 182 y = 82 }
 				Orientation = "UPPER_LEFT"
 			}
 			
+            iconType =
+			{
+				name ="treasury_value_bg"
+				spriteType = "GFX_pitted_bg_150"
+				position = { x= 225 y = 80 }
+				Orientation = "UPPER_LEFT"
+			}
+            
 			instantTextBoxType = {
 				name = "treasury"
-				position = { x = 170 y = 46 }
+				position = { x = 263 y = 83 }
 				format = right
 				font = "vic_22"
 				text = "999K"
@@ -1235,7 +1398,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "income_label"
-				position = { x = 136 y = 86 }
+				position = { x = 180 y = 120 }
 				format = left
 				font = "vic_18"
 				text = "DOMESTIC_INCOME"
@@ -1247,7 +1410,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "income"
-				position = { x = 200 y = 86 }
+				position = { x = 240 y = 120 }
 				format = right
 				font = "vic_18"
 				text = "9999.99"
@@ -1259,7 +1422,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "expenses_label"
-				position = { x = 136 y = 108 }
+				position = { x = 180 y = 140 }
 				format = left
 				font = "vic_18"
 				text = "SUBJECT_EXPENSES"
@@ -1271,7 +1434,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "expenses"
-				position = { x = 200 y = 108 }
+				position = { x = 240 y = 140 }
 				format = right
 				font = "vic_18"
 				text = "9999.99"
@@ -1283,9 +1446,9 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "balance_label"
-				position = { x = 136 y = 132 }
+				position = { x = 180 y = 160 }
 				format = left
-				font = "vic_22"
+				font = "vic_18"
 				text = "BALANCE"
 				maxWidth = 80
 				maxHeight = 32	
@@ -1295,9 +1458,9 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "balance"
-				position = { x = 200 y = 132 }
+				position = { x = 240 y = 160 }
 				format = right
-				font = "vic_22"
+				font = "vic_18"
 				text = "-9999.99"
 				maxWidth = 70
 				maxHeight = 32	
@@ -1312,7 +1475,7 @@ guiTypes = {
 		name = "subject_interaction_item"
 		backGround=""
 		position = { x=0 y=0 }	
-		size = { x=150 y= 36 }
+		size = { x=150 y= 55 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -1322,14 +1485,14 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="interact_button"
-			spriteType = "GFX_subject_action_bg"
+			spriteType = "GFX_fm_big_button"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 40 y =6 }
+			position = { x = 50 y =18 }
 			format = left
 			textureFile = ""
 			font = "vic_22"
@@ -1346,7 +1509,7 @@ guiTypes = {
 		{
 			name = "interact_icon"
 			quadTextureSprite= ""
-			position = { x= 10 y = 4 }
+			position = { x= 20 y = 16 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}

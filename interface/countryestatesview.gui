@@ -267,7 +267,7 @@ guiTypes = {
 	
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 400 y = 970 }
+			position = { x = 403 y = 970 }
 			quadTextureSprite ="GFX_button_default"	
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_LEFT"
