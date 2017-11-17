@@ -12,6 +12,10 @@ country_event = {
         NOT = { has_global_flag = ncr_focus }
 	}
 	
+    mean_time_to_happen = {
+		months = 12
+	}
+    
     immediate = {
         set_global_flag = ncr_focus
         hidden_effect = {

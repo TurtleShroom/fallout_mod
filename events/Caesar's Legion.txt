@@ -7,13 +7,15 @@ country_event = {
 	desc = the_legion.1.desc
     picture = LEGION_CROSS_eventPicture
 	
-	is_triggered_only = yes
-
 	trigger = {
 		tag = CAE
 	    NOT = { has_global_flag = legion_start }
 	}
 	
+    mean_time_to_happen = {
+		months = 12
+	}
+    
     immediate = {
         set_global_flag = legion_start
         hidden_effect = {

@@ -5,6 +5,8 @@
  PEACE_FORCE_RELIGION:0 "Force Belief"
  MODIFIER_IMPERIAL_AUTHORITY_VALUE:1 "Research Capacity Modifier"
  
+ WORLD_YEAR:0 "$YEAR$"
+ 
  #------------------------------------------------------
  # Parliament
  #------------------------------------------------------
@@ -82,15 +84,18 @@
  #------------------------------------------------------
  # Gov Abilities
  #------------------------------------------------------
- RUSABIL_SUBEDNIK:0 "Consolidate Power"
+ russian_adm_power:0 "Administrative Progress"
+ russian_dip_power:0 "Diplomatic Progress"
+ russian_mil_power:0 "Military Progress"
+ RUSABIL_SUDEBNIK: "Consolidate Power"
  RUSABIL_OPRICHNINA:0 "Suppress Dissent"
  RUSABIL_STRELTSY:0 "Muster Legionaries"
- RUSABIL_SUBEDNIK_Q:0 "This will impact Autonomy by $CHANGE|G$ in all our Provinces."
+ RUSABIL_SUDEBNIK_Q:0 "This will impact Autonomy by $CHANGE|G$ in all our Provinces."
  RUSABIL_OPRICHNINA_Q:0 "This will impact progress for all rebel factions by $CHANGE$."
  RUSABIL_STRELTSY_Q:0 "This will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Streltsy Regiments in our capital."
  RUSABIL_NOT_ENOUGH:0 "You need $NEED|Y$ power gathered to '$NAME|Y$' but you have only gathered $CURR|Y$."
  RUSABIL_NOT_AUTONOMY:0 "There are no provinces that has at least $VAL|Y$ autonomy that can be reduced by '$NAME|Y$'."
- RUSABIL_DO_IT_SUBEDNIK:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact Autonomy by $CHANGE|G$ in all our Province(s).\nThere are $PROV|Y$ Province(s) that will be affected."
+ RUSABIL_DO_IT_SUDEBNIK:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact Autonomy by $CHANGE|G$ in all our Province(s).\nThere are $PROV|Y$ Province(s) that will be affected."
  RUSABIL_NO_REBELS:0 "There are no rebel factions with a progress of at least $VAL|R$, so there is no need to '$NAME|Y$'."
  RUSABIL_DO_IT_OPRI:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact progress for all rebel factions by $CHANGE$."
  RUSABIL_NO_CAPITAL:0 "Your capital needs to be under your control for you to be able to '$NAME|Y$'."
@@ -436,7 +441,7 @@
  ADD_PIETY: "$DIRECTION$ $VALUE$ Warlust"
  
  positive_piety: "Frenzied"
- negative_piety: "Tranquil"
+ negative_piety: "Sedated"
  
  PIETY_BAD_WAR_EFF:0 "Declaring war will increase our Warlust by §Y$VAL$§!."
  PIETY_GOOD_WAR_EFF:0 "Declaring war will increase our Warlust by §Y$VAL$§!."
@@ -448,6 +453,16 @@
  
  PIETY_LESS_THAN: "Warlust is less than §Y$VAL$§!.\n"
  PIETY_AT_LEAST: "Warlust is at least §Y$VAL$§!.\n"
+ 
+ PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YEnforce Faithful Adherence§!' we need to be at least $NEED|Y$ towards Legalism. This would impact corruption by $CORRUPTION$."
+ PIETY_LEGALISM_BONUS:1 "Our tradition of Legalism is a great advantage. §YEnforcing faithful Adherence§! will move us by $COST|Y$ towards Mysticism but impact corruption by $CORRUPTION$."
+ PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YCall on Religious Followers§!' we need to be at least $NEED|Y$ towards Mysticism. This would gives us the following impact:\n$GAIN$"
+ PIETY_MYSTICISM_BONUS:1 "Our tradition of Mysticism is a great advantage. §YCalling on Religious Followers§! will move us by $COST|Y$ towards Warlust but offer us $GAIN$"
+ PIETY_MYSTICISM_COOLDOWN:0 "You can only '§YCall on Religious Followers§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_LEGALISM_COOLDOWN:0 "You can only '§YEnforce Faithful Adherence§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ 
+ GAIN_PIETY:0 "Gain $VALUE|Y$ Warlust"
+ LOSE_PIETY:0 "Lose $VALUE|Y$ Warlust"
  
  #------------------------------------------------------
  # Rebels

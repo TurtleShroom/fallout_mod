@@ -4,7 +4,7 @@ spriteTypes = {
     #-----------------------------------------------
     spriteType = {
 		name = "GFX_advisor_lawyer"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_1.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -13,7 +13,7 @@ spriteTypes = {
     
 	spriteType = {
 		name = "GFX_advisor_philosopher"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_2.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -22,7 +22,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_natural_scientist"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_9.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -31,7 +31,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_artist"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_4.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -40,7 +40,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_treasurer"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_5.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -49,7 +49,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_theologian"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_6.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -58,7 +58,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_master_of_mint"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_black_adm_1.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -67,7 +67,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_inquisitor"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_8.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -76,7 +76,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_statesman"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_adm_7.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -88,7 +88,7 @@ spriteTypes = {
     #-----------------------------------------------
 	spriteType = {
 		name = "GFX_advisor_naval_reformer"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_1.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -97,7 +97,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_trader"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_2.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -106,7 +106,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_spymaster"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_3.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -115,7 +115,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_colonial_governor"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_4.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -124,7 +124,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_advisor_diplomat"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_5.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -133,7 +133,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_navigator"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_6.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -142,7 +142,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_advisor_mayor"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_dip_7.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -154,7 +154,7 @@ spriteTypes = {
     #-----------------------------------------------
 	spriteType = {
 		name = "GFX_advisor_army_reformer"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_4.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -163,7 +163,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_army_organiser"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_3.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -172,7 +172,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_commandant"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_2.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -181,7 +181,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_quartermaster"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_1.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -190,7 +190,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_recruitmaster"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_5.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -199,7 +199,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_fortification_expert"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_black_mil_2.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -208,7 +208,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_grand_captain"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_9.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -217,7 +217,7 @@ spriteTypes = {
     
     spriteType = {
 		name = "GFX_advisor_mercenary_recruiter"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_white_mil_7.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -226,7 +226,7 @@ spriteTypes = {
     
 	spriteType = {
 		name = "GFX_advisor_weapons_dealer"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+		texturefile = "gfx//interface//advisors//human_male_black_mil_1.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"

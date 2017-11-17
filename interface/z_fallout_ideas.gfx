@@ -9,6 +9,58 @@ spriteTypes = {
 		transparencecheck = yes
 	}	
     
+    spriteType = {
+		name = "GFX_idea_native_adm_ideas"
+		texturefile = "gfx//interface//ideas//native_adm_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_native_dip_ideas"
+		texturefile = "gfx//interface//ideas//native_dip_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_native_mil_ideas"
+		texturefile = "gfx//interface//ideas//native_mil_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_none"
+		texturefile = "gfx//interface//ideas//empty.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_empty"
+		texturefile = "gfx//interface//ideas//empty.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_unknown"
+		texturefile = "gfx//interface//ideas_EU4//unknown.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_random_personality"
+		texturefile = "gfx//interface//ideas//random_personality.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+    
     #----------------------------------------------
     # Group Icons
     #----------------------------------------------

@@ -62,7 +62,6 @@ federal_republic = {
 	royal_marriage = yes
 	
     has_parliament = yes
-    dutch_mechanics = yes
     
 	ai_will_do = {
 		factor = 0
@@ -110,10 +109,12 @@ legion = {
     max_states = 10
     
     maintain_dynasty = yes
-
-    has_russian_abilities = yes
     claim_states = yes
 
+    government_abilities = {
+		russian_mechanic
+    }
+    
 	rank = {
 		1 = {
 			discipline = 0.05

@@ -1,5 +1,6 @@
 guiTypes = {
-    #x is minimum resolution height for this country view to increase to large size
+
+	#x is minimum resolution height for this country view to increase to large size
 	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
 	positionType =
 	{
@@ -13,7 +14,7 @@ guiTypes = {
 		name ="countryestatesview_scaling_huge_min_inc"
 		position = { x= 1080 y = 314 }
 	}
-    
+
 	### ESTATE
 	windowType = {
 		name = "estate_item"
@@ -25,14 +26,14 @@ guiTypes = {
 		iconType =
 		{
 			name ="name_banner"
-			spriteType = "GFX_button_300"
+			spriteType = "GFX_banner_left_5"
 			position = { x= 40 y = -6 }
 			Orientation = "UPPER_LEFT"
 		}			
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 100 y = -1 }
+			position = { x = 48 y = -1 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -47,21 +48,13 @@ guiTypes = {
 		{
 			name ="icon"
 			spriteType = "GFX_estates_icons"
-			position = { x= 50 y = -8 }
+			position = { x= 0 y = 22 }
 			Orientation = "UPPER_LEFT"
 		}	
 
-        iconType =
-		{
-			name ="loyalty_bg"
-			spriteType = "GFX_pitted_bg_100"
-			position = { x= 360 y = -2 }
-			Orientation = "UPPER_LEFT"
-		}
-        
 		instantTextBoxType = {
 			name = "loyalty"
-			position = { x = 385 y = -1 }
+			position = { x = 322 y = 35 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -72,17 +65,9 @@ guiTypes = {
 			fixedsize = yes			
 		}		
 		
-        iconType =
-		{
-			name ="influence_bg"
-			spriteType = "GFX_pitted_bg_100"
-			position = { x= 480 y = -2 }
-			Orientation = "UPPER_LEFT"
-		}
-        
 		instantTextBoxType = {
 			name = "influence"
-			position = { x = 505 y = -1 }
+			position = { x = 366 y = 35 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -93,17 +78,9 @@ guiTypes = {
 			fixedsize = yes			
 		}
 
-        iconType =
-		{
-			name ="territory_bg"
-			spriteType = "GFX_pitted_bg_100"
-			position = { x= 600 y = -2 }
-			Orientation = "UPPER_LEFT"
-		}
-        
 		instantTextBoxType = {
 			name = "territory"
-			position = { x = 625 y = -1 }
+			position = { x = 410 y = 35 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -116,13 +93,13 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "country_effects"
-			position = { x = 48 y = 35 }
+			position = { x = 48 y = 20 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "+5% coolness"	
 			maxWidth = 272
-			maxHeight = 200
+			maxHeight = 115
 			format = left
 			fixedsize = yes			
 		}
@@ -130,15 +107,15 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="interactions_button"
-			spriteType = "GFX_estate_action_button"
-			position = { x = 720 y = 0 }
+			spriteType = "GFX_actions_button"
+			position = { x = 456 y = 28 }
 		}			
 	}
 	
 	guiButtonType =	{
 		name ="name_sort_button"
 		spriteType = "GFX_sort_271"
-		position = { x = 300 y = 400 }
+		position = { x = 300 y = 300 }
 	}		
 	
 	guiButtonType =	{
@@ -162,14 +139,14 @@ guiTypes = {
 	windowType = {
 		name = "estate_interaction_entry"
 		position = { x=0 y=0 }	
-		size = { x=100 y=60 }
+		size = { x=100 y=36 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
 		
 		guiButtonType =
 		{
 			name ="select_button"
-			spriteType = "GFX_fm_big_button"
+			spriteType = "GFX_subject_action_bg"
 			position = { x= 0 y = 0 }
 		}				
 		
@@ -177,18 +154,18 @@ guiTypes = {
 		{
 			name ="icon"
 			spriteType = "GFX_estate_interactions"
-			position = { x= 15 y = 10 }
+			position = { x= 4 y = -2 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}	
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 60 y = 22 }
+			position = { x = 48 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			text = "name"	
-			maxWidth = 150
+			maxWidth = 192
 			maxHeight = 15
 			format = left
 			fixedsize = yes		
@@ -207,19 +184,19 @@ guiTypes = {
 		size = { x=1024 y=100 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
-		upsound = tab_government
+		upsound = tab_estates
 		
 		iconType =
 		{
 			name ="background"
-			spriteType = "GFX_countryview_background"
+			spriteType = "GFX_country_estates_view_bg"
 			position = { x= -4 y = -10 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "window_title"
-			position = { x = 250 y = 10 }
+			position = { x = 15 y = 78 }
 			textureFile = ""
 			font = "vic_29s"
 			borderSize = {x = 4 y = 4}	
@@ -231,33 +208,41 @@ guiTypes = {
 		
 		guiButtonType =	{
 			name ="name_sort_button"
-			spriteType = "GFX_name_sort_button"
-			position = { x = 120 y = 220 }
+			spriteType = "GFX_sort_278"
+			position = { x = 73 y = 121 }
+			buttonText = "NAME"
+			buttonFont = "vic_18"	
 		}		
 
 		guiButtonType =	{
 			name ="loyalty_sort_button"
-			spriteType = "GFX_estate_loyalty_sort_button"
-			position = { x = 440 y = 220 }
+			spriteType = "GFX_sort_loyalty"
+			position = { x = 352 y = 121 }
 		}	
 		
 		guiButtonType =	{
 			name ="influence_sort_button"
-			spriteType = "GFX_estate_influence_sort_button"
-			position = { x = 560 y = 220 }
+			spriteType = "GFX_sort_influence"
+			position = { x = 396 y = 121 }
 		}			
 	
 		guiButtonType =	{
 			name ="territory_sort_button"
-			spriteType = "GFX_estate_territory_sort_button"
-			position = { x = 680 y = 220 }
-		}		
+			spriteType = "GFX_sort_territory"
+			position = { x = 440 y = 121 }
+		}	
+
+#		guiButtonType =	{
+#			name ="actions_sort_button"
+#			spriteType = "GFX_sort_actions"
+#			position = { x = 484 y = 121 }
+#		}		
 		
 		listboxType = {
 				name = "estates_listbox"
 				backGround = ""
-				position = { x=80 y=270 }
-				size = { x=800 y=500 }
+				position = { x=30 y=140 }
+				size = { x=500 y=500 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5
@@ -267,20 +252,17 @@ guiTypes = {
 	
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 403 y = 970 }
-			quadTextureSprite ="GFX_button_default"	
+			position = { x = 517 y = -1 }
+			quadTextureSprite ="GFX_closebutton2"	
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_LEFT"
-			clicksound = close_window
-            buttonText = "Close"
-            buttonFont = "vic_22"
 		}
 		
 		windowType = {
 			name = "estate_actions_window"
 			backGround=""
-			position = { x=1024 y=8 }
-			size = { x=600 y=100 }
+			position = { x=550 y=75 }	
+			size = { x=296 y=304 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder= ""
@@ -289,29 +271,29 @@ guiTypes = {
 		
 			iconType = {
 				name ="bg"
-				spriteType = "GFX_side_panel_bg"
-				position = { x= 0 y = -10 }
+				spriteType = "GFX_estate_actions_bg"
+				position = { x=0 y=0 }	
 				Orientation = "UPPER_LEFT"
 			}
 			
 			listboxType = {
 				name = "listbox"
 				backGround = ""
-				position = { x=90 y =220}
-				size = { x=253 y=750 }
+				position = { x = 18 y = 36 }
+				size = { x=253 y=450 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5
-				scrollbartype = "standardlistbox_noslider"
+				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
 			
 			instantTextBoxType = {
 				name = "title"
-				position = { x = 0 y =16 }
-				format = centre
-				font = "vic_29s"
-				maxWidth = 420
+				position = { x=40 y=10 }
+				format = center
+				font = "vic_22"
+				maxWidth = 220
 				maxHeight = 32	
 				Orientation = "UPPER_LEFT"
 				text = "INTERACTIONS"

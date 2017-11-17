@@ -21,7 +21,7 @@ tribal_ancestor_worship = {
 	advisor_pool = 1
 		
 	allow = {
-		has_unlocked_cult = tribal_ancestor_worship
+		#has_unlocked_cult = tribal_ancestor_worship
 	}
 	
 	ai_will_do = {
@@ -35,7 +35,7 @@ tribal_nature_worship = {
 	development_cost = -0.1
 
 	allow = {
-		has_unlocked_cult = tribal_nature_worship 
+		#has_unlocked_cult = tribal_nature_worship 
 	}
 		
 	ai_will_do = {
@@ -49,7 +49,7 @@ tribal_technology_worship = {
 	idea_cost = -0.1
 	
 	allow = {
-		has_unlocked_cult = tribal_technology_worship 
+		#has_unlocked_cult = tribal_technology_worship 
 	}	
 		
 	ai_will_do = {

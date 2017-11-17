@@ -209,7 +209,6 @@ SNA = "countries/Snajan.txt"
 
 # Texas
 #STS = "countries/Steel Scorpions.txt" 
- 
 
 # Oklahoma
 

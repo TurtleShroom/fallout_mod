@@ -1,0 +1,24 @@
+- Marschall Vorwärts's contributions
+- Removed Dutch mechanic from federal_republic
+- Removed Militarization mechanic from Orders
+- Changed Startup screen UI
+- Fixed bug with warlust.1
+- Changed Warlust modifiers
+- Changed Warlust UI icons
+- Made Nature, Ancestor and Technology cult unlocked by default
+- Added startup history for Caesar's Legion
+- Added startup history for NCR
+- Added startup history for West Coast Chapter
+- Added startup history for East Coast Chapter
+- Added startup history for New Reno
+- Added startup history for Shi
+- Added startup history for New Vegas
+- Added startup history for Vault City
+- Added startup history for Great Khans
+- Added startup history for Institute
+- Added startup history for Railroad
+- Added startup history for Minutemen
+- Added startup history for Powder Gangers
+- Added startup history for Think Tank and Forbidden Zone
+- Added startup history for Sorrows, White Legs and Dead Horses
+- Added startup history for Enclave

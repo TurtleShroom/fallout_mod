@@ -243,8 +243,6 @@ administrative_brotherhood_order = {
 	
 	royal_marriage = yes
 	
-    militarised_society = yes
-    
 	ai_will_do = {
 		factor = 0
 	}
@@ -286,8 +284,6 @@ diplomatic_brotherhood_order = {
 	
     max_states = 8
 	
-    militarised_society = yes
-    
 	rank = {
 		1 = {
 			diplomatic_reputation = 0.5
@@ -325,8 +321,6 @@ fascist_brotherhood_order = {
 	
     max_states = 8
 	
-    militarised_society = yes
-    
 	rank = {
 		1 = {
 			land_forcelimit_modifier = 0.1

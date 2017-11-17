@@ -16,7 +16,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="domesticpanel_bg"
-			spriteType = "GFX_countryview_background"
+			spriteType = "GFX_country_ideas_view_bg"
 			position = {  x= -7 y = -10 }
 			Orientation = "UPPER_LEFT"
 

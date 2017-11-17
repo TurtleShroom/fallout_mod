@@ -169,7 +169,7 @@ guiTypes = {
 				name ="mainmenu_panel_upperleft"
 				backGround=""
 				position = { x=0 y =-1 }
-				show_position = { x=0 y =-1 }
+				show_position = { x=80 y =-1 }
 				hide_position = { x=0 y =-200 }	
 				animation_type = "decelerated"
 				animation_time = 300				
@@ -305,9 +305,9 @@ guiTypes = {
 			windowType = {
 				name ="mainmenu_panel_bottom"
 				backGround=""
-				position = { x=-250 y =-400 }
-				show_position = { x = -250 y = -400 }
-				hide_position = { x = -250 y = 100 }
+				position = { x=-250 y =-800 }
+				show_position = { x = 50 y = 400 }
+				hide_position = { x = -1000 y = 400 }
 				animation_type = "decelerated"
 				animation_time = 300				
 				size = { x=500 y =357}
@@ -318,25 +318,27 @@ guiTypes = {
 				upsound = ""
 				downsound = ""
 				fullscreen=yes
-				Orientation = "CENTER_DOWN"
+				Orientation = "UPPER_LEFT"
 
 				iconType =
-					{
-						name ="frontend_bottom_bg"
-						spriteType = "GFX_frontend_background"
-						position = { x= 0 y = 0 }
-					}
+                {
+                    name ="frontend_bottom_bg"
+                    spriteType = "GFX_lobby_country_bg"
+                    position = { x= 50 y = 0 }
+                }
 					
 				guiButtonType = {
 					name = "single_player_button"
-					position = { x = 170 y = 30 }
-					quadTextureSprite ="GFX_frontend_button"	
+					position = { x = 170 y = 90 }
+					quadTextureSprite ="GFX_fm_big_button"	
+                    buttonText = "Singleplayer"
+                    buttonFont = "vic_22"
 				}
 
 				instantTextBoxType = {
 
 					name ="single_player_button_text"
-					position = { x = 160 y = 38 }
+					position = { x = 160 y = -9999 }
 					
 					font = "vic_22"
 					borderSize = {x = 0 y = 0}
@@ -386,13 +388,15 @@ guiTypes = {
 				
 				guiButtonType = {
 					name = "multi_player_button"
-					position = { x = 170 y = 70 }
-					quadTextureSprite ="GFX_frontend_button"	
+					position = { x = 170 y = 155 }
+					quadTextureSprite ="GFX_fm_big_button"	
+                    buttonText = "Multiplayer"
+                    buttonFont = "vic_22"	
 				}
 				instantTextBoxType = {
 
 					name ="multi_player_button_text"
-					position = { x = 160 y = 78 }
+					position = { x = 160 y = -9999 }
 					
 					font = "vic_22"
 					borderSize = {x = 0 y = 0}
@@ -407,22 +411,22 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name ="version_label"
-					position = { x = 170 y = 300 }
+					position = { x = 150 y = 28 }
 					
-					font = "vic_18"
+					font = "vic_29"
 					borderSize = {x = 0 y = 0}
 					text = "EU4 v0.00 (TODO)"	
 					format = centre
-					maxWidth = 147
+					maxWidth = 300
 					maxHeight = 20	
 				}
 				
 				guiButtonType = {
 					name = "nudge_button"
-					position = { x = 170 y = 230 }
-					quadTextureSprite ="GFX_frontend_button"	
-					buttonText = "Nudge!"
-					buttonFont = "vic_18"
+					position = { x = 170 y = 415 }
+					quadTextureSprite ="GFX_fm_big_button"	
+                    buttonText = "Nudge"
+                    buttonFont = "vic_22"
 				}
 
 				guiButtonType = {
@@ -455,29 +459,31 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "settings_button"
-					position = { x = 170 y = 110 }
-					quadTextureSprite ="GFX_frontend_button"	
+					position = { x = 170 y = 220 }
+					quadTextureSprite ="GFX_fm_big_button"	
 					buttonText = "FE_OPTIONS"
 					buttonFont = "vic_22"
 				}
 				
 				guiButtonType = {
 					name = "content_button"
-					position = { x = 170 y = 150 }
-					quadTextureSprite ="GFX_frontend_button"	
+					position = { x = 170 y = 285 }
+					quadTextureSprite ="GFX_fm_big_button"	
 					buttonText = "FE_CONTENT"
 					buttonFont = "vic_22"
 				}
 				
 				guiButtonType = {
 					name = "exit_button"
-					position = { x = 170 y = 190 }
-					quadTextureSprite ="GFX_frontend_button"	
+					position = { x = 170 y = 350 }
+					quadTextureSprite ="GFX_fm_big_button"	
+                    buttonText = "Exit"
+					buttonFont = "vic_22"
 				}
 				instantTextBoxType = {
 
 					name ="exit_button_text"
-					position = { x = 172 y = 198 }
+					position = { x = 172 y = -9999 }
 					
 					font = "vic_22"
 					borderSize = {x = 0 y = 0}
@@ -869,7 +875,6 @@ guiTypes = {
 					font = "vic_18"
 					borderSize = {x = 8 y = 4}	
 					size = { x=520 y=32}
-					text = " "	
 					instantTextBoxType = no
 					
 					orientation = "UPPER_LEFT"
@@ -1085,9 +1090,9 @@ guiTypes = {
 				
 				listboxType = {
 					name ="enabled_dlc_list"
-					position = { x = 292 y = 40 }
+					position = { x = 291 y = 40 }
 					backGround=""
-					size = { x=50 y =450 }
+					size = { x=50 y =500 }
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -1417,73 +1422,73 @@ guiTypes = {
 				{
 					name ="frontend_banner2"
 					spriteType = "GFX_lobby_top_bg"
-					position = { x= -216 y = 6 }
+					position = { x= -235 y = 6 }
 				}
 
 				## map modes
 				guiButtonType = {
 					name = "mapmode_terrain"
-					position = { x = -155 y = 51 }
+					position = { x = -174 y = 51 }
 					quadTextureSprite ="GFX_mapmode_terrain"
 					shortcut = "q"
 				}			
 				
 				guiButtonType = {
 					name = "mapmode_political"
-					position = { x = -117 y = 51 }
+					position = { x = -136 y = 51 }
 					quadTextureSprite ="GFX_mapmode_political"
 					shortcut = "w"
 				}
 
 				guiButtonType = {
 					name = "mapmode_trade"
-					position = { x = -79 y = 51 }
+					position = { x = -98 y = 51 }
 					quadTextureSprite ="GFX_mapmode_trade"
 					shortcut = "e"
 				}
-				
+
 				guiButtonType = {
 					name = "mapmode_empire"
-					position = { x = -41 y = 51 }
+					position = { x = -22 y = 51 }
 					quadTextureSprite ="GFX_mapmode_empire"
-					shortcut = "r"
-				}
-				
-				guiButtonType = {
-					name = "mapmode_religion"
-					position = { x = -3 y = 51 }
-					quadTextureSprite ="GFX_mapmode_religion"
 					shortcut = "t"
 				}
-				
+
+				guiButtonType = {
+					name = "mapmode_religion"
+					position = { x = -60 y = 51 }
+					quadTextureSprite ="GFX_mapmode_religion"
+					shortcut = "r"
+				}
+
 				guiButtonType = {
 					name = "mapmode_diplomacy"
-					position = { x = 35 y = 51 }
+					position = { x = 16 y = 51 }
 					quadTextureSprite ="GFX_mapmode_diplomatic"
 					shortcut = "y"
 				}
 
 				guiButtonType = {
 					name = "mapmode_economy"
-					position = { x = 73 y = 51 }
+					position = { x = 54 y = 51 }
 					quadTextureSprite ="GFX_mapmode_economical"
 					shortcut = "u"
 				}
 
 				guiButtonType = {
 					name = "mapmode_region"
-					position = { x = 111 y = 51}
+					position = { x = 92 y = 51}
 					quadTextureSprite = "GFX_mapmode_region"
 					shortcut = "i"
 				}
 
 				guiButtonType = {
 					name = "mapmode_players"
-					position = { x = 149 y = 51 }
+					position = { x = 130 y = 51 }
 					quadTextureSprite ="GFX_mapmode_players_small"
-					shortcut = "i"
+					shortcut = "o"
 				}
-				
+
 				####
 
 				instantTextBoxType = {
@@ -1741,12 +1746,12 @@ guiTypes = {
 					{
 						name ="techgroup_icon"
 						spriteType = "GFX_tech_group_strip"
-						position = { x= 15 y = 76 }
+						position = { x= 19 y = 78 }
 						Orientation = "UPPER_LEFT"
 					}						
 					
 					guiButtonType = {
-						position = { x= 64 y = 32 }
+						position = { x= 60 y = 32 }
 						name = "player_shield"	
 						quadTextureSprite ="GFX_shield_thin"
 					}

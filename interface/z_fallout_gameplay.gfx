@@ -89,6 +89,40 @@ spriteTypes = {
 	}	
     
     #-------------------------------------------------------------------------------------
+    # Government
+    #-------------------------------------------------------------------------------------
+    textSpriteType = {
+		name = "GFX_russian_ability_ADM"
+		texturefile = "gfx//interface//russian_adm_button.dds"
+        loadType = "INGAME"
+		#transparencecheck = yes	
+	}
+    
+    textSpriteType = {
+		name = "GFX_russian_ability_DIP"
+		texturefile = "gfx//interface//russian_dip_button.dds"
+        loadType = "INGAME"
+		#transparencecheck = yes	
+	}
+    
+    textSpriteType = {
+		name = "GFX_russian_ability_MIL"
+		texturefile = "gfx//interface//russian_mil_button.dds"
+        loadType = "INGAME"
+		#transparencecheck = yes	
+	}
+    
+    spriteType = {
+		name = "GFX_piety_icon_high"
+		texturefile = "gfx/interface/piety_icon_high.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_piety_icon_low"
+		texturefile = "gfx/interface/piety_icon_low.dds"
+	}
+    
+    #-------------------------------------------------------------------------------------
 	# Technology Groups
 	#-------------------------------------------------------------------------------------
     spriteType = {

@@ -1680,7 +1680,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     
@@ -1692,7 +1692,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     
@@ -1704,7 +1704,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     
@@ -1716,7 +1716,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     
@@ -1728,7 +1728,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     
@@ -1740,7 +1740,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     
@@ -1752,7 +1752,7 @@ creatures_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
 }
@@ -1771,7 +1771,7 @@ robot_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
 	android = {
@@ -1782,7 +1782,7 @@ robot_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
     robo_scorpion = {
@@ -1793,7 +1793,7 @@ robot_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
 	robot = {
@@ -1804,7 +1804,7 @@ robot_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
 	lobotomite = {
@@ -1815,7 +1815,7 @@ robot_group = {
 			
         }
 		dynasty_names = {
-			""
+			
         }
 	}
 }

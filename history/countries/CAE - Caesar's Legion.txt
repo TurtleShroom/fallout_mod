@@ -16,7 +16,14 @@ historical_friend = GRK
 		dip = 3
 		mil = 6
         birth_date = 2238.1.1
-		leader = {	name = "Edward Sallow"  type = general	rank = 0	fire = 4	shock = 4	manuever = 2	siege = 2 }
+		leader = {	
+            name = "Edward Sallow"  
+            type = general	
+            fire = 4	
+            shock = 4	
+            manuever = 2	
+            siege = 2 
+        }
 	}
 	
 	define_general = {

@@ -35,7 +35,10 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
-        # The game picks between _S, _M, _L depending on the size of the text in the Description object
+        # The game picks between _S, _M, _L depending on number of options:
+        # 1 - 2: small (default)
+        # 3 - 5: medium
+        # 6+   : large
 		iconType =
 		{
 			name ="event_bg_bottom"
@@ -79,11 +82,11 @@ guiTypes = {
 		{
 			name = "event_option_listbox"
 			position = { x = 0 y = 0 }
-			size = { x = 400 y = 100 }
+			size = { x = 665 y = 100 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
-			scrollbartype = "standardlistbox_slider"
+			scrollbartype = "standardlistbox_noslider"
 			borderSize = { x = 0 y = 0 }
 		}
 	}

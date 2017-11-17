@@ -81,6 +81,13 @@ spriteTypes = {
 	}
     
     spriteType = {
+		name = "GFX_state_regulations_bg"
+		texturefile = "gfx//interface//ui//background//state_regulations_bg.dds"
+        loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    spriteType = {
 		name = "GFX_countryview_background_large"
 		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
         loadType = "INGAME"
@@ -97,6 +104,26 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_courtview_bg_button"
 		texturefile = "gfx//interface//ui//background//court_view_block_630.dds"
+	}
+    
+    #spriteType = {
+	#	name = "GFX_lobby_date_bg"
+	#	texturefile = "gfx//interface//ui//background//generic_popup_win.dds"
+	#}
+    
+    spriteType = {
+		name = "GFX_lobby_info_bg"
+		texturefile = "gfx//interface//ui//background//generic_popup_win.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_lobby_country_bg"
+		texturefile = "gfx//interface//ui//background//settings_popup_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_lobby_bookmark_bg"
+		texturefile = "gfx//interface//ui//background//settings_popup_bg.dds"
 	}
     
     spriteType = {
@@ -167,7 +194,54 @@ spriteTypes = {
     #---------------------------------------------------
     # Buttons / Icons
     #---------------------------------------------------
-    # --------------- Subject View
+    # --------------- Military
+    spriteType = {
+		name = "GFX_icon_cost_bg"
+		texturefile = "gfx//interface//ui//icons//icon_cost_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_power_bg"
+		texturefile = "gfx//interface//ui//icons//icon_power_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_fire_mod_bg"
+		texturefile = "gfx//interface//ui//icons//icon_fire_mod_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_shock_mod_bg"
+		texturefile = "gfx//interface//ui//icons//icon_shock_mod_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_hash_bg"
+		texturefile = "gfx//interface//ui//icons//icon_hash_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_navy_cannons_bg"
+		texturefile = "gfx//interface//ui//icons//icon_navy_cannons_bg.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_hullsize_bg"
+		texturefile = "gfx//interface//ui//icons//icon_hullsize_bg.dds"
+	}
+    
+    spriteType = {	
+		name = "GFX_unit_types_strip_bg"
+		texturefile = "gfx//interface//ui//icons//unit_types_strip_bg.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = no
+		#allwaystransparent = yes
+	}
+    
+    # --------------- Subjects
     spriteType = {
 		name = "GFX_subject_name_sort_button"
 		texturefile = "gfx//interface//ui//button//name_sort_button.dds"
@@ -210,17 +284,17 @@ spriteTypes = {
 		noOfFrames = 6
 	}
     
-    spriteType = {
-		name = "GFX_subject_focus"
-		texturefile = "gfx/interface/ui/button/big_button_232_6_frame.dds"
-		noOfFrames = 6
-	}
+    #spriteType = {
+	#	name = "GFX_subject_focus"
+	#	texturefile = "gfx/interface/ui/button/big_button_232_6_frame.dds"
+	#	noOfFrames = 6
+	#}
 
-	spriteType = {
-		name = "GFX_subject_tribute"
-		texturefile = "gfx/interface/ui/button/big_button_232_6_frame.dds"
-		noOfFrames = 6
-	}
+	#spriteType = {
+	#	name = "GFX_subject_tribute"
+	#	texturefile = "gfx/interface/ui/button/big_button_232_6_frame.dds"
+	#	noOfFrames = 6
+	#}
     
     # --------------- Estates
     spriteType = {
@@ -242,50 +316,50 @@ spriteTypes = {
 	}
     
     # --------------- Diplomacy
-    textSpriteType = {
-		name = "GFX_diplomacy_action_category_button"
-		texturefile = "gfx//interface//ui//button//284_block_button.dds"
-	}	
+    #textSpriteType = {
+	#	name = "GFX_diplomacy_action_category_button"
+	#	texturefile = "gfx//interface//ui//button//284_block_button.dds"
+	#}	
     
-    textSpriteType = {
-		name = "GFX_diplomacy_action_button"
-		texturefile = "gfx//interface//ui//button//big_button_232_toggle.dds"
-		noOfFrames = 2
-	}	
+    #textSpriteType = {
+	#	name = "GFX_diplomacy_action_button"
+	#	texturefile = "gfx//interface//ui//button//big_button_232_toggle.dds"
+	#	noOfFrames = 2
+	#}	
     
-    spriteType = {
-		name = "GFX_diplomatic_actions_button"
-		texturefile = "gfx//interface//ui//button//diplomatic_actions_button.dds"
-		noOfFrames = 2		
-	}
+    #spriteType = {
+	#	name = "GFX_diplomatic_actions_button"
+	#	texturefile = "gfx//interface//ui//button//diplomatic_actions_button.dds"
+	#	noOfFrames = 2		
+	#}
 	
-	spriteType = {
-		name = "GFX_diplomatic_feedback_button"
-		texturefile = "gfx//interface//ui//button//diplomatic_feedback_button.dds"
-		noOfFrames = 2		
-	}
+	#spriteType = {
+	#	name = "GFX_diplomatic_feedback_button"
+	#	texturefile = "gfx//interface//ui//button//diplomatic_feedback_button.dds"
+	#	noOfFrames = 2		
+	#}
 
-	spriteType = {
-		name = "GFX_diplomatic_opinions_button"
-		texturefile = "gfx//interface//ui//button//diplomatic_opinions_button.dds"
-		noOfFrames = 2		
-	}
+	#spriteType = {
+	#	name = "GFX_diplomatic_opinions_button"
+	#	texturefile = "gfx//interface//ui//button//diplomatic_opinions_button.dds"
+	#	noOfFrames = 2		
+	#}
     
-    spriteType = {
-		name = "GFX_release_nation_button"
-		texturefile = "gfx//interface//ui//button//release_nation_button.dds"
-	}
+    #spriteType = {
+	#	name = "GFX_release_nation_button"
+	#	texturefile = "gfx//interface//ui//button//release_nation_button.dds"
+	#}
     
-    spriteType = {
-		name = "GFX_view_nation_button"
-		texturefile = "gfx//interface//ui//button//view_nation_button.dds"
-	}
+    #spriteType = {
+	#	name = "GFX_view_nation_button"
+	#	texturefile = "gfx//interface//ui//button//view_nation_button.dds"
+	#}
 
-    spriteType = {
-		name = "GFX_government_upgrade_strip"
-		texturefile = "gfx//interface//ui//button//government_upgrade_strip.dds"
-		noOfFrames = 3	
-	}
+    #spriteType = {
+	#	name = "GFX_government_upgrade_strip"
+	#	texturefile = "gfx//interface//ui//button//government_upgrade_strip.dds"
+	#	noOfFrames = 3	
+	#}
     
     spriteType = {
 		name = "GFX_view_modifiers_button"
@@ -342,15 +416,15 @@ spriteTypes = {
 		texturefile = "gfx//interface//ui//button//neighbour_sort_button.dds"
 	}
     
-    spriteType = {
-		name = "GFX_increase_trust_button"
-		texturefile = "gfx//interface//ui//button//increase_trust_button.dds"
-	}
+    #spriteType = {
+	#	name = "GFX_increase_trust_button"
+	#	texturefile = "gfx//interface//ui//button//increase_trust_button.dds"
+	#}
     
-    spriteType = {
-		name = "GFX_prepare_for_war_button"
-		texturefile = "gfx//interface//ui//button//prepare_for_war_button.dds"
-	}
+    #spriteType = {
+	#	name = "GFX_prepare_for_war_button"
+	#	texturefile = "gfx//interface//ui//button//prepare_for_war_button.dds"
+	#}
     
     # --------------- Court
     spriteType = {
@@ -389,6 +463,7 @@ spriteTypes = {
 		clicksound = click
 	}
     
+    # 200_block_button
     spriteType = {
 		name = "GFX_button_default"
 		texturefile = "gfx//interface//ui//button//200_block_button.dds"
@@ -578,11 +653,11 @@ spriteTypes = {
 		texturefile = "gfx//interface//ui//icons//favour_icon.dds"
 	}
     
-    spriteType = {
-		name = "GFX_attitude_icons_strip"
-		texturefile = "gfx//interface//ui//icons//attitude_icons_strip.dds"
-		noOfFrames = 15
-	}
+    #spriteType = {
+	#	name = "GFX_attitude_icons_strip"
+	#	texturefile = "gfx//interface//ui//icons//attitude_icons_strip.dds"
+	#	noOfFrames = 15
+	#}
     
     spriteType = {
 		name = "GFX_improve_relation_icon"
@@ -606,323 +681,270 @@ spriteTypes = {
     # Overrides
     #---------------------------------------------------
     # --------------- Country View Tabs
-    spriteType = {
-		name = "GFX_tab_court"
-		texturefile = "gfx//interface//ui//button//tab_court.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_court"
+	#	texturefile = "gfx//interface//ui//button//tab_court.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_local_government"
-		texturefile = "gfx//interface//ui//button//tab_government.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_local_government"
+	#	texturefile = "gfx//interface//ui//button//tab_government.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_policies"
-		texturefile = "gfx//interface//ui//button//tab_diplomacy.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_policies"
+	#	texturefile = "gfx//interface//ui//button//tab_diplomacy.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_economy"
-		texturefile = "gfx//interface//ui//button//tab_economy.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_economy"
+	#	texturefile = "gfx//interface//ui//button//tab_economy.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_domestic_trade"
-		texturefile = "gfx//interface//ui//button//tab_trade.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_domestic_trade"
+	#	texturefile = "gfx//interface//ui//button//tab_trade.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_domestic_technology"
-		texturefile = "gfx//interface//ui//button//tab_technology.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_domestic_technology"
+	#	texturefile = "gfx//interface//ui//button//tab_technology.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_domestic_ideas"
-		texturefile = "gfx//interface//ui//button//tab_ideas.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_domestic_ideas"
+	#	texturefile = "gfx//interface//ui//button//tab_ideas.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_domestic_mission"
-		texturefile = "gfx//interface//ui//button//tab_decisions.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_domestic_mission"
+	#	texturefile = "gfx//interface//ui//button//tab_decisions.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_domestic_government"
-		texturefile = "gfx//interface//ui//button//tab_stability.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_domestic_government"
+	#	texturefile = "gfx//interface//ui//button//tab_stability.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_religion"
-		texturefile = "gfx//interface//ui//button//tab_religion.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_religion"
+	#	texturefile = "gfx//interface//ui//button//tab_religion.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_military"
-		texturefile = "gfx//interface//ui//button//tab_military.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_military"
+	#	texturefile = "gfx//interface//ui//button//tab_military.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_subjects"
-		texturefile = "gfx//interface//ui//button//tab_subjects.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_subjects"
+	#	texturefile = "gfx//interface//ui//button//tab_subjects.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    spriteType = {
-		name = "GFX_tab_estates"
-		texturefile = "gfx//interface//ui//button//tab_estates.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 2
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_tab_estates"
+	#	texturefile = "gfx//interface//ui//button//tab_estates.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 2
+	#	loadType = "INGAME"
+	#}
     
-    # --------------- Listbox
-    spriteType = {
-		name = "GFX_scroll_drager"
-		texturefile = "gfx/interface/scroll_drager.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_scroll_up"
-		texturefile = "gfx/interface/scroll_up.dds"
-	}
-    
-	spriteType = {
-		name = "GFX_scroll_down"
-		texturefile = "gfx/interface/scroll_down.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_scroll_right"
-		texturefile = "gfx/interface/scroll_right.dds"
-	}
-    
-	spriteType = {
-		name = "GFX_scroll_left"
-		texturefile = "gfx/interface/scroll_left.dds"
-	}
-    
-    corneredTileSpriteType = {
-		name = "GFX_scroll_track"
-		size= {x =12 y = 12 }
-		texturefile = "gfx/interface/scroll_track.dds"
-		borderSize = { x=4 y=4 }
-	}
-    
-    # --------------- Government
-    textSpriteType = {
-		name = "GFX_russian_ability_ADM"
-		texturefile = "gfx//interface//ui//button//russian_adm_button.dds"
-        loadType = "INGAME"
-		#transparencecheck = yes	
-	}
-    
-    textSpriteType = {
-		name = "GFX_russian_ability_DIP"
-		texturefile = "gfx//interface//ui//button//russian_dip_button.dds"
-        loadType = "INGAME"
-		#transparencecheck = yes	
-	}
-    
-    textSpriteType = {
-		name = "GFX_russian_ability_MIL"
-		texturefile = "gfx//interface//ui//button//russian_mil_button.dds"
-        loadType = "INGAME"
-		#transparencecheck = yes	
-	}
+   
     
     # For countryview tabs that use scaling positions. These exact names must be used for the backgrounds, as the internal code for the scaling appears to look for them. Changing the name results in the game defaulting to the vanilla background.
     
     # Diplomacy and Religion tabs are done by overwriting the image files. 
     
     # Government
-    spriteType = {
-		name = "GFX_local_government_view_bg"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_local_government_view_bg"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_local_government_view_bg_large"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_local_government_view_bg_large"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_local_government_view_bg_huge"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_local_government_view_bg_huge"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
     # Trade
-    spriteType = {
-		name = "GFX_country_trade_view_bg"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_trade_view_bg"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_trade_view_bg_large"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_trade_view_bg_large"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_trade_view_bg_huge"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_trade_view_bg_huge"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
     # Subjects
-    spriteType = {
-		name = "GFX_country_subject_bg"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_subject_bg"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_subject_bg_large"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_subject_bg_large"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_subject_bg_huge"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_subject_bg_huge"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
     # Stability
-    spriteType = {
-		name = "GFX_country_government_view_bg"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_government_view_bg"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_government_view_bg_large"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_government_view_bg_large"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_government_view_bg_huge"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_government_view_bg_huge"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
 
     # Mission/Decision
-    spriteType = {
-		name = "GFX_country_mission_view_bg"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_mission_view_bg"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_mission_view_bg_large"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_mission_view_bg_large"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #   loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_mission_view_bg_huge"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_mission_view_bg_huge"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #    loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
     # Estates
-    spriteType = {
-		name = "GFX_country_estates_view_bg"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_estates_view_bg"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #    loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_estates_view_bg_large"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_estates_view_bg_large"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #    loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_country_estates_view_bg_huge"
-		texturefile = "gfx//interface//ui//background//countryview_bg.dds"
-        loadType = "INGAME"
-		transparencecheck = yes
-	}
+    #spriteType = {
+	#	name = "GFX_country_estates_view_bg_huge"
+	#	texturefile = "gfx//interface//ui//background//countryview_bg.dds"
+    #    loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
     
-    spriteType = {
-		name = "GFX_advisor_noAdvisorType"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate.lua"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_advisor_noAdvisorType_female"
-		texturefile = "gfx//interface//advisors//noAdvisorType.dds"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-		loadType = "INGAME"
-	}
+    #spriteType = {
+	#	name = "GFX_advisor_noAdvisorType"
+	#	texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+	#	noOfFrames = 1
+	#	
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	loadType = "INGAME"
+	#}
+	#spriteType = {
+	#	name = "GFX_advisor_noAdvisorType_female"
+	#	texturefile = "gfx//interface//advisors//noAdvisorType.dds"
+	#	noOfFrames = 1
+	#	norefcount = yes
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	loadType = "INGAME"
+	#}
 
-    spriteType = {
-		name = "GFX_icon_legitimacy"
-		texturefile = "gfx//interface//ui//icons//icon_legitimacy.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 5
-	}
+    #spriteType = {
+	#	name = "GFX_icon_legitimacy"
+	#	texturefile = "gfx//interface//ui//icons//icon_legitimacy.dds"
+	#	effectFile = "gfx/FX/buttonstate.lua"
+	#	noOfFrames = 5
+	#}
 }
 
