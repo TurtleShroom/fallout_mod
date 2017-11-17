@@ -188,95 +188,35 @@ HDL = "countries/Hidelocks.txt"
 SNA = "countries/Snajan.txt" 
 
 # 3 new per state
-# Oregon
-#BBN = "countries/Blackbones.txt"
-#WSK = "countries/Whitestalkers.txt"
-
-# Washington
-
-# Montana
-#RTS = "countries/Ratspeakers.txt" 
-#GMT = "countries/Grimtooth.txt" 
-
-# Idaho
-#CKF = "countries/Cracked Fist.txt" 
-#LTT = "countries/Lost Totem.txt" 
-#DMT = "countries/Deadmouth.txt" 
-
-# Utah
-
 # Mexico
+# PUE = "countries/Puebla.txt"
+# HID = "countries/Hidalgo.txt"
 
 # Texas
 #STS = "countries/Steel Scorpions.txt" 
+#LOS = "countries/Los.txt" # ghoul
 
-# Oklahoma
+# Plains Commonwealth: Oklahoma / Nebraska / Iowa / Kansas / Missouri
 
-# Arkansas
+# East Central Commonwealth: Ohio / Kentucky / Tennessee
 
-# Louisana
+# Gulf Commonwealth : Louisiana / Mississippi / Alabama / Florida
 
-# Mississippi
+# Great Midwest Commonwealth : Minnesota / Wisconsin / Illinois / Indiana / Michigan
 
-# Alabama
+# Northern Commonwealth: Montana / Wyoming / North Dakota / South Dakota
+#RTS = "countries/Ratspeakers.txt" 
+#GMT = "countries/Grimtooth.txt" 
 
-# Florida
+# Northwest Commonwealth: Washington / Oregon / Idaho
+#BBN = "countries/Blackbones.txt"
+#WSK = "countries/Whitestalkers.txt"
+#CKF = "countries/Cracked Fist.txt" 
+#LTT = "countries/Lost Totem.txt" 
+#DMT = "countries/Deadmouth.txt" 
+#ISS = "countries/Issaquah.txt"
 
-# Georgia
-
-# South Carolina
-
-# North Carolina
-
-# Virginia
-
-# Kentucky
-
-# Indiana
-
-# West Virginia
-
-# Pennsylvania
-
-# Missouri
-
-# Iowa
-
-# Nebraska
-
-# Wyoming
-
-# South Dakota
-
-# North Dakota
-
-# Minnesota
-
-# Wisconsin
-
-# Michigan
-
-# British Columbia
-
-# New York
-
-# New England
-
-# New Jersey
-
-# Quebec
-
-# Ontario
-
-# Manitoba
-
-# Saskatchewan
-
-# Alberta 
-
-# British Columbia
-
-
+# Canada
 
 # <culture>, administrative_settlement/diplomatic_settlement, tech_wastelander, secular
 # <culture>, military_settlement, tech_raider, secular/fetishism
