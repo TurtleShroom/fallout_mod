@@ -326,17 +326,45 @@ country_event = {
 		name = diplomatic_actions.11.option.a
  
         random_list = {
-            25 = {
-                add_slaves_25 = yes
+            10 = {
+                custom_tooltip = gain_slaves_10_tt
+                add_slaves_effect = { AMOUNT = 10 }
             }
-            25 = {
-                add_slaves_50 = yes
+            10 = {
+                custom_tooltip = gain_slaves_20_tt
+                add_slaves_effect = { AMOUNT = 20 }
             }
-            25 = {
-                add_slaves_75 = yes
+            10 = {
+                custom_tooltip = gain_slaves_30_tt
+                add_slaves_effect = { AMOUNT = 30 }
             }
-            25 = {
-                add_slaves_100 = yes
+            10 = {
+                custom_tooltip = gain_slaves_40_tt
+                add_slaves_effect = { AMOUNT = 40 }
+            }
+            10 = {
+                custom_tooltip = gain_slaves_50_tt
+                add_slaves_effect = { AMOUNT = 50 }
+            }
+            10 = {
+                custom_tooltip = gain_slaves_60_tt
+                add_slaves_effect = { AMOUNT = 60 }
+            }
+            10 = {
+                custom_tooltip = gain_slaves_70_tt
+                add_slaves_effect = { AMOUNT = 70 }
+            }
+            10 = {
+                custom_tooltip = gain_slaves_80_tt
+                add_slaves_effect = { AMOUNT = 80 }
+            }
+            10 = {
+                custom_tooltip = gain_slaves_90_tt
+                add_slaves_effect = { AMOUNT = 90 }
+            }
+            10 = {
+                custom_tooltip = gain_slaves_100_tt
+                add_slaves_effect = { AMOUNT = 100 }
             }
         }
 	}

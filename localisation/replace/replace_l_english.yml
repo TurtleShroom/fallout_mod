@@ -8,6 +8,147 @@
  WORLD_YEAR:0 "$YEAR$"
  
  #------------------------------------------------------
+ # Personal Deities
+ #------------------------------------------------------
+ CONFIRM_NEW_DEITY_TITLE: "Confirm New Attitude"
+ RV_NO_DEITY: "No Attitude Selected"
+ CANT_CHANGE_DIETY_REGENCY: "You cannot select a Attitude while in regency."
+ RV_NO_DEITY_TITLE: "No Current Attitude."
+ RV_NO_DEITY_DESC: "Your religion allows you to select an Attitude to adhere to. Each Attitude will come with its own effects and last until your ruler changes."
+ RV_PICK_DEITY: "Select Attitude"
+ HAS_DEITY: "Is following $DEITY|Y$"
+ NOT_HAS_DEITY: "Is NOT following $DEITY|Y$"
+ CHANGE_DEITY_EFFECT: "Change Attitude to $NAME|Y$"
+ 
+ #------------------------------------------------------
+ # Militarization
+ #------------------------------------------------------
+ militarized_society:0 "Democratic Spirit"
+ INCMILSOCTITLE:0 "Increase Democratic Spirit of Country"
+ INC_M_ALREADY_MAX:0 "Democratic Spirit is already at its highest!"
+ MIL_SOC_CHANGE:0 "The Democratic Spirit of our Country change by $VAL$ each month due to:\n"
+ INC_MIL_NO_POINTS:0 "You require at least $COST|Y$ military power to increase the democratic spirit of your country, but you only have $VAL|Y$!"
+ INC_MIL_DO_IT:0 "Spend $COST|Y$ military power to increase the democratic spirit of your country by §G+$EFFECT$§!."
+ MODIFIER_MONTHLY_MILITARIZED_SOCIETY:0 "Democratic Spirit"
+ ADD_MILSOC_EFFECT:0 "$DIRECTION$ $VALUE$ Democratic Spirit of country.\n"
+ 
+ #------------------------------------------------------
+ # Pasha
+ #------------------------------------------------------
+ ADD_PASHA_BUTTON:0 "Assign Pasha"
+ REMOVE_PASHA_BUTTON:0 "Remove Pasha"
+ ADD_PASHA_TOOLTIP:0 "§YAssign Pasha§!"
+ REMOVE_PASHA_TOOLTIP:0 "§YRemove Pasha§!"
+ ADD_PASHA_TOOLTIP_DESC:0 "With §YOttoman Government§! we are capable of giving out positions of Pashas in States.\nAssigning a Pasha in $STATE|Y$ will give us the following effects:\n$EFFECT$"
+ REMOVE_PASHA_TOOLTIP_DESC:0 "Removing the Pasha in $STATE|Y$ will give us the following effects:\n$EFFECT$"
+ CONFIRMADDPASHA:0 "Assign Pasha"
+ CONFIRMADDPASHA_TEXT:1 "Assigning a Pasha in $STATE|Y$ will give us the following effects:\n$EFFECT$"
+ CONFIRMREMOVEPASHA:0 "Remove Pasha"
+ CONFIRMREMOVEPASHA_TEXT:1 "Removing the Pasha in $STATE|Y$ will give us the following effects:\n$EFFECT$"
+ pasha_removed_modifier:0 "Pasha Removed"
+ PASHA_MODIFIER:0 "Pasha in State"
+ 
+ #------------------------------------------------------
+ # Gov Abilities
+ #------------------------------------------------------
+ alert_can_use_russian_ability_instant:0 "§YCan use a Legion ability!§!"
+ alert_can_use_russian_ability_delayed:0 "$POWERS|Y$ can currently be used."
+ alert_can_use_iqta_ability_instant:0 "§YCan enact a Governmental Focus!§!"
+ alert_can_use_iqta_ability_delayed:0 "$POWERS|Y$ can currently be enacted."
+ alert_can_use_malmluk_ability_instant:0 "§YCan use a New Vegas ability!§!"
+ alert_can_use_malmluk_ability_delayed:0 "$POWERS|Y$ can currently be used."
+ alert_can_use_feudal_theocracy_ability_instant:0 "§YCan use a Brotherhood ability!§!"
+ alert_can_use_feudal_theocracy_ability_delayed:0 "$POWERS|Y$ can currently be used."
+ alert_can_use_tribal_federation_ability_instant:0 "§YCan use a Tribal ability!§!"
+ alert_can_use_tribal_federation_ability_delayed:0 "$POWERS|Y$ can currently be used."
+ 
+ # Russian (Legion)
+ russian_adm_power:0 "Administrative Progress"
+ russian_dip_power:0 "Diplomatic Progress"
+ russian_mil_power:0 "Military Progress"
+ RUSABIL_SUDEBNIK: "Consolidate Power"
+ RUSABIL_OPRICHNINA:0 "Suppress Dissent"
+ RUSABIL_STRELTSY:0 "Muster Legionaries"
+ RUSABIL_SUDEBNIK_Q:0 "This will impact Autonomy by $CHANGE|G$ in all our Provinces."
+ RUSABIL_OPRICHNINA_Q:0 "This will impact progress for all rebel factions by $CHANGE$."
+ RUSABIL_STRELTSY_Q:0 "This will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Streltsy Regiments in our capital."
+ RUSABIL_NOT_ENOUGH:0 "You need $NEED|Y$ power gathered to '$NAME|Y$' but you have only gathered $CURR|Y$."
+ RUSABIL_NOT_AUTONOMY:0 "There are no provinces that has at least $VAL|Y$ autonomy that can be reduced by '$NAME|Y$'."
+ RUSABIL_DO_IT_SUDEBNIK:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact Autonomy by $CHANGE|G$ in all our Province(s).\nThere are $PROV|Y$ Province(s) that will be affected."
+ RUSABIL_NO_REBELS:0 "There are no rebel factions with a progress of at least $VAL|R$, so there is no need to '$NAME|Y$'."
+ RUSABIL_DO_IT_OPRI:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact progress for all rebel factions by $CHANGE$."
+ RUSABIL_NO_CAPITAL:0 "Your capital needs to be under your control for you to be able to '$NAME|Y$'."
+ RUSABIL_DO_IT_STRELTSY:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Veteran Legionary Regiments in our capital. "
+ RUSABIL_STRELTSY_MODIFIER:0 "This will increase our stability cost to $MODIFIER$ by relying on these regiments."
+ RUSABIL_POOL:0 "We gain §G+$GAIN$§! to the pool at the start of each year, up to a maximum of $MAX|Y$\nWe currently have $CURR|R$ and using an ability costs $NEED|Y$."
+ 
+ # Iqta (Generic)
+ AN_IQTA_TAXATION_POLICY:0 "An Governmental Focus"
+ IQTA_TAXATION_POLICY_PERIOD:1 "During this period you can not enact another Governmental Focus."
+ 
+ efficient_tax_farming:0 "Taxation Focus"
+ efficient_tax_farming_desc:0 "You will also get $AMOUNT|Y$ ducats, from the total Development of your Subjects' Provinces."
+ land_acquisition:0 "Recruitment Focus"
+ land_acquisition_desc:0 "You will also get $AMOUNT|Y$ manpower, from the total Development of your Subjects' Provinces."
+ lenient_taxation:0 "Production Focus"
+ lenient_taxation_desc:0 ""
+ 
+ efficient_tax_farming_modifier:0 "Taxation Focus"
+ desc_efficient_tax_farming_modifier:0 ""
+ land_acquisition_modifier:0 "Recruitment Focus"
+ desc_land_acquisition_modifier:0 ""
+ lenient_taxation_modifier:0 "Production Focus"
+ desc_lenient_taxation_modifier:0 ""
+ 
+ # Mamluk (New Vegas)
+ promote_culture_in_government:0 "Empower Securitrons"
+ promote_culture_in_government_desc:0 ""
+ sell_off_culture_slaves:0 "Advertise Casinos"
+ sell_off_culture_slaves_desc:0 "You will get $AMOUNT|Y$ ducats, from your $CULTURE|Y$ Culture provinces.\n"
+ recruit_from_culture_lands:0 "Conscript Tribals"
+ recruit_from_culture_lands_desc:0 "You will get $AMOUNT|Y$ manpower, from your $CULTURE|Y$ Culture provinces.\n"
+ 
+ mamluk_adm_power:1 "Administrative Progress"
+ mamluk_dip_power:1 "Diplomatic Progress"
+ mamluk_mil_power:1 "Military Progress"
+ 
+ promote_culture_in_government_modifier:0 "Empower Securitrons"
+ desc_promote_culture_in_government_modifier:0 "Mr. House has chosen to divert some of his stored power into empowering his Securitrons. This greatly improves their killing effectiveness, although empowerment cannot be sustained for long."
+ 
+ # Feudal Theocracy (BoS Order)
+ SANCTION_HOLY_WAR_NO_PROVINCES:0 "You already have a Claim or a Core on all valid Provinces.\n"
+ INVITE_MINORITIES_NOT_OWNED:0 "You need to own and control every Province in your capital Area to do this.\n"
+ INVITE_MINORITIES_NO_MINORITY:0 "You need to know about a foreign Province of your Religion, owned by a Heathen or Heretic, to do this.\n"
+ 
+ seize_clerical_holdings:0 "Conduct Research"
+ seize_clerical_holdings_desc:0 ""
+ invite_minorities:0 "Conscript External Recruits"
+ invite_minorities_desc:0 "$DEV|Y$ Development will be randomly distributed in your capital Area."
+ sanction_holy_war:0 "Quell Potential Rivals"
+ sanction_holy_war_desc:0 "This gives us a Claim on all neighboring Provinces currently owned by neutral or enemy heretics or heathens:\n$LIST$"
+ 
+ seize_clerical_holdings_modifier:0 "Conducted Research"
+ desc_seize_clerical_holdings_modifier:0 "We have researched the uses and attributes of various pieces of technology we scavenged."
+ invite_minorities_modifier:0 "Conscripted External Recruits"
+ desc_invite_minorities_modifier:0 "By accepting non-familial members, we can bolster our forces quicker and be battle-ready sooner."
+ 
+ # Tribal Allegiance (Tribes)
+ enlist_general:0 "Enlist General"
+ enlist_general_desc:0 "You will get a new General with $TRADITION|Y$ Tradition.\n"
+ train_horsemanship:0 "Expand Tribal Influence"
+ train_horsemanship_desc:0 ""
+ conscript_from_tribes:0 "Form Roaming Deathsquad"
+ conscript_from_tribes_desc:0 ""
+ 
+ tribal_allegiance:0 "Tribal Allegiance"
+ tribal_allegiance_desc:1 "By winning battles and humiliating rivals, a Tribe can increase their Tribal Allegiance, whereas losing battles and being humiliated will decrease it.\n\nIt also changes by $CHANGE$ every year, due to:\n$WHY$\n"
+ tribal_allegiance_effect:0 "Effects from $VAL|Y$ Tribal Allegiance:\n$EFFECTS$"
+ 
+ train_horsemanship_modifier:0 "Expanded Tribal Influence"
+ desc_train_horsemanship_modifier:0 "Let our tribesmen settle new lands and exert control over them."
+ 
+ 
+ #------------------------------------------------------
  # Parliament
  #------------------------------------------------------
  default_parliament_name:0 "Congress"
@@ -82,28 +223,6 @@
  LASTS_ICON_UNTIL:0 "This lasts until $WHEN|Y$."
  
  #------------------------------------------------------
- # Gov Abilities
- #------------------------------------------------------
- russian_adm_power:0 "Administrative Progress"
- russian_dip_power:0 "Diplomatic Progress"
- russian_mil_power:0 "Military Progress"
- RUSABIL_SUDEBNIK: "Consolidate Power"
- RUSABIL_OPRICHNINA:0 "Suppress Dissent"
- RUSABIL_STRELTSY:0 "Muster Legionaries"
- RUSABIL_SUDEBNIK_Q:0 "This will impact Autonomy by $CHANGE|G$ in all our Provinces."
- RUSABIL_OPRICHNINA_Q:0 "This will impact progress for all rebel factions by $CHANGE$."
- RUSABIL_STRELTSY_Q:0 "This will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Streltsy Regiments in our capital."
- RUSABIL_NOT_ENOUGH:0 "You need $NEED|Y$ power gathered to '$NAME|Y$' but you have only gathered $CURR|Y$."
- RUSABIL_NOT_AUTONOMY:0 "There are no provinces that has at least $VAL|Y$ autonomy that can be reduced by '$NAME|Y$'."
- RUSABIL_DO_IT_SUDEBNIK:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact Autonomy by $CHANGE|G$ in all our Province(s).\nThere are $PROV|Y$ Province(s) that will be affected."
- RUSABIL_NO_REBELS:0 "There are no rebel factions with a progress of at least $VAL|R$, so there is no need to '$NAME|Y$'."
- RUSABIL_DO_IT_OPRI:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact progress for all rebel factions by $CHANGE$."
- RUSABIL_NO_CAPITAL:0 "Your capital needs to be under your control for you to be able to '$NAME|Y$'."
- RUSABIL_DO_IT_STRELTSY:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Veteran Legionary Regiments in our capital. "
- RUSABIL_STRELTSY_MODIFIER:0 "This will increase our stability cost to $MODIFIER$ by relying on these regiments."
- RUSABIL_POOL:0 "We gain §G+$GAIN$§! to the pool at the start of each year, up to a maximum of $MAX|Y$\nWe currently have $CURR|R$ and using an ability costs $NEED|Y$."
- 
- #------------------------------------------------------
  # Units
  #------------------------------------------------------
  REGCAT_normal:0 "Regulars"
@@ -133,11 +252,6 @@
  ORANGISTS_DRO:0 "When Authoritarians are in power, our current ruler will continue to rule until his/her death."
  STATISTS_IRO:0 "§YLiberals§!\n"
  STATISTS_DRO:0 "When Liberals are in power we will get new rulers elected every 4 years, but no ruler can hold more than 1 term at a time."
- 
- #------------------------------------------------------
- # Institutions
- #------------------------------------------------------
- INSTITUTION_SPREAD_HELP:0 "Institutions spread between provinces over time. You can also increase the development to directly spread an institution.\n\nIf you lack a border with a nation that has embraced an institution, then achieving relations of §G100§! or more will permit institution spread without bordering said nation."
  
  #---------------------------------------------------------
  # Peace Terms
@@ -440,8 +554,8 @@
  PIETY_DESCRIPTION_ESTATES: ""
  ADD_PIETY: "$DIRECTION$ $VALUE$ Warlust"
  
- positive_piety: "Frenzied"
- negative_piety: "Sedated"
+ positive_piety: "Berserk"
+ negative_piety: "Sedate"
  
  PIETY_BAD_WAR_EFF:0 "Declaring war will increase our Warlust by §Y$VAL$§!."
  PIETY_GOOD_WAR_EFF:0 "Declaring war will increase our Warlust by §Y$VAL$§!."
@@ -454,12 +568,12 @@
  PIETY_LESS_THAN: "Warlust is less than §Y$VAL$§!.\n"
  PIETY_AT_LEAST: "Warlust is at least §Y$VAL$§!.\n"
  
- PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YEnforce Faithful Adherence§!' we need to be at least $NEED|Y$ towards Legalism. This would impact corruption by $CORRUPTION$."
- PIETY_LEGALISM_BONUS:1 "Our tradition of Legalism is a great advantage. §YEnforcing faithful Adherence§! will move us by $COST|Y$ towards Mysticism but impact corruption by $CORRUPTION$."
- PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YCall on Religious Followers§!' we need to be at least $NEED|Y$ towards Mysticism. This would gives us the following impact:\n$GAIN$"
- PIETY_MYSTICISM_BONUS:1 "Our tradition of Mysticism is a great advantage. §YCalling on Religious Followers§! will move us by $COST|Y$ towards Warlust but offer us $GAIN$"
- PIETY_MYSTICISM_COOLDOWN:0 "You can only '§YCall on Religious Followers§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
- PIETY_LEGALISM_COOLDOWN:0 "You can only '§YEnforce Faithful Adherence§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_TOO_LOW_FOR_LEGALISM:1 "To be able to '§YEnforce Adherence§!' we need to be at least $NEED|Y$ towards Berserk. This would impact corruption by $CORRUPTION$."
+ PIETY_LEGALISM_BONUS:1 "§YEnforcing Adherence§! will move us by $COST|Y$ towards Sedate but impact corruption by $CORRUPTION$."
+ PIETY_TOO_HI_FOR_MYSTICISM:1 "To be able to '§YRally Soldiers§!' we need to be at least $NEED|Y$ towards Sedate. This would gives us the following impact:\n$GAIN$"
+ PIETY_MYSTICISM_BONUS:1 "§YRallying Soldiers§! will move us by $COST|Y$ towards Berserk but offer us $GAIN$"
+ PIETY_MYSTICISM_COOLDOWN:0 "You can only '§YRally Soldiers§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
+ PIETY_LEGALISM_COOLDOWN:0 "You can only '§YEnforce Adherence§!' once every $YEARS|Y$ years.\nYou will be able to do it again in $UNTIL|Y$."
  
  GAIN_PIETY:0 "Gain $VALUE|Y$ Warlust"
  LOSE_PIETY:0 "Lose $VALUE|Y$ Warlust"
@@ -849,19 +963,6 @@
  # National Ideas
  #------------------------------------------------------
  MAY_ATTACK_OVERSEAS: "- Permanent Casus Belli against less advanced nations.\n"
- 
- #------------------------------------------------------
- # Deity
- #------------------------------------------------------
- CONFIRM_NEW_DEITY_TITLE: "Confirm New Stance"
- RV_NO_DEITY: "No Stance Selected"
- CANT_CHANGE_DIETY_REGENCY: "You cannot select stance while in regency."
- RV_NO_DEITY_TITLE: "No Current Stance."
- RV_NO_DEITY_DESC: "Your religion allows you to select a stance to follow. Each stance will come with its own effects and last until your ruler changes."
- RV_PICK_DEITY: "Select Stance"
- HAS_DEITY: "Is following $DEITY|Y$"
- NOT_HAS_DEITY: "Is NOT following $DEITY|Y$"
- CHANGE_DEITY_EFFECT: "Change Stance to $NAME|Y$"
  
  #------------------------------------------------------
  # Exploration

@@ -56,32 +56,13 @@
  geck_data_banks: "G.E.C.K Data Banks"
  desc_geck_data_banks: ""
  
- # Neighbour embraced tooltips
- tt_anhe_bottlecaps: "Adjacent province has §YBottlecaps§!"
- tt_anhe_robco: "Adjacent province has §YRobCo Industries§!"
- tt_anhe_repconn: "Adjacent province has §YREPCONN Aerospace§!"
- tt_anhe_fev: "Adjacent province has §YForced Evolutionary Virus§!"
- tt_anhe_power_armor: "Adjacent province has §YPower Armor§!"
- tt_anhe_vault_tec: "Adjacent province has §YVault-Tec Industries§!"
- tt_anhe_geck: "Adjacent province has §YG.E.C.K§!"
- 
- # Friendly coast embraced tooltips
- tt_afcbphe_bottlecaps: "Nearby Friendly Province has §YBottlecaps§!"
- tt_afcbphe_robco: "Nearby Friendly Province has §YRobCo Industries§!"
- tt_afcbphe_repconn: "Nearby Friendly Province has §YREPCONN Aerospace§!"
- tt_afcbphe_fev: "Nearby Friendly Province has §YForced Evolutionary Virus§!"
- tt_afcbphe_power_armor: "Nearby Friendly Province has §YPower Armor§!"
- tt_afcbphe_vault_tec: "Nearby Friendly Province has §YVault-Tec Industries§!"
- tt_afcbphe_geck: "Nearby Friendly Province has §YG.E.C.K§!"
- 
- # Embracement tooltips
- tt_embraced_bottlecaps: "Owner has embraced §YBottlecaps§!"
- tt_embraced_robco: "Owner has embraced §YRobCo Industries§!"
- tt_embraced_repconn: "Owner has embraced §YREPCONN Aerospace§!"
- tt_embraced_fev: "Owner has embraced §YForced Evolutionary Virus§!"
- tt_embraced_power_armor: "Owner has embraced §YPower Armor§!"
- tt_embraced_vault_tec: "Owner has embraced §YVault-Tec Industries§!"
- tt_embraced_geck: "Owner has embraced §YG.E.C.K§!"
+ tt_base_bottlecaps: "Neighbouring province has §YBottlecaps§!"
+ tt_base_robco: "Neighbouring province has §YRobCo Industries§!"
+ tt_base_repconn: "Neighbouring province has §YREPCONN Aerospace§!"
+ tt_base_fev: "Neighbouring province has §YForced Evolutionary Virus§!"
+ tt_base_power_armor: "Neighbouring province has §YPower Armor§!"
+ tt_base_vault_tec: "Neighbouring province has §YVault-Tec Industries§!"
+ tt_base_geck: "Neighbouring province has §YG.E.C.K§!"
  
  tt_presence_bottlecaps: "Owner has §YBottlecaps§! present within their Country"
  tt_presence_robco: "Owner has §YRobCo Industries§! present within their Country"
@@ -91,44 +72,14 @@
  tt_presence_vault_tec: "Owner has §YVault-Tec Industries§! present within their Country"
  tt_presence_geck: "Owner has §YG.E.C.K§! present within their Country"
  
- 
- # Tooltips
- tt_border_relations_open_access: "Nearby Friendly Province with Data Policy - §GOpen Access§!"
- tt_border_relations_restricted_access: "Nearby Friendly Province with Data Policy - §YRestricted Access§!"
- tt_border_relations_closed_access: "Nearby Friendly Province with Data Policy - §RClosed Access§!"
- 
- tt_high_relations_open_access: "Has §G50§!+ Relations with Country with Data Policy - §GOpen Access§!"
- tt_high_relations_restricted_access: "Has §G50§!+ Relations with Country with Data Policy - §YRestricted Access§!"
- tt_high_relations_closed_access: "Has §G50§!+ Relations with Country with Data Policy - §RClosed Access§!"
- 
- tt_self_spread: "Has Embraced Province within our Country"
+ tt_embraced_bottlecaps: "Owner has embraced §YBottlecaps§!"
+ tt_embraced_robco: "Owner has embraced §YRobCo Industries§!"
+ tt_embraced_repconn: "Owner has embraced §YREPCONN Aerospace§!"
+ tt_embraced_fev: "Owner has embraced §YForced Evolutionary Virus§!"
+ tt_embraced_power_armor: "Owner has embraced §YPower Armor§!"
+ tt_embraced_vault_tec: "Owner has embraced §YVault-Tec Industries§!"
+ tt_embraced_geck: "Owner has embraced §YG.E.C.K§!"
 
- # Decisions
- set_data_policy_open_title: "Set Data Policy: §MOpen§!"
- set_data_policy_open_desc: "Set our data policy to Open."
- 
- set_data_policy_restricted_title: "Set Data Policy: §MRestricted§!"
- set_data_policy_restricted_desc: "Set our data policy to Restricted."
- 
- set_data_policy_closed_title: "Set Data Policy: §MClosed§!"
- set_data_policy_closed_desc: "Set our data policy to Closed."
- 
- # Modifiers
- institution_access_open: "Open Access"
- desc_institution_access_open: "We permit our allies open access to our data banks."
- 
- institution_access_restricted: "Restricted Access"
- desc_institution_access_restricted: "We permit our allies restricted access to our data banks."
- 
- institution_access_closed: "Closed Access"
- desc_institution_access_closed: "We do not permit our allies access to our data banks."
- 
- institution_data_breach: "Data Breach"
- desc_institution_data_breach: "Our data banks have been breached, allow others to take our institutional blueprints."
- 
- institution_policy_cooldown: "Data Policy Cooldown"
- desc_institution_policy_cooldown: ""
- 
  # Events
  fallout_institutions.1.title: "Bottlecaps!"
  fallout_institutions.1.desc: "Thousands upon thousands of bottle caps litter the wasteland. Why don't we utilize this semi-rare commodity as a currency, allowing for an easier exchange of goods and services."
@@ -157,18 +108,6 @@
  fallout_institutions.7.title: "G.E.C.K"
  fallout_institutions.7.desc: "Further research into the remains of Vault-Tec Industries has revealed to us the origins of the Vaults found across America, and that the G.E.C.K held by Vault 87 has the ability to transform dead soil into fertile land suitable for farming. Agriculture has not fared well since the Great War, but this discovery may see our fortunes reversed!"
  fallout_institutions.7.option.a: "Great idea!"
- 
- fallout_institutions.10.title: "Data Policy"
- fallout_institutions.10.desc: "Set the level of accessibility we want to our data banks. This controls institution spread. By permitting access, others will think highly of us."
- fallout_institutions.10.option.a: "Open Access"
- fallout_institutions.10.option.b: "Restricted Access"
- fallout_institutions.10.option.c: "Closed Access"
- 
- fallout_institutions.11.title: "Data Breach"
- fallout_institutions.11.desc: "A rival has breached our data banks and is extracted pertinant data as we speak. Unfortunately the data taken will allow them to embrace our institutions more readily."
- fallout_institutions.11.option.a: "Open Access"
- fallout_institutions.11.option.b: "Restricted Access"
- fallout_institutions.11.option.c: "Closed Access"
  
  
  

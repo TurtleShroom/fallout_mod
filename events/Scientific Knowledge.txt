@@ -1,31 +1,36 @@
-namespace = research_capacity
+namespace = scientific_knowledge
 
 # Default technology levels
 country_event = {
-	id = research_capacity.1
-	title = research_capacity.1.title
-	desc = research_capacity.1.desc
+	id = scientific_knowledge.1
+	title = scientific_knowledge.1.title
+	desc = scientific_knowledge.1.desc
 	picture = BIG_MT_THE_SINK_eventPicture
 	
 	is_triggered_only = yes
     hidden = yes
     
     trigger = {
-        NOT = { has_country_flag = setup_tech }
+        NOT = { has_country_flag = setup_scientific_knowledge_level }
     }
     
     immediate = {
-        set_country_flag = setup_tech
+        set_country_flag = setup_scientific_knowledge_level
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.1" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.1" }
         }
     }
     
     option = {
-		name = research_capacity.1.option.a
+		name = scientific_knowledge.1.option.a
         
         set_variable = {
-            which = scientific_capacity
+            which = research_progress
+            value = 0
+        }
+        
+        set_variable = {
+            which = scientific_knowledge_level
             value = 0
         }
         
@@ -39,10 +44,7 @@ country_event = {
                     technology_group = tech_alien
                 }
             }
-            set_variable = {
-                which = tech_level
-                value = 8
-            }
+            set_scientific_knowledge_level = { LEVEL = 8 }
             else = {
                 if = {
                     limit = {
@@ -51,10 +53,7 @@ country_event = {
                             technology_group = tech_new_vegas
                         }
                     }
-                    set_variable = {
-                        which = tech_level
-                        value = 6
-                    }
+                    set_scientific_knowledge_level = { LEVEL = 6 }
                     else = {
                         if = {
                             limit = {
@@ -63,10 +62,7 @@ country_event = {
                                     technology_group = tech_vault_dweller
                                 }
                             }
-                            set_variable = {
-                                which = tech_level
-                                value = 5
-                            }
+                            set_scientific_knowledge_level = { LEVEL = 5 }
                             else = {
                                 if = {
                                     limit = {
@@ -77,15 +73,9 @@ country_event = {
                                             technology_group = tech_hubologist 
                                         }
                                     }
-                                    set_variable = {
-                                        which = tech_level
-                                        value = 3
-                                    }
+                                    set_scientific_knowledge_level = { LEVEL = 3 }
                                     else = {
-                                        set_variable = {
-                                            which = tech_level
-                                            value = 0
-                                        }
+                                        set_scientific_knowledge_level = { LEVEL = 0 }
                                     }
                                 }
                             }
@@ -99,44 +89,44 @@ country_event = {
 
 # "Experiemental Research"
 country_event = {
-	id = research_capacity.2
-	title = research_capacity.2.title
-	desc = research_capacity.2.desc
+	id = scientific_knowledge.2
+	title = scientific_knowledge.2.title
+	desc = scientific_knowledge.2.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.2" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.2" }
         }
     }
     
     option = {
-		name = research_capacity.2.option.a
+		name = scientific_knowledge.2.option.a
 
         hidden_effect = {
             random_list = {
                 25 = {
-                    country_event = { id = research_capacity.3 days = 90 }
+                    country_event = { id = scientific_knowledge.3 days = 90 }
                 }
                 5 = {
-                    country_event = { id = research_capacity.5 days = 90 }
+                    country_event = { id = scientific_knowledge.5 days = 90 }
                 }
                 5 = {
-                    country_event = { id = research_capacity.6 days = 90 }
+                    country_event = { id = scientific_knowledge.6 days = 90 }
                 }
                 5 = {
-                    country_event = { id = research_capacity.7 days = 90 }
+                    country_event = { id = scientific_knowledge.7 days = 90 }
                 }
                 5 = {
-                    country_event = { id = research_capacity.8 days = 90 }
+                    country_event = { id = scientific_knowledge.8 days = 90 }
                 }
                 5 = {
-                    country_event = { id = research_capacity.9 days = 90 }
+                    country_event = { id = scientific_knowledge.9 days = 90 }
                 }
                 50 = {
-                    country_event = { id = research_capacity.4 days = 90 }
+                    country_event = { id = scientific_knowledge.4 days = 90 }
                 }
             }
         }
@@ -145,23 +135,23 @@ country_event = {
 
 # Discovery!
 country_event = {
-	id = research_capacity.3
-	title = research_capacity.3.title
-	desc = research_capacity.3.desc
+	id = scientific_knowledge.3
+	title = scientific_knowledge.3.title
+	desc = scientific_knowledge.3.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.3" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.3" }
         }
     }
     
     option = {
-		name = research_capacity.3.option.a
+		name = scientific_knowledge.3.option.a
 
-        add_tech_level = yes
+        add_scientific_knowledge_level = yes
         
         add_prestige = 10
     }
@@ -169,23 +159,23 @@ country_event = {
 
 # Mathematics
 country_event = {
-	id = research_capacity.5
-	title = research_capacity.5.title
-	desc = research_capacity.5.desc
+	id = scientific_knowledge.5
+	title = scientific_knowledge.5.title
+	desc = scientific_knowledge.5.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.5" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.5" }
         }
     }
     
     option = {
-		name = research_capacity.5.option.a
+		name = scientific_knowledge.5.option.a
 
-        add_tech_level = yes
+        add_scientific_knowledge_level = yes
         
         if = { limit = { NOT = { has_country_modifier = discovery_mathematics } }
             add_country_modifier = {
@@ -200,23 +190,23 @@ country_event = {
 
 # Biology
 country_event = {
-	id = research_capacity.6
-	title = research_capacity.6.title
-	desc = research_capacity.6.desc
+	id = scientific_knowledge.6
+	title = scientific_knowledge.6.title
+	desc = scientific_knowledge.6.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.6" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.6" }
         }
     }
     
     option = {
-		name = research_capacity.6.option.a
+		name = scientific_knowledge.6.option.a
 
-        add_tech_level = yes
+        add_scientific_knowledge_level = yes
         
         if = { limit = { NOT = { has_country_modifier = discovery_biology } }
             add_country_modifier = {
@@ -231,23 +221,23 @@ country_event = {
 
 # Chemistry
 country_event = {
-	id = research_capacity.7
-	title = research_capacity.7.title
-	desc = research_capacity.7.desc
+	id = scientific_knowledge.7
+	title = scientific_knowledge.7.title
+	desc = scientific_knowledge.7.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.7" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.7" }
         }
     }
     
     option = {
-		name = research_capacity.7.option.a
+		name = scientific_knowledge.7.option.a
 
-        add_tech_level = yes
+        add_scientific_knowledge_level = yes
         
         if = { limit = { NOT = { has_country_modifier = discovery_chemistry } }
             add_country_modifier = {
@@ -262,23 +252,23 @@ country_event = {
 
 # Computer Science
 country_event = {
-	id = research_capacity.8
-	title = research_capacity.8.title
-	desc = research_capacity.8.desc
+	id = scientific_knowledge.8
+	title = scientific_knowledge.8.title
+	desc = scientific_knowledge.8.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.8" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.8" }
         }
     }
     
     option = {
-		name = research_capacity.8.option.a
+		name = scientific_knowledge.8.option.a
 
-        add_tech_level = yes
+        add_scientific_knowledge_level = yes
         
         if = { limit = { NOT = { has_country_modifier = discovery_computing } }
             add_country_modifier = {
@@ -293,23 +283,23 @@ country_event = {
 
 # Physics
 country_event = {
-	id = research_capacity.9
-	title = research_capacity.9.title
-	desc = research_capacity.9.desc
+	id = scientific_knowledge.9
+	title = scientific_knowledge.9.title
+	desc = scientific_knowledge.9.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.9" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.9" }
         }
     }
     
     option = {
-		name = research_capacity.9.option.a
+		name = scientific_knowledge.9.option.a
 
-        add_tech_level = yes
+        add_scientific_knowledge_level = yes
         
         if = { limit = { NOT = { has_country_modifier = discovery_physics } }
             add_country_modifier = {
@@ -324,21 +314,21 @@ country_event = {
 
 # Failure!
 country_event = {
-	id = research_capacity.4
-	title = research_capacity.4.title
-	desc = research_capacity.4.desc
+	id = scientific_knowledge.4
+	title = scientific_knowledge.4.title
+	desc = scientific_knowledge.4.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.10" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.10" }
         }
     }
     
     option = {
-		name = research_capacity.4.option.a
+		name = scientific_knowledge.4.option.a
 
         add_prestige = -10
 	}
@@ -346,158 +336,168 @@ country_event = {
 
 # Eureka!
 country_event = {
-	id = research_capacity.10
-	title = research_capacity.10.title
-	desc = research_capacity.10.desc
+	id = scientific_knowledge.10
+	title = scientific_knowledge.10.title
+	desc = scientific_knowledge.10.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.11" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.11" }
         }
     }
     
     option = {
-		name = research_capacity.10.option.a
+		name = scientific_knowledge.10.option.a
 
-        add_scientific_capacity_10 = yes
+        custom_tooltip = gain_research_progress_10_tt
+        gain_research_progress = { AMOUNT = 10 }
 	}
 }
 
 # Knowledge Rot
 country_event = {
-	id = research_capacity.11
-	title = research_capacity.11.title
-	desc = research_capacity.11.desc
+	id = scientific_knowledge.11
+	title = scientific_knowledge.11.title
+	desc = scientific_knowledge.11.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.11" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.11" }
         }
     }
     
     option = {
-		name = research_capacity.11.option.a
+		name = scientific_knowledge.11.option.a
 
-        lose_scientific_capacity_10 = yes
+        custom_tooltip = lose_research_progress_10_tt
+        lose_research_progress = { AMOUNT = 10 }
 	}
 }
 
 # Feuding Scientists
 country_event = {
-	id = research_capacity.12
-	title = research_capacity.12.title
-	desc = research_capacity.12.desc
+	id = scientific_knowledge.12
+	title = scientific_knowledge.12.title
+	desc = scientific_knowledge.12.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.12" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.12" }
         }
     }
     
     option = {
-		name = research_capacity.12.option.a
+		name = scientific_knowledge.12.option.a
 
         add_dip_power = -50
 	}
     
     option = {
-		name = research_capacity.12.option.b
+		name = scientific_knowledge.12.option.b
 
-        lose_scientific_capacity_5 = yes
+        custom_tooltip = lose_research_progress_5_tt
+        lose_research_progress = { AMOUNT = 5 }
 	}
 }
 
 # Divergent Thoughts
 country_event = {
-	id = research_capacity.13
-	title = research_capacity.13.title
-	desc = research_capacity.13.desc
+	id = scientific_knowledge.13
+	title = scientific_knowledge.13.title
+	desc = scientific_knowledge.13.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.13" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.13" }
         }
     }
     
     option = {
-		name = research_capacity.13.option.a
+		name = scientific_knowledge.13.option.a
 
-        add_scientific_capacity_5 = yes
-        add_adm_power = -50
+        custom_tooltip = gain_research_progress_10_tt
+        gain_research_progress = { AMOUNT = 10 }
+        
+        add_dip_power = -100
 	}
     
     option = {
-		name = research_capacity.13.option.b
+		name = scientific_knowledge.13.option.b
 
-        lose_scientific_capacity_5 = yes
+        custom_tooltip = lose_research_progress_5_tt
+        lose_research_progress = { AMOUNT = 5 }
 	}
 }
 
 # Dangerous Implications
 country_event = {
-	id = research_capacity.14
-	title = research_capacity.14.title
-	desc = research_capacity.14.desc
+	id = scientific_knowledge.14
+	title = scientific_knowledge.14.title
+	desc = scientific_knowledge.14.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.14" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.14" }
         }
     }
     
     option = {
-		name = research_capacity.14.option.a
+		name = scientific_knowledge.14.option.a
 
         add_stability = -1
 	}
     
     option = {
-		name = research_capacity.14.option.b
+		name = scientific_knowledge.14.option.b
 
-        lose_scientific_capacity_5 = yes
+        custom_tooltip = lose_research_progress_5_tt
+        lose_research_progress = { AMOUNT = 5 }
 	}
 }
 
 # Unified Efforts
 country_event = {
-	id = research_capacity.15
-	title = research_capacity.15.title
-	desc = research_capacity.15.desc
+	id = scientific_knowledge.15
+	title = scientific_knowledge.15.title
+	desc = scientific_knowledge.15.desc
 	picture = INS_LAB_eventPicture
 	
 	is_triggered_only = yes
     
     immediate = {
         hidden_effect = {
-            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - research_capacity.15" }
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - scientific_knowledge.15" }
         }
     }
     
     option = {
-		name = research_capacity.15.option.a
+		name = scientific_knowledge.15.option.a
 
-        add_adm_power = -50
-        add_scientific_capacity_5 = yes
+        custom_tooltip = gain_research_progress_10_tt
+        gain_research_progress = { AMOUNT = 10 }
+        
+        add_adm_power = -100
 	}
     
     option = {
-		name = research_capacity.15.option.b
+		name = scientific_knowledge.15.option.b
 
-        lose_scientific_capacity_5 = yes
+        custom_tooltip = lose_research_progress_5_tt
+        lose_research_progress = { AMOUNT = 5 }
 	}
 }

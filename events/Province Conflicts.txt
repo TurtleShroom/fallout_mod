@@ -7,8 +7,6 @@ province_event = {
 	desc = province_conflicts.1.desc
     picture = ZION_ROCKY_PASS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		OR = {
             is_city = yes
@@ -19,8 +17,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -120,8 +120,6 @@ province_event = {
 	desc = province_conflicts.2.desc
     picture = GRAVEYARD_RADSTORM_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		OR = {
             is_city = yes
@@ -131,8 +129,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -206,8 +206,6 @@ province_event = {
 	desc = province_conflicts.3.desc
     picture = GLOWING_SEA_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
     trigger = {
 		OR = {
             is_city = yes
@@ -233,8 +231,10 @@ province_event = {
         }
     }
     
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -314,8 +314,6 @@ province_event = {
 	desc = province_conflicts.4.desc
     picture = CHURCH_MISTY_INSIDE_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
     trigger = {
 		OR = {
             is_city = yes
@@ -326,8 +324,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
     
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -423,9 +423,7 @@ province_event = {
 	title = province_conflicts.5.title
 	desc = province_conflicts.5.desc
     picture = YAO_GUAI_eventPicture
-	
-	#is_mtth_scaled_to_size = 1
-	
+
     trigger = {
 		OR = {
             is_city = yes
@@ -436,8 +434,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
     
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -528,8 +528,6 @@ province_event = {
 	desc = province_conflicts.6.desc
     picture = SKELETON_BEHIND_BARS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		OR = {
             is_city = yes
@@ -539,8 +537,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -612,9 +612,7 @@ province_event = {
 	title = province_conflicts.7.title
 	desc = province_conflicts.7.desc
     picture = GOODSPRINGS_RANCH_eventPicture
-	
-	#is_mtth_scaled_to_size = 1
-	
+
 	trigger = {
 		OR = {
             is_city = yes
@@ -624,8 +622,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -688,8 +688,6 @@ province_event = {
 	desc = province_conflicts.8.desc
     picture = TOXIC_POOLS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		OR = {
             is_city = yes
@@ -699,8 +697,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -771,8 +771,6 @@ province_event = {
 	desc = province_conflicts.9.desc
     picture = TOXIC_POOLS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		OR = {
             is_city = yes
@@ -782,8 +780,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -856,9 +856,7 @@ province_event = {
 	title = province_conflicts.10.title
 	desc = province_conflicts.10.desc
     picture = FARMSTEAD_eventPicture
-	
-	#is_mtth_scaled_to_size = 1
-	
+
 	trigger = {
 		OR = {
             is_city = yes
@@ -868,8 +866,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -955,8 +955,6 @@ province_event = {
 	desc = province_conflicts.11.desc
     picture = SKELETON_BEHIND_BARS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		OR = {
             is_city = yes
@@ -966,8 +964,10 @@ province_event = {
         owner = { NOT = { has_country_modifier = conflict_cooldown } }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5
@@ -1062,9 +1062,7 @@ province_event = {
 	title = province_conflicts.12.title
 	desc = province_conflicts.12.desc
     picture = WASTELAND_HILLS_eventPicture
-	
-	#is_mtth_scaled_to_size = 1
-	
+
 	trigger = {
 		OR = {
             is_city = yes
@@ -1075,8 +1073,10 @@ province_event = {
         superregion = west_coast_superregion
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
-		months = 640
+		months = 2000
         
         modifier = {
             factor = 0.5

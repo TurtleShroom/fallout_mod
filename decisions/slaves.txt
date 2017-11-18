@@ -121,7 +121,8 @@ country_decisions = {
             }
 		}
 		effect = {
-            subtract_slaves_50 = yes
+            custom_tooltip = lose_slaves_50_tt
+            lose_slaves_effect = { AMOUNT = 50 }
             
             add_country_modifier = {
                 name = slavery_construction
@@ -146,7 +147,8 @@ country_decisions = {
             }
 		}
 		effect = {
-            subtract_slaves_50 = yes
+            custom_tooltip = lose_slaves_50_tt
+            lose_slaves_effect = { AMOUNT = 50 }
             
             add_country_modifier = {
                 name = slavery_production
@@ -170,7 +172,8 @@ country_decisions = {
             }
 		}
 		effect = {
-            subtract_slaves_50 = yes
+            custom_tooltip = lose_slaves_50_tt
+            lose_slaves_effect = { AMOUNT = 50 }
             
             add_absolutism = 5
 		}
@@ -192,7 +195,9 @@ country_decisions = {
             }
 		}
 		effect = {
-            subtract_slaves_50 = yes
+            custom_tooltip = lose_slaves_100_tt
+            lose_slaves_effect = { AMOUNT = 100 }
+            
             add_stability = 1
 		}
 		
@@ -213,7 +218,9 @@ country_decisions = {
             }
 		}
 		effect = {
-            subtract_slaves_100 = yes
+            custom_tooltip = lose_slaves_75_tt
+            lose_slaves_effect = { AMOUNT = 75 }
+            
             add_yearly_manpower = 1
 		}
 		

@@ -43,6 +43,8 @@ country_event = {
                 duration = -1
                 hidden = yes
             }
+
+            add_slaves_effect = { AMOUNT = 10 }
             else = {
                 add_country_modifier = {
                     name = slavery_prohibited
@@ -77,7 +79,8 @@ country_event = {
 	option = {
 		name = slavery.2.option.a
 		
-        add_slaves_50 = yes
+        custom_tooltip = gain_slaves_50_tt
+        add_slaves_effect = { AMOUNT = 50 }
         
         add_prestige = -5
 	}
@@ -118,7 +121,8 @@ country_event = {
 	option = {
 		name = slavery.3.option.a
 		
-        add_slaves_25 = yes
+        custom_tooltip = gain_slaves_25_tt
+        add_slaves_effect = { AMOUNT = 25 }
 	}
 }
 
@@ -150,7 +154,12 @@ country_event = {
 		
         add_treasury = -50
         
-        add_slaves_25 = yes
+        custom_tooltip = gain_slaves_25_tt
+        add_slaves_effect = { AMOUNT = 25 }
+	}
+    
+    option = {
+		name = slavery.4.option.b
 	}
 }
 

@@ -23,3 +23,18 @@
 - Added startup history for Sorrows, White Legs and Dead Horses
 - Added startup history for Enclave
 
+- Renamed Research Capacity to Research Progress
+- Province Status events now happen invisibly
+- Added is_mtth_scaled_to_size to most province events
+- Increased province_conflicts events mtth to 2000
+- Added missing static_modifiers that were causing CTDs
+- Added Governmental Policy government buttons (Iqta)
+- Added New Vegas government buttons (Mamluks)
+- Added Brotherhood Chapter government buttons (Feudal Theocracy)
+- Added Tribe government buttons (Tribal Allegiance)
+- Added Democratic Spirit to Federal Republic
+- Removed Data access mechanic
+- Altered the Institution spread rules
+- Altered some alert icons to be more general (i.e. Cults available icon isn't the fetishist icon)
+- Added Attitudes (Deities) to the Tribalism religions
+- Added Cults to the Animism and Totemism religions

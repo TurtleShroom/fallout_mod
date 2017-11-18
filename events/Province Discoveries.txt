@@ -7,8 +7,6 @@ province_event = {
 	desc = province_discoveries.1.desc
     picture = ARMY_BUNKER_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-    
     trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
         OR = {
@@ -17,6 +15,8 @@ province_event = {
         }
         NOT = { has_province_modifier = bunker_outpost }
     }
+    
+    is_mtth_scaled_to_size = 1
     
 	mean_time_to_happen = {
 		months = 1200
@@ -74,8 +74,6 @@ province_event = {
 	desc = province_discoveries.2.desc
     picture = FARMSTEAD_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
     trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
         OR = {
@@ -90,6 +88,8 @@ province_event = {
             }
         }
     }
+    
+    is_mtth_scaled_to_size = 1
     
 	mean_time_to_happen = {
 		months = 1200
@@ -166,8 +166,6 @@ province_event = {
 	desc = province_discoveries.3.desc
     picture = VAULT_LASERS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -183,6 +181,8 @@ province_event = {
         }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -245,8 +245,6 @@ province_event = {
 	desc = province_discoveries.4.desc
     picture = ARMY_STOREROOM_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -262,6 +260,8 @@ province_event = {
         }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -322,9 +322,7 @@ province_event = {
 	title = province_discoveries.5.title
 	desc = province_discoveries.5.desc
     picture = ENCAMPMENT_eventPicture
-	
-	#is_mtth_scaled_to_size = 1
-	
+
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -336,6 +334,8 @@ province_event = {
         NOT = { has_province_modifier = illicit_profits }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -410,8 +410,6 @@ province_event = {
 	desc = province_discoveries.6.desc
     picture = INS_CONSOLE_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -427,6 +425,8 @@ province_event = {
         }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -499,9 +499,7 @@ province_event = {
 	title = province_discoveries.7.title
 	desc = province_discoveries.7.desc
     picture = PRISONERS_eventPicture
-	
-	#is_mtth_scaled_to_size = 1
-	
+
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -513,6 +511,8 @@ province_event = {
         NOT = { has_province_modifier = state_sponsored_slavery }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -572,8 +572,6 @@ province_event = {
 	desc = province_discoveries.8.desc
     picture = FACTORY_RAINY_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -586,6 +584,8 @@ province_event = {
 		}
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -664,8 +664,6 @@ province_event = {
 	desc = province_discoveries.9.desc
     picture = WASTELAND_GOODSPRINGS_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -675,6 +673,8 @@ province_event = {
 		trade_goods = oil
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -753,8 +753,6 @@ province_event = {
 	desc = province_discoveries.10.desc
     picture = VAULT_SCANNER_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -770,6 +768,8 @@ province_event = {
         }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -876,8 +876,6 @@ province_event = {
 	desc = province_discoveries.11.desc
     picture = RIVER_RAINY_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -888,6 +886,8 @@ province_event = {
         NOT = { has_province_modifier = water_source }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -975,8 +975,6 @@ province_event = {
 	desc = province_discoveries.12.desc
     picture = WASTE_BY_WATER_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -987,6 +985,8 @@ province_event = {
         NOT = { has_province_modifier = water_source }
 	}
 
+    is_mtth_scaled_to_size = 1
+    
 	mean_time_to_happen = {
 		months = 1200
         
@@ -1074,8 +1074,6 @@ province_event = {
 	desc = province_discoveries.13.desc
     picture = GOV_RUINS_CLEAR_eventPicture
 	
-	#is_mtth_scaled_to_size = 1
-	
 	trigger = {
         owner = { NOT = { has_country_modifier = discovery_cooldown } }
 		OR = {
@@ -1100,6 +1098,8 @@ province_event = {
             }
         }
     }
+    
+    is_mtth_scaled_to_size = 1
     
 	mean_time_to_happen = {
 		months = 1200

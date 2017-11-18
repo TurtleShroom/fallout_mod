@@ -199,5 +199,14 @@
  focus_technology: "Research"
  desc_focus_technology: ""
  
- 
- 
+ # Attitudes
+ combative_attitude: "Combative"
+ combative_attitude_desc: ""
+ vengeful_attitude: "Vengeful"
+ vengeful_attitude_desc: ""
+ diplomatic_attitude: "Diplomatic"
+ diplomatic_attitude_desc: ""
+ defensive_attitude: "Defensive"
+ defensive_attitude_desc: ""
+ domineering_attitude: "Domineering"
+ domineering_attitude_desc: ""

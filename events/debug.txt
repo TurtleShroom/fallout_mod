@@ -11,6 +11,7 @@ country_event = {
 	option = {
 		name = debug.1.option.a
 
+        update_research_progress = yes
 	}
     
 }

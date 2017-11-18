@@ -7,6 +7,8 @@ province_event = {
 	desc = "province_status.1.desc"
 	picture = DIAMOND_CITY_eventPicture
     
+    hidden = yes
+    
 	trigger = { 
         NOT = { has_province_modifier = pf_town }
         NOT = { has_province_modifier = pf_city }
@@ -46,6 +48,8 @@ province_event = {
 	desc = "province_status.2.desc"
 	picture = ENCAMPMENT_eventPicture
     
+    hidden = yes
+    
 	trigger = { 
         has_province_modifier = pf_town
         OR = {
@@ -75,6 +79,8 @@ province_event = {
 	title = "province_status.3.title"
 	desc = "province_status.3.desc"
 	picture = DIAMOND_CITY_eventPicture
+    
+    hidden = yes
     
 	trigger = { 
         has_province_modifier = pf_town
@@ -122,6 +128,8 @@ province_event = {
 	desc = "province_status.4.desc"
 	picture = ENCAMPMENT_eventPicture
     
+    hidden = yes
+    
 	trigger = { 
         has_province_modifier = pf_city
         OR = {
@@ -151,6 +159,8 @@ province_event = {
 	title = "province_status.5.title"
 	desc = "province_status.5.desc"
 	picture = DIAMOND_CITY_eventPicture
+    
+    hidden = yes
     
 	trigger = { 
         has_province_modifier = pf_city

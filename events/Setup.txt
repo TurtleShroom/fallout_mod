@@ -32,8 +32,8 @@ country_event = {
         # Power system
         # set_global_flag = power_enabled
         
-        # Research Capacity system
-        set_global_flag = research_capacity_enabled
+        # Scientific Knowledge system
+        set_global_flag = scientific_knowledge_enabled
 
         if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - Global Setup" }
     }  

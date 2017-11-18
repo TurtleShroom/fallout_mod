@@ -461,7 +461,9 @@ estate_scientists =
 		
 		effect = {
             if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used RECRUIT_SCIENTIST scientists estate action" }
-            add_scientific_capacity_5 = yes
+           
+            custom_tooltip = gain_research_progress_5_tt
+            gain_research_progress = { AMOUNT = 5 }
             
 			if = {
 				limit = {
@@ -528,7 +530,9 @@ estate_scientists =
 		
 		effect = {
             if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used RECRUIT_RESEARCHER scientists estate action" }
-            add_scientific_capacity_5 = yes
+            
+            custom_tooltip = gain_research_progress_5_tt
+            gain_research_progress = { AMOUNT = 5 }
             
 			if = {
 				limit = {
@@ -602,7 +606,8 @@ estate_scientists =
                 duration = 3650
             }
             
-            add_scientific_capacity_5 = yes
+            custom_tooltip = gain_research_progress_10_tt
+            gain_research_progress = { AMOUNT = 10 }
             
             add_estate_influence_modifier = {
 				estate = estate_scientists
@@ -652,11 +657,12 @@ estate_scientists =
 		
 		effect = {
             if = { limit = { has_global_flag = enable_common_logging } log = "[Root.GetName] used ATTEMPT_EXPERIMENT scientists estate action" }
+            
 			set_country_flag = do_experiment
             custom_tooltip = tt_do_experiment
-            #country_event = { id = fallout_estates.12 }
-            
-            add_scientific_capacity_5 = yes
+
+            custom_tooltip = gain_research_progress_10_tt
+            gain_research_progress = { AMOUNT = 10 }
             
             add_estate_influence_modifier = {
 				estate = estate_scientists

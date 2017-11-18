@@ -1272,7 +1272,7 @@ guiTypes = {
 			{
 				name ="no_deity_icon"
 				spriteType = "GFX_icon_religion"
-				position = { x = 13 y = -51 }
+				position = { x = 13 y = -9999 }
 				Orientation = "UPPER_LEFT"
 			}
 			
@@ -1280,12 +1280,12 @@ guiTypes = {
 			{
 				name ="deity_icon"
 				spriteType = "GFX_hindu_deities_strip"
-				position = { x= 25 y = -41 }
+				position = { x= 10 y = -9999 }
 			}
 			
 			instantTextBoxType = {
 				name = "deity_name"
-				position = { x= 104 y = -46 }
+				position = { x= 30 y = -46 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "RV_NO_DEITY"	
@@ -1297,7 +1297,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "deity_effect"
-				position = { x = 78 y = -25 }
+				position = { x = 30 y = -25 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""	
@@ -1309,8 +1309,8 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "pick_deity"
-				position = { x=113 y = -17}
-				quadTextureSprite ="GFX_standard_button_71"
+				position = { x= 20 y = -17}
+				quadTextureSprite ="GFX_standard_button_224"
 				buttonText = "SELECT"
 				buttonFont = "vic_18"
 				Orientation = "LEFT"
@@ -1422,8 +1422,8 @@ guiTypes = {
 			guiButtonType = 
 			{
 				name ="papacy_icon"
-				quadTextureSprite = "GFX_frontend_button"
-				position = { x=90 y = -40 }
+				quadTextureSprite = "GFX_standard_button_224"
+				position = { x=45 y = -35 }
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -2207,7 +2207,7 @@ guiTypes = {
 		{
 			name ="deity_item_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= 5 y = -4 }
+			position = { x= 5 y = -9999 }
 		}
 		
 		instantTextBoxType = {
@@ -2224,11 +2224,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "deity_item_effect"
-			position = { x = 58 y = -2 }
+			position = { x = 50 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "DeityEffect"	
-			maxWidth = 256
+			maxWidth = 280
 			maxHeight = 40
 			Orientation = "UPPER_LEFT"
 			format = left

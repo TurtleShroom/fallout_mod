@@ -24,7 +24,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X10
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_oregon = {
@@ -52,7 +52,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X11
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_california = {
@@ -81,7 +81,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X12
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_nevada = {
@@ -109,7 +109,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X13
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_utah = {
@@ -137,7 +137,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X14
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_idaho = {
@@ -165,7 +165,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X15
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_montana = {
@@ -193,7 +193,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X16
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_wyoming = {
@@ -221,7 +221,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X17
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_baja_california = {
@@ -249,7 +249,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X18
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_arizona = {
@@ -278,7 +278,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X19
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_new_mexico = {
@@ -306,7 +306,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X20
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_colorado = {
@@ -334,7 +334,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X21
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_north_dakota = {
@@ -362,7 +362,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X22
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_south_dakota = {
@@ -390,7 +390,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X23
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_nebraska = {
@@ -418,7 +418,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X24
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_kansas = {
@@ -446,7 +446,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X25
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_missouri = {
@@ -474,7 +474,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X26
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_iowa = {
@@ -502,7 +502,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X27
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_kentucky = {
@@ -530,7 +530,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X28
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_west_virginia = {
@@ -558,7 +558,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X29
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_ohio = {
@@ -586,7 +586,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X30
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_indiana = {
@@ -614,7 +614,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X31
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_michigan = {
@@ -642,7 +642,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X32
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_minnesota = {
@@ -670,7 +670,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X33
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_wisconsin = {
@@ -698,7 +698,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X34
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_illinois = {
@@ -726,7 +726,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X35
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_oklahoma = {
@@ -754,7 +754,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X36
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_arkansas = {
@@ -782,7 +782,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X37
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_texas = {
@@ -810,7 +810,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X38
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_louisiana = {
@@ -838,7 +838,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X39
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_mississippi = {
@@ -866,7 +866,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X40
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_alabama = {
@@ -894,7 +894,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X41
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_tennessee = {
@@ -922,7 +922,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X42
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_florida = {
@@ -950,7 +950,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X43
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_georgia = {
@@ -978,7 +978,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X44
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_south_carolina = {
@@ -1006,7 +1006,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X45
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_north_carolina = {
@@ -1034,7 +1034,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X46
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_virginia = {
@@ -1062,7 +1062,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X47
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_new_york = {
@@ -1090,7 +1090,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X48
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_new_jersey = {
@@ -1118,7 +1118,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X49
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_pennsylvania = {
@@ -1146,7 +1146,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X50
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_the_capital_wasteland = {
@@ -1174,7 +1174,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X51
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
         
         ai_will_do = {
@@ -1206,7 +1206,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X52
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
         
         ai_will_do = {
@@ -1238,7 +1238,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X53
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_alberta = {
@@ -1266,7 +1266,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X54
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_saskatchewan = {
@@ -1294,7 +1294,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X55
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_manitoba = {
@@ -1322,7 +1322,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X56
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_ontario = {
@@ -1350,7 +1350,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X57
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_quebec = {
@@ -1378,7 +1378,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X58
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_newfoundland_and_labrador = {
@@ -1406,7 +1406,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X59
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_new_brunswick = {
@@ -1434,7 +1434,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X60
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
     form_nova_scotia = {
@@ -1462,7 +1462,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = X61
-			swap_free_idea_group = yes
+			#swap_free_idea_group = yes
 		}
 	}
 }

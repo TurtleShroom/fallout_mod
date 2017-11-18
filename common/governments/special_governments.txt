@@ -27,6 +27,10 @@ miltia_gov = {
     
     max_states = 5
 	
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			global_unrest = -2
@@ -70,6 +74,8 @@ federal_republic = {
     
     max_states = 15
 	
+    militarised_society = yes
+
 	rank = {
 		1 = {
 			global_tax_modifier = 0.1
@@ -158,6 +164,10 @@ mothership = {
     different_religion_acceptance = -200
     different_religion_group_acceptance = -200
 
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		3 = {
 			unjustified_demands = -0.5
@@ -172,6 +182,8 @@ mothership = {
 # Big MT
 #------------------------------------------------------------
 the_think_tank = {
+    monarchy = yes
+    
 	valid_for_new_country = no
 	allow_convert = no
 
@@ -182,12 +194,19 @@ the_think_tank = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	
+    queen = no
+    heir = no
+    
 	ai_will_do = {
 		factor = 0
 	}
 	ai_importance = 0
 
     max_states = 5
+    
+    government_abilities = {
+		iqta_mechanic
+	}
     
 	rank = {
 		1 = {
@@ -213,6 +232,8 @@ the_think_tank = {
 # New Vegas
 #------------------------------------------------------------
 new_vegas = {
+    monarchy = yes
+    
 	valid_for_new_country = no
 	allow_convert = no
 
@@ -222,6 +243,9 @@ new_vegas = {
 	
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+    
+    queen = no
+    heir = no
 	
 	ai_will_do = {
 		factor = 0
@@ -229,6 +253,10 @@ new_vegas = {
 	ai_importance = 0
 
     max_states = 5
+    
+    government_abilities = {
+		mamluk_mechanic
+	}
     
 	rank = {
 		1 = {
@@ -271,6 +299,10 @@ the_institute = {
 	ai_importance = 0
 
     max_states = 10
+    
+    government_abilities = {
+		iqta_mechanic
+	}
     
     faction = facilities
     faction = bioscience
@@ -323,6 +355,10 @@ enclave_gov = {
     
     max_states = 5
 	
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			technology_cost = -0.1
@@ -364,6 +400,10 @@ vault = {
     
     max_states = 5
 
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			global_tax_modifier = 0.10
@@ -399,7 +439,11 @@ rodent_scourge = {
 	ai_importance = 100
 
     max_states = 5
-     
+    
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			land_forcelimit_modifier = 0.15
@@ -443,6 +487,10 @@ dictatorship = {
 	
     max_states = 5
     
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			years_of_nationalism = -5
@@ -481,6 +529,10 @@ commune = {
     
     max_states = 5
 	
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			development_cost = -0.1
@@ -519,6 +571,10 @@ theocracy = {
 	
     max_states = 5
     
+    government_abilities = {
+		iqta_mechanic
+	}
+    
 	rank = {
 		1 = {
 			tolerance_own = 1
@@ -533,5 +589,19 @@ theocracy = {
             global_unrest = -3
             global_autonomy = -0.05	
 		}
+	}
+}
+
+all_mechanics = {
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+
+	government_abilities = {
+		russian_mechanic
+		feudal_theocracy_mechanic
+		tribal_federation_mechanic
+		mamluk_mechanic
+		iqta_mechanic
 	}
 }

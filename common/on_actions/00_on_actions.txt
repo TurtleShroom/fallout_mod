@@ -6,11 +6,10 @@ on_startup = {
         setup.3                     # Designate 'processor' country
         
         discovery.1                 # Discovery event
-        research_capacity.1         # Default tech levels
+        scientific_knowledge.1      # Default tech levels
         slavery.1                   # Setup slavery
         cults.100                   # Default cults
         immortality.1               # Setup immortal rulers
-        fallout_institutions.100    # Setup Data access
         caravans.1                  # Initial placement
         
         # DLC-checks
@@ -604,25 +603,24 @@ on_bi_yearly_pulse = {
     if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_bi_yearly_pulse" }
     
     random_events = {
-        10 = research_capacity.10
-        10 = research_capacity.11
-        10 = research_capacity.12
-        10 = research_capacity.13
-        10 = research_capacity.14
-        10 = research_capacity.15
+        10 = scientific_knowledge.10
+        10 = scientific_knowledge.11
+        10 = scientific_knowledge.12
+        10 = scientific_knowledge.13
+        10 = scientific_knowledge.14
+        10 = scientific_knowledge.15
         1200 = 0
         # 5% any event will be picked per pulse
     }
     
-    # Convert imperial_authority_value into research_capacity var
-    update_research_capacity = yes
+    update_research_progress = yes
     
     # Sanity checks - if either var is below 0, set to 0
     if = {
         limit = {
-            NOT = { check_variable = { which = scientific_capacity value = 0 } }
+            NOT = { check_variable = { which = research_progress value = 0 } }
         }
-        set_variable = { which = scientific_capacity value = 0 }
+        set_variable = { which = research_progress value = 0 }
     }
     
     if = {
@@ -640,7 +638,7 @@ on_bi_yearly_pulse_2 = {
 
 on_bi_yearly_pulse_3 = {
     if = { limit = { has_global_flag = enable_onaction_logging } log = "ON_ACTIONS - [Root.GetName] - on_bi_yearly_pulse_3" }
-
+    
     random_events = {
         10 = fallout_institutions.1
         10 = fallout_institutions.2

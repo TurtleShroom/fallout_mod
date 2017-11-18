@@ -333,7 +333,7 @@ guiTypes = {
 			{
 				name ="prussian_progress"
 				spriteType = "GFX_prussian_progressbar"
-				position = { x= 48 y = 9 }
+				position = { x= 28 y = 9 }
 				Orientation = "UPPER_LEFT"
 			}
 
@@ -341,13 +341,13 @@ guiTypes = {
 			{
 				name ="prussian_progress_frame"
 				spriteType = "GFX_prussian_bar_frame"
-				position = { x= 30 y = -47 }
+				position = { x= 10 y = -47 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextBoxType = {
 				name = "prussian_change"
-				position = { x= 163 y =  12 }
+				position = { x= 145 y =  12 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""	
@@ -360,10 +360,10 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="prussia_boost"
-				quadTextureSprite= "GFX_militarization_increase_button"
-				position = { x= -10 y = -15 }
-#				buttonText = "PRUS_BOOST_TXT"
-#				buttonFont = "vic_18"		
+				quadTextureSprite= "GFX_standard_button_224"
+				position = { x= 60 y = -30 }
+                buttonText = "Support"
+                buttonFont = "vic_18"		
 			}
 
 			
@@ -723,7 +723,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "RUSABIL_SUDEBNIK_button"
-			position = { x = 22 y = 15 }
+			position = { x = 22 y = 10 }
 			quadTextureSprite ="GFX_russian_ability_ADM"	
 			tooltip = ""
 			tooltipText =""
@@ -735,7 +735,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "RUSABIL_OPRICHNINA_button"
-			position = { x = 140 y = 15 }
+			position = { x = 140 y = 10 }
 			quadTextureSprite ="GFX_russian_ability_DIP"	
 			tooltip = ""
 			tooltipText =""
@@ -747,7 +747,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "RUSABIL_STRELTSY_button"
-			position = { x = 258 y = 15 }
+			position = { x = 258 y = 10 }
 			quadTextureSprite ="GFX_russian_ability_MIL"	
 			tooltip = ""
 			tooltipText =""
@@ -818,13 +818,13 @@ guiTypes = {
 		iconType = {
 			name ="mamluk_mechanic_bg"
 			spriteType = "GFX_mamluk_mechanic_bg"
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = -9999 }
 			Orientation = "UPPER_LEFT"
 		}			
 		
 		guiButtonType = {
 			name = "promote_culture_in_government_button"
-			position = { x = 32 y = -4 }
+			position = { x = 32 y = 10 }
 			quadTextureSprite ="GFX_promote_culture_in_government_button"	
 			tooltip = ""
 			tooltipText =""
@@ -836,7 +836,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "sell_off_culture_slaves_button"
-			position = { x = 142 y = -4 }
+			position = { x = 142 y = 10 }
 			quadTextureSprite ="GFX_sell_off_culture_slaves_button"	
 			tooltip = ""
 			tooltipText =""
@@ -848,7 +848,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "recruit_from_culture_lands_button"
-			position = { x = 252 y = -4 }
+			position = { x = 252 y = 10 }
 			quadTextureSprite ="GFX_recruit_from_culture_lands_button"	
 			tooltip = ""
 			tooltipText =""
@@ -919,13 +919,13 @@ guiTypes = {
 		iconType = {
 			name ="feudal_theocracy_bg"
 			spriteType = "GFX_feudal_theocracy_bg"
-			position = { x = 6 y = 0 }
+			position = { x = 6 y = -9999 }
 			Orientation = "UPPER_LEFT"
 		}		
 
 		guiButtonType = {
 			name = "seize_clerical_holdings_button"
-			position = { x = 41 y = 0 }
+			position = { x = 41 y = 10 }
 			quadTextureSprite ="GFX_seize_clerical_holdings_button"	
 			tooltip = ""
 			tooltipText =""
@@ -937,7 +937,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "invite_minorities_button"
-			position = { x = 133 y = 0 }
+			position = { x = 133 y = 10 }
 			quadTextureSprite ="GFX_invite_minorities_button"	
 			tooltip = ""
 			tooltipText =""
@@ -949,7 +949,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "sanction_holy_war_button"
-			position = { x = 225 y = 0 }
+			position = { x = 225 y = 10 }
 			quadTextureSprite ="GFX_sanction_holy_war_button"	
 			tooltip = ""
 			tooltipText =""
@@ -975,13 +975,13 @@ guiTypes = {
 		iconType = {
 			name ="tribal_federation_bg"
 			spriteType = "GFX_tribal_federation_bg"
-			position = { x = 16 y = -5 }
+			position = { x = 16 y = -9999 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		guiButtonType = {
 			name = "enlist_general_button"
-			position = { x = 41 y = -3 }
+			position = { x = 41 y = 10 }
 			quadTextureSprite ="GFX_enlist_general_button"	
 			tooltip = ""
 			tooltipText =""
@@ -993,7 +993,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "train_horsemanship_button"
-			position = { x = 138 y = -3 }
+			position = { x = 138 y = 10 }
 			quadTextureSprite ="GFX_train_horsemanship_button"	
 			tooltip = ""
 			tooltipText =""
@@ -1005,7 +1005,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "conscript_from_tribes_button"
-			position = { x = 235 y = -3 }
+			position = { x = 235 y = 10 }
 			quadTextureSprite ="GFX_conscript_from_tribes_button"	
 			tooltip = ""
 			tooltipText =""
@@ -1046,13 +1046,13 @@ guiTypes = {
 		iconType = {
 			name ="iqta_bg"
 			spriteType = "GFX_iqta_bg"
-			position = { x = 14 y = 0 }
+			position = { x = 14 y = -9999 }
 			Orientation = "UPPER_LEFT"
 		}			
 		
 		guiButtonType = {
 			name = "efficient_tax_farming_button"
-			position = { x = 47 y = 4 }
+			position = { x = 47 y = 10 }
 			quadTextureSprite ="GFX_efficient_tax_farming_button"	
 			tooltip = ""
 			tooltipText =""
@@ -1064,7 +1064,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "land_acquisition_button"
-			position = { x = 134 y = 4 }
+			position = { x = 134 y = 10 }
 			quadTextureSprite ="GFX_land_acquisition_button"	
 			tooltip = ""
 			tooltipText =""
@@ -1076,7 +1076,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "lenient_taxation_button"
-			position = { x = 221 y = 4 }
+			position = { x = 221 y = 10 }
 			quadTextureSprite ="GFX_lenient_taxation_button"	
 			tooltip = ""
 			tooltipText =""

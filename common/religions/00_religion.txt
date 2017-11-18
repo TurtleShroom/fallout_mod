@@ -1,37 +1,32 @@
 #----------------------------------------------------------------------
 # Religions
 #----------------------------------------------------------------------
-# Secular:          papacy (State Decrees)
-# Creatorism:       has_patriarchs
-# Cult of Mars:     uses_piety
-# Hubology:         fervor
+# Postwar
+    # secular:          papacy
+    # creatorism:       orthodox_icons
+    # cult_of_mars:     piety
+    # hubology:         fervor
+    # robotics:         fervor
+    
+# Atom
+    # atomic_worship:   uses_church_power
 
-# Atomic Worship:   uses_church_power
+# Pagan
+    # tribalism:        personal_deity
+    # ghoul_tribalism:  personal_deity
+    # mutant_tribalism: personal_deity
+    # swamp_tribalism:  personal_deity
+    # zion_tribal:      can_have_secondary_religion
+    # animism:          fetishist_cult
+    # fetishism:        fetishist_cult
+    # totemism:         fetishist_cult
 
-# Zion Tribalism:   can_have_secondary_religion
-# Animism:          fervor
-# Fetishism:        fetishist_cult
-# Totemist:         fervor
-# Tengri:           fervor
-# Norse:            personal_deity
-
-# Catholic:         fervor
-# Baptist:          fervor
-# Mormon:           fervor
-# Orthodox:         fervor
-# Coptic:           fervor
-# Sunni:            fervor
-# Shia:             fervor
-# Ibadi:            fervor
-# Theravada:        fervor
-# Vajrayana:        fervor
-# Mahayana:         fervor
-# Taoism:           fervor
-# Shinto:           fervor
-# Hinduism:         personal_deity
-# Sikhism:          fervor
-# Jewish:           fervor
-# Zoroastrian:      fervor
+# Unused:
+    # holy_sites = { } / blessings = { }
+    # uses_karma = yes
+    # uses_harmony = yes
+    # uses_isolationism = yes
+    # personal_deity = yes
 
 religion_group_postwar = {
 	defender_of_faith = yes
@@ -750,8 +745,8 @@ religion_group_pagan = {
 
 		country = { 
 			global_manpower_modifier = 0.1
-            tolerance_heretic = -3
-            tolerance_heathen = -3
+            tolerance_heretic = -1
+            tolerance_heathen = -1
 		}
 		province = {
 			local_missionary_strength = 0.03
@@ -760,7 +755,7 @@ religion_group_pagan = {
 			global_manpower_modifier = 0.1
 		}
         
-        fetishist_cult = yes
+        personal_deity = yes
 	}
     
     # For raider ghouls and feral ghouls. Peaceful ghoul states should use Secular
@@ -770,8 +765,8 @@ religion_group_pagan = {
 
 		country = { 
 			land_attrition = -0.1
-            tolerance_heretic = -3
-            tolerance_heathen = -3
+            tolerance_heretic = -1
+            tolerance_heathen = -1
 		}
 		province = {
 			local_missionary_strength = 0.03
@@ -780,7 +775,7 @@ religion_group_pagan = {
 			land_attrition = -0.1
 		}
         
-        fetishist_cult = yes
+        personal_deity = yes
 	}
     
     # For Super mutants and other mutant states
@@ -800,7 +795,7 @@ religion_group_pagan = {
 			shock_damage = 0.05
 		}
         
-        fetishist_cult = yes
+        personal_deity = yes
 	}
     
     # For swamp people states
@@ -819,7 +814,7 @@ religion_group_pagan = {
 			global_regiment_recruit_speed = -0.1
 		}
         
-        fetishist_cult = yes
+        personal_deity = yes
 	}
     
     zion_tribal = {
@@ -859,7 +854,7 @@ religion_group_pagan = {
 			tolerance_heretic = -2
 		}
         
-        fervor = yes
+        fetishist_cult = yes
 	}
     
     # 21
@@ -899,7 +894,7 @@ religion_group_pagan = {
             yearly_corruption = -0.02
 		}
         
-        fervor = yes
+        fetishist_cult = yes
 	}
     
     tengri = {

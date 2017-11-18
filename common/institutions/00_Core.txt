@@ -37,173 +37,26 @@ bottlecaps = {
 	}
 
 	embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    bottlecaps = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_bottlecaps
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     bottlecaps = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    bottlecaps = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    bottlecaps = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = bottlecaps
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = bottlecaps
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = bottlecaps
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = bottlecaps
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = bottlecaps
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = bottlecaps
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-        
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -223,9 +76,7 @@ bottlecaps = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes
@@ -299,172 +150,26 @@ robco = {
 	}
 	
     embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    robco = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_robco
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     robco = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    robco = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    robco = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = robco
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = robco
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = robco
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = robco
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = robco
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = robco
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-        
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -484,9 +189,7 @@ robco = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes
@@ -560,172 +263,26 @@ repconn = {
 	}
 	
     embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    repconn = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_repconn
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     repconn = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    repconn = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    repconn = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = repconn
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = repconn
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = repconn
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = repconn
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = repconn
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = repconn
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -745,9 +302,7 @@ repconn = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes
@@ -815,172 +370,26 @@ fev = {
 	}
 	
 	embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    fev = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_fev
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     fev = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    fev = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    fev = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = fev
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = fev
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = fev
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = fev
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = fev
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = fev
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -1000,9 +409,7 @@ fev = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes
@@ -1071,172 +478,26 @@ power_armor = {
 	}
 	
     embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    power_armor = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_power_armor
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     power_armor = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    power_armor = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    power_armor = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = power_armor
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = power_armor
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = power_armor
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = power_armor
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = power_armor
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = power_armor
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -1256,9 +517,7 @@ power_armor = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes
@@ -1326,172 +585,26 @@ vault_tec = {
 	}
 	
     embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    vault_tec = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_vault_tec
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     vault_tec = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    vault_tec = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    vault_tec = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = vault_tec
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = vault_tec
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = vault_tec
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = vault_tec
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = vault_tec
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = vault_tec
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -1511,9 +624,7 @@ vault_tec = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes
@@ -1582,172 +693,26 @@ geck = {
 	}
 	
     embracement_speed = {
-        #------------
-        # Borders
-        #------------
-        # Closed Access
+        # --------- Base
         modifier = {
-			factor = 0.01
+			factor = 0.1
 			scale = yes
             
             potential = {
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
+                    geck = 100
                 }
             }
             
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_closed_access
+            custom_trigger_tooltip = {
+				tooltip = tt_base_geck
                 any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_closed
-                    }
                     geck = 100
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
                 }
             }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_restricted_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_restricted
-                    }
-                    geck = 100
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_border_relations_open_access
-                any_friendly_coast_border_province = {
-                    owner = {
-                        has_country_modifier = institution_access_open
-                    }
-                    geck = 100
-                }
-			}
 		}
         
-        #------------
-        # High Relations
-        #------------
-        # Closed Access
-        modifier = {
-			factor = 0.01
-			scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = geck
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_closed_access
-                
-                any_known_country = {
-                    has_institution = geck
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_closed
-                }
-			}
-		}
-        # Restricted Access
-        modifier = {
-			factor = 0.05
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = geck
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_restricted_access
-                
-                any_known_country = {
-                    has_institution = geck
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_restricted
-                }
-			}
-		}
-        # Open Access
-        modifier = {
-			factor = 0.2
-            scale = yes
-            
-            potential = {
-                any_known_country = {
-                    has_institution = geck
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-            }
-            
-			custom_trigger_tooltip = {
-				tooltip = tt_high_relations_open_access
-                
-                any_known_country = {
-                    has_institution = geck
-                    has_opinion = {
-                        who = PREV
-                        value = 50
-                    }
-                    has_country_modifier = institution_access_open
-                }
-			}
-		}
-
-        #------------
-        # Presence
-        #------------
+        # --------- Within Country
         modifier = {
 			factor = 1
 			potential = {
@@ -1767,9 +732,7 @@ geck = {
 			}
 		}
         
-        #------------
-        # Embracement
-        #------------
+        # --------- Embraced
 		modifier = {
 			factor = 2
 			scale = yes

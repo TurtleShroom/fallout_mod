@@ -142,6 +142,8 @@ technology = {
 	# Tech 10
 	year = 2410
     
+    combat_width = 5
+    
     # Infantry
     enable = wastelander_trooper
     enable = raider_psycho
@@ -215,9 +217,7 @@ technology = {
 technology = {
 	# Tech 15
 	year = 2475
-    
-    combat_width 		= 	2
-    
+
     artillery_shock  	= 	0.25
     land_morale 		= 	0.5
     supply_limit 		= 	0.25
@@ -260,6 +260,8 @@ technology = {
 	# Tech 20
 	year = 2540
 
+    combat_width = 5
+    
     # Infantry
     enable = wastelander_commando
     enable = raider_veteran
@@ -342,8 +344,6 @@ technology = {
     
     fm_correctional_facility = yes
     
-    combat_width 		= 	2
-    
     artillery_shock  	= 	0.25
     infantry_shock 		= 	0.5
 }
@@ -383,7 +383,7 @@ technology = {
 	# Tech 30
 	year = 2670
  
-    combat_width 		= 	2
+    combat_width = 5
     
     infantry_fire		= 	0.5
     land_morale 		= 	0.5
@@ -459,8 +459,7 @@ technology = {
 technology = {
 	# Tech 40
 	year = 2800
-    
-    combat_width 		= 	2
+
     infantry_fire		= 	0.5
 }
 technology = {
@@ -493,20 +492,20 @@ technology = {
 technology = {
 	# Tech 45
 	year = 2865
-    
+
     artillery_fire 		=	0.5
 }
 technology = {
 	# Tech 46
 	year = 2878
     
-    combat_width 		= 	2
+    artillery_fire 		=	1
 }
 technology = {
 	# Tech 47
 	year = 2891
     
-    artillery_fire 		=	1
+   
     military_tactics 	= 	0.5
 }
 technology = {
