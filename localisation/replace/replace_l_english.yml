@@ -71,7 +71,7 @@
  RUSABIL_STRELTSY:0 "Muster Legionaries"
  RUSABIL_SUDEBNIK_Q:0 "This will impact Autonomy by $CHANGE|G$ in all our Provinces."
  RUSABIL_OPRICHNINA_Q:0 "This will impact progress for all rebel factions by $CHANGE$."
- RUSABIL_STRELTSY_Q:0 "This will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Streltsy Regiments in our capital."
+ RUSABIL_STRELTSY_Q:0 "This will impact war exhaustion by $CHANGE$ and raise $UNITS|Y$ Veteran Legionary Regiments in our capital."
  RUSABIL_NOT_ENOUGH:0 "You need $NEED|Y$ power gathered to '$NAME|Y$' but you have only gathered $CURR|Y$."
  RUSABIL_NOT_AUTONOMY:0 "There are no provinces that has at least $VAL|Y$ autonomy that can be reduced by '$NAME|Y$'."
  RUSABIL_DO_IT_SUDEBNIK:0 "By using $VAL|Y$ gathered power for '$NAME|Y$', we will impact Autonomy by $CHANGE|G$ in all our Province(s).\nThere are $PROV|Y$ Province(s) that will be affected."
@@ -108,12 +108,12 @@
  recruit_from_culture_lands:0 "Conscript Tribals"
  recruit_from_culture_lands_desc:0 "You will get $AMOUNT|Y$ manpower, from your $CULTURE|Y$ Culture provinces.\n"
  
- mamluk_adm_power:1 "Administrative Progress"
- mamluk_dip_power:1 "Diplomatic Progress"
- mamluk_mil_power:1 "Military Progress"
+ mamluk_adm_power: "Administrative Progress"
+ mamluk_dip_power: "Diplomatic Progress"
+ mamluk_mil_power: "Military Progress"
  
- promote_culture_in_government_modifier:0 "Empower Securitrons"
- desc_promote_culture_in_government_modifier:0 "Mr. House has chosen to divert some of his stored power into empowering his Securitrons. This greatly improves their killing effectiveness, although empowerment cannot be sustained for long."
+ promote_culture_in_government_modifier: "Empower Securitrons"
+ desc_promote_culture_in_government_modifier: "Mr. House has chosen to divert some of his stored power into empowering his Securitrons. This greatly improves their killing effectiveness, although empowerment cannot be sustained for long."
  
  # Feudal Theocracy (BoS Order)
  SANCTION_HOLY_WAR_NO_PROVINCES:0 "You already have a Claim or a Core on all valid Provinces.\n"

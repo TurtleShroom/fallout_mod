@@ -16,17 +16,17 @@ NDefines.NCountry.TECH_TIME_COST = 0.3		                -- tech grow with 20% co
 NDefines.NCountry.TECH_AHEAD_OF_TIME = 0.1		            -- per year ahead.
 NDefines.NCountry.PS_ESTABLISH_SIBERIAN_FRONTIER = 50
 NDefines.NCountry.PS_FACTION_BOOST = 30 -- 10
-
--- NDefines.NEconomy.MAX_BUILDING_SLOTS = 12
--- NDefines.NEconomy.EDICTS_COST_INCREASE = 1.0 
-
 NDefines.NDiplomacy.ALLOW_ESTATE_AND_PARLIAMENT_SEAT_IN_PROVINCE = 1
 NDefines.NDiplomacy.PARLIAMENT_BACKING_PERCENTAGE = 25
--- NDefines.NDiplomacy.PARLIAMENT_ISSUE_DURATION = 1
--- NDefines.NDiplomacy.PARLIAMENT_DEBATE_DURATION = 1
--- NDefines.NDiplomacy.NUM_PARLIAMENT_ISSUES = 5
 NDefines.NDiplomacy.PARLIAMENT_PRESTIGE_HIT = 0
--- NDefines.NDiplomacy.PARLIAMENT_CHANCE_OF_DECISION = 10
+NDefines.NCountry.SUBJECT_MAX_RANK = 2
+NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_2 = 25			-- Prestige gained on upgrading to government rank 2
+NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25			-- Prestige gained on upgrading to government rank 3
+NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 25			-- Required prestige to to upgrade to government rank 2
+NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_3 = 25			-- Required prestige to to upgrade to government rank 3
+NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 300		-- Need at least this much development to upgrade to government rank 2
+NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 1000		-- Need at least this much development to upgrade to government rank 3
+NDefines.NCountry.MAX_GOV_RANK = 3		
 
 --------------------------------
 -- AI
@@ -56,29 +56,59 @@ NDefines.NCountry.CORRUPTION_FROM_BANNERS = 5
 --------------------------------
 -- GOVERNMENT
 --------------------------------
-NDefines.NCountry.SUBJECT_MAX_RANK = 2
-NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_2 = 25			-- Prestige gained on upgrading to government rank 2
-NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25			-- Prestige gained on upgrading to government rank 3
-NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 25			-- Required prestige to to upgrade to government rank 2
-NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_3 = 25			-- Required prestige to to upgrade to government rank 3
-NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 300		-- Need at least this much development to upgrade to government rank 2
-NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 1000		-- Need at least this much development to upgrade to government rank 3
-NDefines.NCountry.MAX_GOV_RANK = 3		
-
 NDefines.NGovernment.RUSSIAN_ABILITY_COST = 100
 NDefines.NGovernment.RUSSIAN_ABILITY_POOL_SIZE = 150
 NDefines.NGovernment.RUSSIAN_ABILITY_BASE_GAIN = 3
+
 NDefines.NGovernment.RUSSIAN_ABILITY_SUBEDNIK_MIN_AUTONOMY = 10
 NDefines.NGovernment.RUSSIAN_ABILITY_SUBEDNIK_AUTONOMY_CHANGE = -10
 NDefines.NGovernment.RUSSIAN_ABILITY_OPRICHNINA_THRESHOLD = 0.3
-NDefines.NGovernment.RUSSIAN_ABILITY_OPRICHNINA_AI_THRESHOLD = 0.85 -- AI will use ability when revolt risk is 90%, or when they have full power
-NDefines.NGovernment.RUSSIAN_ABILITY_OPRICHNINA_CHANGE = -0.3
+NDefines.NGovernment.RUSSIAN_ABILITY_OPRICHNINA_AI_THRESHOLD = 0.85
+NDefines.NGovernment.RUSSIAN_ABILITY_OPRICHNINA_CHANGE = -0.5
 NDefines.NGovernment.RUSSIAN_ABILITY_STRELTSY_WE_CHANGE = -2
-NDefines.NGovernment.RUSSIAN_ABILITY_STRELTSY_SPAWN_SIZE = 0.2
+NDefines.NGovernment.RUSSIAN_ABILITY_STRELTSY_SPAWN_SIZE = 0.5
+
+NDefines.NGovernment.IQTA_POLICY_COOLDOWN_YEARS = 20
+NDefines.NGovernment.EFFICIENT_FARMING_DUCAT_MULTIPLIER = 2
+NDefines.NGovernment.LAND_AQUISITION_MANPOWER_MULTIPLIER = 0.05
+
+NDefines.NGovernment.SEIZE_CLERICAL_HOLDINGS_COST = 100
+NDefines.NGovernment.INVITE_MINORITIES_COST = 100
+NDefines.NGovernment.SANCTION_HOLY_WAR_COST = 100
+NDefines.NGovernment.FEUDAL_THEOCRACY_INTERACTION_COOLDOWN_YEARS = 5
+NDefines.NGovernment.SANCTION_HOLY_WAR_LIST_SIZE = 7
+NDefines.NGovernment.INVITE_MINORITIES_GAIN = 1
+
+NDefines.NGovernment.MAMLUK_ABILITY_POOL_SIZE = 150
+NDefines.NGovernment.MAMLUK_ABILITY_COST = 100
+NDefines.NGovernment.MAMLUK_RECRUIT_MANPOWER_MULTIPLIER = 100
+NDefines.NGovernment.MAMLUK_SELL_SLAVES_DUCATS_MULTIPLIER = 10
+NDefines.NGovernment.PROMOTE_MAMLUK_CULTURE_DURATION_YEARS = 1
+
+NDefines.NGovernment.TRAIN_HORSEMANSHIP_DURATION_YEARS = 5
+NDefines.NGovernment.CONSCRIPT_FROM_TRIBES_AMOUNT = 5
+NDefines.NGovernment.CONSCRIPT_FROM_TRIBES_TIME = 0.25
+NDefines.NGovernment.TRIBAL_ALLEGIANCE_MAX = 100
+NDefines.NGovernment.TRIBAL_ALLEGIANCE_HUMILIATE = 30.0
+NDefines.NGovernment.TRIBAL_FEDERATION_ABILITY_COST = 50
+NDefines.NGovernment.ENLIST_GENERAL_TRADITION = 50
 
 --------------------------------
 -- RELIGION
 --------------------------------
+-- Piety
+NDefines.NReligion.PIETY_CORRUPTION = -2
+NDefines.NReligion.PIETY_MANPOWER = 2.0
+NDefines.NReligion.PIETY_COST = 0.5
+NDefines.NReligion.PIETY_ABS_THRESHOLD = 0.75
+NDefines.NReligion.PIETY_ACTION_COOLDOWN = 5
+
+-- Schools
+NDefines.NReligion.NOT_SAME_MUSLIM_SCHOOL_ALLIANCE_ACCEPTANCE = 15
+NDefines.NReligion.NOT_SAME_MUSLIM_SCHOOL_ROYAL_MARRIAGE_ACCEPTANCE = 15
+NDefines.NReligion.SAME_MUSLIM_SCHOOL_ALLIANCE_ACCEPTANCE = 15
+NDefines.NReligion.SAME_MUSLIM_SCHOOL_ROYAL_MARRIAGE_ACCEPTANCE = 15
+
 -- Orthodox Icons ()
 NDefines.NReligion.CONSECRATE_PATRIACH_AUTHORITY_BOOST = 0.1   --5% or so
 NDefines.NReligion.CONSECRATE_PATRIARCH_THRESHOLD = 10          --in development
