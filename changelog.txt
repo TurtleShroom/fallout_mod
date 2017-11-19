@@ -1,40 +1,4 @@
-- Marschall Vorwärts's contributions
-- Removed Dutch mechanic from federal_republic
-- Removed Militarization mechanic from Orders
-- Changed Startup screen UI
-- Fixed bug with warlust.1
-- Changed Warlust modifiers
-- Changed Warlust UI icons
-- Made Nature, Ancestor and Technology cult unlocked by default
-- Added startup history for Caesar's Legion
-- Added startup history for NCR
-- Added startup history for West Coast Chapter
-- Added startup history for East Coast Chapter
-- Added startup history for New Reno
-- Added startup history for Shi
-- Added startup history for New Vegas
-- Added startup history for Vault City
-- Added startup history for Great Khans
-- Added startup history for Institute
-- Added startup history for Railroad
-- Added startup history for Minutemen
-- Added startup history for Powder Gangers
-- Added startup history for Think Tank and Forbidden Zone
-- Added startup history for Sorrows, White Legs and Dead Horses
-- Added startup history for Enclave
-
-- Renamed Research Capacity to Research Progress
-- Province Status events now happen invisibly
-- Added is_mtth_scaled_to_size to most province events
-- Increased province_conflicts events mtth to 2000
-- Added missing static_modifiers that were causing CTDs
-- Added Governmental Policy government buttons (Iqta)
-- Added New Vegas government buttons (Mamluks)
-- Added Brotherhood Chapter government buttons (Feudal Theocracy)
-- Added Tribe government buttons (Tribal Allegiance)
-- Added Democratic Spirit to Federal Republic
-- Removed Data access mechanic
-- Altered the Institution spread rules
-- Altered some alert icons to be more general (i.e. Cults available icon isn't the fetishist icon)
-- Added Attitudes (Deities) to the Tribalism religions
-- Added Cults to the Animism and Totemism religions
+- Adjusted Propagate Religion trading policy to 90/85 from 50/40
+- Fixed loc issue with new_vegas.7
+- Fixed bad positions for Steel Palace
+- Fixed the outliner being obscured

@@ -304,7 +304,7 @@ country_event = {
 	}
 	
 	option = {  #  The Lonesome Drifter
-		name = new_vegas.7.option.e
+		name = new_vegas.7.option.d
 		add_faction_influence = { faction = the_chairmen influence = 15 }
 		add_treasury = -75
 	}

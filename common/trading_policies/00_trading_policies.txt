@@ -87,7 +87,7 @@ propagate_religion =
 			has_trader = ROOT
 			trade_share = {
 				country = ROOT
-				share = 50
+				share = 90
 			}
 		}
 	}
@@ -98,7 +98,7 @@ propagate_religion =
 			has_trader = ROOT
 			trade_share = {
 				country = ROOT
-				share = 40
+				share = 85
 			}
 		}
 	}
