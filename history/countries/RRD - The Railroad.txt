@@ -4,6 +4,8 @@ religion = secular
 primary_culture = railroad
 capital = 3041
 
+historical_rival = INS
+
 2282.1.1 = {
 	monarch = {
 		name = "Desdemona"
@@ -12,4 +14,11 @@ capital = 3041
 		mil = 5
         birth_date = 2257.1.1
 	}
+    
+    hidden_effect = {
+        add_opinion = {
+            who = INS
+            modifier = ideological_enemies
+        }
+    }
 }

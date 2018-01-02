@@ -1,15 +1,2 @@
-- Updated for 1.24
-- Changed Military Camp to + 2 Land Forcelimit and -33% Recruitment Time
-- Increased Migration Cooldown to 20 years from 5
-- Removed Slavery variable system: now represented via the Slaver estate for any nation with the Slavery Permitted modifier.
-- Added Slaver estate.
-- Reworked all the estate interactions.
-- Changed estate modifier bonuses.
-- Changed estate territory demands.
-- Removed the Research Progress variable system.
-- Changed the advisortypes to new ones.
-- Added two advisors specific to nations that permit Slavery.
-- Removed advisor pictures.
-- Changed institutions to operate in a staggered manner. 
-- Added institution start events.
-- Adjusted modifiers throughout all files.
+- Fixed diplomacy setup
+- Changed diplomacy setup for the Institute

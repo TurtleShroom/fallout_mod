@@ -2,7 +2,7 @@
 -- Game
 --------------------------------
 NDefines.NGame.START_DATE = "2280.1.1"
-NDefines.NGame.END_DATE = "100000.1.1"
+NDefines.NGame.END_DATE = "9999.1.1"
 
 NDefines.NEngine.EVENT_PROCESS_OFFSET = 20
 NDefines.NCountry.MAX_CROWN_COLONIES = 9999

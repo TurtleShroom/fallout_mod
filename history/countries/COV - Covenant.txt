@@ -4,6 +4,8 @@ religion = secular
 primary_culture = covenant
 capital = 3060
 
+historical_rival = INS
+
 2282.1.1 = {
 	monarch = {
 		name = "Jacob"

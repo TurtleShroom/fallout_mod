@@ -567,7 +567,7 @@ tributary_state = {
 	}
 }
 
-# 
+# Sphere
 sphere = {
 	copy_from = default
 

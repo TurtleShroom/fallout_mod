@@ -429,22 +429,6 @@
  desc_attack_the_ncr_buff:0 "The NCR is a bureaucratic dystopia, a relic from before the Great War. It is up to us, Caesar's Legion to cleanse the wasteland of these profligates and establish a mighty empire in the guise of the Romans."
  
  #-------------------------------------------------------------------
- # Opinion Modifiers                    
- #-------------------------------------------------------------------
- 
- killed_ghouls:0 "Killed Ghouls"
- fm_plus_25:0 "Liked"
- fm_neg_25:0 "Disliked"
- fm_plus_50:0 "Adored"
- fm_neg_50:0 "Hated"
- fm_plus_75:0 "Beloved"
- fm_neg_75:0 "Reviled"
- fm_plus_100:0 "Loved"
- fm_neg_100:0 "Dispised"
- 
- good_relations:0 "Good Relations"
- 
- #-------------------------------------------------------------------
  # Province Modifiers                    
  #-------------------------------------------------------------------
  uni_the_hub:0 "The Hub"

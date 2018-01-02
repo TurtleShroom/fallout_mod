@@ -4,6 +4,8 @@ religion = tribalism
 primary_culture = forged
 capital = 550
 
+historical_rival = INS
+
 2282.1.1 = {
 	monarch = {
 		name = "Slag"

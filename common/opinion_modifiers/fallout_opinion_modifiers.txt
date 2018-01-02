@@ -1,3 +1,7 @@
+ideological_enemies = {
+	opinion = -400
+}
+
 friendly_to_ghouls = {
 	opinion = 25
 	max = 100

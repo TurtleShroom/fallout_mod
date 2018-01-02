@@ -4,6 +4,10 @@ religion = secular
 primary_culture = minutemen
 capital = 3027
 
+historical_rival = INS
+historical_friend = DIC
+historical_friend = RRD
+
 2282.1.1 = {
 	monarch = {
 		name = "Joe"

@@ -4,6 +4,9 @@ religion = secular
 primary_culture = boston_settlers
 capital = 548
 
+historical_rival = INS
+historical_friend = RRD
+
 2282.1.1 = {
 	monarch = {
 		name = "Anne Uwe"

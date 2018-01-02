@@ -4,6 +4,8 @@ religion = secular
 primary_culture = vault_dweller
 capital = 538
 
+historical_rival = INS
+
 2282.1.1 = {
 	monarch = {
 		name = "Gwen McNamara"
