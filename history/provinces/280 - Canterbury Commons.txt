@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 280  }
+# set_variable = { which = province_id value = 280  }
 
 owner = CCM
 controller = CCM

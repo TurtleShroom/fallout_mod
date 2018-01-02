@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 698  }
+# set_variable = { which = province_id value = 698  }
 
 is_city = no
 native_size = 7

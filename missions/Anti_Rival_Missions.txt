@@ -14,17 +14,21 @@ befriend_rival_rival = {
 		NOT = { has_opinion = { who = FROM value = 50 } }
 		has_opinion = { who = FROM value = 0 }
 		OR = {
-			NOT = { has_country_flag = befriended_rival_rival_mission }
-			had_country_flag = { flag = befriended_rival_rival_mission days = 3650 }
+			NOT = { 
+				FROM = { has_country_flag = befriended_rival_rival_mission }
+			}
+			FROM = {
+				had_country_flag = { flag = befriended_rival_rival_mission days = 3650 }
+			}
 		}
 		NOT = { war_with = FROM }
 		FROM = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			knows_country = ROOT
 		}
 	}
 	abort = {
-		FROM = { is_subject = yes }
+		FROM = { is_subject_other_than_tributary_trigger = yes }
 		OR = {
 			war_with = FROM
 			is_rival = FROM

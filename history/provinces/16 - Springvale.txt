@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 16  }
+# set_variable = { which = province_id value = 16  }
 
 owner = SPV
 controller = SPV

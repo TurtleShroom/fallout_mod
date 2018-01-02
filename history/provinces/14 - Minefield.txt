@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 14  }
+# set_variable = { which = province_id value = 14  }
 
 owner = BIG
 controller = BIG

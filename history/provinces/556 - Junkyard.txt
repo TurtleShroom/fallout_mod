@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 556  }
+# set_variable = { which = province_id value = 556  }
 
 owner = GEC
 controller = GEC

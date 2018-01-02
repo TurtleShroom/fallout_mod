@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 379  }
+# set_variable = { which = province_id value = 379  }
 
 # 379 - Lost Passage
 

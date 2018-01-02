@@ -101,7 +101,6 @@ can_exploit_production = {
 can_exploit_manpower = {
 }
 
-
 can_change_culture = {
 }
 

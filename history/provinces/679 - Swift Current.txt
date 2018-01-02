@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 679  }
+# set_variable = { which = province_id value = 679  }
 
 owner = REC
 controller = REC

@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2547  }
+# set_variable = { which = province_id value = 2547  }
 
 #938 - Pamlico
 

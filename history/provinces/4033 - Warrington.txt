@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 4033 }
+# set_variable = { which = province_id value = 4033 }
 owner = WTN
 controller = WTN
 add_core = WTN

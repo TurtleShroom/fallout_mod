@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2557  }
+# set_variable = { which = province_id value = 2557  }
 
 #885 - Teyas
 

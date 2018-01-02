@@ -719,18 +719,18 @@ country_event = {
 	}
 }
 
-# Faith
+# Slavers
 country_event = {
 	id = fallout_estates.30
 	title = fallout_estates.30.title
 	desc = fallout_estates.30.desc
-    picture = CHURCH_MISTY_INSIDE_eventPicture
+    picture = MILITARY_BUNKS_eventPicture
 	
 	major = yes
 	is_triggered_only = yes
 	
 	immediate = {
-		set_country_flag = in_faith_disaster
+		set_country_flag = in_slavers_disaster
         hidden_effect = {
             if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - fallout_estates.30" }
         }
@@ -741,7 +741,7 @@ country_event = {
         
 		add_stability = -1
         
-		custom_tooltip = TT_ESTATE_FAITH_DISASTER_EVENT
+		custom_tooltip = TT_ESTATE_SLAVERS_DISASTER_EVENT
 	}
 }
 
@@ -749,7 +749,7 @@ country_event = {
 	id = fallout_estates.31
 	title = fallout_estates.31.title
 	desc = fallout_estates.31.desc
-    picture = CHURCH_MISTY_INSIDE_eventPicture
+    picture = MILITARY_BUNKS_eventPicture
 	
 	major = yes
 	is_triggered_only = yes

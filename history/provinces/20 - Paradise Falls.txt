@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 20  }
+# set_variable = { which = province_id value = 20  }
 
 owner = PAF
 controller = PAF

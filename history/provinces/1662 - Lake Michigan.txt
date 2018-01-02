@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 1662  }
+# set_variable = { which = province_id value = 1662  }
 
 
 

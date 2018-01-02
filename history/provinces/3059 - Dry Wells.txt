@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 3059  }
+# set_variable = { which = province_id value = 3059  }
 
 #3059 - Dry Wells 
 

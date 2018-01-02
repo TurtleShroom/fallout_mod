@@ -1,5 +1,5 @@
 intelligence_implant = {
-    imperial_authority_value = 1
+    technology_cost = -0.05
 }
 
 charisma_implant = {

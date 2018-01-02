@@ -1,0 +1,149 @@
+dip_advisor_diplomatic_reputation = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	diplomatic_reputation = 1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_improve_relation_modifier = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	improve_relation_modifier = 0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_ae_impact = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	ae_impact = -0.1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_province_warscore_cost = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	province_warscore_cost = -0.15
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_global_unrest = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	global_unrest = -2
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_years_of_nationalism = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	years_of_nationalism = -5
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_spy_offence = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	spy_offence = 0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_global_colonial_growth = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	global_colonial_growth = 10
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_trade_range_modifier = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	trade_range_modifier = 0.33
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_caravan_power = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	caravan_power = 0.2
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

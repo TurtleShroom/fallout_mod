@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 3027  }
+# set_variable = { which = province_id value = 3027  }
 
 owner = MTM
 controller = MTM

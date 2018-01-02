@@ -236,6 +236,7 @@ kind_hearted_personality = {
 	}
 	
 	gift_chance = 65
+	alliance_acceptance = 10
 	
 	war_exhaustion = -0.05
 	nation_designer_cost = 10
@@ -2270,7 +2271,7 @@ drunkard_personality = {
 	chance = {
 	}
 	
-	random_troop_moves = yes
+	#random_troop_moves = yes Commenting out since often indistinguishable from a bug.
 	wants_loans = yes
 	
 	trade_efficiency = -0.10
@@ -2568,6 +2569,8 @@ cruel_personality = {
 		}
 	}
 	
+	wants_betray_allies = yes
+
 	razing = yes
 	lower_autonomy = yes
 	

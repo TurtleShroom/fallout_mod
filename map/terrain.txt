@@ -41,6 +41,7 @@ categories =  {
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 
+        type = marsh
 		sound_type = forest
 		color = { 76 112 105 }
         
@@ -56,6 +57,7 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.8
 
+        type = desert
 		color = { 220 210 0 }
         
         terrain_override = {
@@ -68,6 +70,7 @@ categories =  {
 		supply_limit = 1
 		local_development_cost = 1
 		
+        type = plains
 		sound_type = plains
 		color = { 0 0 0  }
 		
@@ -126,6 +129,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1
 
+        type = plains
 		sound_type = plains
 		color = { 211 201 184 }
 	
@@ -137,6 +141,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 		nation_designer_cost_multiplier = 1
 
+        type = plains
 		sound_type = plains
 		color = { 211 201 184 }
         
@@ -152,6 +157,7 @@ categories =  {
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9
 		
+        type = forest
 		sound_type = forest
 		color = { 187 232 186 } 
 
@@ -168,6 +174,7 @@ categories =  {
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9
 		
+        type = forest
 		sound_type = forest
 		color = { 91 123 45 }   
 
@@ -187,6 +194,7 @@ categories =  {
 
 		color = { 66 184 62 }
 	
+        type = mountains
 		sound_type = mountain     
 
         terrain_override = {
@@ -205,6 +213,7 @@ categories =  {
 
 		color = { 117 108 119 }
 	
+        type = mountains
 		sound_type = mountain
         
         terrain_override = {

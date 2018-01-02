@@ -1,11 +1,11 @@
 # The Institute
 institute_ideas = {
     start = {
-        imperial_authority_value = 5
-		ae_impact = 1.0
+        technology_cost = -0.25
+        idea_cost = -0.25
     }
     bonus = {
-        development_cost = -0.1
+        all_power_cost = -0.1
     }
    
     trigger = {
@@ -13,20 +13,20 @@ institute_ideas = {
     }
     free = yes
 
-    # Synth Mass Production
-    institute_ideas_1 = {
-        land_forcelimit_modifier = 0.2
-    }
-
     # Synth Replacement
     institute_ideas_2 = {
-        global_unrest = -2
+        spy_offence = 0.5
     }
    
+    # Synth Mass Production
+    institute_ideas_1 = {
+        land_forcelimit_modifier = 0.25
+    }
+
     # Mass Indoctrination
     institute_ideas_3 = {
-        global_missionary_strength = 0.05
-        culture_conversion_cost = -0.33
+        global_missionary_strength = 0.03
+        culture_conversion_cost = -0.25
     }
 
     # Teleportation Relays
@@ -37,8 +37,8 @@ institute_ideas = {
 
     # Coursers
     institute_ideas_5 = {
-        leader_land_fire = 1
-        leader_land_shock = 1
+        fire_damage = 0.15
+        shock_damage = 0.15
     }
     
     # Apex of Robotics
@@ -49,8 +49,8 @@ institute_ideas = {
     
     # Miniaturization
     institute_ideas_7 = {
-        infantry_cost = -0.1
-        infantry_power = 0.1
+        global_regiment_cost = -0.25
+        global_regiment_recruit_speed = -0.25
     }
 }
 
@@ -72,9 +72,9 @@ VAU_ideas = {
 	
 	# Vault Knowledge
     vau_idea_1 = {
-		imperial_authority_value = 1
+		idea_cost = -0.1
     }
-	# Vault-Tec Medical Center"
+	# Vault-Tec Medical Center
     vau_idea_2 = {
 		manpower_recovery_speed = 0.1
     }
@@ -126,7 +126,7 @@ NVG_ideas = {
 	}
 	# Technological Artifacts
 	nvg_idea_3 = {
-		imperial_authority_value = 1
+		idea_cost = -0.1
 	}
 	# Robot Army
 	nvg_idea_4 = {
@@ -243,7 +243,7 @@ NCR_ideas = {
 # Brotherhood
 BOST_ideas = {
 	start = {
-		imperial_authority_value = 1
+		idea_cost = -0.1
 		shock_damage = 0.25
 	}
 	

@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 3060  }
+# set_variable = { which = province_id value = 3060  }
 
 add_core = COV
 owner = COV

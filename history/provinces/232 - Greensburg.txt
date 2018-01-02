@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 232  }
+# set_variable = { which = province_id value = 232  }
 
 owner = IRF
 controller = IRF

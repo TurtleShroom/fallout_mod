@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 595  }
+# set_variable = { which = province_id value = 595  }
 
 owner = SWF
 controller = SWF

@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 787  }
+# set_variable = { which = province_id value = 787  }
 
 owner = SPA
 controller = SPA

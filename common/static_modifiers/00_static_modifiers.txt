@@ -68,7 +68,7 @@ difficulty_hard_ai = {
 	manpower_recovery_speed = 0.50
 	global_unrest = -1
 	war_exhaustion = -0.05
-	interest = -2
+	interest = -1
 	ae_impact = -0.33
 }
 
@@ -84,7 +84,7 @@ difficulty_very_hard_ai = {
 	war_exhaustion = -0.05
 	core_creation = -0.25
 	idea_cost = -0.25
-	interest = -2
+	interest = -1
 	improve_relation_modifier = 0.5
 	development_cost = -0.2
 	build_cost = -0.25
@@ -1316,16 +1316,16 @@ invasion_nation = {
 ########################################
 
 native_policy_coexist = {
-	native_uprising_chance = -0.75
+	native_uprising_chance = -1
 }
 
 native_policy_trade = {
-	native_assimilation = 1.0
+	native_assimilation = 0.5
+    native_uprising_chance = -0.5
 }
 
 native_policy_hostile = {
-	global_colonial_growth = 25
-    native_uprising_chance = 1.0
+	global_colonial_growth = 20
 }
 
 ########################################
@@ -1457,11 +1457,15 @@ invite_minorities_modifier = {
 ########################################
 # Regiment Types Modifiers
 ########################################
-army_drill_modifier = {
+regiment_drill_modifier = { # Used by individual regiments
 	shock_damage = 0.1
 	fire_damage = 0.1
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
+}
+
+army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
+	movement_speed = 0.2
 }
 
 janissary_regiment = {

@@ -154,14 +154,14 @@ guiTypes = {
 		{
 			name ="icon"
 			spriteType = "GFX_estate_interactions"
-			position = { x= 4 y = -2 }
+			position = { x= 4 y = -9999 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}	
 		
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 48 y = 8 }
+			position = { x = 20 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			text = "name"	
@@ -242,7 +242,7 @@ guiTypes = {
 				name = "estates_listbox"
 				backGround = ""
 				position = { x=30 y=140 }
-				size = { x=500 y=500 }
+				size = { x=394 y=410 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5
@@ -280,7 +280,7 @@ guiTypes = {
 				name = "listbox"
 				backGround = ""
 				position = { x = 18 y = 36 }
-				size = { x=253 y=450 }
+				size = { x=253 y=500 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5

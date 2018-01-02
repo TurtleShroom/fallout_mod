@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2966  }
+# set_variable = { which = province_id value = 2966  }
 
 #2957 - NCR
 

@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 18  }
+# set_variable = { which = province_id value = 18  }
 
 owner = OAS
 controller = OAS

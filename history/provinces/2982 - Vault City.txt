@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2982  }
+# set_variable = { which = province_id value = 2982  }
 
 #2982 - Vault City
 

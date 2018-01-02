@@ -12,14 +12,8 @@
  estate_caravanners_desc: "Although not the lowest class, Caravanners are widely regarded as minor players in the game of politics. When they gain leverage however, they seek to fill their pockets with valuables."
  estate_scientists: "Scientists"
  estate_scientists_desc: "A valuable member of society, a scientist tends to seek what is best for society. However, often the thirst for knowledge can distort such desires, and create ruthless men and women whom seek knowledge above all else."
- 
- estate_faith: "Supplicants"
- estate_faith_desc: "There are still those in the wasteland that believe in some form of higher power. They are represented as people of faith, and petition for allowances to continue their worship."
- 
- # Tribal
- estate_warriors: "Warriors"
- estate_gatherers: "Gatherers"
- estate_senators: "Senators"
+ estate_slavers: "Slavers"
+ estate_slavers_desc: "A demonized member of society, the slaver purchases and sells slaves. What a slaver lacks in morality, he makes up in greed."
 
  #------------------------------------------
  # Names
@@ -45,16 +39,9 @@
  estate_quaesitores_desc: ""
  estate_adoratores: "Adoratores"
  estate_adoratores_desc: ""
- 
- estate_overseers: "Overseers"
- estate_overseers_desc: ""
- estate_workers: "Workers"
- estate_workers_desc: ""
- estate_slaves: "Slaves"
- estate_slaves_desc: ""
- estate_lieutenants: "Lieutenants"
- estate_lieutenants_desc: ""
- 
+ estate_dominus_servo: "Dominus Servo"
+ estate_dominus_servo_desc: ""
+
  #------------------------------------------
  # Events
  #------------------------------------------
@@ -148,12 +135,12 @@
  fallout_estates.29.desc: "We have managed to limit the influence of the $ESTATE_SCIENTISTS$ to tolerable levels. $ESTATE_SCIENTISTS$ privileges have been revoked and their positions removed. The $ESTATE_SCIENTISTS$ themselves have grudgingly agreed that the $MONARCHTITLE$ is the undisputable leader of this country."
  fallout_estates.29.option.a: "The $MONARCHTITLE$ is back in control."
  
- fallout_estates.30.title: "The $ESTATE_FAITH$ Seize Power"
- fallout_estates.30.desc: "$MONARCH$ has allowed the $ESTATE_FAITH$ of $COUNTRY$ to grow too powerful and now they have made their move. Exercising the wide range of privileges and rights granted to them, they have effectively seized the reins of the state and turned the $MONARCHTITLE$ into little more than their puppet."
+ fallout_estates.30.title: "The $ESTATE_SLAVERS$ Seize Power"
+ fallout_estates.30.desc: "$MONARCH$ has allowed the $ESTATE_SLAVERS$ of $COUNTRY$ to grow too powerful and now they have made their move. Exercising the wide range of privileges and rights granted to them, they have effectively seized the reins of the state and turned the $MONARCHTITLE$ into little more than their puppet."
  fallout_estates.30.option.a: "We should have seen this coming..."
  
- fallout_estates.31.title: "The $ESTATE_FAITH$ Curtailed"
- fallout_estates.31.desc: "We have managed to limit the influence of the $ESTATE_FAITH$ to tolerable levels. $ESTATE_FAITH$ privileges have been revoked and their positions removed. The $ESTATE_FAITH$ themselves have grudgingly agreed that the $MONARCHTITLE$ is the undisputable leader of this country."
+ fallout_estates.31.title: "The $ESTATE_SLAVERS$ Curtailed"
+ fallout_estates.31.desc: "We have managed to limit the influence of the $ESTATE_SLAVERS$ to tolerable levels. $ESTATE_SLAVERS$ privileges have been revoked and their positions removed. The $ESTATE_SLAVERS$ themselves have grudgingly agreed that the $MONARCHTITLE$ is the undisputable leader of this country."
  fallout_estates.31.option.a: "The $MONARCHTITLE$ is back in control."
  
  fallout_estates.11.title: "Settlement Established"
@@ -186,125 +173,138 @@
  curtail_estate_scientists_title: "Curtail the Scientists"
  curtail_estate_scientists_desc: "Our realm is run by and for the Scientists. To adopt a more centralized administration we will need to curtail their power and privileges."
  
- curtail_estate_faith_title: "Curtail the Supplicants"
- curtail_estate_faith_desc: "Our realm is run by and for the Supplicants. To adopt a more centralized administration we will need to curtail their power and privileges."
+ curtail_estate_slavers_title: "Curtail the Slavers"
+ curtail_estate_slavers_desc: "Our realm is run by and for the Slavers. To adopt a more centralized administration we will need to curtail their power and privileges."
  
  #------------------------------------------
  # Actions
  #------------------------------------------
- DEMAND_ASSISTANCE: "Demand Assistance"
- CULTIVATE_RECOGNITION: "Cultivate Recognition"
- MAKE_INVESTMENT: "Make Investment"
- SEEK_SUPPORT: "Seek Support"
- OUST_UNDESIRABLES: "Oust Undesirables"
+ DEMAND_BACKING: "Demand Backing"
+ CORRUPT_BUREAUCRATS: "Corrupt Officials"
+ SEEK_SUPPORT_OF_BUREAUCRATS: "Seek Support of Bureaucrats"
+ RECRUIT_BUREAUCRAT: "Recruit Bureaucrat"
+ RECRUIT_BANKER: "Recruit Banker"
+ RECRUIT_AUDITOR: "Recruit Auditor"
  PURGE_BUREAUCRACY: "Purge Bureaucracy"
- CODIFY_LAWS: "Codify Laws"
- SWAY_OPPOSITION: "Sway Opposition"
- GARNER_LEGITIMACY: "Garner Legitimacy"
- ESTABLISH_SETTLEMENT: "Establish Settlement"
- QUELL_UNREST: "Quell Unrest"
- EXTRACT_WEALTH: "Extract Wealth"
- TRAIN_GENERAL: "Train General"
- TRAIN_ADMIRAL: "Train Admiral"
- ESTABLISH_MILITARY_CENTRE: "Establish Military Centre"
- ESTABLISH_NAVAL_CENTRE: "Establish Naval Centre"
- DIVERT_STOCK: "Divert Stock"
- FUND_RESEARCH: "Fund Research"
- ATTEMPT_EXPERIMENT: "Attempt Experiment"
+ CONSOLIDATE_DEBT: "Consolidate Debt"
+ LEGITIMIZE_GOVERNMENT: "Legitimize Government"
+ 
+ BRIBE_MERCHANTS: "Bribe Merchants"
+ SEEK_SUPPORT_OF_CARAVANNERS: "Seek Support of Caravanners"
+ RECRUIT_TRADER: "Recruit Trader"
+ RECRUIT_MERCHANT: "Recruit Caravanner"
+ RECRUIT_AGENT: "Recruit Intelligence Operative"
+ DEMAND_CONTRIBUTION: "Demand Contribution"
+ PROMOTE_MERCANTILISM: "Promote Mercantilism"
+ EMPLOY_MERCHANT: "Employ Merchant"
+ ENACT_MARKET_PROPAGANDA: "Enact Mercantile Propaganda"
+ 
+ CORRUPT_OFFICERS: "Corrupt Officers"
+ SEEK_SUPPORT_OF_OFFICERS: "Seek Support of Caravanners"
+ RECRUIT_ARMY_OFFICER: "Recruit Army Officer"
+ RECRUIT_ARMY_RECRUITER: "Recruit Army Recruiter"
+ RECRUIT_FIREARMS_OFFICER: "Recruit Firearms Officer"
+ ESTABLISH_TRADITIONS: "Establish Traditions"
+ APPOINT_GENERAL: "Appoint General"
+ APPOINT_ADMIRAL: "Appoint Admiral"
  MUSTER_SOLDIERS: "Muster Soldiers"
- DISPATCH_SETTLERS: "Dispatch Settlers"
+ MUSTER_SAILORS: "Muster Sailors"
+ 
+ BRIBE_SCIENTISTS: "Bribe Scientists"
+ SEEK_SUPPORT_OF_SCIENTISTS: "Seek Scientist Support"
+ RECRUIT_RESEARCHER: "Recruit Researcher"
+ RECRUIT_ARCHITECT: "Recruit Architect"
+ RECRUIT_DIPLOMAT: "Recruit Diplomat"
+ CONDUCT_RESEARCH: "Conduct Research"
+ AUTHORIZE_SCIENTIFIC_FORUM: "Authorize Scientific Forum"
+ UTILIZE_SEDATION_GASES: "Utilize Sedation Gases"
+ INSTITUTE_AUTOMATED_CHECKS: "Institute Automated Checks"
+ 
+ BRIBE_GOVERNERS: "Bribe Settlers"
+ SEEK_SUPPORT_OF_SETTLERS: "Seek Settler Support"
+ RECRUIT_ADVENTURER: "Recruit Adventurer"
+ RECRUIT_ORCHESTRATOR: "Recruit Orchestrator"
+ RECRUIT_ENFORCER: "Recruit Enforcer"
+ INSTITUTE_FRONTIER_RUSH: "Institute Frontier Rush"
+ ENCOURAGE_FREETHINKERS: "Encourage Freethinkers"
+ EMPLOY_FOREIGN_ADVISORS: "Employ Foreign Advisors"
  DISCOVER_LOST_TEXTS: "Discover Lost Texts"
  
- RECRUIT_COMMANDANT: "Recruit Commandant"
- RECRUIT_QUARTERMASTER: "Recruit Quartermaster"
- RECRUIT_TRADER: "Recruit Trader"
- RECRUIT_GOVERNOR: "Recruit Governor"
- RECRUIT_ARTIST: "Recruit Artist"
- RECRUIT_RUMOURMONGER: "Recruit Rumourmonger"
- RECRUIT_BANKER: "Recruit Banker"
- RECRUIT_TAX_COLLECTOR: "Recruit Tax Collector"
- RECRUIT_SCIENTIST: "Recruit Scientist"
- RECRUIT_RESEARCHER: "Recruit Researcher"
- RECRUIT_THEOLOGIAN: "Recruit Theologian"
- RECRUIT_PRIEST: "Recruit Priest"
- 
- MUSTER_VETERAN_UNITS: "Muster Veteran Infantry"
- MUSTER_NCR_RANGERS: "Muster Ranger Regiment"
- MUSTER_VETERAN_LEGIONARIES: "Muster Veteran Legionaries"
+ FUND_SLAVERS: "Fund Slavers"
+ SEEK_SUPPORT_OF_SLAVERS: "Seek Slaver Support"
+ RECRUIT_SLAVE_JOCKEY: "Recruit Slave Jockey"
+ RECRUIT_SLAVE_DRIVER: "Recruit Slave Driver"
+ HUNT_DISSIDENTS: "Hunt Dissidents"
+ HASTEN_CONSTRUCTION_PROJECTS: "Hasten Construction Projects"
+ EXPLOIT_SLAVE_SOLDIERS: "Exploit Slave Soldiers"
+ EMPLOY_SLAVE_WORKERS: "Employ Slave Workers"
+ ALLOW_RAPE_AND_PILLAGE: "Allow Rape and Pillage"
  
  #------------------------------------------
- # Modifiers
+ # Influence
  #------------------------------------------
- EST_VAL_BASE: "Base: §Y$VAL$§!"
- EST_VAL_SOUGHT_SUPPORT: "Sought Support: §Y$VAL$§!"
- 
- EST_VAL_WASTE_MANAGEMENT_VAU: "Vault Waste Management: §Y$VAL$§!"
- 
- # Loyalty, drop %
- EST_VAL_LEGITIMATE: "Is Legitimate: §Y$VAL$§!"
- EST_VAL_VERY_LEGITIMATE: "Is Very Legitimate: §Y$VAL$§!"
- EST_VAL_NOT_LEGITIMATE: "Is Not Legitimate: §Y$VAL$§!"
- EST_VAL_ILLEGITIMATE: "Is Illegitimate: §Y$VAL$§!"
- 
- EST_VAL_VERY_STABLE: "Is Very Stable: §Y$VAL$§!"
- EST_VAL_STABLE: "Is Stable: §Y$VAL$§!"
- EST_VAL_NOT_STABLE: "Is Unstable: §Y$VAL$§!"
- EST_VAL_VERY_UNSTABLE: "Is Very Unstable: §Y$VAL$§!"
- 
- EST_VAL_VERY_HIGH_TRADITION: "Has Very High Army Tradition: §Y$VAL$§!"
- EST_VAL_HIGH_TRADITION: "Has High Army Tradition: §Y$VAL$§!"
- EST_VAL_LOW_TRADITION: "Has Low Army Tradition: §Y$VAL$§!"
- EST_VAL_VERY_LOW_TRADITION: "Has Very Low Army Tradition: §Y$VAL$§!"
- 
- EST_VAL_VERY_MERCANTILISM: "Has Very High Mercantilism: §Y$VAL$§!"
- EST_VAL_HIGH_MERCANTILISM: "Has High Mercantilism: §Y$VAL$§!"
- EST_VAL_LOW_MERCANTILISM: "Has Low Mercantilism: §Y$VAL$§!"
- EST_VAL_VERY_LOW_MERCANTILISM: "Has Very Low Mercantilism: §Y$VAL$§!"
- 
- EST_VAL_PLACES_OF_KNOWLEDGE: "Controls Places of Knowledge: §Y$VAL$§!"
- EST_VAL_LACK_OF_PLACES_OF_KNOWLEDGE: "Does Not Control Places of Knowledge: §Y$VAL$§!"
- 
- EST_VAL_NCR_INFLUENCE: "NCR: §Y$VAL$%§!"
  EST_VAL_LEGION_INFLUENCE: "Legion: §Y$VAL$%§!"
+ EST_VAL_NCR_INFLUENCE: "NCR: §Y$VAL$%§!"
  EST_VAL_COMMONWEALTH_INFLUENCE: "The Institute: §Y$VAL$%§!"
  
- # Territory, drop %
- EST_VAL_NCR_TERRITORY: "NCR: §Y$VAL$§!"
- EST_VAL_LEGION_TERRITORY: "Legion: §Y$VAL$§!"
- EST_VAL_COMMONWEALTH_TERRITORY: "The Institute: §Y$VAL$§!"
- EST_VAL_WRONG_RELIGION: "Dominant Heretics and Heathens: §Y$VAL$§!"
+ EST_VAL_RECRUITED_LEADER: "Recruited Leader: §Y$VAL$§!"
+ EST_VAL_RECRUITED_ADVISOR: "Recruited Advisor: §Y$VAL$§!"
+ EST_VAL_SOUGHT_SUPPORT: "Sought Support: §Y$VAL$§!"
+ EST_VAL_LEGITIMIZED_GOVERNMENT: "Legitimized Government: §Y$VAL$§!"
+ EST_VAL_CONSOLIDATED_DEBT: "Consolidated Debt: §Y$VAL$§!"
+ EST_VAL_PROMOTED_MERCANTILISM: "Promoted Mercantilism: §Y$VAL$§!"
+ EST_VAL_GROUNDBREAKING_RESEARCH: "Groundbreaking Research: §Y$VAL$§!"
+ EST_VAL_SCIENTIFIC_FORUM: "Scientific Forum: §Y$VAL$§!"
+ EST_VAL_FRONTIER_RUSH: "Frontier Rush: §Y$VAL$§!"
+ EST_VAL_AUTOMATED_CHECKS: "Automated Checks: §Y$VAL$§!"
+ EST_VAL_SEDATION_GASES: "Sedation Gases: §Y$VAL$§!"
+ EST_VAL_MERCANTILE_PROPAGANDA: "Mercantile Propaganda: §Y$VAL$§!"
+ EST_VAL_ADDITIONAL_MERCHANTS: "Additional Merchants: §Y$VAL$§!"
+ EST_VAL_FREETHINKERS: "Freethinkers: §Y$VAL$§!"
+ EST_VAL_FOREIGN_ADVISORS: "Foreign Advisors: §Y$VAL$§!"
+ EST_VAL_RAPE_AND_PILLAGE: "Rape and Pillage: §Y$VAL$§!"
  
- # Influence, have %
- # Actions
- EST_VAL_OUSTED_UNDESIRABLES: "Ousted Undesirables: §Y$VAL$%§!"
- EST_VAL_RECRUITED_ADVISOR: "Recruited Advisor: §Y$VAL$%§!"
- EST_VAL_CODIFIED_LAWS: "Codified Laws: §Y$VAL$%§!"
- EST_VAL_SWAYED_OPPOSITION: "Swayed Opposition: §Y$VAL$%§!"
- EST_VAL_ESTABLISHED_SETTLEMENT: "Established Settlement: §Y$VAL$%§!"
- EST_VAL_QUELLING_UNREST: "Quelling Unrest: §Y$VAL$%§!"
- EST_VAL_RECRUITED_LEADER: "Recruited Leader: §Y$VAL$%§!"
- EST_VAL_ESTABLISHED_MILITARY_CENTRE: "Established Military Centre: §Y$VAL$%§!"
- EST_VAL_ESTABLISHED_NAVAL_CENTRE: "Established Naval Centre: §Y$VAL$%§!"
- EST_VAL_PROMOTED_MERCANTILISM: "Promoted Mercantilism: §Y$VAL$%§!"
- EST_VAL_FUNDED_RESEARCH: "Funded Research: §Y$VAL$%§!"
- EST_VAL_ATTEMPTED_EXPERIMENT: "Attempted Experiment : §Y$VAL$%§!"
- 
- # Event
  EST_VAL_EMPOWERED_BUREAUCRATS: "Empowered Bureaucrats: §Y$VAL$%§!"
  EST_VAL_EMPOWERED_SETTLERS: "Empowered Settlers: §Y$VAL$%§!"
  EST_VAL_EMPOWERED_OFFICERS: "Empowered Officers: §Y$VAL$%§!"
  EST_VAL_EMPOWERED_CARAVANNERS: "Empowered Caravanners: §Y$VAL$%§!"
  EST_VAL_EMPOWERED_SCIENTISTS: "Empowered Scientists: §Y$VAL$%§!"
  
- quelling_unrest: "Quelling Unrest"
- desc_quelling_unrest: "Our deal with our citizens means any unrest is currently being quelled." 
- 
- funding_scientific_research: "Funding Research"
- desc_funding_scientific_research: "We are currently funding our scientists to research new technologies."
- 
- tt_create_settlement: "Your settlers will set out into the wastes and attempt to establish a settlement."
- tt_do_experiment: "Your scientists will attempt an experiment, and see what usable outcomes appear."
- tt_send_settlers: "A group of settlers will appear in one of your active colonies."
+ #------------------------------------------
+ # Loyalty
+ #------------------------------------------
+ EST_VAL_LEGITIMATE: "Legitimate Government: §Y$VAL$§!"
+ EST_VAL_ILLEGITIMATE: "Illegitimate Government: §Y$VAL$§!"
+ EST_VAL_HIGH_MERCANTILISM: "High Mercantilism: §Y$VAL$§!"
+ EST_VAL_LOW_MERCANTILISM: "Low Mercantilism: §Y$VAL$§!"
+ EST_VAL_HIGH_TRADITION: "High Army Tradition: §Y$VAL$§!"
+ EST_VAL_LOW_TRADITION: "Low Army Tradition: §Y$VAL$§!"
+
+ #------------------------------------------
+ # Event Modifiers
+ #------------------------------------------
+ frontier_rush: "Frontier Rush"
+ desc_frontier_rush: "Our settlers are rushing to settle on our frontier."
+ scientific_forum: "Scientific Forum"
+ desc_scientific_forum: "Our scientists have collobrated in a scientific forum, encouraging the exchange of ideas."
+ slavery_construction: "Slave Builders"
+ desc_slavery_construction: "We are using slave builders."
+ slavery_production: "Slave Labourers"
+ desc_slavery_production: "We are using slave labourers."
+ additional_merchants: "Additional Merchants"
+ desc_additional_merchants: ""
+ persuasive_merchants: "Persuasive Merchants"
+ desc_persuasive_merchants: ""
+ sedation_gases: "Sedation Gases"
+ desc_sedation_gases: ""
+ automated_checks: "Automated Checks"
+ desc_automated_checks: ""
+ freethinking_settlers: "Freethinkers"
+ desc_freethinking_settlers: ""
+ foreign_advisors: "Foreign Advisors"
+ desc_foreign_advisors: ""
+ rape_and_pillage: "Rape and Pillage"
+ desc_rape_and_pillage: ""
  
  #------------------------------------------
  # Disasters
@@ -314,20 +314,19 @@
  estate_officers_disaster: "Officer Dominance"
  estate_caravanners_disaster: "Caravanner Dominance"
  estate_scientists_disaster: "Scientist Dominance"
- estate_faith_disaster: "Religious Dominance"
+ estate_slavers_disaster: "Slaver Dominance"
  
  EST_CRUSHED_BUREAUCRATS: "Bureaucrats have been curtailed"
  EST_CRUSHED_SETTLERS: "The Citizenry have been curtailed"
  EST_CRUSHED_OFFICERS: "Officers have been curtailed"
  EST_CRUSHED_CARAVANNERS: "Caravanners have been curtailed"
  EST_CRUSHED_SCIENTISTS: "Scientists have been curtailed"
- EST_CRUSHED_SUPPLICANTS: "Supplicants have been curtailed"
+ EST_CRUSHED_SLAVERS: "Slavers have been curtailed"
  
  TT_ESTATE_BUREAUCRATS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YBureaucrats§! until the §Y'Curtail the Bureaucrats'§! decision is taken."
  TT_ESTATE_SETTLERS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YCitizenry§! until the §Y'Curtail the Citizenry'§! decision is taken."
  TT_ESTATE_OFFICERS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YOfficers§! until the §Y'Curtail the Officers'§! decision is taken."
  TT_ESTATE_CARAVANNERS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YCaravanners§! until the §Y'Curtail the Caravanners'§! decision is taken."
  TT_ESTATE_SCIENTISTS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YScientists§! until the §Y'Curtail the Scientists'§! decision is taken."
- TT_ESTATE_SUPPLICANTS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YSupplicants§! until the §Y'Curtail the Supplicants'§! decision is taken."
- 
+ TT_ESTATE_SLAVERS_DISASTER_EVENT: "[Root.GetName] will now be controlled by the §YSlavers§! until the §Y'Curtail the Slavers'§! decision is taken."
  

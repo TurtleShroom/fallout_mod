@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 236  }
+# set_variable = { which = province_id value = 236  }
 
 owner = NCR
 controller = NCR

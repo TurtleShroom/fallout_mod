@@ -13,11 +13,21 @@ get_an_alliance_mission = {
 		NOT = { num_of_allies = 2 }
 		NOT = { is_enemy = FROM }
 		NOT = { is_rival = FROM }
+		NOT = { historical_rival_with = FROM }
 		is_at_war = no
-		has_opinion = { who = FROM value = 10 }
+		has_opinion = { who = FROM value = 50 }
 		NOT = { alliance_with = FROM }
-		NOT = { is_subject = yes }
-		FROM = { NOT = { is_subject = yes } }
+		NOT = { overlord_of = FROM }
+		NOT = { is_subject_other_than_tributary_trigger = yes }
+		FROM = {
+			NOT = { is_subject_other_than_tributary_trigger = yes }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = FROM
+			}
+		}
 	}
 	abort = {
 		OR = {
@@ -79,8 +89,19 @@ improve_relations_mission = {
 		religion_group = FROM
 		NOT = { has_opinion = { who = FROM value = 50 } }
 		has_opinion = { who = FROM value = 0 }
+		NOT = {
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_hostile
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = FROM
+			}
+		}
 		OR = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			overlord = {
 				tag = FROM
 			}
@@ -90,6 +111,12 @@ improve_relations_mission = {
 		OR = {
 			war_with = FROM
 			exists = no
+			FROM = {
+				ai_attitude = {
+					who = ROOT
+					attitude = attitude_hostile
+				}
+			}
 		}
 	}
 
@@ -235,13 +262,14 @@ vassalize_mission = {
 		is_subject = no
 		has_regency = no
 		FROM = { 
-			is_subject = no 
+			is_free_or_tributary_trigger = yes
 			num_of_cities = 5
 			NOT = { has_country_modifier = foreign_contacts }
 		}
 		NOT = { num_of_cities = 4 }
 		NOT = { total_development = 50 }
 		religion_group = FROM
+		NOT = { is_in_trade_league_with = FROM }
 		NOT = { war_with = FROM }
 		NOT = { alliance_with = FROM }
 		has_opinion = { who = FROM value = 50 }
@@ -250,7 +278,7 @@ vassalize_mission = {
 		OR = {
 			NOT = { num_of_cities = 1 }
 			AND = {
-				is_subject = yes
+				is_subject_other_than_tributary_trigger = yes
 				NOT = { vassal_of = FROM }
 			}
 			NOT = {

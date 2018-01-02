@@ -4,32 +4,6 @@ NAT = "countries/Natives.txt"
 
 # Do not use the following prefixs: C, E, D, K, O
 
-# Aspiration - Foil
-#   Each nation has an aspiration, that is the value which it would likely seek to achieve most of the time. 
-#   This is combined with a foil, which is the measure often taken due to circumstances inhibiting the aspiration
-#   These are used to springboard events/decisions for each nation, and how the choices should be presented 
-#   most of the time. 
-#   
-#   For example:
-#   The NCR values democracy, but often democracy will permit fragmentation and splintering, and so the NCR turns to 
-#   authoritarian measures to restrict this. Therefore events will present the player with options that 'boost' 
-#   democracy, but also 'weaken' authority, and vice versa.
-#
-#   Values outside these can be present, but they should overshaow the core aspiration. i.e. NCR shouldn't have events 
-#   presenting wealth against isolation, as that would be absurd considering there size and position in the world. 
-#   Rather, wealth is displayed through the weakening of democracy, i.e. pandering to the Brahmin Barons
-
-# NCR:              Democracy - Authority
-# Caesar's Legion:  Unity - Authority
-# New Vegas:        Power - Wealth
-# Shi:              Knowledge - Isolation
-# Brotherhood:      Knowledge - Authority
-# Settlements:      Stability - Wealth
-# Raiders:          Power - Wealth
-# Tribes:           Unity - Isolation
-# Ghouls:           Unity - Isolation
-# Super Mutants:    Power - Authority
-
 NCR = "countries/New California Republic.txt"   
 CAE = "countries/Caesar's Legion.txt"           
 NVG = "countries/New Vegas.txt"                 

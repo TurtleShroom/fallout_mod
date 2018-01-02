@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 4003  }
+# set_variable = { which = province_id value = 4003  }
 
 #3007 - Hopi
 

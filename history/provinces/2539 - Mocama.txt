@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2539  }
+# set_variable = { which = province_id value = 2539  }
 
 #2539 - Mocame
 

@@ -30,7 +30,7 @@ administrative_organisation_ideas = {
     }
     
     administrative_organisation_ideas_3 = {
-        imperial_authority_value = 5
+        idea_cost = -0.1
     }
     
     ai_will_do = {
@@ -237,11 +237,11 @@ espionage_ideas = {
     }
     
     espionage_ideas_2 = {
-        discovered_relations_impact = -0.5
+        discovered_relations_impact = -0.75
     }
     
     espionage_ideas_3 = {
-        global_spy_defence = 0.5
+        global_spy_defence = 0.75
     }
     
     ai_will_do = {
@@ -368,7 +368,7 @@ exploration_ideas = {
     }
     
     exploration_ideas_2 = {
-        colonists = 2
+        colonists = 1
     }
     
     exploration_ideas_3 = {
@@ -483,7 +483,7 @@ aggressive_diplomacy_ideas = {
     }
     
     aggressive_diplomacy_ideas_1 = {
-        reduced_stab_impacts = yes
+        idea_claim_colonies = yes
     }
     
     aggressive_diplomacy_ideas_2 = {

@@ -1,14 +1,6 @@
 slavery_permitted = { }
 slavery_prohibited = { }
 
-slavery_construction = {
-    build_time = -0.75
-}
-
-slavery_production = {
-    production_efficiency = 0.25
-}
-
 slave_superiority = {
     land_morale = -0.1
 }

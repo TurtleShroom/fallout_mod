@@ -1,0 +1,149 @@
+adm_advisor_state_maintenance_modifier = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	state_maintenance_modifier = -0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_inflation_reduction = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	inflation_reduction = 0.1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_development_cost = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	development_cost = -0.2
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_build_cost = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	build_cost = -0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_administrative_efficiency = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	administrative_efficiency = 0.05
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_global_institution_spread = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	global_institution_spread = 0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_prestige = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	prestige = 1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_yearly_corruption = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	yearly_corruption = -0.05
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_yearly_absolutism = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	yearly_absolutism = 1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+adm_advisor_global_missionary_strength = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	global_missionary_strength = 0.03
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

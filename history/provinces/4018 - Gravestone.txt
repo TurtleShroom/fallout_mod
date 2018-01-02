@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 4018  }
+# set_variable = { which = province_id value = 4018  }
 
 owner = GRA
 controller = GRA

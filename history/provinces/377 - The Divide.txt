@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 377  }
+# set_variable = { which = province_id value = 377  }
 
 # 377 - The Divide
 

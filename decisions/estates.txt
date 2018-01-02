@@ -134,11 +134,11 @@ country_decisions = {
 		}
 	}
     
-    curtail_estate_faith = {
+    curtail_estate_slavers = {
 		major = yes
 		potential = {
             has_dlc = "The Cossacks"
-            has_country_flag = in_faith_disaster
+            has_country_flag = in_slavers_disaster
 		}
 		allow = {
 			stability = 1
@@ -146,7 +146,7 @@ country_decisions = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
 			NOT = {
 				estate_influence = {
-					estate = estate_faith
+					estate = estate_slavers
 					influence = 60
 				}				
 			}
@@ -154,7 +154,7 @@ country_decisions = {
 		effect = {
 			add_stability = -3
 			add_prestige = -25
-			clr_country_flag = in_faith_disaster
+			clr_country_flag = in_slavers_disaster
 		}
 		ai_will_do = {
 			factor = 1

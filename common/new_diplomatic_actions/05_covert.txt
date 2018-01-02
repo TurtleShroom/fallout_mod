@@ -52,9 +52,7 @@ establish_cult = {
 		}
 	}
 	ai_will_do = {
-		FROM = {
-            is_rival = yes
-        }
+		always = yes
 	}
 }
 
@@ -186,9 +184,7 @@ assassinate_leader = {
 		}
 	}
 	ai_will_do = {
-		FROM = {
-            ai = yes
-        }
+		always = yes
 	}
 }
 
@@ -261,23 +257,9 @@ conduct_slave_raid = {
 		}
 	}
 	ai_will_do = {
-		FROM = {
-            ai = yes
-        }
+		always = yes
 	}
 }
-
-#---------------------------------------
-# Infiltrate Laboratories
-#---------------------------------------
-
-
-
-
-
-
-
-
 
 
 

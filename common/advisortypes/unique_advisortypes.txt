@@ -1,0 +1,81 @@
+# Slavery only
+mil_advisor_reinforce_cost_modifier = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	reinforce_cost_modifier = -0.25
+
+	chance = {
+		factor = 1
+        
+        modifier = {
+            factor = 0 
+            has_country_modifier = slavery_prohibited
+        }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_reinforce_speed = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	reinforce_speed = 0.2
+
+	chance = {
+		factor = 1
+        
+        modifier = {
+            factor = 0 
+            has_country_modifier = slavery_prohibited
+        }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# Tribal only
+mil_advisor_movement_speed = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	movement_speed = 0.1
+
+	chance = {
+		factor = 1
+
+        modifier = {
+            factor = 0 
+            NOT = { technology_group = tech_tribal }
+        }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dip_advisor_war_exhaustion = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	war_exhaustion = -0.1
+
+	chance = {
+		factor = 1
+
+        modifier = {
+            factor = 0 
+            NOT = { technology_group = tech_tribal }
+        }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

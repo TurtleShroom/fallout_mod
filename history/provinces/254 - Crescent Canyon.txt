@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 254  }
+# set_variable = { which = province_id value = 254  }
 
 owner = CAE
 controller = CAE

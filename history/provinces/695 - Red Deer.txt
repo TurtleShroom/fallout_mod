@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 695  }
+# set_variable = { which = province_id value = 695  }
 
 owner = SNF
 controller = SNF

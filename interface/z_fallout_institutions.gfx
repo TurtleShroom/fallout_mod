@@ -18,7 +18,7 @@ spriteTypes = {
 		transparencecheck = yes
 	}	
  	spriteType = {
-		name = "GFX_icon_institution_fev"
+		name = "GFX_icon_institution_rads"
 		texturefile = "gfx//interface//institutions//fev.dds"
 		loadType = "INGAME"
 		transparencecheck = yes
@@ -58,7 +58,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_institution_tab_fev"
+		name = "GFX_institution_tab_rads"
 		texturefile = "gfx/interface/institutions//institution_tab_fev.dds"
 		noOfFrames = 2
 		transparencecheck = yes

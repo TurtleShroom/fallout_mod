@@ -2,10 +2,53 @@
  grasslands: "Wasteland"
  grasslands_desc: "The remains of once fertile land destroyed during the Great War."
  
- PEACE_FORCE_RELIGION:0 "Force Belief"
- MODIFIER_IMPERIAL_AUTHORITY_VALUE:1 "Research Capacity Modifier"
- 
  WORLD_YEAR:0 "$YEAR$"
+ 
+ #------------------------------------------------------
+ # Institutions
+ #------------------------------------------------------
+ INSTITUTIONS_HEADER:0 "§YInstitutions§!"
+ INSTITUTION_CURRENTLY_GROWING:0 "The Institution $NAME$ is currently growing in this province."
+ INSTITUTION_JUST_ONE_GROWING:0 "Only one Institution can grow in a province at a time."
+ DATE_EARLIERST_FOR_INSTI:0 "This is the earliest date that this institution can appear and spread through the world."
+ INSTI_NOT_YET:0 "This institution has not yet been created in the world."
+ INSTITUTION_SPREAD_HELP:0 "Institution spread between provinces over time. You can also increase the development to directly spread an institution."
+ OPEN_CLOSE_INSTITUTIONS:0 "Open/Close Institutions"
+ HEADER_PRESENT_INSTITUTIONS:0 "§YPresent Institutions:§!"
+ HEADER_GROWING_INSTITUTIONS:0 "§YGrowing Institutions:§!"
+ 
+ MAPMODE_INSTITUTIONS:0 "Institutions"
+ MAPMODE_INSTITUTIONS_DESC:0 "Colors the provinces depending if they have embraced all institutions created. Green means they have embraced them all, yellow means they are currently on the way, and red means they have not."
+ 
+ INSTI_PRIMITIVE_CANNOT_EMBRACE_RELIGION:0 "Primitive countries must reform their religion before embracing institutions."
+ INSTI_PRIMITIVE_CANNOT_EMBRACE_GOVERNMENT:0 "Primitive countries must reform their Government before embracing institutions."
+ INSTI_NOT_ENOUGH_HOLD:0 "The institution of $NAME|Y$ has not a big enough hold of our country for us to fully embrace it.  It needs to be embraced in at least $NEED|Y$ percent of our autonomy modified development, but it is only embraced in $CURR|Y$ percent."
+ WILL_LOSE_POWER_AT_EMBRACE:0 "After embracing this institution, you will lose $LOSS$ due to a lowered maximum storage of monarch power."
+ NO_MODIFIER_ON_INSTIGROW:0 "There is currently nothing modifying the spread of institutions."
+ NO_CURRENT_INSTI_TECH_PENALTIES:0 "No current institutional penalties to tech."
+ ND_TECH_GROUP_DESC:0 "This cost is calculated from the number of institutions you will receive at the start relative to your surroundings."
+ 
+ EMBRACEINST_OTHER_TITLE:0 "Embraced Institution"
+ EMBRACEINST_OTHER_SETUP:0 "When another nation embrace an institution."
+ EMBRACEINST_TITLE:0 "Embraced Institution"
+ EMBRACEINST_SETUP:0 "When you embrace an institution."
+ 
+ INSTITUTION_DIFF_LOWER_THAN:0 "§Y$WHO$§!'s number of embraced institutions compared to §Y$TARGET$§! is lower than §Y$VAL$§!."
+ INSTITUTION_DIFF_AT_LEAST:0 "§Y$WHO$§!'s number of embraced institutions compared to §Y$TARGET$§! is at least §Y$VAL$§!."
+ INSTITUTION_DIFF_LOWER_THAN_ALT:0 "Number of embraced institutions of §Y$TARGET$§! is lower than §Y$VAL$§!."
+ INSTITUTION_DIFF_AT_LEAST_ALT:0 "Number of embraced institutions of §Y$TARGET$§! is at least §Y$VAL$§!."
+ OWN_CONTROL_LESS_INSTITUTIONS:0 "Own and control less institution origins than $TXT$\n"
+ OWN_CONTROL_AT_LEAST_INSTITUTIONS:0 "Own and control at least $TXT$ institution origins\n"
+ 
+ #------------------------------------------------------
+ # Native Reform
+ #------------------------------------------------------
+ REFORM_RELIGION_EXPL:1 "Reform our religion and society by learning from §Y$WHO$§!, giving us §Y$LVL$§! technologies spread across the categories, while embracing $NUM|Y$ institutions."
+ REFORM_RELIGION_EXPL_DET_2:0 "It is possible to reform our religion and society if we have all the religious reforms and either border a European nation OR have a total of $NEEDED|Y$ technology levels."
+ REFORM_RELIGION_NO_SPONSOR_EXPL:0 "Reform our religion and society by applying our technological understanding. This will change our government into a more modern type and give us institutions to help us."
+ REFORM_NATIVE_EXPL:1 "Reform to §Y$GOV$§! by learning from §Y$WHO$§!, giving us §Y$LVL$§! technologies spread across the categories, while embracing $NUM|Y$ institutions."
+ REFORM_NATIVE_EXPL_DET_2:0 "It is possible to reform away from a native council to a more advanced form of government if we have all native advancements and either border a European nation OR have a total of $NEEDED|Y$ technology levels."
+ REFORM_NATIVE_NO_SPONSOR_EXPL:0 "Reform our nation by applying our technological understanding. This will change our government into a more modern type and allow us to Westernize."
  
  #------------------------------------------------------
  # Personal Deities

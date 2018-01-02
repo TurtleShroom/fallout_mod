@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2639  }
+# set_variable = { which = province_id value = 2639  }
 
 #878 - Navajo
 

@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 420  }
+# set_variable = { which = province_id value = 420  }
 
 owner = CRS
 controller = CRS

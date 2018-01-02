@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2968  }
+# set_variable = { which = province_id value = 2968  }
 
 #2968 - Mount Charleston
 

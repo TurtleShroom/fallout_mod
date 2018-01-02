@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 409  }
+# set_variable = { which = province_id value = 409  }
 
 is_city = yes
 add_core = FOA

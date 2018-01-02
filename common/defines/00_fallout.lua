@@ -5,44 +5,59 @@ NDefines.NGame.START_DATE = "2280.1.1"
 NDefines.NGame.END_DATE = "100000.1.1"
 
 NDefines.NEngine.EVENT_PROCESS_OFFSET = 20
+NDefines.NCountry.MAX_CROWN_COLONIES = 9999
 
-NDefines.NCountry.GOLDEN_ERA_YEARS = 25  
+--------------------------------
+-- General
+--------------------------------
+NDefines.NCountry.MIGRATION_COOLDOWN = 240
+NDefines.NDiplomacy.ALLOW_ESTATE_AND_PARLIAMENT_SEAT_IN_PROVINCE = 1
+
+--------------------------------
+-- Ruler
+--------------------------------
+NDefines.NCountry.MAX_EXTRA_PERSONALITIES = 3
+NDefines.NCountry.YEARS_PER_EXTRA_PERSONALITY = 10 
+
+--------------------------------
+-- Technology
+--------------------------------
 NDefines.NCountry.POWER_MAX = 1000 
 NDefines.NCountry.FREE_IDEA_GROUP_COST = 1.5
-NDefines.NCountry.MAX_CROWN_COLONIES = 9999
 NDefines.NCountry.MAX_IDEA_GROUPS_FROM_SAME_CATEGORY = 1
-NDefines.NCountry.LEGITIMACY_DYNASTY_CHANGE = 50
 NDefines.NCountry.TECH_TIME_COST = 0.3		                -- tech grow with 20% cost over time.
 NDefines.NCountry.TECH_AHEAD_OF_TIME = 0.1		            -- per year ahead.
+
+--------------------------------
+-- Power Cost
+--------------------------------
 NDefines.NCountry.PS_ESTABLISH_SIBERIAN_FRONTIER = 50
 NDefines.NCountry.PS_FACTION_BOOST = 30 -- 10
-NDefines.NDiplomacy.ALLOW_ESTATE_AND_PARLIAMENT_SEAT_IN_PROVINCE = 1
+
+--------------------------------
+-- Government
+--------------------------------
+NDefines.NCountry.SUBJECT_MAX_RANK = 2
+NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_2 = 25
+NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25
+NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 25
+NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_3 = 25
+NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 300
+NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 1000
+NDefines.NCountry.MAX_GOV_RANK = 3		
+
 NDefines.NDiplomacy.PARLIAMENT_BACKING_PERCENTAGE = 25
 NDefines.NDiplomacy.PARLIAMENT_PRESTIGE_HIT = 0
-NDefines.NCountry.SUBJECT_MAX_RANK = 2
-NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_2 = 25			-- Prestige gained on upgrading to government rank 2
-NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25			-- Prestige gained on upgrading to government rank 3
-NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 25			-- Required prestige to to upgrade to government rank 2
-NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_3 = 25			-- Required prestige to to upgrade to government rank 3
-NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 300		-- Need at least this much development to upgrade to government rank 2
-NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 1000		-- Need at least this much development to upgrade to government rank 3
-NDefines.NCountry.MAX_GOV_RANK = 3		
 
 --------------------------------
 -- AI
 --------------------------------
 NDefines.NAI.AI_USES_HISTORICAL_IDEA_GROUPS = 0
-NDefines.NAI.AGGRESSIVENESS = 500  -- Base chance (out of 10000) of AI being willing to start a war each diplomatic tick (~1.5 times a month)
-NDefines.NAI.AGGRESSIVENESS_BONUS_EASY_WAR = 500 -- Added to aggressiveness if the war is against a weak or particularily hated enemy
 NDefines.NAI.AI_CONVERT_CULTURES = 1   
  
 --------------------------------
 -- Combat and War           
 --------------------------------
-NDefines.NDiplomacy.OFFENSIVE_WAR_COOLDOWN = 0
-NDefines.NDiplomacy.TRUCE_YEARS = 5 			            -- _DDEF_TRUCE_YEARS_; Years of Truce
-NDefines.NDiplomacy.SCALED_TRUCE_YEARS = 0			        -- Additional years of truce based on % of warscore taken in war (100% warscore = full scaled truce years)
-
 NDefines.NMilitary.COSSACKS_SHOCK_DAMAGE_BONUS = 0.1
 NDefines.NMilitary.STRELTSY_FIRE_DAMAGE_BONUS = 0.1
     

@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 318  }
+# set_variable = { which = province_id value = 318  }
 
 owner = LNS
 controller = LNS

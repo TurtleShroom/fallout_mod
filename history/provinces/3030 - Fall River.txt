@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 3030  }
+# set_variable = { which = province_id value = 3030  }
 
 native_size = 11
 native_ferocity = 15

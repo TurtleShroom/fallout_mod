@@ -10,7 +10,7 @@ maximize_profit =
 
 	trade_power = {
 		duration = -1
-		 power_modifier = 0.05
+		power_modifier = 0.05
 		key = maximize_profits
 	}
 	
@@ -82,23 +82,27 @@ propagate_religion =
 	unique = yes # Only one country can select this in a certain node.
 
 	can_select = {		
+		always = no
 		dominant_religion = ROOT
 		FROM = {
 			has_trader = ROOT
+			is_node_in_trade_company_region = yes
 			trade_share = {
 				country = ROOT
-				share = 90
+				share = 50
 			}
 		}
 	}
 
 	can_maintain = {
+		always = no
 		dominant_religion = ROOT
 		FROM = {
 			has_trader = ROOT
+			is_node_in_trade_company_region = yes
 			trade_share = {
 				country = ROOT
-				share = 85
+				share = 40
 			}
 		}
 	}

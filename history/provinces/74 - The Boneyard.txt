@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 74  }
+# set_variable = { which = province_id value = 74  }
 
 is_city = yes
 add_core = NCR

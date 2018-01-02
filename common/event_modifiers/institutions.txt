@@ -2,19 +2,16 @@ institution_policy_cooldown = {
 }
 
 institution_access_open = {
-    imperial_authority_value = 1
     global_spy_defence = -1
 }
 
 institution_access_restricted = {
     global_institution_spread = -0.5
     global_spy_defence = -0.5
-    imperial_authority_value = 0.5
 }
 
 institution_access_closed = {
     global_institution_spread = -1
-    imperial_authority_value = -1
 }
 
 institution_data_breach = {

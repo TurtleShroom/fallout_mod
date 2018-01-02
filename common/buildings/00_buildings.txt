@@ -28,27 +28,13 @@ museum = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
+		factor = 1	
+        
+        modifier = {
+			factor = 250
 			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
+			is_state = yes
 		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -64,27 +50,13 @@ school = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
+		factor = 1	
+        
+        modifier = {
+			factor = 250
 			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
+			is_state = yes
 		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -99,27 +71,7 @@ fm_workshop = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1	
 	}
 }
 
@@ -134,27 +86,7 @@ office_block = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1
 	}
 }
 
@@ -170,27 +102,13 @@ jail = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
+		factor = 1	
+        
+        modifier = {
+			factor = 200
 			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
+			is_state = yes
 		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -205,27 +123,7 @@ market = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1.5
 	}
 }
 
@@ -242,27 +140,7 @@ farm = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1	
 	}
 }
 		
@@ -279,27 +157,12 @@ munitions_storage = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
+		factor = 1	
+        
+        modifier = {
+			factor = 200
+			is_territory = yes
 		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -314,27 +177,7 @@ fm_barracks = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1
 	}
 }
 
@@ -349,27 +192,7 @@ fm_armory = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1
 	}
 }
 
@@ -380,31 +203,20 @@ military_camp = {
 	time = 12
 	
 	modifier = {
+        land_forcelimit = 2
 		local_regiment_cost = -0.33
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1
 		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
+			factor = 150
+			FROM = { army_size_percentage = 0.95 }
 		}
 		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
+			factor = 1.1
+			local_autonomy = 50
 		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -420,27 +232,13 @@ guard_tower = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
+		factor = 1	
+        
+        modifier = {
+			factor = 250
 			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
+			is_state = yes
 		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -459,27 +257,16 @@ dockyard = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
+		factor = 1	
+        
+        modifier = {
+			factor = 105 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
 		}
 		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
+			factor = 1.1
+			local_autonomy = 50
 		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -498,27 +285,7 @@ fm_arsenal = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1	
 	}
 }
 
@@ -534,27 +301,12 @@ road = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
+		factor = 1
+        
+        modifier = {
+			factor = 250
+			is_state = yes
 		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
 	}
 }
 
@@ -571,27 +323,7 @@ service_post = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1	
 	}
 }
 
@@ -608,27 +340,7 @@ military_depot = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1	
 	}
 }
 
@@ -647,27 +359,7 @@ rubble_defences = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1
 	}
 }
 
@@ -686,27 +378,7 @@ concrete_defences = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1	
 	}
 }
 
@@ -725,27 +397,7 @@ steel_defences = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 1
 	}
 }
 
@@ -765,28 +417,8 @@ titanium_defences = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
-	}
+		factor = 1
+    }
 }
 	
 # Unique
@@ -804,27 +436,7 @@ fm_command_centre = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -840,27 +452,7 @@ fm_casino = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -878,27 +470,7 @@ fm_embassy = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -914,27 +486,7 @@ fm_police_hq = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -950,27 +502,7 @@ fm_research_lab = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -987,27 +519,7 @@ fm_artillery_array = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -1025,27 +537,7 @@ fm_factory = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -1063,27 +555,7 @@ fm_wharf = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -1099,27 +571,7 @@ fm_correctional_facility = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -1137,27 +589,7 @@ fm_temple = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -1177,27 +609,7 @@ fm_town_hall = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 
@@ -1215,27 +627,7 @@ fm_simulation_centre = {
 	}
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}	
+		factor = 10000
 	}
 }
 

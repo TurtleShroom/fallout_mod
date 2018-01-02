@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 3058  }
+# set_variable = { which = province_id value = 3058  }
 
 is_city = yes
 owner = OPT

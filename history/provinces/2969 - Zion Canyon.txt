@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2969  }
+# set_variable = { which = province_id value = 2969  }
 
 #2969 - Zion Canyon
 

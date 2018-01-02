@@ -1,0 +1,186 @@
+mil_advisor_army_tradition = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	army_tradition = 1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_yearly_army_professionalism = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	yearly_army_professionalism = 0.01
+
+	chance = {
+		factor = 1
+        
+        modifier = {
+            factor = 0
+            NOT = {
+                has_dlc = "Cradle of Civilization"
+            }
+        }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_discipline = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	discipline = 0.05
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_land_morale = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	land_morale = 0.1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_siege_ability = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	siege_ability = 0.1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_fire_damage = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	fire_damage = 0.1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_shock_damage = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	shock_damage = 0.1
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_land_attrition = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	land_attrition = -0.2
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_global_regiment_cost = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	global_regiment_cost = -0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_land_maintenance_modifier = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	land_maintenance_modifier = -0.2
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_mercenary_cost = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	mercenary_cost = -0.25
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mil_advisor_merc_maintenance_modifier = {
+    monarch_power = MIL
+	
+    skill_scaled_modifier = { meritocracy = 0.5 }
+    
+	merc_maintenance_modifier = -0.2
+
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

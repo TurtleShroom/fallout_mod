@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 337  }
+# set_variable = { which = province_id value = 337  }
 
 owner = TWM
 controller = TWM

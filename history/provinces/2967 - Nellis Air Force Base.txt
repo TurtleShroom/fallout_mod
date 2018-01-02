@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 2967  }
+# set_variable = { which = province_id value = 2967  }
 
 #2967 - Nellis Air Force Base
 

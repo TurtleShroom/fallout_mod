@@ -7,12 +7,19 @@ annex_minor_mission = {
 		owned_by = ROOT
 	}
 	allow = {
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		FROM = {	
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			NOT = { alliance_with = FROM }
 		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
+		NOT = { alliance_with = FROM }
+		NOT = { is_subject_of = FROM }
+		NOT = { overlord_of = FROM }
+		NOT = { overlord = { is_subject_of = FROM } }
 		num_of_cities = 1
 		NOT = { num_of_cities = 2 }
 		NOT = { has_opinion = { who = FROM value = 0 } }
@@ -67,11 +74,23 @@ annex_minor_mission = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = FROM
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
 		}
 	}
 	effect = {
-		add_prestige = 20
+		FROM = {
+			add_country_modifier = {
+				name = "military_victory"
+				duration = 3650
+			}
+		}
 	}
 }
 
@@ -84,7 +103,7 @@ conquer_a_port = {
 	allow = {
 		FROM = {
 			primitives = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { num_of_total_ports = 1 }
 			NOT = { has_country_flag = conquered_a_port }
@@ -93,6 +112,10 @@ conquer_a_port = {
 		owner = {
 			NOT = { truce_with = FROM }
 			NOT = { alliance_with = FROM }
+			NOT = { is_subject_of = FROM }
+			NOT = { overlord_of = FROM }
+			NOT = { overlord = { is_subject_of = FROM } }
+			is_free_or_tributary_trigger = yes
 		}
 		has_port = yes
 		has_discovered = FROM
@@ -136,7 +159,16 @@ conquer_a_port = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
+		}
 	}
 	effect = {
 		FROM = {
@@ -157,7 +189,7 @@ conquer_neighbour = {
 	
 	allow = {
 		FROM = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			NOT = { has_country_modifier = military_victory }
 		}
 		NOT = { is_core = FROM }
@@ -166,7 +198,12 @@ conquer_neighbour = {
 		owner = { NOT = { truce_with = FROM } }
 		NOT = { owner = { num_of_infantry = FROM  } }
 		NOT = { owner = { vassal_of = FROM } }
-		owner = { is_subject = no }
+		NOT = { owner = { overlord = { is_subject_of = FROM } } }
+		owner = {
+			NOT = { is_subject_of = FROM }
+			NOT = { overlord_of = FROM }
+		}
+		owner = { is_free_or_tributary_trigger = yes }
 		owner = { is_at_war = no }
 		has_discovered = FROM
 		OR = {
@@ -220,7 +257,18 @@ conquer_neighbour = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		owner = {
+			every_target_province = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = FROM
+						}
+					}
+					remove_claim = FROM
+				}
+			}
+		}
 	}
 	effect = {
 		FROM = {
@@ -240,16 +288,17 @@ conquer_core = {
 
 	allow = {
 		FROM = {	
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			NOT = { has_country_modifier = military_victory }
 		}
 		is_core = FROM
 		is_colony = no
 		is_capital = no
-		NOT = { owner = { vassal_of = FROM } }
-		NOT = { owner = { junior_union_with = FROM } }
+		NOT = { owner = { is_subject_of = FROM } }
+		NOT = { owner = { overlord_of = FROM } }
+		NOT = { owner = { overlord = { is_subject_of = FROM } } }
 		owner = { NOT = { truce_with = FROM } }
-		owner = { is_subject = no }
+		owner = { is_free_or_tributary_trigger = yes }
 		owner = { is_at_war = no }
 		has_discovered = FROM
 		owner = {
@@ -300,7 +349,6 @@ conquer_core = {
 				duration = 3650
 			}
 		}
-		add_yearly_manpower = 0.5
 	}	
 }
 
@@ -311,7 +359,7 @@ protect_religious_minority = {
 	
 	allow = {
 		FROM = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			has_regency = no
 		}
@@ -320,7 +368,14 @@ protect_religious_minority = {
 		NOT = { culture = FROM }
 		NOT = { is_core = FROM }
 		NOT = { is_claim = FROM }
-		owner = { NOT = { alliance_with = FROM } }
+		is_colony = no
+		owner = {
+			NOT = { overlord = { is_subject_of = FROM } }
+			is_free_or_tributary_trigger = yes
+			NOT = { alliance_with = FROM }
+			NOT = { is_subject_of = FROM }
+			NOT = { overlord_of = FROM }
+		}
 		owner = { NOT = { is_subject_of = FROM } }
 		owner = { num_of_cities = 2 }
 		has_discovered = FROM
@@ -367,15 +422,22 @@ protect_religious_minority = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
+		}
 	}
 	effect = {
 		add_province_modifier = {
 			name = "faster_integration"
 			duration = 3650
 		}
-		
-		add_yearly_manpower = 0.33
 	}
 }
 

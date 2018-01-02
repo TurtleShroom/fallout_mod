@@ -1,41 +1,45 @@
-increased_patrols = {
-    global_unrest = -1
-    global_tax_modifier = -0.1
+frontier_rush = {
+    global_colonial_growth = 10
 }
 
-incentivise_research = {
-    idea_cost = -0.1
-    global_tax_modifier = -0.1
-}
-
-relaxed_recruitment = {
-    mercenary_cost = -0.25
-    global_unrest = 1
-}
-
-assuaged_commoners = {
-    war_exhaustion = -0.025
-    global_tax_modifier = -0.1
-}
-
-expanded_spy_network = {
-    spy_offence = 0.25
-}
-
-open_markets = {
-    trade_range_modifier = 0.25
-    global_foreign_trade_power = 0.1
-    global_own_trade_power = -0.1
-}
-
-quelling_unrest = {
-    global_unrest = -2
-}
-
-funding_scientific_research = {
+scientific_forum = {
     idea_cost = -0.1
 }
 
-settlers_of_the_wasteland = {
-    colonists = 1
+slavery_construction = {
+    build_time = -0.5
+    build_cost = -0.2
+}
+
+slavery_production = {
+    production_efficiency = 0.15
+}
+
+additional_merchants = {
+    merchants = 1
+}
+
+persuasive_merchants = {
+    trade_steering = 0.15
+}
+
+sedation_gases = {
+    years_of_nationalism = -5
+}
+
+automated_checks = {
+    yearly_corruption = -0.05
+}
+
+freethinking_settlers = {
+    embracement_cost = -0.25
+}
+
+foreign_advisors = {
+    advisor_pool = 1
+}
+
+rape_and_pillage = {
+    loot_amount = 1.0
+    improve_relation_modifier = -0.25
 }

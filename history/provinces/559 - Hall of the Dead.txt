@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 559  }
+# set_variable = { which = province_id value = 559  }
 
 owner = NEC
 controller = NEC

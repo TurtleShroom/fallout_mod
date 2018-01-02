@@ -620,7 +620,7 @@ guiTypes = {
 				name ="court_select_slider"
 				position = { x=86 y =170}
 				backGround=""
-				size = { x=382 y =350}
+				size = { x=445 y =350}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2
@@ -744,7 +744,7 @@ guiTypes = {
 		{
 			name ="advisor_button"
 			quadTextureSprite= "GFX_advisor_noAdvisorType"
-			position = { x= 3 y = 3 }
+			position = { x= -10 y = 5 }
 			Orientation = "UPPER_LEFT"
 			tooltip = ""
 			tooltipText =""
@@ -758,16 +758,16 @@ guiTypes = {
 		iconType ={
 			name ="advisor_indicator_religion"
 			spriteType = "GFX_advisor_indicator_religion"
-			position = { x= -18 y = 5 }
+			position = { x= 35 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType ={
 			name ="advisor_indicator_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= -13 y = 10 }
+			position = { x= 43 y = 12 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.6
+			scale = 0.5
 			allwaystransparent = yes
 			frame = 17
 		}
@@ -775,7 +775,7 @@ guiTypes = {
 		iconType ={
 			name ="advisor_indicator_culture"
 			spriteType = "GFX_advisor_indicator_culture"
-			position = { x= -18 y = 39 }
+			position = { x= 35 y = 39 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}		
@@ -937,32 +937,19 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 			
-		guiButtonType =
-		{
-			name ="advisor_button"
-			quadTextureSprite= "GFX_greatmen_button"
-			position = { x= -15 y = 1 }
-			Orientation = "UPPER_LEFT"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-		}
-		
-
-		
 		iconType ={
 			name ="advisor_indicator_religion"
 			spriteType = "GFX_advisor_indicator_religion"
-			position = { x= -42 y = 3 }
+			position = { x= -20 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType ={
 			name ="advisor_indicator_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= -37 y = 8 }
+			position = { x= -13 y = 10 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.6
+			scale = 0.5
 			allwaystransparent = yes
 			frame = 17
 		}
@@ -970,7 +957,7 @@ guiTypes = {
 		iconType ={
 			name ="advisor_indicator_culture"
 			spriteType = "GFX_advisor_indicator_culture"
-			position = { x= -42 y = 37 }
+			position = { x= -20 y = 37 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}		
@@ -980,7 +967,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 68 y =0 }
+			position = { x = 25 y =0 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1054,7 +1041,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "value"
-			position = { x = 193 y =34 }
+			position = { x = 150 y =34 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1066,7 +1053,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "desc"
-			position = { x = 68 y =49 }
+			position = { x = 25 y =49 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1079,7 +1066,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "home"
-			position = { x = 193 y =49 }
+			position = { x = 150 y =49 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1092,7 +1079,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "purchase"
-			position = { x = 68 y =34 }
+			position = { x = 25 y =34 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1104,7 +1091,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "purchase_cost"
-			position = { x = 113 y =34 }
+			position = { x = 70 y =34 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1118,13 +1105,13 @@ guiTypes = {
 		{
 			name ="effect_icon"
 			spriteType = "GFX_idea_unknown"
-			position = { x= 62 y = 14 }
+			position = { x= 22 y = 14 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.4
 		}
 		instantTextBoxType = {
 			name = "effect"
-			position = { x = 88 y =18 }
+			position = { x = 50 y =18 }
 			format = left
 			textureFile = ""
 			font = "vic_18"
@@ -1135,14 +1122,26 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
+        guiButtonType =
+		{
+			name ="advisor_button"
+			quadTextureSprite= "GFX_advisor_noAdvisorType"
+			position = { x= 330 y = 13 }
+			Orientation = "UPPER_LEFT"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+        
 		guiButtonType = {
 			name = "dismiss_button"
-			position = { x = 330 y = -8}
+			position = { x = 380 y = 10}
 			quadTextureSprite ="GFX_dismiss_advisor"	
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			clicksound = back_click
+            scale = 1
 		}
 
 	}

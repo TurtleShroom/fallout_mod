@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 539  }
+# set_variable = { which = province_id value = 539  }
 
 add_core = DIC
 owner = DIC

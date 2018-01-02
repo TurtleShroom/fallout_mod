@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 268  }
+# set_variable = { which = province_id value = 268  }
 
 owner = SOU
 controller = SOU

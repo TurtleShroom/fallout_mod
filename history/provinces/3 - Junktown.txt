@@ -1,4 +1,4 @@
-set_variable = { which = province_id value = 3  }
+# set_variable = { which = province_id value = 3  }
 
 #3 - Junktown
 
