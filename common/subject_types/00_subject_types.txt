@@ -469,6 +469,7 @@ tributary_state = {
 	# Triggers:
 	is_potential_overlord = {
 		has_dlc = "Mandate of Heaven"
+		has_country_flag = allow_tributary_state
 		NOT = { 
 			is_subject_of_type = tributary_state
 		}

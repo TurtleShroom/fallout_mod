@@ -11,7 +11,7 @@ native_adm_ideas = {
 	
     # Cap Collectors
 	native_adm_1 = {
-        global_tax_modifier = 0.25
+        global_tax_modifier = 0.2
 	}
     # Loansharks
 	native_adm_2 = {
@@ -20,6 +20,7 @@ native_adm_ideas = {
     # Juryrigged Construction
 	native_adm_3 = {
 		build_cost = -0.2
+		build_time = -0.2
 	}	
     # Salvaged Materials
 	native_adm_4 = {
@@ -27,7 +28,7 @@ native_adm_ideas = {
 	}
     # Mind Over Matter
 	native_adm_5 = {
-		adm_tech_cost_modifier = -0.15
+		core_creation = -0.1
 	}
 	
 	ai_will_do = {
@@ -49,7 +50,7 @@ native_dip_ideas = {
 	}
     # Backroom Diplomacy
 	native_dip_3 = {
-		improve_relation_modifier = 0.5
+		improve_relation_modifier = 0.25
 	}
     # Transient
 	native_dip_4 = { 
@@ -58,7 +59,7 @@ native_dip_ideas = {
 	}
     # Diplomatic Cunning
 	native_dip_5 = { 
-		dip_tech_cost_modifier = -0.15
+		diplomatic_reputation = 2
 	}
 	
 	ai_will_do = {
@@ -72,23 +73,24 @@ native_mil_ideas = {
 	
     # Kill or be Killed
 	native_mil_1 = {
-		land_morale = 0.1
+		shock_damage = 0.1
 	}
     # Guerilla Warfare
 	native_mil_2 = {
-		leader_land_manuever = 1
+		siege_ability = 0.1
 	}
     # Makeshift Weaponry
 	native_mil_3 = {
-		fire_damage = 0.2
+		global_regiment_cost = -0.33
 	}
     # Mercenary Connections
-	native_mil_4 = {
-		mercenary_cost = -0.25
+	native_mil_4 = {	
+		mercenary_discipline = 0.1
+		mercenary_cost = -0.1
 	}
     # Brutality
 	native_mil_5 = {
-		mil_tech_cost_modifier = -0.15
+		discipline = 0.05
 	}
 	
 	ai_will_do = {
