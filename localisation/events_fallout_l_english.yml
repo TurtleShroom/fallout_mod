@@ -113,28 +113,21 @@
  courier.1.option.a: "Cosy up with the NCR"
  courier.1.option.b: "Side with the Legion"
  courier.1.option.c: "Remain independent"
+
+ courier.2.title: "A Courier's Task"
+ courier.2.desc: "A courier from New Vegas has attended [Root.Monarch.GetTitle] [Root.Monarch.GetName] command tent and requested that the Legion forms an alliance with the regional power that is New Vegas."
+ courier.2.option.a: "An alliance will be formed!"
+ courier.2.option.b: "Throw this vagrant out of my tent!"
+
+ courier.3.title: "A Courier's Task"
+ courier.3.desc: "A courier from New Vegas has attended [Root.Monarch.GetTitle] [Root.Monarch.GetName] command office and requested that the New California Republic forms an alliance with the regional power that is New Vegas."
+ courier.3.option.a: "An alliance will be formed!"
+ courier.3.option.b: "Throw this vagrant out of my office!"
  
- courier.2.title: "The Courier"
- courier.2.desc: "A courier has been rumoured to carry the Platinum Chip. With access to the securitron army, he may be able to assist our cause. However, it will take a hefty payment to ensure such loyalty."
- courier.2.option.a: "Ensure his loyalty"
- courier.2.option.b: "Encourage his loyalty"
- courier.2.option.c: "Dismiss such ideas"
- 
- courier.3.title: "The Courier ponders..."
- courier.3.desc: ""
- courier.3.option.a: ""
- 
- courier.4.title: "The Courier's Choice"
- courier.4.desc: "The courier has decided to help us, granting us the power of the securitron army in the Mojave."
- courier.4.option.a: "Huzzah!"
- 
- courier.5.title: "The Courier's Choice"
- courier.5.desc: "The courier has decided to take control of the securitron army in the Mojave, with himself at the helm. This will disrupt the people of the Mojave for years to come."
- courier.5.option.a: "Damnation!"
- 
- courier.6.title: "The Courier Fades Away..."
- courier.6.desc: "For years the courier has wrought death and destruction across the wasteland. But as the years passed, his will for malice fades and his actions stopped."
- courier.6.option.a: "He will trouble us no longer"
+ courier.4.title: "The Platinum Chip"
+ courier.4.desc: "A courier has been rumoured to carry the Platinum Chip. With access to the securitron army, he may be able to assist our cause. However, it will take a hefty payment to ensure such loyalty. If we fail to secure his loyalty, he may visit our enemies instead."
+ courier.4.option.a: "Bribe him"
+ courier.4.option.b: "Dismiss him"
  
  #----------------------------------
  # The Pitt

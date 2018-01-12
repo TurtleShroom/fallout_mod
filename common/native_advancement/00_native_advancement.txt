@@ -54,7 +54,7 @@ native_dip_ideas = {
 	}
     # Transient
 	native_dip_4 = { 
-		migration_cooldown = -0.1
+		migration_cooldown = -0.5
 		auto_explore_adjacent_to_colony = yes
 	}
     # Diplomatic Cunning
