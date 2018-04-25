@@ -7,8 +7,8 @@ vertibird_fleet_chicago = {
 		owns_core_province = 1906
 	}
 	
-    movement_speed = 0.25
-    cavalry_power = 0.1
+    movement_speed = 0.1
+    cavalry_power = 0.05
 }
 
 controls_washington = {

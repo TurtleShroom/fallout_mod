@@ -42,10 +42,10 @@ uni_baltimore = {
 }
 
 uni_liberty_bell = {
-	republican_tradition = 0.3
-	legitimacy = 0.3
-	horde_unity = 0.3
-	devotion = 0.3
+	republican_tradition = 0.25
+	legitimacy = 0.25
+	horde_unity = 0.25
+	devotion = 0.25
 }
 
 the_glowing_sea = {
@@ -72,7 +72,7 @@ swealting_heat = {
  
 lost_hills_bunker = {
 	local_defensiveness = 0.15 
-        garrison_growth = 0.05
+	garrison_growth = 0.05
 }
 
 angels_boneyard_medical_university = {
@@ -112,7 +112,7 @@ jefferson_memorial = {
 }
 
 black_mountain = {
-	unjustified_demands = -0.1
+	unjustified_demands = -0.05
 }
 
 protectron_manufactory = {
@@ -227,8 +227,7 @@ capitol_building = {
 }
 
 national_archives = {
-    technology_cost = -0.02
-	local_development_cost = -0.05
+	local_development_cost = -0.25
 } 
 
 crm_com_bunk = {
@@ -236,15 +235,11 @@ crm_com_bunk = {
 }
 
 boston_the_castle = {
-	local_defensiveness = 1
-	global_garrison_growth = 0.15
-	local_defensiveness = 0.20
+	local_defensiveness = 0.5
 }
 
 boston_fenway_stadium = {
-	local_defensiveness = 1
-	global_garrison_growth = 0.20
-	local_defensiveness = 0.30
+	local_defensiveness = 0.5
 }
 
 boulder_city_ruins = {
@@ -268,7 +263,7 @@ the_cloud = {
 }
 
 riches_of_the_sierra_madre = {
-	tax_income = 120
+	tax_income = 32
 }
 
 

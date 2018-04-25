@@ -113,7 +113,7 @@ post_war_age = {
         
         ab_colonial_growth = {
 			modifier = {
-				global_colonial_growth = 30
+				global_colonial_growth = 15
 			}
 			ai_will_do = {
 				factor = 50

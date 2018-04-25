@@ -1,0 +1,26 @@
+namespace = fds_conscription
+
+country_event = {
+	id = fds_conscription.1
+	title = fds_conscription.1.title
+	desc = fds_conscription.1.desc
+    picture = BOS_CHAT_eventPicture
+	
+    trigger = {
+	
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = fds_conscription.1.option.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+}
+

@@ -41,6 +41,11 @@
  building_the_bison_steve_casino: "The Bison and Steve Casino"
  building_lincoln_memorial: "Lincoln Memorial"
  building_ranger_unification_statue: "Ranger Unification Statue"
- 
  building_atomic_wrangler: "Atomic Wrangler"
  building_silver_rush: "Silver Rush"
+ 
+ building_labour_camp: "Labour Camp"
+ building_military_factory: "Military Lab"
+ building_industrial_factory: "Industrial Factory"
+ building_commercial_factory: "Commerical Warehouse"
+ building_electronics_factory: "Electronics Lab"

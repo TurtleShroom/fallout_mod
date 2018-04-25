@@ -3794,3 +3794,13 @@ entertaining_heathens = {
 	opinion = -35
 	yearly_decay = 1
 }
+
+harbored_inventor = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+turned_away_inventor = {
+	opinion = 50
+	yearly_decay = 1
+}

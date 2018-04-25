@@ -10,6 +10,6 @@ the_howitizer = {
         }
 	}
     
-    fire_damage_received = 0.25
-    shock_damage_received = 0.25
+    fire_damage_received = 0.1
+    shock_damage_received = 0.1
 }

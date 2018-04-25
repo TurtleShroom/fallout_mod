@@ -1,7 +1,0 @@
-attack_the_legion_buff = {
-	land_morale = 0.1
-}
-
-attack_the_ncr_buff = {
-	land_morale = 0.1
-}

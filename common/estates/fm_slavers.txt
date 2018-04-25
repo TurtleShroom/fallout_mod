@@ -490,11 +490,11 @@ estate_slavers =
 
         trigger = {
             estate_loyalty = {
-                estate = estate_scientists
+                estate = estate_slavers
                 loyalty = 30
             }
             estate_influence = {
-                estate = estate_scientists
+                estate = estate_slavers
                 influence = 40
             }
         }
@@ -506,7 +506,7 @@ estate_slavers =
             }
 
 			add_estate_influence_modifier = {
-                estate = estate_scientists
+                estate = estate_slavers
                 desc = EST_VAL_RAPE_AND_PILLAGE
                 influence = 15
                 duration = 7300

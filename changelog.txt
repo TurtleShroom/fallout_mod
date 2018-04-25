@@ -1,2 +1,2 @@
-- Fixed diplomacy setup
-- Changed diplomacy setup for the Institute
+- Update for 1.25
+- Modifier nerf across all sources in general.

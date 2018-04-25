@@ -1,0 +1,338 @@
+﻿l_english:
+ # Variables
+ fds_economy: "Economy Policy"
+ fds_law: "Law Policy"
+ fds_justice: "Justice Policy"
+ fds_punishment: "Punishment Policy"
+ fds_innovation: "Innovation Policy"
+ fds_conscription: "Conscription Policy"
+ 
+ fds_slavery_regulation: "Slavery Regulation"
+ fds_gambling_regulation: "Slavery Regulation"
+ fds_prostitution_regulation: "Slavery Regulation"
+ fds_firearms_regulation: "Slavery Regulation"
+ fds_narcotics_regulation: "Slavery Regulation"
+ fds_scavenging_regulation: "Scavenging Regulation"
+ 
+ # Flags
+ fds_economy_set_flag: "Economy Policy Set"
+ fds_law_set_flag: "Law Policy Set"
+ fds_justice_set_flag: "Justice Policy Set"
+ fds_punishment_set_flag: "Punishment Policy Set"
+ fds_innovation_set_flag: "Innovation Policy Set"
+ fds_conscription_set_flag: "Conscription Policy Set"
+ 
+ fds_slavery_regulation_set_flag: "Slavery Regulation Set"
+ fds_gambling_regulation_set_flag: "Slavery Regulation Set"
+ fds_prostitution_regulation_set_flag: "Slavery Regulation Set"
+ fds_firearms_regulation_set_flag: "Slavery Regulation Set"
+ fds_narcotics_regulation_set_flag: "Slavery Regulation Set"
+ fds_scavenging_regulation_set_flag: "Scavenging Regulation Set"
+ 
+ # Tooltips
+ fds_economy_traditional_set: "Set §YEconomy Policy§! to §YTraditional§!."
+ fds_economy_command_set: "Set §YEconomy Policy§! to §YCommand§!."
+ fds_economy_market_set: "Set §YEconomy Policy§! to §YMarket§!."
+ fds_economy_mixed_set: "Set §YEconomy Policy§! to §YMixed§!."
+ 
+ fds_law_democratic_set: "Set §YLaw Policy§! to §YDemocratic§!."
+ fds_law_oligarchic_set: "Set §YLaw Policy§! to §YOligarchic§!."
+ fds_law_autocratic_set: "Set §YLaw Policy§! to §YAutocratic§!."
+ 
+ fds_justice_courts_set: "Set §YJustice Policy§! to §YState Courts§!."
+ fds_justice_community_set: "Set §YJustice Policy§! to §YCommunity Courts§!."
+ fds_justice_state_set: "Set §YJustice Policy§! to §YSecret Courts§!."
+
+ fds_punishment_fine_set: "Set §YPunishment Policy§! to §YFine§!."
+ fds_punishment_imprisonment_set: "Set §YPunishment Policy§! to §YImprisonment§!."
+ fds_punishment_execution_set: "Set §YPunishment Policy§! to §YExecution§!."
+ fds_punishment_slavery_set: "Set §YPunishment Policy§! to §YSlavery§!."
+ 
+ fds_innovation_individual_set: "Set §YInnovation Policy§! to §YIndividual§!."
+ fds_innovation_sponsored_set: "Set §YInnovation Policy§! to §YState-sponsored§!."
+ fds_innovation_state_set: "Set §YInnovation Policy§! to §YState§!."
+ 
+ fds_conscription_volunteer_set: "Set §YConscription Policy§! to §YVolunteer§!."
+ fds_conscription_limited_set: "Set §YConscription Policy§! to §YLimited§!."
+ fds_conscription_full_set: "Set §YConscription Policy§! to §YFull§!."
+ 
+ fds_slavery_regulation_allowed_set: "Set §YSlavery Regulation§! to §YAllowed§!."
+ fds_slavery_regulation_licensed_set: "Set §YSlavery Regulation§! to §YLicensed§!."
+ fds_slavery_regulation_forbidden_set: "Set §YSlavery Regulation§! to §YForbidden§!."
+ 
+ fds_gambling_regulation_allowed_set: "Set §YGambling Regulation§! to §YAllowed§!."
+ fds_gambling_regulation_licensed_set: "Set §YGambling Regulation§! to §YLicensed§!."
+ fds_gambling_regulation_forbidden_set: "Set §YGambling Regulation§! to §YForbidden§!."
+ 
+ fds_prostitution_regulation_allowed_set: "Set §YProstitution Regulation§! to §YAllowed§!."
+ fds_prostitution_regulation_licensed_set: "Set §YProstitution Regulation§! to §YLicensed§!."
+ fds_prostitution_regulation_forbidden_set: "Set §YProstitution Regulation§! to §YForbidden§!."
+ 
+ fds_firearms_regulation_allowed_set: "Set §YFirearms Regulation§! to §YAllowed§!."
+ fds_firearms_regulation_licensed_set: "Set §YFirearms Regulation§! to §YLicensed§!."
+ fds_firearms_regulation_forbidden_set: "Set §YFirearms Regulation§! to §YForbidden§!."
+ 
+ fds_narcotics_regulation_allowed_set: "Set §YNarcotics Regulation§! to §YAllowed§!."
+ fds_narcotics_regulation_licensed_set: "Set §YNarcotics Regulation§! to §YLicensed§!."
+ fds_narcotics_regulation_forbidden_set: "Set §YNarcotics Regulation§! to §YForbidden§!."
+ 
+ fds_scavenging_regulation_allowed_set: "Set §YScavenging Regulation§! to §YAllowed§!."
+ fds_scavenging_regulation_licensed_set: "Set §YScavenging Regulation§! to §YLicensed§!."
+ fds_scavenging_regulation_forbidden_set: "Set §YScavenging Regulation§! to §YForbidden§!."
+ 
+ # Triggered Modifiers
+ # Economy
+ fds_traditional_economy: "Traditional Economy"
+ desc_fds_traditional_economy: "A traditional economy is a local economy, with farming at the centre of all economic activity. For members of the wasteland, this means they live a economically deprived existence. But such locality fosters strong communal bonds.\n\nAllows X events to occur."
+ 
+ fds_command_economy: "Command Economy"
+ desc_fds_command_economy: "A command economy is ruled by a central authority, for most this means the government. For members of the wasteland, this grants little to no autonomy to the individual, but permits the state fast mobilization of goods when needed.\n\nAllows X events to occur."
+ 
+ fds_market_economy: "Market Economy"
+ desc_fds_market_economy: "A market economy is dictated by individuals, who are unbound by any central authority, fostering competition. For members of the wasteland, this means vital goods such as food are competitively priced, but niche industries such as medicine are often lacking.\n\nAllows X events to occur."
+ 
+ fds_mixed_economy: "Mixed Economy"
+ desc_fds_mixed_economy: "A combination of command and market, where the market is bound by regulations, but otherwise free to operate. For members of the wasteland, this can often be the best of both worlds, but lacks the extremes found in either.\n\nAllows X events to occur."
+ 
+ # Law
+ fds_democratic_law: "Democratic Law"
+ desc_fds_democratic_law: "The legislature (or regional equivalent) operates in a democratic manner, allowing democratic input in one way or another. For members of the wasteland, this is a fair, but slow system.\n\nAllows X events to occur."
+ 
+ fds_oligarchic_law: "Oligarchic Law"
+ desc_fds_oligarchic_law: "The legislature (or regional equivalent) is controlled by an oligarchy of sorts. This deprived much of the populance from input, but for those allied with the oligarchs, there is much to gain.\n\nAllows X events to occur."
+ 
+ fds_autocratic_law: "Autocratic Law"
+ desc_fds_autocratic_law: "The legislature (or regional equivalent) is controlled by a strongman. The whims of the autocrat are capricious, but an autocrat with a vision can achieve greatness, no matter the costs.\n\nAllows X events to occur."
+ 
+ # Justice
+ fds_court_justice: "State Courts"
+ desc_fds_court_justice: "Justice is sought through the courts, granting those accused a fair and just trial.\n\nAllows X events to occur."
+ 
+ fds_community_justice: "Community Courts"
+ desc_fds_community_justice: "Justice is sought through local communal courts. Local practices mean trials can ranged from fair and just to mock trials, where the community enacts what it sees as justice.\n\nAllows X events to occur."
+ 
+ fds_state_justice: "Secret Courts"
+ desc_fds_state_justice: "Justice is sought only by the state, where trials are conducted in secret. Scant true justice can be found in such courtrooms.\n\nAllows X events to occur."
+ 
+ # Punishment
+ fds_fine_punishment: "Fines"
+ desc_fds_fine_punishment: "Punishment for crimes is served through the issue of a fine (or bribe) in the majority of cases. \n\nAllows X events to occur."
+ 
+ fds_imprisonment_punishment: "Prison"
+ desc_fds_imprisonment_punishment: "Punishment for crimes is served through imprisonment in the majority of cases. \n\nAllows X events to occur."
+ 
+ fds_execution_punishment: "Execution"
+ desc_fds_execution_punishment: "Punishment for crimes is execution in the majority of cases. \n\nAllows X events to occur."
+ 
+ fds_slavery_punishment: "Slavery"
+ desc_fds_slavery_punishment: "Punishment for crimes is served through slavery to the state in the majority of cases. \n\nAllows X events to occur."
+ 
+ # Innovation
+ fds_individual_innovation: "Individual Innovation"
+ desc_fds_individual_innovation: "Innovation in the sciences is funded and enacted by the individual, with no state support. \n\nAllows X events to occur."
+ 
+ fds_state_sponsored_innovation: "State-sponsored Innovation"
+ desc_fds_state_sponsored_innovation: "Innovation in the sciences is funded by the state and enacted by the individual and the state.\n\nAllows X events to occur."
+ 
+ fds_state_innovation: "State Innovation"
+ desc_fds_state_innovation: "Innovation in the sciences is funded by the state and enacted by the state, with individuals dissaded from such activities.\n\nAllows X events to occur."
+ 
+ # Conscription
+ fds_volunteer_conscription: "Volunteer Conscription"
+ desc_fds_volunteer_conscription: "The manpower of our armies is mainly fueled by volunteers.\n\nAllows X events to occur."
+ 
+ fds_limited_conscription: "Limited Conscription"
+ desc_fds_limited_conscription: "The manpower of our armies is fueled by the recruitment of able-bodied men.\n\nAllows X events to occur."
+ 
+ fds_full_conscription: "Full Conscription"
+ desc_fds_full_conscription: "The manpower of our armies is fueled by the recruitment of all citizens old enough to walk.\n\nAllows X events to occur."
+ 
+ # Slavery
+ fds_slavery_allowed: "Slavery Allowed"
+ desc_fds_slavery_allowed: "Slavery is practicable by any citizen, and the state if it so pleases. \n\nAllows X events to occur."
+ 
+ fds_slavery_licensed: "Slavery Licensed"
+ desc_fds_slavery_licensed: "Slavery is practicable by the state and individuals it deems worthy. \n\nAllows X events to occur."
+ 
+ fds_slavery_forbidden: "Slavery Forbidden"
+ desc_fds_slavery_forbidden: "Slavery is forbidden. \n\nAllows X events to occur."
+ 
+ # Gambling
+ fds_gambling_allowed: "Gambling Allowed"
+ desc_fds_gambling_allowed: "Gambling is allowed anywhere without restriction.\n\nAllows X events to occur."
+ 
+ fds_gambling_licensed: "Gambling Licensed"
+ desc_fds_gambling_licensed: "Gambling only allowed in state-sanctioned venues. Other forms are prosecuted.\n\nAllows X events to occur."
+ 
+ fds_gambling_forbidden: "Gambling Forbidden"
+ desc_fds_gambling_allowed: "Gambling is forbidden.\n\nAllows X events to occur."
+ 
+ # Prostitution
+ fds_prostitution_allowed: "Prostitution Allowed"
+ desc_fds_prostitution_allowed: "Prostitution is allowed anywhere without restriction.\n\nAllows X events to occur."
+ 
+ fds_prostitution_licensed: "Prostitution Licensed"
+ desc_fds_prostitution_licensed: "Prostitution is licensed by the state.\n\nAllows X events to occur."
+ 
+ fds_prostitution_forbidden: "Prostitution Forbidden"
+ desc_fds_prostitution_forbidden: "Prostitution is forbidden.\n\nAllows X events to occur."
+ 
+ # Firearms
+ fds_firearms_allowed: "Open Carry Allowed"
+ desc_fds_firearms_allowed: "Open carry of firearms is allowed.\n\nAllows X events to occur."
+ 
+ fds_firearms_licensed: "Open Carry Licensed"
+ desc_fds_firearms_licensed: "Open carry of firearms is allowed with license.\n\nAllows X events to occur."
+ 
+ fds_firearms_forbidden: "Open Carry Forbidden"
+ desc_fds_firearms_forbidden: "Open carry of firearms is forbidden.\n\nAllows X events to occur."
+ 
+ # Narcotics
+ fds_narcotics_allowed: "Narcotics Allowed"
+ desc_fds_narcotics_allowed: "Narcotics production and usage are allowed without restriction.\n\nAllows X events to occur."
+ 
+ fds_narcotics_licensed: "Narcotics Licensed"
+ desc_fds_narcotics_licensed: "Narcotics production and usage are allowed with license.\n\nAllows X events to occur."
+ 
+ fds_narcotics_forbidden: "Narcotics Forbidden"
+ desc_fds_narcotics_forbidden: "Narcotics production and usage are forbidden.\n\nAllows X events to occur."
+ 
+ # Scavenging
+ fds_scavenging_allowed: "Scavenging Allowed"
+ desc_fds_scavenging_allowed: "Scavenging is allowed without restriction.\n\nAllows X events to occur."
+ 
+ fds_scavenging_licensed: "Scavenging Licensed"
+ desc_fds_scavenging_licensed: "Scavenging is only allowed by the state and state-sanctioned individuals.\n\nAllows X events to occur."
+ 
+ fds_scavenging_forbidden: "Scavenging Forbidden"
+ desc_fds_scavenging_forbidden: "Scavenging is only allowed by the state.\n\nAllows X events to occur."
+ 
+ # Events
+ event_exit: "Return"
+
+ fds.1.title: "Setup"
+ fds.1.desc: ""
+ fds.1.option.a: ""
+ 
+ fds_policies.1.title: "Economic Policy"
+ fds_policies.1.desc: ""
+ fds_policies.1.option.a: "Traditional Economy"
+ fds_policies.1.option.b: "Command Economy"
+ fds_policies.1.option.c: "Market Economy"
+ fds_policies.1.option.d: "Mixed Economy"
+ 
+ fds_policies.2.title: "Law Policy"
+ fds_policies.2.desc: ""
+ fds_policies.2.option.a: "Democratic Law"
+ fds_policies.2.option.b: "Oligarchic Law"
+ fds_policies.2.option.c: "Autocratic Law"
+ 
+ fds_policies.3.title: "Justice Policy"
+ fds_policies.3.desc: ""
+ fds_policies.3.option.a: "State Courts"
+ fds_policies.3.option.b: "Community Courts"
+ fds_policies.3.option.c: "Secret Courts"
+ 
+ fds_policies.4.title: "Punishment Policy"
+ fds_policies.4.desc: ""
+ fds_policies.4.option.a: "Fines"
+ fds_policies.4.option.b: "Prison"
+ fds_policies.4.option.c: "Execution"
+ fds_policies.4.option.d: "Slavery"
+ 
+ fds_policies.5.title: "Innovation Policy"
+ fds_policies.5.desc: ""
+ fds_policies.5.option.a: "Individual Innovation"
+ fds_policies.5.option.b: "State-sponsored Innovation"
+ fds_policies.5.option.c: "State Innovation"
+ 
+ fds_policies.6.title: "Conscription Policy"
+ fds_policies.6.desc: ""
+ fds_policies.6.option.a: "Volunteer Conscription"
+ fds_policies.6.option.b: "Limited Conscription"
+ fds_policies.6.option.c: "Full Conscription"
+ 
+ fds_regulations.1.title: "Slavery Regulation"
+ fds_regulations.1.desc: ""
+ fds_regulations.1.option.a: "Allowed"
+ fds_regulations.1.option.b: "Licensed"
+ fds_regulations.1.option.c: "Forbidden"
+ 
+ fds_regulations.2.title: "Gambling Regulation"
+ fds_regulations.2.desc: ""
+ fds_regulations.2.option.a: "Allowed"
+ fds_regulations.2.option.b: "Licensed"
+ fds_regulations.2.option.c: "Forbidden"
+ 
+ fds_regulations.3.title: "Prostitution Regulation"
+ fds_regulations.3.desc: ""
+ fds_regulations.3.option.a: "Allowed"
+ fds_regulations.3.option.b: "Licensed"
+ fds_regulations.3.option.c: "Forbidden"
+ 
+ fds_regulations.4.title: "Firearms Regulation"
+ fds_regulations.4.desc: ""
+ fds_regulations.4.option.a: "Allowed"
+ fds_regulations.4.option.b: "Licensed"
+ fds_regulations.4.option.c: "Forbidden"
+ 
+ fds_regulations.5.title: "Narcotics Regulation"
+ fds_regulations.5.desc: ""
+ fds_regulations.5.option.a: "Allowed"
+ fds_regulations.5.option.b: "Licensed"
+ fds_regulations.5.option.c: "Forbidden"
+ 
+ fds_regulations.6.title: "Scavenging Regulation"
+ fds_regulations.6.desc: ""
+ fds_regulations.6.option.a: "Allowed"
+ fds_regulations.6.option.b: "Licensed"
+ fds_regulations.6.option.c: "Forbidden"
+ 
+ # Decisions
+ fds_economy_selection_title: "Enact Economic Policy"
+ fds_economy_selection_desc: "Change your economic policy."
+ 
+ fds_law_selection_title: "Enact Law Policy"
+ fds_law_selection_desc: "Change your law policy."
+ 
+ fds_justice_selection_title: "Enact Justice Policy"
+ fds_justice_selection_desc: "Change your justice policy."
+ 
+ fds_punishment_selection_title: "Enact Punishment Policy"
+ fds_punishment_selection_desc: "Change your punishment policy."
+ 
+ fds_innovation_selection_title: "Enact Innovation Policy"
+ fds_innovation_selection_desc: "Change your innovation policy."
+ 
+ fds_conscription_selection_title: "Enact Conscription Policy"
+ fds_conscription_selection_desc: "Change your conscription policy."
+ 
+ fds_slavery_selection_title: "Enact Slavery Regulation"
+ fds_slavery_selection_desc: "Change your slavery regulation."
+ 
+ fds_gambling_selection_title: "Enact Gambling Regulation"
+ fds_gambling_selection_desc: "Change your gambling regulation."
+ 
+ fds_prostitution_selection_title: "Enact Prostitution Regulation"
+ fds_prostitution_selection_desc: "Change your prostitution regulation."
+ 
+ fds_firearms_selection_title: "Enact Firearms Regulation"
+ fds_firearms_selection_desc: "Change your firearms regulation."
+ 
+ fds_narcotics_selection_title: "Enact Narcotics Regulation"
+ fds_narcotics_selection_desc: "Change your narcotics regulation."
+ 
+ fds_scavenging_selection_title: "Enact Scavenging Regulation"
+ fds_scavenging_selection_desc: "Change your scavenging regulation."
+ 
+ # Disasters
+ FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING: "Changing this policy prematurely will cause a §YRegulatory Disaster§! to occur.\n\nPolicies and regulations can only be changed between 10 to 20 years after passing a change."
+ FDS_QUICK_CHANGE_POLITICAL_DISASTER_WARNING: "Changing this policy prematurely will cause a §YPolitical Disaster§! to occur.\n\nPolicies and regulations can only be changed between 10 to 20 years after passing a change."
+ FDS_QUICK_CHANGE_ECONOMIC_DISASTER_WARNING: "Changing this policy prematurely will cause a §YEconomic Disaster§! to occur.\n\nPolicies and regulations can only be changed between 10 to 20 years after passing a change."
+ 
+ 
+ 
+ 
+ 
+ 
+ 

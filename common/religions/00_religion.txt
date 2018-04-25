@@ -618,7 +618,7 @@ religion_group_postwar = {
 		icon = 3
 
 		country = { 
-            infantry_cost = -0.15
+            infantry_cost = -0.1
             global_manpower_modifier = 0.1
 		}
         country_as_secondary = { 
@@ -708,7 +708,6 @@ religion_group_atomic = {
             local_hostile_attrition = 1
             local_missionary_strength = -0.02
         }
-		
         country_as_secondary = { 
             local_hostile_attrition = 1
 		}
@@ -724,7 +723,7 @@ religion_group_atomic = {
 			atom_strength
 			atom_charm
 		}
-
+		aspects_name = ATOMIC_ASPECTS
 	}
     
     crusade_name = CRUSADE

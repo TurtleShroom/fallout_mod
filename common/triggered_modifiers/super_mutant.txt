@@ -7,7 +7,8 @@ fev_vats = {
             trade_goods = radioactive_waste
 		}		
 	}
-	land_forcelimit = 6
-	tax_income = 5
+	
+	land_forcelimit = 10
+	tax_income = 12
 }
 

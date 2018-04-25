@@ -6,7 +6,7 @@ gang_ideas = {
         possible_mercenaries = 0.5
 	}
 	bonus = {
-		merc_maintenance_modifier = -0.2
+		merc_maintenance_modifier = -0.1
 	}
 	
 	trigger = {
@@ -32,11 +32,11 @@ gang_ideas = {
 	}
 	
 	gang_4 = {
-		hostile_attrition = 2
+		hostile_attrition = 1
 	}
 
 	gang_5 = {
-		fire_damage_received = -0.1
+		fire_damage_received = -0.05
 	}
 	
 	gang_6 = {
@@ -79,7 +79,7 @@ client_ideas = {
 		global_prov_trade_power_modifier = 0.15
 	}
 	mercenary_recruitment_center = {
-		merc_maintenance_modifier = -0.25
+		merc_maintenance_modifier = -0.1
 	}	
 	foreign_advisors_client = {
 		advisor_pool = 1
@@ -151,7 +151,7 @@ ghoul_ideas = {
 	}
 	# Extended Lifespan
 	ghoul_3 = {
-		idea_cost = -0.1
+		idea_cost = -0.05
 	}
 	# Perceptive Populace
 	ghoul_4 = {
@@ -167,17 +167,17 @@ ghoul_ideas = {
 	}
 	# Outcasts of the Wasteland
 	ghoul_7 = {
-		war_exhaustion_cost = -0.2
+		war_exhaustion_cost = -0.15
 	}
 }
 
 super_mutant_ideas = {
 	start = {
 		reinforce_cost_modifier = -1.0
-        global_manpower_modifier = 0.33
+        global_manpower_modifier = 0.25
 	}
 	bonus = {
-		global_regiment_recruit_speed = -0.33
+		global_regiment_recruit_speed = -0.2
 	}
 	
 	trigger = {
@@ -186,13 +186,13 @@ super_mutant_ideas = {
 	free = yes
 	
 	super_mutant_1 = {
-		land_morale = 0.2
+		land_morale = 0.1
 	}
 	super_mutant_2 = {
 		leader_land_shock = 1
 	}
 	super_mutant_3 = {
-		land_attrition = -0.15
+		land_attrition = -0.1
 	}
 	super_mutant_4 = {
 		production_efficiency = 0.1
@@ -214,7 +214,7 @@ city_ideas = {
 		build_cost = -0.1
 	}
 	bonus = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.1
 	}
 	
 	trigger = {
@@ -256,7 +256,7 @@ city_ideas = {
 	
 	# Salvaged Power
 	city_6 = {
-		state_maintenance_modifier = -0.2
+		state_maintenance_modifier = -0.15
 	}
 	
 	# Advanced Weaponry
@@ -343,7 +343,7 @@ tribal_ideas = {
 	}
 	
 	soldiers_of_circumstance = {
-		global_regiment_cost = -0.25
+		global_regiment_cost = -0.15
 	}
 	
 	work_or_die = {
@@ -355,7 +355,7 @@ tribal_ideas = {
 	}
 	
 	wardrive = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.15
 	}
 	
 	wasteland_explorers_tribal = {
@@ -386,7 +386,7 @@ vault_ideas = {
 	}
 	# Pip-Boys 
 	vault_2 = {
-		global_institution_spread = 0.2
+		global_institution_spread = 0.1
 	}
 	# Vault Specialists
 	vault_3 = {

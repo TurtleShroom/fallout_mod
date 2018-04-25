@@ -10,6 +10,7 @@ on_startup = {
         cults.100                   # Default cults
         immortality.1               # Setup immortal rulers
         caravans.1                  # Initial placement
+		fds.1						# Setup
         
         # DLC-checks
         zion.7 # Revert Sorrows/Dead Horses to Mormon if the Cossacks isn't installed

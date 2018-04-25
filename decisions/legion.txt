@@ -80,6 +80,7 @@ country_decisions = {
     conduct_enslavement_sweep = {
         potential = {
             tag = CAE
+            NOT = { has_dlc = "The Cossacks" }
             NOT = { has_country_modifier = slavery_prohibited }
             NOT = { has_country_modifier = decision_cooldown }
 		}
@@ -143,6 +144,7 @@ country_decisions = {
     conduct_extermination_sweep = {
         potential = {
             tag = CAE
+            NOT = { has_dlc = "The Cossacks" }
             NOT = { has_country_modifier = slavery_prohibited }
             NOT = { has_country_modifier = decision_cooldown }
 		}
@@ -226,6 +228,7 @@ country_decisions = {
     mint_aureaus = {
         potential = {
             tag = CAE
+            NOT = { has_dlc = "The Cossacks" }
             NOT = { has_country_modifier = minting_cooldown }
 		}
 		allow =  {
@@ -260,6 +263,7 @@ country_decisions = {
     mint_denarius = {
         potential = {
             tag = CAE
+            NOT = { has_dlc = "The Cossacks" }
             NOT = { has_country_modifier = minting_cooldown }
 		}
 		allow =  {
@@ -294,6 +298,7 @@ country_decisions = {
     purge_drug_manufacturing = {
         potential = {
             tag = CAE
+            NOT = { has_dlc = "The Cossacks" }
             NOT = { has_country_modifier = drug_purge_cooldown }
 		}
 		allow =  {

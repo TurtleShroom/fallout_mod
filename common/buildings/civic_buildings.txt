@@ -1,0 +1,303 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+	
+museum = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		local_development_cost = -0.25
+        local_institution_spread = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 1	
+        
+        modifier = {
+			factor = 250
+			development = 20
+			is_state = yes
+		}
+	}
+}
+
+school = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		local_build_cost = -0.25
+        local_build_time = -0.25
+	}
+	
+	ai_will_do = {
+		factor = 1	
+        
+        modifier = {
+			factor = 250
+			development = 20
+			is_state = yes
+		}
+	}
+}
+
+fm_workshop = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		local_production_efficiency = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+office_block = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		local_tax_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+jail = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+        local_core_creation = -0.25
+		local_unrest = -1
+	}
+	
+	ai_will_do = {
+		factor = 1	
+        
+        modifier = {
+			factor = 200
+			development = 20
+			is_state = yes
+		}
+	}
+}
+
+market = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		province_trade_power_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+	}
+}
+
+farm = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		trade_goods_size_modifier = 0.5
+		trade_value_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+munitions_storage = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		supply_limit_modifier = 0.33
+	}
+	
+	ai_will_do = {
+		factor = 1	
+        
+        modifier = {
+			factor = 200
+			is_territory = yes
+		}
+	}
+}
+
+fm_barracks = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		local_manpower_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+fm_armory = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		regiment_recruit_speed = -0.33
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+military_camp = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+        land_forcelimit = 2
+		local_regiment_cost = -0.33
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 150
+			FROM = { army_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+guard_tower = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		local_defensiveness = 0.5
+        local_hostile_attrition = 1
+	}
+	
+	ai_will_do = {
+		factor = 1	
+        
+        modifier = {
+			factor = 250
+			development = 20
+			is_state = yes
+		}
+	}
+}
+
+dockyard = {
+	cost = 100
+	time = 12
+	
+    trigger = { has_port = yes }
+    
+	modifier = {
+		local_sailors_modifier = 0.33
+        ship_recruit_speed = -0.33
+	}
+	
+	ai_will_do = {
+		factor = 1	
+        
+        modifier = {
+			factor = 105 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+fm_arsenal = {
+	cost = 100
+	time = 12
+	
+    trigger = { has_port = yes }
+    
+	modifier = {
+		local_ship_repair = 0.33
+        local_ship_cost = -0.33
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+road = {
+	cost = 100
+    time = 12
+    
+	modifier = {
+		local_friendly_movement_speed = 0.5
+        local_hostile_movement_speed = -0.1
+	}
+	
+	ai_will_do = {
+		factor = 1
+        
+        modifier = {
+			factor = 250
+			is_state = yes
+		}
+	}
+}
+
+service_post = {
+	cost = 100
+    time = 12
+
+	modifier = {
+		local_unrest = -1
+        local_autonomy = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+military_depot = {
+	cost = 100
+    time = 12
+    
+	modifier = {
+		garrison_growth = 0.5
+        supply_limit = 1
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+

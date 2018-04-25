@@ -18,13 +18,17 @@ cb_restore_personal_union = {
 	valid_for_subject = no
 
 	is_triggered_only = yes
-	months = 120
-	
+	months = 240
+
 	prerequisites = {
 		NOT = { government = republic }
 		is_revolution_target = no
+		FROM = {
+			government = monarchy
+			is_subject = no
+		}
 	}
-	
+
 	war_goal = take_capital_personal_union
 }
 
@@ -344,7 +348,7 @@ cb_defender_of_the_faith = {
 # Purging of Heresy
 cb_heretic = {
 	valid_for_subject = no
-	
+
 	prerequisites = {
 		is_neighbor_of = FROM
 		cb_on_religious_enemies = yes
@@ -375,6 +379,7 @@ cb_excommunication = {
 cb_trade_war = {
 
 	prerequisites = {
+
 		OR = {
 			AND = {
 				trade_embargo_by = FROM
@@ -644,6 +649,7 @@ cb_forced_break_alliance = {
 }
 
 cb_force_tributary = {
+
 	valid_for_subject = no
 
 	prerequisites = {

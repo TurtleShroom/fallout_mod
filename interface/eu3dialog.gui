@@ -5,6 +5,12 @@ guiTypes = {
 			spriteType = "GFX_icon_merchant"
 			position = { x= 0 y = 0 }
 		}
+		
+	positionType =
+	{
+		name ="dialog_decoration_footer_offset"
+		position = { x= 0 y = -19 }
+	}
 
 		
 	### DEFAULT DIALOG
@@ -104,7 +110,7 @@ guiTypes = {
 			shortcut = "c"
 			extra_shortcut = "RETURN"
 			clicksound = ok_click
-		}	
+		}		
 		
 		guiButtonType = {
 			name = "popup"
@@ -355,7 +361,22 @@ guiTypes = {
 			spriteType = "GFX_button_400"
 			position = { x= 50 y = 50 }
 		}
-        
+		
+		
+		iconType =
+		{
+			name ="header_decoration"
+			spriteType = "gfx_header_decoration"
+			position = { x= -16 y = -60 }
+		}
+		
+		iconType =
+		{
+			name ="footer_decoration"
+			spriteType = "gfx_footer_decoration"
+			position = { x= -3 y = -280 }
+		}
+		
 		instantTextBoxType = {
 			name = "Header"
 			position = { x = 59 y = 26 }

@@ -2,7 +2,7 @@ slavery_permitted = { }
 slavery_prohibited = { }
 
 slave_superiority = {
-    land_morale = -0.1
+    land_morale = -0.025
 }
 
 slave_raid = {

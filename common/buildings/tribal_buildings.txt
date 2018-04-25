@@ -1,7 +1,3 @@
-###
-# North American Natives
-###
-
 # Do not change tags in here without changing every other reference to them.
 # If adding new buildings, make sure they are uniquely named.
 
@@ -16,8 +12,6 @@
 
 # FROM = owner
 # ROOT = province
-
-
 
 native_earthwork = {
 	cost = 50
