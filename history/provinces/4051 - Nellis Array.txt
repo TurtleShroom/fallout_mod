@@ -15,6 +15,4 @@ religion = secular
 trade_goods = weaponry
 hre = no
 
-add_building = fm_artillery_array
-
-add_building = concrete_defences
+add_building = fbs_fort_1

@@ -1,0 +1,42 @@
+        # fbs_office
+        # fbs_factory
+        # fbs_marketplace
+        # fbs_bank
+        # fbs_research_lab
+        # fbs_police_station
+        # fbs_religious_centre
+        
+        # fbs_military_camp
+        # fbs_outpost
+        # fbs_barracks
+        # fbs_dock
+        # fbs_shipyard
+        # fbs_arsenal
+        # fbs_highway
+        
+        # fbs_fort_1
+        # fbs_fort_2
+        # fbs_fort_3
+        # fbs_fort_4
+        
+        # manufactory
+        
+        # fbs_army_command
+        # fbs_navy_command
+        # fbs_planning_command
+        # fbs_infantry_recruitment_centre
+        # fbs_sailor_recruitment_centre
+        # fbs_propaganda_centre
+        # fbs_centre_of_harmony
+        
+        # fbs_casino
+        # fbs_slave_pit
+        
+            
+		# Slot 1: x: 9 
+		# Slot 2: x: 61
+		# Slot 3: x: 113
+		# Slot 4: x: 165
+		# Slot 5: x: 216
+		# Slot 6: x: 268
+		# Slot 7: x: 320

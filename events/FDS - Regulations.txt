@@ -5,7 +5,7 @@ country_event = {
 	id = fds_regulations.1
 	title = fds_regulations.1.title
 	desc = fds_regulations.1.desc
-    picture = BOS_CHAT_eventPicture
+    picture = GOV_RUINS_CLEAR_eventPicture
 	
     is_triggered_only = yes
 	
@@ -16,6 +16,7 @@ country_event = {
 				NOT = { has_country_flag = fds_slavery_regulation_set_flag }
 			}
 			set_slavery_allowed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -23,6 +24,14 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_slavery_allowed = yes
+            add_dip_power = -100
+			
 		}
 	}
 	option = {
@@ -32,6 +41,7 @@ country_event = {
 				NOT = { has_country_flag = fds_slavery_regulation_set_flag }
 			}
 			set_slavery_licensed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -39,6 +49,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_slavery_licensed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -48,6 +64,7 @@ country_event = {
 				NOT = { has_country_flag = fds_slavery_regulation_set_flag }
 			}
 			set_slavery_forbidden = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -55,6 +72,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_slavery_forbidden = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -67,7 +90,7 @@ country_event = {
 	id = fds_regulations.2
 	title = fds_regulations.2.title
 	desc = fds_regulations.2.desc
-    picture = BOS_CHAT_eventPicture
+    picture = GOV_RUINS_CLEAR_eventPicture
 	
     is_triggered_only = yes
 
@@ -78,6 +101,7 @@ country_event = {
 				NOT = { has_country_flag = fds_gambling_regulation_set_flag }
 			}
 			set_gambling_allowed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -85,6 +109,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_gambling_allowed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -94,6 +124,7 @@ country_event = {
 				NOT = { has_country_flag = fds_gambling_regulation_set_flag }
 			}
 			set_gambling_licensed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -101,6 +132,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_gambling_licensed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -110,6 +147,7 @@ country_event = {
 				NOT = { has_country_flag = fds_gambling_regulation_set_flag }
 			}
 			set_gambling_forbidden = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -117,6 +155,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_gambling_forbidden = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -129,7 +173,7 @@ country_event = {
 	id = fds_regulations.3
 	title = fds_regulations.3.title
 	desc = fds_regulations.3.desc
-    picture = BOS_CHAT_eventPicture
+    picture = GOV_RUINS_CLEAR_eventPicture
 	
     is_triggered_only = yes
 	
@@ -140,6 +184,7 @@ country_event = {
 				NOT = { has_country_flag = fds_prostitution_regulation_set_flag }
 			}
 			set_prostitution_allowed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -147,6 +192,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_prostitution_allowed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -156,6 +207,7 @@ country_event = {
 				NOT = { has_country_flag = fds_prostitution_regulation_set_flag }
 			}
 			set_prostitution_licensed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -163,6 +215,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_prostitution_licensed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -172,6 +230,7 @@ country_event = {
 				NOT = { has_country_flag = fds_prostitution_regulation_set_flag }
 			}
 			set_prostitution_forbidden = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -179,6 +238,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_prostitution_forbidden = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -191,7 +256,7 @@ country_event = {
 	id = fds_regulations.4
 	title = fds_regulations.4.title
 	desc = fds_regulations.4.desc
-    picture = BOS_CHAT_eventPicture
+    picture = GOV_RUINS_CLEAR_eventPicture
 	
     is_triggered_only = yes
 
@@ -202,6 +267,7 @@ country_event = {
 				NOT = { has_country_flag = fds_firearms_regulation_set_flag }
 			}
 			set_firearms_allowed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -209,6 +275,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_firearms_allowed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -218,6 +290,7 @@ country_event = {
 				NOT = { has_country_flag = fds_firearms_regulation_set_flag }
 			}
 			set_firearms_licensed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -225,6 +298,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_firearms_licensed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -234,6 +313,7 @@ country_event = {
 				NOT = { has_country_flag = fds_firearms_regulation_set_flag }
 			}
 			set_firearms_forbidden = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -241,6 +321,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_firearms_forbidden = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -253,7 +339,7 @@ country_event = {
 	id = fds_regulations.5
 	title = fds_regulations.5.title
 	desc = fds_regulations.5.desc
-    picture = BOS_CHAT_eventPicture
+    picture = GOV_RUINS_CLEAR_eventPicture
 	
     is_triggered_only = yes
 
@@ -264,6 +350,7 @@ country_event = {
 				NOT = { has_country_flag = fds_narcotics_regulation_set_flag }
 			}
 			set_narcotics_allowed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -271,6 +358,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_narcotics_allowed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -280,6 +373,7 @@ country_event = {
 				NOT = { has_country_flag = fds_narcotics_regulation_set_flag }
 			}
 			set_narcotics_licensed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -287,6 +381,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_narcotics_licensed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -296,6 +396,7 @@ country_event = {
 				NOT = { has_country_flag = fds_narcotics_regulation_set_flag }
 			}
 			set_narcotics_forbidden = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -303,6 +404,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_narcotics_forbidden = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -315,7 +422,7 @@ country_event = {
 	id = fds_regulations.6
 	title = fds_regulations.6.title
 	desc = fds_regulations.6.desc
-    picture = BOS_CHAT_eventPicture
+    picture = GOV_RUINS_CLEAR_eventPicture
 	
     is_triggered_only = yes
 	
@@ -326,6 +433,7 @@ country_event = {
 				NOT = { has_country_flag = fds_scavenging_regulation_set_flag }
 			}
 			set_scavenging_allowed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -333,6 +441,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_scavenging_allowed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -342,6 +456,7 @@ country_event = {
 				NOT = { has_country_flag = fds_scavenging_regulation_set_flag }
 			}
 			set_scavenging_licensed = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -349,6 +464,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_scavenging_licensed = yes
+			add_dip_power = -100
 		}
 	}
 	option = {
@@ -358,6 +479,7 @@ country_event = {
 				NOT = { has_country_flag = fds_scavenging_regulation_set_flag }
 			}
 			set_scavenging_forbidden = yes
+            add_dip_power = -100
 		}
 		if = {
 			limit = {
@@ -365,6 +487,12 @@ country_event = {
 				ai = no
 			}
 			custom_tooltip = FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING
+			hidden_effect = {
+				set_country_flag = fds_regulatory_disaster_allowed
+				set_country_flag = changed_regulation_early
+			}
+			set_scavenging_forbidden = yes
+			add_dip_power = -100
 		}
 	}
 	option = {

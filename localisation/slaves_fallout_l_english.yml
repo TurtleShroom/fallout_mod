@@ -20,20 +20,6 @@
  slave_raid: "Slave Raid"
  desc_slave_raid: "This province was raided for slaves."
 
- # Events
- slavery.2.title: "Victory over $FROMCOUNTRY$"
- slavery.2.desc: "Our victory over $FROMCOUNTRY$ in a recent battle has led to numerous prisoners of war being collected. What shall we do with them?\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
- slavery.2.option.a: "Make them slaves"
- slavery.2.option.b: "Ransom them"
- slavery.2.option.c: "Slay them"
- 
- slavery.3.title: "Slaves of War"
- slavery.3.desc: "Our victory over $FROMCOUNTRY$ in a recent battle has led to the acquisition of numerous slavery. They will be sent back the capital for processing.\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
- slavery.3.option.a: "Good work"
- 
- slavery.4.title: "Slaver's Haul"
- slavery.4.desc: "A band of misfits and vagabonds have been captured by one of our slavers. They've offered them to us for a fair price.\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
- slavery.4.option.a: "Great"
- slavery.4.option.b: "No thanks"
+
  
  

@@ -40,15 +40,15 @@ estate_officers =
 	country_modifier_happy = {
 		army_tradition = 1
         yearly_army_professionalism = 0.01
-        land_maintenance_modifier = -0.2
+        land_maintenance_modifier = -0.1
 	}
 	country_modifier_neutral = {
-		land_maintenance_modifier = -0.1
+		land_maintenance_modifier = -0.05
 	}	
 	country_modifier_angry = {
 		army_tradition = -1
         yearly_army_professionalism = -0.01
-        land_maintenance_modifier = 0.2
+        land_maintenance_modifier = 0.1
 	}
 	
 	# ----- Province -----

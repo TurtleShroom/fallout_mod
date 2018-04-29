@@ -12,27 +12,27 @@ groups = {
     #-----------------------
     # Wastelander
     tech_wastelander = {
-        start_cost_modifier = 0.5
+        start_cost_modifier = 0
 		start_level = 0
     }
     
     # Raiders
     tech_raider = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
     }
     
     # Tribals
     tech_tribal = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
     }
     
     # Super Mutants
 	tech_super_mutant = {
-		start_cost_modifier = 1
+		start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
 	}
@@ -45,7 +45,7 @@ groups = {
     
     # Ghoul
 	tech_ghoul = {
-		start_cost_modifier = 0.3
+		start_cost_modifier = 0
 		start_level = 0
     }
     
@@ -54,69 +54,69 @@ groups = {
     #-----------------------
     # Brotherhood
     tech_bos = {
-		start_cost_modifier = 0.1
-		start_level = 1
+		start_cost_modifier = 0
+		start_level = 0
 	}
     
     # The Institute
 	tech_commonwealth = {
 		start_cost_modifier = 0
-		start_level = 1
+		start_level = 0
 	}
 
     # New Vegas
 	tech_new_vegas = {
-		start_cost_modifier = 0.2
-		start_level = 1
+		start_cost_modifier = 0
+		start_level = 0
 	}
     
     # New California Republic
 	tech_ncr = {
-		start_cost_modifier = 0.3
-		start_level = 1
+		start_cost_modifier = 0
+		start_level = 0
 	}
 
     # Caesar's Legion
 	tech_caesars_legion = {
-		start_cost_modifier = 0.5
+		start_cost_modifier = 0
 		start_level = 0
 	}
     
     # Enclave
 	tech_enclave = {
 		start_cost_modifier = 0
-		start_level = 1
+		start_level = 0
 	}
     
     # Shi
 	tech_shi = {
 		start_cost_modifier = 0
-		start_level = 1
+		start_level = 0
 	}
 
     # Zeta
 	tech_alien = {
-		start_cost_modifier = 0.0
+		start_cost_modifier = 0
 		start_level = 0
 	}
     
     # Great Khans
     tech_great_khan = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
     }
     
     # Swampfolk
     tech_swampfolk = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
     }
     
     # Rodent
     tech_rodent = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
     }
@@ -129,32 +129,32 @@ groups = {
     
     # Children
     tech_children = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
         is_primitive = yes
     }
     
     # Triggermen
     tech_triggermen = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
     }
     
     # The Kings
     tech_the_kings = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
     }
     
     # Children of the Atom
     tech_children_of_the_atom = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
     }
     
     # Hubologist
     tech_hubologist = {
-        start_cost_modifier = 1
+        start_cost_modifier = 0
 		start_level = 0
     }
 }

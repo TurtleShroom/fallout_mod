@@ -4,14 +4,14 @@ mil_advisor_reinforce_cost_modifier = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	reinforce_cost_modifier = -0.05
+	reinforce_cost_modifier = -0.1
 
 	chance = {
 		factor = 1
         
         modifier = {
             factor = 0 
-            has_country_modifier = slavery_prohibited
+            has_slavery_forbidden = yes
         }
 	}
 	ai_will_do = {
@@ -24,14 +24,14 @@ mil_advisor_reinforce_speed = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	reinforce_speed = 0.05
+	reinforce_speed = 0.1
 
 	chance = {
 		factor = 1
         
         modifier = {
             factor = 0 
-            has_country_modifier = slavery_prohibited
+            has_slavery_forbidden = yes
         }
 	}
 	ai_will_do = {
@@ -45,7 +45,7 @@ mil_advisor_movement_speed = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	movement_speed = 0.05
+	movement_speed = 0.1
 
 	chance = {
 		factor = 1
@@ -65,7 +65,7 @@ dip_advisor_war_exhaustion = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	war_exhaustion = -0.01
+	war_exhaustion = -0.03
 
 	chance = {
 		factor = 1

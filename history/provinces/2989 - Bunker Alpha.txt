@@ -16,7 +16,7 @@ religion = creatorism
 trade_goods = prewar_technology
 hre = no
 
-add_building = fm_research_lab
+
 
 capital = "Bunker Alpha"
 

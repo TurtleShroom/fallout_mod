@@ -23,14 +23,7 @@ estate_bureaucrats =
 			tag = CAE
 		}
 	}
-
-    custom_name = {
-		desc = estate_senators
-		trigger = {
-			tag = NCR
-		}
-	}
-
+    
 	# ----- Conditions -----
 	trigger = {	
         NOT = { technology_group = tech_robot }
@@ -45,17 +38,17 @@ estate_bureaucrats =
 
     # ----- Country -----
 	country_modifier_happy = {
-		global_tax_modifier = 0.25
-		advisor_cost = -0.2
-        state_maintenance_modifier = -0.25
+		global_tax_modifier = 0.1
+		advisor_cost = -0.1
+        state_maintenance_modifier = -0.1
 	}
 	country_modifier_neutral = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.05
 	}	
 	country_modifier_angry = {
-		global_tax_modifier = -0.25
-		advisor_cost = 0.2
-        state_maintenance_modifier = 0.25
+		global_tax_modifier = -0.1
+		advisor_cost = 0.1
+        state_maintenance_modifier = 0.1
 	}
 	
 	# ----- Province -----

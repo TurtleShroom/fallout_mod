@@ -919,16 +919,16 @@
  #------------------------------------------------------
  # Government Ranks
  #------------------------------------------------------
- RANK_1: "Level 1"
- RANK_2: "Level 2"
- RANK_3: "Level 3"
- RANK_4: "Level 4"
- RANK_5: "Level 5"
- RANK_6: "Level 6"
- RANK_7: "Level 7"
- RANK_8: "Level 8"
- RANK_9: "Leve 9"
- RANK_10: "Level 10"
+ RANK_1: "Nation"
+ RANK_2: "Nation"
+ RANK_3: "Nation"
+ RANK_4: "Nation"
+ RANK_5: "Nation"
+ RANK_6: "Nation"
+ RANK_7: "Nation"
+ RANK_8: "Nation"
+ RANK_9: "Nation"
+ RANK_10: "Nation"
  
  #------------------------------------------------------
  # Cavalry

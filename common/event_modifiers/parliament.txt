@@ -1,3 +1,0 @@
-ghoul_migrants = {
-    local_unrest = 2
-}

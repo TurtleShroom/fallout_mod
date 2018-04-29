@@ -3,7 +3,7 @@ dip_advisor_diplomatic_reputation = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	diplomatic_reputation = 0.5
+	diplomatic_reputation = 1
 
 	chance = {
 		factor = 1
@@ -18,7 +18,7 @@ dip_advisor_improve_relation_modifier = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	improve_relation_modifier = 0.05
+	improve_relation_modifier = 0.1
 
 	chance = {
 		factor = 1
@@ -33,7 +33,7 @@ dip_advisor_ae_impact = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	ae_impact = -0.025
+	ae_impact = -0.05
 
 	chance = {
 		factor = 1
@@ -48,7 +48,7 @@ dip_advisor_province_warscore_cost = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	province_warscore_cost = -0.05
+	province_warscore_cost = -0.1
 
 	chance = {
 		factor = 1
@@ -78,7 +78,7 @@ dip_advisor_years_of_nationalism = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	years_of_nationalism = -1
+	years_of_nationalism = -3
 
 	chance = {
 		factor = 1
@@ -93,7 +93,7 @@ dip_advisor_spy_offence = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	spy_offence = 0.05
+	spy_offence = 0.2
 
 	chance = {
 		factor = 1
@@ -108,7 +108,7 @@ dip_advisor_global_colonial_growth = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	global_colonial_growth = 5
+	global_colonial_growth = 10
 
 	chance = {
 		factor = 1
@@ -123,7 +123,7 @@ dip_advisor_trade_range_modifier = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	trade_range_modifier = 0.1
+	trade_range_modifier = 0.2
 
 	chance = {
 		factor = 1
@@ -138,7 +138,7 @@ dip_advisor_caravan_power = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	caravan_power = 0.05
+	caravan_power = 0.1
 
 	chance = {
 		factor = 1

@@ -1,0 +1,24 @@
+        # --- Left ---
+        # GFX_banner_yellow_20 (Left start)
+        # GFX_banner_yellow_160 (Left start)
+        # GFX_banner_yellow_248 (Left start)
+        # GFX_banner_green_194 (Left start)
+        # GFX_build_category_banner
+        # GFX_build_category_units_banner
+        
+        # --- Ambig. ---
+        # GFX_banner_left_2
+        # GFX_banner_left_3
+        # GFX_banner_left_4
+        # GFX_banner_left_5
+        # GFX_banner_left_5m
+        # GFX_province_banner_foreign (red)
+        # GFX_province_banner (green)
+        # GFX_province_history_entry_banner (blue)
+        # GFX_diploconfirm_banner (green)
+        # GFX_macro_diplomacy_green_banner
+         
+        # --- Right ---
+        # GFX_banner_right_2
+        # GFX_banner_right_3
+        

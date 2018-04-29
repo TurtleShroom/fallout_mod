@@ -15,7 +15,7 @@ religion = cult_of_mars
 trade_goods = prewar_technology
 hre = no
 
-concrete_defences = yes
+fbs_fort_1 = yes
 
 
 

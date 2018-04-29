@@ -201,7 +201,10 @@ conduct_slave_raid = {
 	
 	is_visible = {
 		is_neighbor_of = FROM
-        has_country_modifier = slavery_permitted
+        OR = {
+            has_slavery_allowed = yes
+            has_slavery_licensed = yes
+        }
         FROM = {
             any_owned_province = {
                 NOT = { has_province_modifier = slave_raid }

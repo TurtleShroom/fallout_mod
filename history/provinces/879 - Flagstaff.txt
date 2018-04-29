@@ -17,8 +17,6 @@ religion = cult_of_mars
 trade_goods = weaponry
 hre = no
 
-add_building = fm_command_centre
-
 capital = "Flagstaff"
 
 2000.1.1 = {

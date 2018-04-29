@@ -15,8 +15,6 @@ religion = secular
 hre = no
 trade_goods = irradiated_water
 
-add_building = fm_town_hall
-
 add_province_modifier = {
     name = "aqua_cura"
     duration = -1

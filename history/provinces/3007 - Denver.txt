@@ -27,5 +27,5 @@ hre = no
 		duration = -1 
 	}
     
-    concrete_defences = yes
+    fbs_fort_1 = yes
 }

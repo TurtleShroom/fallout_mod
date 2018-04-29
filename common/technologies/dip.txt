@@ -1,375 +1,215 @@
 monarch_power = DIP
 
 ahead_of_time = {
-	trade_efficiency = 0.2
+	trade_efficiency = 0.1
 }
 
+
 technology = {
-	# Tech 0
 	year = 2280
     
+    # Buildings
+    fbs_marketplace = yes
+    fbs_dock = yes
+    fbs_shipyard = yes
+    fbs_highway = yes
+    fbs_arsenal = yes
+    fbs_labour_camp = yes
+    fbs_military_factory = yes
+    fbs_industrial_factory = yes
+    fbs_commercial_factory = yes
+    fbs_electronics_factory = yes
+    fbs_navy_command = yes
+    fbs_sailor_recruitment_centre = yes
+    fbs_propaganda_centre = yes
+     
+    # Skills
     merchants = yes
-    #allow_client_states = yes
-    
-    global_colonial_growth	= 	25
-	range					=	100
-	trade_range				=	100
-	naval_morale			=	2.0
-    
     may_fabricate_claims = yes
+    may_steal_maps = yes
+    may_slander_merchants = yes
+    may_study_technology = yes
+    may_sabotage_recruitment = yes
+    may_sow_discontent = yes
+    may_sabotage_reputation = yes
+    may_corrupt_officials = yes
+    may_agitate_for_liberty = yes
+    may_infiltrate_administration = yes
     
+    # Modifiers
+    global_colonial_growth	= 50
+	range					    = 500
+	trade_range				= 500
+	naval_morale			    = 2.0
+    
+    # Units
     enable = fm_transport_1
 	enable = fm_galley_1
 	enable = fm_trade_ship_1
 	enable = fm_heavy_ship_1
 }
+
 technology = {
-	# Tech 1
-	year = 2293
+	year = 2290
     
-    trade_range				=	50
-    dockyard = yes
+    # Modifiers
+    trade_range				= 100
+	naval_morale			    = 0.5
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 2
-	year = 2306
+	year = 2300
     
-    market = yes
-    may_steal_maps = yes
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 3
-	year = 2319
+	year = 2310
     
-    fm_arsenal = yes
-    
-    trade_range				=	50
-    trade_efficiency = 0.05
+    # Modifiers
+    trade_range				= 100
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 4
-	year = 2332
+	year = 2320   
     
-    jail = yes
-    naval_maintenance		=	0.05
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 5
-	year = 2345
+	year = 2330
     
-    farm = yes
-    trade_range				=	50
-    naval_morale			=	0.2
+    # Modifiers
+    trade_range				= 100
+	naval_morale			    = 0.5
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 6
-	year = 2358
+	year = 2340
     
-    may_slander_merchants = yes
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 7
-	year = 2371
+	year = 2350
     
-    trade_range				=	50
-    trade_efficiency = 0.05
+    # Modifiers
+    trade_range				= 100
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 8
-	year = 2384
+	year = 2360
     
-    naval_maintenance		=	0.05
-    road = yes
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 9
-	year = 2397
+	year = 2370
     
-    trade_range				=	50
-    naval_morale			=	0.3
-    may_study_technology = yes
+    # Modifiers
+    trade_range				= 100
+	naval_morale			    = 0.5
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 10
+	year = 2380
+    
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
+}
+
+technology = {
+	year = 2390
+    
+    # Modifiers
+    trade_range				= 100
+    trade_efficiency          = 0.05
+}
+
+technology = {
+	year = 2400
+    
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
+}
+
+technology = {
 	year = 2410
     
-    global_colonial_growth	= 	25
-    range					=	50
+    # Modifiers
+    trade_range				= 100
+	naval_morale			    = 0.5
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 11
-	year = 2423
+	year = 2420
     
-    trade_range				=	50
-    trade_efficiency = 0.05
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 12
-	year = 2436
+	year = 2430
     
-    naval_maintenance		=	0.05
-    may_sabotage_recruitment = yes
+    # Modifiers
+    trade_range				= 100
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 13
-	year = 2449
+	year = 2440
     
-    trade_range				=	50
-    naval_morale			=	0.2
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 14
-	year = 2462
+	year = 2450
     
-    fm_embassy = yes
-    
+    # Modifiers
+    trade_range				= 100
+	naval_morale			    = 0.5
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 15
-	year = 2475
+	year = 2460
     
-    trade_range				=	50
-    global_colonial_growth	= 	25
-    range					=	50
-    may_sow_discontent = yes
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }
+
 technology = {
-	# Tech 16
-	year = 2488
+	year = 2470
     
-    naval_maintenance		=	0.05
-    trade_efficiency = 0.05
+    # Modifiers
+    trade_range				= 100
+    trade_efficiency          = 0.05
 }
+
 technology = {
-	# Tech 17
-	year = 2501
+	year = 2480
     
-    trade_range				=	50
-    naval_morale			=	0.3
-}
-technology = {
-	# Tech 18
-	year = 2514
-    
-    may_sabotage_reputation = yes
-}
-technology = {
-	# Tech 19
-	year = 2527
-    
-    fm_police_hq = yes
-    trade_range				=	50
-}
-technology = {
-	# Tech 20
-	year = 2540
-    
-    naval_maintenance		=	0.05
-    global_colonial_growth	= 	25
-    range					=	50
-}
-technology = {
-	# Tech 21
-	year = 2553
-    
-    trade_range				=	50
-    trade_efficiency = 0.05
-    may_corrupt_officials = yes
-}
-technology = {
-	# Tech 22
-	year = 2566
-    
-    naval_morale			=	0.2
-    fm_wharf = yes
-}
-technology = {
-	# Tech 23
-	year = 2579
-    
-    trade_range				=	50
-}
-technology = {
-	# Tech 24
-	year = 2592
-    
-    naval_maintenance		=	0.05
-    may_agitate_for_liberty = yes
-}
-technology = {
-	# Tech 25
-	year = 2605
-    
-    trade_range				=	50
-    global_colonial_growth	= 	25
-    range					=	50
-}
-technology = {
-	# Tech 26
-	year = 2618
-    
-    trade_efficiency = 0.1
-    fm_town_hall = yes
-}
-technology = {
-	# Tech 27
-	year = 2631
-    
-    trade_range				=	50
-    naval_morale			=	0.3
-    may_infiltrate_administration = yes
-}
-technology = {
-	# Tech 28
-	year = 2644
-    
-    
-    naval_maintenance		=	0.05
-}
-technology = {
-	# Tech 29
-	year = 2657
-    
-    trade_range				=	50
-}
-technology = {
-	# Tech 30
-	year = 2670
-    
-    global_colonial_growth	= 	25
-    range					=	50
-}
-technology = {
-	# Tech 31
-	year = 2683
-    
-    trade_range				=	50
-    trade_efficiency = 0.1
-}
-technology = {
-	# Tech 32
-	year = 2696
-    
-    naval_maintenance		=	0.05
-    naval_morale			=	0.2
-}
-technology = {
-	# Tech 33
-	year = 2709
-    
-    trade_range				=	50
-}
-technology = {
-	# Tech 34
-	year = 2722
-    
-    trade_efficiency = 0.1
-}
-technology = {
-	# Tech 35
-	year = 2735
-    
-    trade_range				=	50
-    global_colonial_growth	= 	25
-    range					=	50
-}
-technology = {
-	# Tech 36
-	year = 2748
-    
-    
-    naval_maintenance		=	0.05
-    trade_efficiency = 0.1
-}
-technology = {
-	# Tech 37
-	year = 2761
-    
-    trade_range				=	50
-    naval_morale			=	0.3
-}
-technology = {
-	# Tech 38
-	year = 2774
-    
-    trade_efficiency = 0.05
-}
-technology = {
-	# Tech 39
-	year = 2787
-    
-    trade_range				=	50
-    naval_morale			=	0.2
-}
-technology = {
-	# Tech 40
-	year = 2800
-    
-    naval_maintenance		=	0.05
-    global_colonial_growth	= 	25
-    range					=	50
-}
-technology = {
-	# Tech 41
-	year = 2813
-    
-    trade_range				=	50
-    trade_efficiency = 0.1
-}
-technology = {
-	# Tech 42
-	year = 2826
-    
-    naval_maintenance		=	0.1
-    naval_morale			=	0.3
-}
-technology = {
-	# Tech 43
-	year = 2839
-    
-    trade_range				=	50
-    naval_maintenance		=	0.1
-}
-technology = {
-	# Tech 44
-	year = 2852
-    
-    
-    naval_maintenance		=	0.1
-    trade_efficiency = 0.1
-}
-technology = {
-	# Tech 45
-	year = 2865
-    
-    trade_range				=	50
-    global_colonial_growth	= 	25
-    range					=	50
-}
-technology = {
-	# Tech 46
-	year = 2878
-    
-    naval_maintenance		=	0.1
-    naval_morale			=	0.2
-}
-technology = {
-	# Tech 47
-	year = 2891
-    
-    trade_range				=	50
-    trade_efficiency = 0.1
-}
-technology = {
-	# Tech 48
-	year = 2904
-    
-    naval_maintenance		=	0.1
-}
-technology = {
-	# Tech 49
-	year = 2917
-    
-    trade_range				=	50
-    naval_morale			=	0.3
+    # Modifiers
+    global_colonial_growth	= 10
+    range					    = 100
 }

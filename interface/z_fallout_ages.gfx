@@ -10,38 +10,23 @@ spriteTypes = {
 	}
     
     spriteType = {
-		name = "GFX_obj_30_development_city_fallout"
-		texturefile = "gfx//interface//ages//obj_metropolis.dds"
+		name = "GFX_ab_swarm"
+		texturefile = "gfx//interface//ages//ab_swarm.dds"
 	}
     
     spriteType = {
-		name = "GFX_obj_west_coast_dominance"
-		texturefile = "gfx//interface//ages//obj_abandoned_railway_yard.dds"
+		name = "GFX_ab_gift_of_the_gab"
+		texturefile = "gfx//interface//ages//ab_gift_of_the_gab.dds"
 	}
     
     spriteType = {
-		name = "GFX_obj_east_coast_dominance"
-		texturefile = "gfx//interface//ages//obj_ruined_town.dds"
+		name = "GFX_ab_yearly_purges"
+		texturefile = "gfx//interface//ages//ab_yearly_purges.dds"
 	}
     
     spriteType = {
-		name = "GFX_obj_midwest_dominance"
-		texturefile = "gfx//interface//ages//obj_ruined_village.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_obj_south_dominance"
-		texturefile = "gfx//interface//ages//obj_ruined_street.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_obj_mexico_dominance"
-		texturefile = "gfx//interface//ages//obj_wasteland.dds"
-	}
-    
-    spriteType = {
-		name = "GFX_obj_canada_dominance"
-		texturefile = "gfx//interface//ages//obj_stripped_forest.dds"
+		name = "GFX_ab_unity_through_faith"
+		texturefile = "gfx//interface//ages//ab_unity_through_faith.dds"
 	}
     
     spriteType = {

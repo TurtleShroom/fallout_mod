@@ -19,7 +19,7 @@ hre = no
 
 capital = "San Francisco"
 
-add_building = fm_research_lab
+
 
 
 

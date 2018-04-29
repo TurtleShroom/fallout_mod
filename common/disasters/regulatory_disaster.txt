@@ -1,0 +1,41 @@
+regulatory_disaster = {
+	potential = {	
+        has_country_flag = fds_regulatory_disaster_allowed
+	}
+	
+	can_start = {
+		has_any_disaster = no
+	}
+    
+    can_stop = {
+		had_country_flag = {
+			flag = regulatory_disaster_active
+			days = 720
+		}
+	}
+    
+	progress = {
+        factor = 5
+	}
+	
+	can_end = {
+		NOT = { num_of_revolts = 1 }
+		stability = 0
+	}
+	
+	modifier = {
+		stability_cost_modifier = 1.0
+        global_unrest = 5
+        global_autonomy = 0.1
+	}
+	
+	on_start = fds_regulatory_disaster.1
+	on_end = fds_regulatory_disaster.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+		}
+	}
+}

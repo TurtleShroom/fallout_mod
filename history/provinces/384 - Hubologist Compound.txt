@@ -15,10 +15,6 @@ religion = hubology
 trade_goods = food
 hre = no
 
-add_building = fm_temple
-
-
-
 
 
 

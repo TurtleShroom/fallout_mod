@@ -22,7 +22,7 @@ manufactory = {
 	}
 }
 
-labour_camp = {
+fbs_labour_camp = {
 	manufactory = {
 		slaves
 	}
@@ -33,7 +33,7 @@ labour_camp = {
 	}
 }
 
-military_factory = {
+fbs_military_factory = {
 	manufactory = {
 		weaponry
 		munitions
@@ -46,7 +46,7 @@ military_factory = {
 	}
 }
 
-industrial_factory = {
+fbs_industrial_factory = {
 	manufactory = {
 		steel
 		oil
@@ -63,7 +63,7 @@ industrial_factory = {
 	}
 }
 
-commercial_factory = {
+fbs_commercial_factory = {
 	manufactory = {
 		food
 		prewar_books
@@ -85,7 +85,7 @@ commercial_factory = {
 	}
 }
 
-electronics_factory = {
+fbs_electronics_factory = {
 	manufactory = {
 		prewar_technology
 		munitions

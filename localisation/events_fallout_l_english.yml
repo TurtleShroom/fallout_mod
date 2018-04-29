@@ -1,11 +1,65 @@
 ﻿l_english: 
  #----------------------------------------------------------------------
- # Lost Hills BOS
+ # Brotherhood of Steel
  #----------------------------------------------------------------------
- los_bos.1.title: "Resuming the Resource War"
- los_bos.1.desc: "The Brotherhoods defeat in the First Brotherhood War greatly diminished the strength of the unity of the Brotherhood, further splintering the command structures of the Brotherhood leadership. \n\nThe recent display of NCR aggression risks the eradication of what was once the most important Brotherhood Chapter. \n\nIn the first war, our tactics of attacking the Gold Reserves of the NCR proved successful in crippling the NCR economy, raising the question of if we should revive the tactic of old or relying on our military might."
- los_bos.1.option.a: "Strike their economy"
- los_bos.1.option.b: "We will win without such measures"
+ brotherhood_of_steel.1.title: "A Knight's Quarrel"
+ brotherhood_of_steel.1.desc: "A young initiate within the Knights of our Chapter is disputing an order made by [Root.Monarch.GetTitle] [Root.Monarch.GetName] regarding a broken water purifier in a nearby settlement.\n\nHe argues that it is the Brotherhood's duty to repair the purifier and provide the wastelanders who live their water."
+ brotherhood_of_steel.1.option.a: "Revoke your previous stance and justify the initiate"
+ brotherhood_of_steel.1.option.b: "Discipline the initiate for his insubordination"
+ 
+ brotherhood_of_steel.2.title: "Clumsy Scribe"
+ brotherhood_of_steel.2.desc: "A piece of obscure technology was recovered during a recent patrol, with several parts hinting towards pre-war origin.\n\nUnfortunately a scribe whilst prepping for research managed to damage the piece beyond recognition."
+ brotherhood_of_steel.2.option.a: "Discipline him for such a folly"
+ brotherhood_of_steel.2.option.b: "Warn him, but make it understood that it was a mistake"
+ brotherhood_of_steel.2.option.c: "Ignore the incident"
+ 
+ brotherhood_of_steel.3.title: "Discontent within the Paladins"
+ brotherhood_of_steel.3.desc: "As members of what is our Chapter's military force, several Paladins are disputing [Root.Monarch.GetTitle] [Root.Monarch.GetName] recent order to explore a radioactive crater in the region.\n\nThey argue that it is reckless behaviour and that [Root.Monarch.GetTitle] [Root.Monarch.GetName] should revoke [Root.Monarch.GetHisHer] order."
+ brotherhood_of_steel.3.option.a: "Revoke the order"
+ brotherhood_of_steel.3.option.b: "Enforce the order"
+ 
+ brotherhood_of_steel.4.title: "Clash of Ideology"
+ brotherhood_of_steel.4.desc: "Members of our Chapter have been discussing the teachings outlined within our Codex and many are beginning to dispute the interpretation [Root.Monarch.GetTitle] [Root.Monarch.GetName] holds.\n\n If such talk is not quashed soon, our Chapter may risk splintering."
+ brotherhood_of_steel.4.option.a: "Double down on the original interpretation"
+ brotherhood_of_steel.4.option.b: "Acknowledge, but stick with the original interpretation"
+ brotherhood_of_steel.4.option.c: "Rework the Chapter's interpretation"
+ 
+ brotherhood_of_steel.5.title: "Supply Troubles"
+ brotherhood_of_steel.5.desc: "All supplies are free to members of the Brotherhood, be it Scribes, Knights or Paladins.\n\nHowever there have been reports that supply runners within the Paladins are picking favourites, which is against protocol."
+ brotherhood_of_steel.5.option.a: "Ignore the reports"
+ brotherhood_of_steel.5.option.b: "Quietly interview the suspects"
+ brotherhood_of_steel.5.option.c: "Put the suspects on public trial"
+ 
+ #----------------------------------------------------------------------
+ # Brotherhood of Steel (Government)
+ #----------------------------------------------------------------------
+ brotherhood_of_steel_government.1.title: "Heir needed in $COUNTRY$"
+ brotherhood_of_steel_government.1.desc: "As we currently have no designated heir for $MONARCHTITLE$ $MONARCH$, we have several options to pick from."
+ brotherhood_of_steel_government.1.option.a: "A Paladin to lead the way"
+ brotherhood_of_steel_government.1.option.b: "An ambitious Knight to further our cause"
+ brotherhood_of_steel_government.1.option.c: "A knowledge Scribe to expand the Codex"
+ brotherhood_of_steel_government.1.option.d: "A descendant of Maxson"
+ 
+ #----------------------------------------------------------------------
+ # Brotherhood of Steel (East)
+ #----------------------------------------------------------------------
+ brotherhood_of_steel_east.1.title: "Arthur Maxson"
+ brotherhood_of_steel_east.1.desc: "The descendant of the legendary Roger Maxson, Arther Maxson has been suggested by the West Coast Elders as the successor to the latest of the ineffectual Elders for the East Coast Chapter. May his skills bring prosperity to our chapter!"
+ brotherhood_of_steel_east.1.option.a: "Appoint him Elder"
+ brotherhood_of_steel_east.1.option.b: "Reject the suggestion"
+ 
+ brotherhood_of_steel_east.2.title: "Return to the Brotherhood"
+ brotherhood_of_steel_east.2.desc: "For too long have the Outcasts been astray. Arthur Maxson has offered to bring us back into the fold, as long as we drop the outcast iconography and rejoin the East Coast Chapter."
+ brotherhood_of_steel_east.2.option.a: "Wonderful news!"
+ 
+ #----------------------------------------------------------------------
+ # Brotherhood of Steel (West)
+ #----------------------------------------------------------------------
+ brotherhood_of_steel_west.1.title: "Resuming the Resource War"
+ brotherhood_of_steel_west.1.desc: "The Brotherhoods defeat in the First Brotherhood War greatly diminished the strength of the unity of the Brotherhood, further splintering the command structures of the Brotherhood leadership. \n\nThe recent display of NCR aggression risks the eradication of what was once the most important Brotherhood Chapter. \n\nIn the first war, our tactics of attacking the Gold Reserves of the NCR proved successful in crippling the NCR economy, raising the question of if we should revive the tactic of old or relying on our military might."
+ brotherhood_of_steel_west.1.option.a: "Strike their economy"
+ brotherhood_of_steel_west.1.option.b: "We will win without such measures"
+ bos_strike_ncr_economy_tt: "The saboteurs roll out..."
  
  #----------------------------------------------------------------------
  # Diplomatic Actions
@@ -135,18 +189,6 @@
  the_pitt.1.title: "Lord Ashur's Vision"
  the_pitt.1.desc: "Since Lord Ashur filled the power gap left by the Owyn Lyon's Scourge, the Pitt has seen dramatic recovery.\n\nLong dormant steel mills opened, churning out arms to fuel the Pitt's growing raider armies and reinvigorate the cities industrial capacity."
  the_pitt.1.option.a: "The future will be shaped by Pitt Steel!"
- 
- #----------------------------------
- # Arthur Maxson
- #----------------------------------
- arthur_maxson.1.title: "Arthur Maxson"
- arthur_maxson.1.desc: "The descendant of the legendary Roger Maxson, Arther Maxson has been suggested by the West Coast Elders as the successor to the latest of the ineffectual Elders for the East Coast Chapter. May his skills bring prosperity to our chapter!"
- arthur_maxson.1.option.a: "Appoint him Elder"
- arthur_maxson.1.option.b: "Reject the suggestion"
- 
- arthur_maxson.2.title: "Return to the Brotherhood"
- arthur_maxson.2.desc: "For too long have the Outcasts been astray. Arthur Maxson has offered to bring us back into the fold, as long as we drop the outcast iconography and rejoin the East Coast Chapter."
- arthur_maxson.2.option.a: "Wonderful news!"
  
  #----------------------------------
  # Megaton
@@ -462,37 +504,6 @@
  subject_nations.2.option.a: "Station military forces in New Reno to squash any dissent"
  subject_nations.2.option.b: "Attempt to negotiate with the families"
  subject_nations.2.option.c: "Ignore the reports"
- 
- #----------------------------------
- # Authority
- #----------------------------------
- brotherhood_authority.1.title: "A Knight's Quarrel"
- brotherhood_authority.1.desc: "A young initiate within the Knights of our Chapter is disputing an order made by [Root.Monarch.GetTitle] [Root.Monarch.GetName] regarding a broken water purifier in a nearby settlement.\n\nHe argues that it is the Brotherhood's duty to repair the purifier and provide the wastelanders who live their water."
- brotherhood_authority.1.option.a: "Revoke your previous stance and justify the initiate"
- brotherhood_authority.1.option.b: "Discipline the initiate for his insubordination"
- 
- brotherhood_authority.2.title: "Clumsy Scribe"
- brotherhood_authority.2.desc: "A piece of obscure technology was recovered during a recent patrol, with several parts hinting towards pre-war origin.\n\nUnfortunately a scribe whilst prepping for research managed to damage the piece beyond recognition."
- brotherhood_authority.2.option.a: "Discipline him for such a folly"
- brotherhood_authority.2.option.b: "Warn him, but make it understood that it was a mistake"
- brotherhood_authority.2.option.c: "Ignore the incident"
- 
- brotherhood_authority.3.title: "Discontent within the Paladins"
- brotherhood_authority.3.desc: "As members of what is our Chapter's military force, several Paladins are disputing [Root.Monarch.GetTitle] [Root.Monarch.GetName] recent order to explore a radioactive crater in the region.\n\nThey argue that it is reckless behaviour and that [Root.Monarch.GetTitle] [Root.Monarch.GetName] should revoke [Root.Monarch.GetHisHer] order."
- brotherhood_authority.3.option.a: "Revoke the order"
- brotherhood_authority.3.option.b: "Enforce the order"
- 
- brotherhood_authority.4.title: "Clash of Ideology"
- brotherhood_authority.4.desc: "Members of our Chapter have been discussing the teachings outlined within our Codex and many are beginning to dispute the interpretation [Root.Monarch.GetTitle] [Root.Monarch.GetName] holds.\n\n If such talk is not quashed soon, our Chapter may risk splintering."
- brotherhood_authority.4.option.a: "Double down on the original interpretation"
- brotherhood_authority.4.option.b: "Acknowledge, but stick with the original interpretation"
- brotherhood_authority.4.option.c: "Rework the Chapter's interpretation"
- 
- brotherhood_authority.5.title: "Supply Troubles"
- brotherhood_authority.5.desc: "All supplies are free to members of the Brotherhood, be it Scribes, Knights or Paladins.\n\nHowever there have been reports that supply runners within the Paladins are picking favourites, which is against protocol."
- brotherhood_authority.5.option.a: "Ignore the reports"
- brotherhood_authority.5.option.b: "Quietly interview the suspects"
- brotherhood_authority.5.option.c: "Put the suspects on public trial"
  
  #----------------------------------
  # Cults
@@ -1030,13 +1041,13 @@
  #-----------------------------------------------
  # Generic OnAction
  #-----------------------------------------------
- generic_onaction.1.title: "Integrating [From.GetName]"
- generic_onaction.1.desc: "When a smaller country gives up its independence to join a greater realm, there is a lot of adapting, and while some parts are easy, the administration of the realm will still need to expand to accommodate all possibilities."
- generic_onaction.1.option.a: "Integration is a slow process."
+ fm_subjects.1.title: "Integrating [From.GetName]"
+ fm_subjects.1.desc: "When a smaller country gives up its independence to join a greater realm, there is a lot of adapting, and while some parts are easy, the administration of the realm will still need to expand to accommodate all possibilities."
+ fm_subjects.1.option.a: "Integration is a slow process."
  
- generic_onaction.2.title: "Rise of a Pretender"
- generic_onaction.2.desc: "The disputed succession of [Root.Monarch.GetName] has caused a Pretender to raise an army and march for the capital!"
- generic_onaction.2.option.a: "Crush them!"
+ fm_government.1.title: "Rise of a Pretender"
+ fm_government.1.desc: "The disputed succession of [Root.Monarch.GetName] has caused a Pretender to raise an army and march for the capital!"
+ fm_government.1.option.a: "Crush them!"
  
  #-----------------------------------------------
  # Freeside
@@ -1088,16 +1099,6 @@
  the_den.1.option.a: "Accept some of the NCR demands" 
  the_den.1.option.b: "Accept all of the NCR demands" 
  the_den.1.option.c: "The old ways are not dead!" 
- 
- #----------------------------------------------------------------------
- # Brotherhood (Devotion)
- #----------------------------------------------------------------------
- brotherhood_chapters.1.title: "Heir needed in $COUNTRY$"
- brotherhood_chapters.1.desc: "As we currently have no designated heir for $MONARCHTITLE$ $MONARCH$, we have several options to pick from."
- brotherhood_chapters.1.option.a: "A Paladin to lead the way"
- brotherhood_chapters.1.option.b: "An ambitious Knight to further our cause"
- brotherhood_chapters.1.option.c: "A knowledge Scribe to expand the Codex"
- brotherhood_chapters.1.option.d: "A descendant of Maxson"
  
  #----------------------------------------------------------------------
  # Tradegoods
@@ -1215,4 +1216,20 @@
  # 13 new lines, max for good position
  DEBUG.1.title: "Title"
  DEBUG.1.desc: ""
+ 
+ # Slavery
+ slavery.1.title: "Victory over $FROMCOUNTRY$"
+ slavery.1.desc: "Our victory over $FROMCOUNTRY$ in a recent battle has led to numerous prisoners of war being collected. What shall we do with them?\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ slavery.1.option.a: "Make them slaves"
+ slavery.1.option.b: "Ransom them"
+ slavery.1.option.c: "Slay them"
+ 
+ slavery.2.title: "Slaves of War"
+ slavery.2.desc: "Our victory over $FROMCOUNTRY$ in a recent battle has led to the acquisition of numerous slavery. They will be sent back the capital for processing.\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ slavery.2.option.a: "Good work"
+ 
+ slavery.3.title: "Slaver's Haul"
+ slavery.3.desc: "A band of misfits and vagabonds have been captured by one of our slavers. They've offered them to us for a fair price.\n\nYou currently own §Y[Root.slave_count.GetValue]§! Slaves."
+ slavery.3.option.a: "Great"
+ slavery.3.option.b: "No thanks"
  

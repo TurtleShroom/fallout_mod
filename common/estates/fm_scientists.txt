@@ -32,16 +32,16 @@ estate_scientists =
 
     # ----- Country -----
 	country_modifier_happy = {
-		technology_cost = -0.1
-        global_institution_spread = 0.2
+		technology_cost = -0.05
+        global_institution_spread = 0.25
         development_cost = -0.1
 	}
 	country_modifier_neutral = {
-		global_institution_spread = 0.1
+		global_institution_spread = 0.05
 	}	
 	country_modifier_angry = {
-		technology_cost = 0.1
-        global_institution_spread = -0.2
+		technology_cost = 0.05
+        global_institution_spread = -0.25
         development_cost = 0.1
 	}
 	

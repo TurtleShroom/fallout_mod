@@ -14,7 +14,7 @@
 
 # AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
 
-rubble_defences = {
+fbs_fort_1 = {
 	cost = 100
 	time = 12
 	
@@ -30,10 +30,10 @@ rubble_defences = {
 	}
 }
 
-concrete_defences = {
+fbs_fort_2 = {
 	cost = 250
 	time = 12
-	make_obsolete = rubble_defences
+	make_obsolete = fbs_fort_1
 	
     onmap = yes
     influencing_fort = yes
@@ -47,10 +47,10 @@ concrete_defences = {
 	}
 }
 
-steel_defences = {
+fbs_fort_3 = {
 	cost = 500
 	time = 12
-	make_obsolete = concrete_defences
+	make_obsolete = fbs_fort_2
 	
     onmap = yes
     influencing_fort = yes
@@ -64,10 +64,10 @@ steel_defences = {
 	}
 }
 
-titanium_defences = {
+fbs_fort_4 = {
 	cost = 1000
 	time = 12
-	make_obsolete = steel_defences
+	make_obsolete = fbs_fort_3
 	
     onmap = yes
     influencing_fort = yes

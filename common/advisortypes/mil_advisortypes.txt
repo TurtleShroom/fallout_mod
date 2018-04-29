@@ -3,7 +3,7 @@ mil_advisor_army_tradition = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	army_tradition = 0.5
+	army_tradition = 1
 
 	chance = {
 		factor = 1
@@ -55,7 +55,7 @@ mil_advisor_land_morale = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	land_morale = 0.025
+	land_morale = 0.05
 
 	chance = {
 		factor = 1
@@ -130,7 +130,7 @@ mil_advisor_global_regiment_cost = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	global_regiment_cost = -0.05
+	global_regiment_cost = -0.1
 
 	chance = {
 		factor = 1
@@ -160,7 +160,7 @@ mil_advisor_mercenary_cost = {
 	
     skill_scaled_modifier = { meritocracy = 0.5 }
     
-	mercenary_cost = -0.05
+	mercenary_cost = -0.1
 
 	chance = {
 		factor = 1

@@ -22,7 +22,7 @@ trade_goods = prewar_technology
 		duration = -1 
 	}
 
-    add_building = titanium_defences
+    add_building = fbs_fort_3
     
     trade_goods = prewar_technology
 }

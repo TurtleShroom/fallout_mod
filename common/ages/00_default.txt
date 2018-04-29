@@ -20,10 +20,9 @@ post_war_age = {
 	}
 
 	abilities = {
-		ab_can_chain_claim = 
-		{
-			rule = {
-				can_chain_claim = yes
+		ab_swarm = {
+			modifier = {
+				land_forcelimit_modifier = 0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -57,27 +56,27 @@ post_war_age = {
 			}
 		}
         
-        ab_force_march = {
-			rule = {
-				force_march_free = yes
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-        
-        ab_no_distance_for_core = {
-			rule = {
-				ignore_coring_distance = yes
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-        
-        ab_autonomy = {
+        ab_gift_of_the_gab = {
 			modifier = {
-				autonomy_change_time = -0.5
+				diplomatic_reputation = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+        
+        ab_yearly_purges = {
+			modifier = {
+				yearly_corruption = -0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+        
+        ab_unity_through_faith = {
+			modifier = {
+				tolerance_own = 2
 			}
 			ai_will_do = {
 				factor = 10

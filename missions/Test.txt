@@ -1,0 +1,18 @@
+test_missions = {
+	slot = 6
+	
+	potential = {
+	   has_country_flag = test_mission_test
+	}
+	
+	testing_cash = {
+		icon = mission_alliances
+		required_missions = {  }
+		trigger = {
+			treasury = 1000
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+}

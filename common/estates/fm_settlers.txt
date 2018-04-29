@@ -38,17 +38,17 @@ estate_settlers =
 
     # ----- Country -----
 	country_modifier_happy = {
-		colonist_placement_chance = 0.1
-        global_colonial_growth = 25
-        production_efficiency = 0.2
+		colonist_placement_chance = 0.05
+        global_colonial_growth = 10
+        production_efficiency = 0.1
 	}
 	country_modifier_neutral = {
-		production_efficiency = 0.1
+		global_colonial_growth = 5
 	}	
 	country_modifier_angry = {
-        colonist_placement_chance = -0.1
-        global_colonial_growth = -25
-        production_efficiency = -0.2
+        colonist_placement_chance = -0.05
+        global_colonial_growth = -10
+        production_efficiency = -0.1
 	}
 	
 	# ----- Province -----

@@ -15,4 +15,4 @@ religion = secular
 trade_goods = munitions
 hre = no
 
-concrete_defences = yes
+fbs_fort_1 = yes

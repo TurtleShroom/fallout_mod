@@ -839,6 +839,21 @@
  discovery_poor_access: "Poor Access"
  desc_discovery_poor_access: "We discovered a lack of easy access to areas of this province. This will hamper our settlements here."
  
+ building_lucky38: "Lucky 38"
+ desc_building_lucky38: ""
  
+ building_the_bison_steve_casino: "The Bison Steve Casino"
+ desc_building_the_bison_steve_casino: ""
  
+ building_lincoln_memorial: "Lincoln Memorial"
+ desc_building_lincoln_memorial: ""
+ 
+ building_ranger_unification_statue: "Ranger Unification Statue"
+ desc_building_ranger_unification_statue: ""
+ 
+ building_atomic_wrangler: "Atomic Wrangler"
+ desc_building_atomic_wrangler: ""
+ 
+ building_silver_rush: "Silver Rush"
+ desc_building_silver_rush: ""
  

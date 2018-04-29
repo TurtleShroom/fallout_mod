@@ -15,7 +15,7 @@ religion = tribalism
 hre = no
 trade_goods = unknown
 
-concrete_defences = yes
+fbs_fort_1 = yes
 
 
 

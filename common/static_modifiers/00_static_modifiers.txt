@@ -4,15 +4,11 @@
 
 # These names can NOT be removed or changes, as the code uses them....
 
-################
-null_modifier = {
-}
-################
+null_modifier = { }
 
-##########################################################################
-# Handicap Modifiers for human player
-##########################################################################
-
+#--------------------------------------
+# Difficulty
+#--------------------------------------
 difficulty_very_easy_player = {
 	global_manpower_modifier = 0.5
 	manpower_recovery_speed = 0.50
@@ -33,7 +29,6 @@ difficulty_very_easy_player = {
 	ae_impact = -0.33
 	yearly_corruption = -1.0
 }
-
 difficulty_easy_player = {
 	manpower_recovery_speed = 0.50
 	global_unrest = -5
@@ -41,29 +36,13 @@ difficulty_easy_player = {
 	ae_impact = -0.33
 	yearly_corruption = -1.0
 }
+difficulty_normal_player = { }
+difficulty_hard_player = { }
+difficulty_very_hard_player = { }
 
-difficulty_normal_player = {
-}
-
-difficulty_hard_player = {
-}
-
-difficulty_very_hard_player = {
-}
-
-##########################################################################
-# Handicap Modifiers for AI
-##########################################################################
-
-difficulty_very_easy_ai = {
-}
-
-difficulty_easy_ai = {
-}
-
-difficulty_normal_ai = {
-}
-
+difficulty_very_easy_ai = { }
+difficulty_easy_ai = { }
+difficulty_normal_ai = { }
 difficulty_hard_ai = {
 	manpower_recovery_speed = 0.50
 	global_unrest = -1
@@ -71,7 +50,6 @@ difficulty_hard_ai = {
 	interest = -1
 	ae_impact = -0.33
 }
-
 difficulty_very_hard_ai = {
 	manpower_recovery_speed = 0.50
 	global_manpower_modifier = 0.5
@@ -91,11 +69,9 @@ difficulty_very_hard_ai = {
 	ae_impact = -0.33
 }
 
-
-##########################################################################
-# Provincial Static Modifiers
-##########################################################################
-
+#--------------------------------------
+# Province
+#--------------------------------------
 city = {
 	local_tax_modifier = 0.25
 	allowed_num_of_buildings = 2
@@ -128,8 +104,7 @@ seat_in_parliament = {
 	local_production_efficiency = 0.1
 }
 
-non_coastal = {
-}
+non_coastal = { }
 
 coastal_sea = {
 	local_naval_engagement_modifier = 0.10
@@ -171,7 +146,7 @@ sea_zone = {
 }
 
 land_province = {
-	max_attrition = 5						#Maximum Attrition is 5
+	max_attrition = 10  # The wasteland is harsh           
 	local_manpower_modifier = 0.25			#25% of manpower.
 }
 
@@ -256,7 +231,6 @@ development_scaled = {
 capital_city = {
 	fort_level = 1
 }
-
 
 patriarch_state = {
 	local_state_maintenance_modifier = 0.1
@@ -468,7 +442,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 65
+	max_absolutism = 80
 	merc_maintenance_modifier = 1.5
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
@@ -507,8 +481,6 @@ ai_nation = {
 	sailors_recovery_speed = 0.25		
 }
 
-
-
 war_taxes = {
 	land_maintenance_modifier = -0.20
 	naval_maintenance_modifier = -0.20
@@ -533,6 +505,8 @@ positive_stability = {
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
     papal_influence = 1
+    
+    inflation_reduction = 0.1 # Natural deflation
 }
 
 negative_stability = {
@@ -545,6 +519,8 @@ negative_stability = {
 	devotion = 1
 	caravan_power = 0.05
     papal_influence = 1
+    
+    inflation_reduction = 0.1 # Natural inflation
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -617,6 +593,7 @@ bankruptcy = {
 
 war = {
     monthly_militarized_society = -0.1
+    inflation_reduction = 0.05 # Natural inflation
 }
 
 peace = {
@@ -757,7 +734,7 @@ occupied_imperial = {
 }
 
 num_of_marriages = {
-	legitimacy = 0.10
+	legitimacy = 0.25
 	heir_chance = 0.05
 	improve_relation_modifier = 0.01
 }
@@ -1014,7 +991,7 @@ in_golden_era = {
 }
 
 absolutism = {
-	administrative_efficiency = 0.4
+	administrative_efficiency = 0.2
 	discipline = 0.05
 	core_decay_on_your_own = -0.5
 }
@@ -1110,52 +1087,49 @@ gov_rank_1 = {
 }
 
 gov_rank_2 = {
-	max_states = 5
-    papal_influence = 1
+	free_leader_pool = 1
 }
 
 gov_rank_3 = {
 	free_leader_pool = 1
-	max_states = 10
-    papal_influence = 1
 }
 
 gov_rank_4 = {
-	missionaries = 1
+	
 }
 
 gov_rank_5 = {
-	merchants = 1
+	
 }
 
 gov_rank_6 = {
-	free_leader_pool = 1
+	
 }
 
 gov_rank_7 = {
-	diplomats = 1
+	
 }
 
 gov_rank_8 = {
-	missionaries = 1
+	
 }
 
 gov_rank_9 = {
-	merchants = 1
+	
 }
 
 gov_rank_10 = {
-	free_leader_pool = 1
+	
 }
 
 
 # For autonomy mechanics
 autonomy_increased = {
-	local_unrest = -10
+	local_unrest = -5
 }
 
 autonomy_decreased = {
-	local_unrest = 10
+	local_unrest = 5
 }
 
 revolution_target = {
@@ -1190,19 +1164,11 @@ merchants_slandered = {
 }
 
 discontent_sowed = {
-	global_unrest = 2
-	legitimacy = -1
-	republican_tradition = -0.2
-	devotion = -1
-	horde_unity = -1
-	meritocracy = -0.5
-    papal_influence = -2
-    monthly_militarized_society = -0.1
+	global_unrest = 3
 }
 
 reputation_sabotaged = {
-	diplomatic_reputation = -3
-    monthly_militarized_society = -0.1
+	diplomatic_reputation = -2
 }
 
 corrupt_officials = {
@@ -1472,7 +1438,7 @@ regiment_drill_modifier = { # Used by individual regiments
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
-	movement_speed = 0.2
+	
 }
 
 janissary_regiment = {
@@ -1484,6 +1450,4 @@ janissary_regiment = {
 
 innovativeness = {
 	all_power_cost	= -0.1
-	army_tradition_decay = -0.01
-	navy_tradition_decay = -0.01
 }

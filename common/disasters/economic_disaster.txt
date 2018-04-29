@@ -1,0 +1,42 @@
+economic_disaster = {
+	potential = {	
+		has_country_flag = fds_economic_disaster_allowed
+	}
+	
+	can_start = {
+		has_any_disaster = no
+	}
+    
+    can_stop = {
+		had_country_flag = {
+			flag = economic_disaster_active
+			days = 720
+		}
+	}
+    
+	progress = {
+        factor = 5
+	}
+	
+	can_end = {
+		NOT = { num_of_revolts = 1 }
+		stability = 0
+	}
+	
+	modifier = {
+        stability_cost_modifier = 1.0
+        global_unrest = 5
+        global_tax_modifier = -0.75
+        production_efficiency = -0.75
+	}
+	
+	on_start = fds_economic_disaster.1
+	on_end = fds_economic_disaster.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+		}
+	}
+}

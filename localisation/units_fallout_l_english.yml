@@ -71,11 +71,11 @@
  ncr_ranger: "NCR Ranger"
  ncr_rangerDESCR: "Experts in the field, NCR Rangers are the cream of the crop in the NCR military structure."
  
- legionary_recruit: "Legionary Recruit"
+ legionary_recruit: "Recruit Legionary"
  legionary_recruitDESCR: "A newly 'recruited' member of Caesar's Legion, under going their trials for full membership."
- legionary_soldier: "Legionary Soldier"
+ legionary_soldier: "Prime Legionary"
  legionary_soldierDESCR: "A soldier of Caesar's Legion who has under gone their trials and has been deemed an effective killing force."
- prime_legionary: "Prime Legionary"
+ prime_legionary: "Veteran Legionary"
  prime_legionaryDESCR: "Veteran soldiers of Caesar's Legion, they are truly a force to be reckoned with."
  
  enclave_grunt: "Enclave Grunt"

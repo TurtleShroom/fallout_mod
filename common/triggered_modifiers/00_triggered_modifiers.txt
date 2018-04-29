@@ -15,13 +15,3 @@ submission_to_emperor = {
 	}
 }
 
-test_modifier = {
-	potential = {
-		has_country_flag = enable_test_modifier
-	}
-
-	trigger = {
-        has_country_flag = enable_test_modifier
-	}
-    
-}

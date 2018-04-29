@@ -29,6 +29,65 @@
  fds_narcotics_regulation_set_flag: "Slavery Regulation Set"
  fds_scavenging_regulation_set_flag: "Scavenging Regulation Set"
  
+ political_disaster_active: "Political Disaster"
+ economic_disaster_active: "Economic Disaster"
+ regulatory_disaster_active: "Regulatory Disaster"
+ changed_policy_early: "Changed Policy Early."
+ changed_regulation_early: "Changed Regulation Early."
+ 
+ # Customizable Localization
+ loc_fds_not_set: "is not set."
+ 
+ loc_fds_traditional_economy: "is Traditional Economy"
+ loc_fds_command_economy: "is Command Economy"
+ loc_fds_market_economy: "is Market Economy"
+ loc_fds_mixed_economy: "is Mixed Economy"
+
+ loc_fds_democratic_law: "is Democratic Law"
+ loc_fds_oligarchic_law: "is Oligarchic Law"
+ loc_fds_autocratic_law: "is Autocratic Law"
+ 
+ loc_fds_state_courts: "is State Courts"
+ loc_fds_community_courts: "is Community Courts"
+ loc_fds_secret_courts: "is Secret Courts"
+ 
+ loc_fds_fines_punishment: "is Fines"
+ loc_fds_imprisonment_punishment: "is Imprisonment"
+ loc_fds_execution_punishment: "is Execution"
+ loc_fds_slavery_punishment: "is Slavery"
+ 
+ loc_fds_individual_innovation: "is Individual Innovation"
+ loc_fds_sponsored_innovation: "is Sponsored Innovation"
+ loc_fds_state_innovation: "is State Innovation"
+ 
+ loc_fds_volunteer_conscription: "is Volunteer Conscription"
+ loc_fds_limited_conscription: "is Limited Conscription"
+ loc_fds_full_conscription: "is Full Conscription"
+ 
+ loc_fds_slavery_allowed: "is Allowed"
+ loc_fds_slavery_licensed: "is Licensed"
+ loc_fds_slavery_forbidden: "is Forbidden"
+ 
+ loc_fds_gambling_allowed: "is Allowed"
+ loc_fds_gambling_licensed: "is Licensed"
+ loc_fds_gambling_forbidden: "is Forbidden"
+ 
+ loc_fds_prostitution_allowed: "is Allowed"
+ loc_fds_prostitution_licensed: "is Licensed"
+ loc_fds_prostitution_forbidden: "is Forbidden"
+ 
+ loc_fds_firearms_allowed: "is Allowed"
+ loc_fds_firearms_licensed: "is Licensed"
+ loc_fds_firearms_forbidden: "is Forbidden"
+ 
+ loc_fds_narcotics_allowed: "is Allowed"
+ loc_fds_narcotics_licensed: "is Licensed"
+ loc_fds_narcotics_forbidden: "is Forbidden"
+ 
+ loc_fds_scavenging_allowed: "is Allowed"
+ loc_fds_scavenging_licensed: "is Licensed"
+ loc_fds_scavenging_forbidden: "is Forbidden"
+ 
  # Tooltips
  fds_economy_traditional_set: "Set §YEconomy Policy§! to §YTraditional§!."
  fds_economy_command_set: "Set §YEconomy Policy§! to §YCommand§!."
@@ -79,6 +138,19 @@
  fds_scavenging_regulation_allowed_set: "Set §YScavenging Regulation§! to §YAllowed§!."
  fds_scavenging_regulation_licensed_set: "Set §YScavenging Regulation§! to §YLicensed§!."
  fds_scavenging_regulation_forbidden_set: "Set §YScavenging Regulation§! to §YForbidden§!."
+ 
+ fds_economy_reset_notice: "You may now change your §YEconomy Policy§! freely."
+ fds_law_reset_notice: "You may now change your §YLaw Policy§! freely."
+ fds_justice_reset_notice: "You may now change your §YJustice Policy§! freely."
+ fds_punishment_reset_notice: "You may now change your §YPunishment Policy§! freely."
+ fds_innovation_reset_notice: "You may now change your §YInnovation Policy§! freely."
+ fds_conscription_reset_notice: "You may now change your §YConscription Policy§! freely."
+ fds_slavery_reset_notice: "You may now change your §YSlavery Regulation§! freely."
+ fds_gambling_reset_notice: "You may now change your §YGambling Regulation§! freely."
+ fds_prostitution_reset_notice: "You may now change your §YProstitution Regulation§! freely."
+ fds_firearms_reset_notice: "You may now change your §YFirearms Regulation§! freely."
+ fds_narcotics_reset_notice: "You may now change your §YNarcotics Regulation§! freely."
+ fds_scavenging_reset_notice: "You may now change your §YScavenging Regulation§! freely."
  
  # Triggered Modifiers
  # Economy
@@ -215,78 +287,788 @@
  fds.1.option.a: ""
  
  fds_policies.1.title: "Economic Policy"
- fds_policies.1.desc: ""
+ fds_policies.1.desc: "Current policy [Root.GetCurrentEconomyPolicy].\n\nYour economic policy controls how your country primarily operates in the economic sphere.\n\nYou may change your policy at anytime, but unless §YEconomic Reforms§! occur, your country will suffer an §YEconomic Disaster§! in the process."
  fds_policies.1.option.a: "Traditional Economy"
  fds_policies.1.option.b: "Command Economy"
  fds_policies.1.option.c: "Market Economy"
  fds_policies.1.option.d: "Mixed Economy"
  
  fds_policies.2.title: "Law Policy"
- fds_policies.2.desc: ""
+ fds_policies.2.desc: "Current policy [Root.GetCurrentLawPolicy].\n\nYour law policy controls how your country primarily deals with its legislature and the extent of which citizens can influence the process.\n\nYou may change your policy at anytime, but unless §YLaw Reforms§! occur, your country will suffer an §YPolitical Disaster§! in the process."
  fds_policies.2.option.a: "Democratic Law"
  fds_policies.2.option.b: "Oligarchic Law"
  fds_policies.2.option.c: "Autocratic Law"
  
  fds_policies.3.title: "Justice Policy"
- fds_policies.3.desc: ""
+ fds_policies.3.desc: "Current policy [Root.GetCurrentJusticePolicy].\n\nYour justice policy controls how your country primarily deals with establishing criminality.\n\nYou may change your policy at anytime, but unless §YJustice Reforms§! occur, your country will suffer an §YPolitical Disaster§! in the process."
  fds_policies.3.option.a: "State Courts"
  fds_policies.3.option.b: "Community Courts"
  fds_policies.3.option.c: "Secret Courts"
  
  fds_policies.4.title: "Punishment Policy"
- fds_policies.4.desc: ""
+ fds_policies.4.desc: "Current policy [Root.GetCurrentPunishmentPolicy].\n\nYour punishment policy controls how your country primarily deals with sentencing criminals and their punishment.\n\nYou may change your policy at anytime, but unless §YPunishment Reforms§! occur, your country will suffer an §YPolitical Disaster§! in the process."
  fds_policies.4.option.a: "Fines"
  fds_policies.4.option.b: "Prison"
  fds_policies.4.option.c: "Execution"
  fds_policies.4.option.d: "Slavery"
  
  fds_policies.5.title: "Innovation Policy"
- fds_policies.5.desc: ""
+ fds_policies.5.desc: "Current policy [Root.GetCurrentInnovationPolicy].\n\nYour innovation policy controls how your country primarily deals with research and innovation.\n\nYou may change your policy at anytime, but unless §YInnovation Reforms§! occur, your country will suffer an §YPolitical Disaster§! in the process."
  fds_policies.5.option.a: "Individual Innovation"
  fds_policies.5.option.b: "State-sponsored Innovation"
  fds_policies.5.option.c: "State Innovation"
  
  fds_policies.6.title: "Conscription Policy"
- fds_policies.6.desc: ""
+ fds_policies.6.desc: "Current policy [Root.GetCurrentConscriptionPolicy].\n\nYour conscription policy controls how your country handles supplying its armies with soldiers.\n\nYou may change your policy at anytime, but unless §YConscription Reforms§! occur, your country will suffer an §YPolitical Disaster§! in the process."
  fds_policies.6.option.a: "Volunteer Conscription"
  fds_policies.6.option.b: "Limited Conscription"
  fds_policies.6.option.c: "Full Conscription"
  
  fds_regulations.1.title: "Slavery Regulation"
- fds_regulations.1.desc: ""
+ fds_regulations.1.desc: "Current policy [Root.GetCurrentSlaveryPolicy].\n\nYour slavery regulation controls how your country views slavery and the usage of slavery within the country.\n\nYou may change your policy at anytime, but unless §YSlavery Reforms§! occur, your country will suffer an §YRegulatory Disaster§! in the process."
  fds_regulations.1.option.a: "Allowed"
  fds_regulations.1.option.b: "Licensed"
  fds_regulations.1.option.c: "Forbidden"
  
  fds_regulations.2.title: "Gambling Regulation"
- fds_regulations.2.desc: ""
+ fds_regulations.2.desc: "Current policy [Root.GetCurrentGamblingPolicy].\n\nYour gambling regulation controls how your country views gambling and the presence of gambling-related activities within the country.\n\nYou may change your policy at anytime, but unless §YGambling Reforms§! occur, your country will suffer an §YRegulatory Disaster§! in the process."
  fds_regulations.2.option.a: "Allowed"
  fds_regulations.2.option.b: "Licensed"
  fds_regulations.2.option.c: "Forbidden"
  
  fds_regulations.3.title: "Prostitution Regulation"
- fds_regulations.3.desc: ""
+ fds_regulations.3.desc: "Current policy [Root.GetCurrentProstitutionPolicy].\n\nYour prostitution regulation controls how your country views prostitution and the presence of prostitution-related activities within the country.\n\nYou may change your policy at anytime, but unless §YProstitution Reforms§! occur, your country will suffer an §YRegulatory Disaster§! in the process."
  fds_regulations.3.option.a: "Allowed"
  fds_regulations.3.option.b: "Licensed"
  fds_regulations.3.option.c: "Forbidden"
  
  fds_regulations.4.title: "Firearms Regulation"
- fds_regulations.4.desc: ""
+ fds_regulations.4.desc: "Current policy [Root.GetCurrentFirearmsPolicy].\n\nYour firearms regulation controls how your country views the carrying of firearms and the presence of non-state firearms-related activities within the country.\n\nYou may change your policy at anytime, but unless §YFirearms Reforms§! occur, your country will suffer an §YRegulatory Disaster§! in the process."
  fds_regulations.4.option.a: "Allowed"
  fds_regulations.4.option.b: "Licensed"
  fds_regulations.4.option.c: "Forbidden"
  
  fds_regulations.5.title: "Narcotics Regulation"
- fds_regulations.5.desc: ""
+ fds_regulations.5.desc: "Current policy [Root.GetCurrentNarcoticsPolicy].\n\nYour narcotics regulation controls how your country views narcotics and the presence of narcotic-related activities within the country.\n\nYou may change your policy at anytime, but unless §YNarcotics Reforms§! occur, your country will suffer an §YRegulatory Disaster§! in the process."
  fds_regulations.5.option.a: "Allowed"
  fds_regulations.5.option.b: "Licensed"
  fds_regulations.5.option.c: "Forbidden"
  
  fds_regulations.6.title: "Scavenging Regulation"
- fds_regulations.6.desc: ""
+ fds_regulations.6.desc: "Current policy [Root.GetCurrentScavengingPolicy].\n\nYour scavenging regulation controls how your country views scavenging and the presence of non-state scavenging-related activities within the country.\n\nYou may change your policy at anytime, but unless §YScavenging Reforms§! occur, your country will suffer an §YRegulatory Disaster§! in the process."
  fds_regulations.6.option.a: "Allowed"
  fds_regulations.6.option.b: "Licensed"
  fds_regulations.6.option.c: "Forbidden"
+ 
+ # Economy Events
+ fds_economy.1.title: "Local Developments"
+ fds_economy.1.desc: "Locals in one of our many provinces have taken initative and started developing their land, making it more suitable for farmig and other such activities."
+ fds_economy.1.option.a: "Excellent"
+ 
+ fds_economy.2.title: "Enterprising Individual"
+ fds_economy.2.desc: ""
+ fds_economy.2.option.a: ""
+ 
+ fds_economy.3.title: "Famine"
+ fds_economy.3.desc: ""
+ fds_economy.3.option.a: ""
+ 
+ fds_economy.4.title: "Slumlords"
+ fds_economy.4.desc: ""
+ fds_economy.4.option.a: ""
+ 
+ fds_economy.5.title: "Utopian Visions"
+ fds_economy.5.desc: ""
+ fds_economy.5.option.a: ""
+ 
+ fds_economy.6.title: "Fast Mobilization"
+ fds_economy.6.desc: ""
+ fds_economy.6.option.a: ""
+ 
+ fds_economy.7.title: "Low Wages"
+ fds_economy.7.desc: ""
+ fds_economy.7.option.a: ""
+ 
+ fds_economy.8.title: "Poor Planning"
+ fds_economy.8.desc: ""
+ fds_economy.8.option.a: ""
+ 
+ fds_economy.9.title: "Bull Market"
+ fds_economy.9.desc: ""
+ fds_economy.9.option.a: ""
+ 
+ fds_economy.10.title: "Land of Business"
+ fds_economy.10.desc: ""
+ fds_economy.10.option.a: ""
+ 
+ fds_economy.11.title: "Bear Market"
+ fds_economy.11.desc: ""
+ fds_economy.11.option.a: ""
+ 
+ fds_economy.12.title: "People in Poverty"
+ fds_economy.12.desc: ""
+ fds_economy.12.option.a: ""
+ 
+ enterprising_individual: "Enterprising Individual"
+ desc_enterprising_individual: ""
+ 
+ slumlords: "Slumlords"
+ desc_slumlords: ""
+ 
+ utopian_vision: "Utopian Vision"
+ desc_utopian_vision: ""
+ 
+ fast_mobilization: "Fast Mobilization"
+ desc_fast_mobilization: ""
+ 
+ low_wages: "Low Wages"
+ desc_low_wages: ""
+ 
+ poor_planning: "Poor Planning"
+ desc_poor_planning: ""
+ 
+ economic_boom: "Economic Boom"
+ desc_economic_boom: ""
+ 
+ preferred_market: "Preferred Market"
+ desc_preferred_market: ""
+ 
+ economic_depression: "Economic Depression"
+ desc_economic_depression: ""
+ 
+ people_in_poverty: "People in Poverty"
+ desc_people_in_poverty: ""
+ 
+ # Law Events
+ fds_law.1.title: ""
+ fds_law.1.desc: ""
+ fds_law.1.option.a: ""
+ 
+ fds_law.2.title: ""
+ fds_law.2.desc: ""
+ fds_law.2.option.a: ""
+ 
+ fds_law.3.title: ""
+ fds_law.3.desc: ""
+ fds_law.3.option.a: ""
+ 
+ fds_law.4.title: ""
+ fds_law.4.desc: ""
+ fds_law.4.option.a: ""
+ 
+ fds_law.5.title: ""
+ fds_law.5.desc: ""
+ fds_law.5.option.a: ""
+ 
+ fds_law.6.title: ""
+ fds_law.6.desc: ""
+ fds_law.6.option.a: ""
+ 
+ fds_law.7.title: ""
+ fds_law.7.desc: ""
+ fds_law.7.option.a: ""
+ 
+ fds_law.8.title: ""
+ fds_law.8.desc: ""
+ fds_law.8.option.a: ""
+ 
+ fds_law.9.title: ""
+ fds_law.9.desc: ""
+ fds_law.9.option.a: ""
+ 
+ fds_law.10.title: ""
+ fds_law.10.desc: ""
+ fds_law.10.option.a: ""
+ 
+ fds_law.11.title: ""
+ fds_law.11.desc: ""
+ fds_law.11.option.a: ""
+ 
+ fds_law.12.title: ""
+ fds_law.12.desc: ""
+ fds_law.12.option.a: ""
+ 
+ # Justice Events
+ fds_justice.1.title: ""
+ fds_justice.1.desc: ""
+ fds_justice.1.option.a: ""
+ 
+ fds_justice.2.title: ""
+ fds_justice.2.desc: ""
+ fds_justice.2.option.a: ""
+ 
+ fds_justice.3.title: ""
+ fds_justice.3.desc: ""
+ fds_justice.3.option.a: ""
+ 
+ fds_justice.4.title: ""
+ fds_justice.4.desc: ""
+ fds_justice.4.option.a: ""
+ 
+ fds_justice.5.title: ""
+ fds_justice.5.desc: ""
+ fds_justice.5.option.a: ""
+ 
+ fds_justice.6.title: ""
+ fds_justice.6.desc: ""
+ fds_justice.6.option.a: ""
+ 
+ fds_justice.7.title: ""
+ fds_justice.7.desc: ""
+ fds_justice.7.option.a: ""
+ 
+ fds_justice.8.title: ""
+ fds_justice.8.desc: ""
+ fds_justice.8.option.a: ""
+ 
+ fds_justice.9.title: ""
+ fds_justice.9.desc: ""
+ fds_justice.9.option.a: ""
+ 
+ fds_justice.10.title: ""
+ fds_justice.10.desc: ""
+ fds_justice.10.option.a: ""
+ 
+ fds_justice.11.title: ""
+ fds_justice.11.desc: ""
+ fds_justice.11.option.a: ""
+ 
+ fds_justice.12.title: ""
+ fds_justice.12.desc: ""
+ fds_justice.12.option.a: ""
+ 
+ # Punishment Events
+ fds_punishment.1.title: ""
+ fds_punishment.1.desc: ""
+ fds_punishment.1.option.a: ""
+ 
+ fds_punishment.2.title: ""
+ fds_punishment.2.desc: ""
+ fds_punishment.2.option.a: ""
+ 
+ fds_punishment.3.title: ""
+ fds_punishment.3.desc: ""
+ fds_punishment.3.option.a: ""
+ 
+ fds_punishment.4.title: ""
+ fds_punishment.4.desc: ""
+ fds_punishment.4.option.a: ""
+ 
+ fds_punishment.5.title: ""
+ fds_punishment.5.desc: ""
+ fds_punishment.5.option.a: ""
+ 
+ fds_punishment.6.title: ""
+ fds_punishment.6.desc: ""
+ fds_punishment.6.option.a: ""
+ 
+ fds_punishment.7.title: ""
+ fds_punishment.7.desc: ""
+ fds_punishment.7.option.a: ""
+ 
+ fds_punishment.8.title: ""
+ fds_punishment.8.desc: ""
+ fds_punishment.8.option.a: ""
+ 
+ fds_punishment.9.title: ""
+ fds_punishment.9.desc: ""
+ fds_punishment.9.option.a: ""
+ 
+ fds_punishment.10.title: ""
+ fds_punishment.10.desc: ""
+ fds_punishment.10.option.a: ""
+ 
+ fds_punishment.11.title: ""
+ fds_punishment.11.desc: ""
+ fds_punishment.11.option.a: ""
+ 
+ fds_punishment.12.title: ""
+ fds_punishment.12.desc: ""
+ fds_punishment.12.option.a: ""
+ 
+ fds_punishment.13.title: ""
+ fds_punishment.13.desc: ""
+ fds_punishment.13.option.a: ""
+ 
+ fds_punishment.14.title: ""
+ fds_punishment.14.desc: ""
+ fds_punishment.14.option.a: ""
+ 
+ fds_punishment.15.title: ""
+ fds_punishment.15.desc: ""
+ fds_punishment.15.option.a: ""
+ 
+ fds_punishment.16.title: ""
+ fds_punishment.16.desc: ""
+ fds_punishment.16.option.a: ""
+ 
+ # Innovation Events
+ fds_innovation.1.title: ""
+ fds_innovation.1.desc: ""
+ fds_innovation.1.option.a: ""
+ 
+ fds_innovation.2.title: ""
+ fds_innovation.2.desc: ""
+ fds_innovation.2.option.a: ""
+ 
+ fds_innovation.3.title: ""
+ fds_innovation.3.desc: ""
+ fds_innovation.3.option.a: ""
+ 
+ fds_innovation.4.title: ""
+ fds_innovation.4.desc: ""
+ fds_innovation.4.option.a: ""
+ 
+ fds_innovation.5.title: ""
+ fds_innovation.5.desc: ""
+ fds_innovation.5.option.a: ""
+ 
+ fds_innovation.6.title: ""
+ fds_innovation.6.desc: ""
+ fds_innovation.6.option.a: ""
+ 
+ fds_innovation.7.title: ""
+ fds_innovation.7.desc: ""
+ fds_innovation.7.option.a: ""
+ 
+ fds_innovation.8.title: ""
+ fds_innovation.8.desc: ""
+ fds_innovation.8.option.a: ""
+ 
+ fds_innovation.9.title: ""
+ fds_innovation.9.desc: ""
+ fds_innovation.9.option.a: ""
+ 
+ fds_innovation.10.title: ""
+ fds_innovation.10.desc: ""
+ fds_innovation.10.option.a: ""
+ 
+ fds_innovation.11.title: ""
+ fds_innovation.11.desc: ""
+ fds_innovation.11.option.a: ""
+ 
+ fds_innovation.12.title: ""
+ fds_innovation.12.desc: ""
+ fds_innovation.12.option.a: ""
+ 
+ # Conscription Events
+ fds_conscription.1.title: ""
+ fds_conscription.1.desc: ""
+ fds_conscription.1.option.a: ""
+ 
+ fds_conscription.2.title: ""
+ fds_conscription.2.desc: ""
+ fds_conscription.2.option.a: ""
+ 
+ fds_conscription.3.title: ""
+ fds_conscription.3.desc: ""
+ fds_conscription.3.option.a: ""
+ 
+ fds_conscription.4.title: ""
+ fds_conscription.4.desc: ""
+ fds_conscription.4.option.a: ""
+ 
+ fds_conscription.5.title: ""
+ fds_conscription.5.desc: ""
+ fds_conscription.5.option.a: ""
+ 
+ fds_conscription.6.title: ""
+ fds_conscription.6.desc: ""
+ fds_conscription.6.option.a: ""
+ 
+ fds_conscription.7.title: ""
+ fds_conscription.7.desc: ""
+ fds_conscription.7.option.a: ""
+ 
+ fds_conscription.8.title: ""
+ fds_conscription.8.desc: ""
+ fds_conscription.8.option.a: ""
+ 
+ fds_conscription.9.title: ""
+ fds_conscription.9.desc: ""
+ fds_conscription.9.option.a: ""
+ 
+ fds_conscription.10.title: ""
+ fds_conscription.10.desc: ""
+ fds_conscription.10.option.a: ""
+ 
+ fds_conscription.11.title: ""
+ fds_conscription.11.desc: ""
+ fds_conscription.11.option.a: ""
+ 
+ fds_conscription.12.title: ""
+ fds_conscription.12.desc: ""
+ fds_conscription.12.option.a: ""
+ 
+ # Slavery Events
+ fds_slavery.1.title: ""
+ fds_slavery.1.desc: ""
+ fds_slavery.1.option.a: ""
+ 
+ fds_slavery.2.title: ""
+ fds_slavery.2.desc: ""
+ fds_slavery.2.option.a: ""
+ 
+ fds_slavery.3.title: ""
+ fds_slavery.3.desc: ""
+ fds_slavery.3.option.a: ""
+ 
+ fds_slavery.4.title: ""
+ fds_slavery.4.desc: ""
+ fds_slavery.4.option.a: ""
+ 
+ fds_slavery.5.title: ""
+ fds_slavery.5.desc: ""
+ fds_slavery.5.option.a: ""
+ 
+ fds_slavery.6.title: ""
+ fds_slavery.6.desc: ""
+ fds_slavery.6.option.a: ""
+ 
+ fds_slavery.7.title: ""
+ fds_slavery.7.desc: ""
+ fds_slavery.7.option.a: ""
+ 
+ fds_slavery.8.title: ""
+ fds_slavery.8.desc: ""
+ fds_slavery.8.option.a: ""
+ 
+ fds_slavery.9.title: ""
+ fds_slavery.9.desc: ""
+ fds_slavery.9.option.a: ""
+ 
+ fds_slavery.10.title: ""
+ fds_slavery.10.desc: ""
+ fds_slavery.10.option.a: ""
+ 
+ fds_slavery.11.title: ""
+ fds_slavery.11.desc: ""
+ fds_slavery.11.option.a: ""
+ 
+ fds_slavery.12.title: ""
+ fds_slavery.12.desc: ""
+ fds_slavery.12.option.a: ""
+ 
+ # Gambling Events
+ fds_gambling.1.title: ""
+ fds_gambling.1.desc: ""
+ fds_gambling.1.option.a: ""
+ 
+ fds_gambling.2.title: ""
+ fds_gambling.2.desc: ""
+ fds_gambling.2.option.a: ""
+ 
+ fds_gambling.3.title: ""
+ fds_gambling.3.desc: ""
+ fds_gambling.3.option.a: ""
+ 
+ fds_gambling.4.title: ""
+ fds_gambling.4.desc: ""
+ fds_gambling.4.option.a: ""
+ 
+ fds_gambling.5.title: ""
+ fds_gambling.5.desc: ""
+ fds_gambling.5.option.a: ""
+ 
+ fds_gambling.6.title: ""
+ fds_gambling.6.desc: ""
+ fds_gambling.6.option.a: ""
+ 
+ fds_gambling.7.title: ""
+ fds_gambling.7.desc: ""
+ fds_gambling.7.option.a: ""
+ 
+ fds_gambling.8.title: ""
+ fds_gambling.8.desc: ""
+ fds_gambling.8.option.a: ""
+ 
+ fds_gambling.9.title: ""
+ fds_gambling.9.desc: ""
+ fds_gambling.9.option.a: ""
+ 
+ fds_gambling.10.title: ""
+ fds_gambling.10.desc: ""
+ fds_gambling.10.option.a: ""
+ 
+ fds_gambling.11.title: ""
+ fds_gambling.11.desc: ""
+ fds_gambling.11.option.a: ""
+ 
+ fds_gambling.12.title: ""
+ fds_gambling.12.desc: ""
+ fds_gambling.12.option.a: ""
+ 
+ # Prostitution Events
+ fds_prostitution.1.title: ""
+ fds_prostitution.1.desc: ""
+ fds_prostitution.1.option.a: ""
+ 
+ fds_prostitution.2.title: ""
+ fds_prostitution.2.desc: ""
+ fds_prostitution.2.option.a: ""
+ 
+ fds_prostitution.3.title: ""
+ fds_prostitution.3.desc: ""
+ fds_prostitution.3.option.a: ""
+ 
+ fds_prostitution.4.title: ""
+ fds_prostitution.4.desc: ""
+ fds_prostitution.4.option.a: ""
+ 
+ fds_prostitution.5.title: ""
+ fds_prostitution.5.desc: ""
+ fds_prostitution.5.option.a: ""
+ 
+ fds_prostitution.6.title: ""
+ fds_prostitution.6.desc: ""
+ fds_prostitution.6.option.a: ""
+ 
+ fds_prostitution.7.title: ""
+ fds_prostitution.7.desc: ""
+ fds_prostitution.7.option.a: ""
+ 
+ fds_prostitution.8.title: ""
+ fds_prostitution.8.desc: ""
+ fds_prostitution.8.option.a: ""
+ 
+ fds_prostitution.9.title: ""
+ fds_prostitution.9.desc: ""
+ fds_prostitution.9.option.a: ""
+ 
+ fds_prostitution.10.title: ""
+ fds_prostitution.10.desc: ""
+ fds_prostitution.10.option.a: ""
+ 
+ fds_prostitution.11.title: ""
+ fds_prostitution.11.desc: ""
+ fds_prostitution.11.option.a: ""
+ 
+ fds_prostitution.12.title: ""
+ fds_prostitution.12.desc: ""
+ fds_prostitution.12.option.a: ""
+ 
+ # Firearms Events
+ fds_firearms.1.title: ""
+ fds_firearms.1.desc: ""
+ fds_firearms.1.option.a: ""
+ 
+ fds_firearms.2.title: ""
+ fds_firearms.2.desc: ""
+ fds_firearms.2.option.a: ""
+ 
+ fds_firearms.3.title: ""
+ fds_firearms.3.desc: ""
+ fds_firearms.3.option.a: ""
+ 
+ fds_firearms.4.title: ""
+ fds_firearms.4.desc: ""
+ fds_firearms.4.option.a: ""
+ 
+ fds_firearms.5.title: ""
+ fds_firearms.5.desc: ""
+ fds_firearms.5.option.a: ""
+ 
+ fds_firearms.6.title: ""
+ fds_firearms.6.desc: ""
+ fds_firearms.6.option.a: ""
+ 
+ fds_firearms.7.title: ""
+ fds_firearms.7.desc: ""
+ fds_firearms.7.option.a: ""
+ 
+ fds_firearms.8.title: ""
+ fds_firearms.8.desc: ""
+ fds_firearms.8.option.a: ""
+ 
+ fds_firearms.9.title: ""
+ fds_firearms.9.desc: ""
+ fds_firearms.9.option.a: ""
+ 
+ fds_firearms.10.title: ""
+ fds_firearms.10.desc: ""
+ fds_firearms.10.option.a: ""
+ 
+ fds_firearms.11.title: ""
+ fds_firearms.11.desc: ""
+ fds_firearms.11.option.a: ""
+ 
+ fds_firearms.12.title: ""
+ fds_firearms.12.desc: ""
+ fds_firearms.12.option.a: ""
+ 
+ # Narcotics Events
+ fds_narcotics.1.title: ""
+ fds_narcotics.1.desc: ""
+ fds_narcotics.1.option.a: ""
+ 
+ fds_narcotics.2.title: ""
+ fds_narcotics.2.desc: ""
+ fds_narcotics.2.option.a: ""
+ 
+ fds_narcotics.3.title: ""
+ fds_narcotics.3.desc: ""
+ fds_narcotics.3.option.a: ""
+ 
+ fds_narcotics.4.title: ""
+ fds_narcotics.4.desc: ""
+ fds_narcotics.4.option.a: ""
+ 
+ fds_narcotics.5.title: ""
+ fds_narcotics.5.desc: ""
+ fds_narcotics.5.option.a: ""
+ 
+ fds_narcotics.6.title: ""
+ fds_narcotics.6.desc: ""
+ fds_narcotics.6.option.a: ""
+ 
+ fds_narcotics.7.title: ""
+ fds_narcotics.7.desc: ""
+ fds_narcotics.7.option.a: ""
+ 
+ fds_narcotics.8.title: ""
+ fds_narcotics.8.desc: ""
+ fds_narcotics.8.option.a: ""
+ 
+ fds_narcotics.9.title: ""
+ fds_narcotics.9.desc: ""
+ fds_narcotics.9.option.a: ""
+ 
+ fds_narcotics.10.title: ""
+ fds_narcotics.10.desc: ""
+ fds_narcotics.10.option.a: ""
+ 
+ fds_narcotics.11.title: ""
+ fds_narcotics.11.desc: ""
+ fds_narcotics.11.option.a: ""
+ 
+ fds_narcotics.12.title: ""
+ fds_narcotics.12.desc: ""
+ fds_narcotics.12.option.a: ""
+ 
+ # Scavenging Events
+ fds_scavenging.1.title: ""
+ fds_scavenging.1.desc: ""
+ fds_scavenging.1.option.a: ""
+ 
+ fds_scavenging.2.title: ""
+ fds_scavenging.2.desc: ""
+ fds_scavenging.2.option.a: ""
+ 
+ fds_scavenging.3.title: ""
+ fds_scavenging.3.desc: ""
+ fds_scavenging.3.option.a: ""
+ 
+ fds_scavenging.4.title: ""
+ fds_scavenging.4.desc: ""
+ fds_scavenging.4.option.a: ""
+ 
+ fds_scavenging.5.title: ""
+ fds_scavenging.5.desc: ""
+ fds_scavenging.5.option.a: ""
+ 
+ fds_scavenging.6.title: ""
+ fds_scavenging.6.desc: ""
+ fds_scavenging.6.option.a: ""
+ 
+ fds_scavenging.7.title: ""
+ fds_scavenging.7.desc: ""
+ fds_scavenging.7.option.a: ""
+ 
+ fds_scavenging.8.title: ""
+ fds_scavenging.8.desc: ""
+ fds_scavenging.8.option.a: ""
+ 
+ fds_scavenging.9.title: ""
+ fds_scavenging.9.desc: ""
+ fds_scavenging.9.option.a: ""
+ 
+ fds_scavenging.10.title: ""
+ fds_scavenging.10.desc: ""
+ fds_scavenging.10.option.a: ""
+ 
+ fds_scavenging.11.title: ""
+ fds_scavenging.11.desc: ""
+ fds_scavenging.11.option.a: ""
+ 
+ fds_scavenging.12.title: ""
+ fds_scavenging.12.desc: ""
+ fds_scavenging.12.option.a: ""
+ 
+ # Reset
+ fds_reset.1.title: "Economic Reforms"
+ fds_reset.1.desc: ""
+ fds_reset.1.option.a: ""
+ 
+ fds_reset.2.title: "Law Reforms"
+ fds_reset.2.desc: ""
+ fds_reset.2.option.a: ""
+ 
+ fds_reset.3.title: "Judicial Reforms"
+ fds_reset.3.desc: ""
+ fds_reset.3.option.a: ""
+ 
+ fds_reset.4.title: "Punishment Reforms"
+ fds_reset.4.desc: ""
+ fds_reset.4.option.a: ""
+ 
+ fds_reset.5.title: "Innovation Reforms"
+ fds_reset.5.desc: ""
+ fds_reset.5.option.a: ""
+ 
+ fds_reset.6.title: "Conscription Reforms"
+ fds_reset.6.desc: ""
+ fds_reset.6.option.a: ""
+ 
+ fds_reset.7.title: "Slavery Reforms"
+ fds_reset.7.desc: ""
+ fds_reset.7.option.a: ""
+ 
+ fds_reset.8.title: "Gambling Reforms"
+ fds_reset.8.desc: ""
+ fds_reset.8.option.a: ""
+ 
+ fds_reset.9.title: "Prostitution Reforms"
+ fds_reset.9.desc: ""
+ fds_reset.9.option.a: ""
+ 
+ fds_reset.10.title: "Firearm Reforms"
+ fds_reset.10.desc: ""
+ fds_reset.10.option.a: ""
+ 
+ fds_reset.11.title: "Narcotics Reforms"
+ fds_reset.11.desc: ""
+ fds_reset.11.option.a: ""
+ 
+ fds_reset.12.title: "Scavenging Reforms"
+ fds_reset.12.desc: ""
+ fds_reset.12.option.a: ""
+ 
+ # Economic Disaster
+ fds_economic_disaster.1.title: "Economic Collapse"
+ fds_economic_disaster.1.desc: ""
+ fds_economic_disaster.1.option.a: ""
+ 
+ fds_economic_disaster.2.title: "Economic Recovery"
+ fds_economic_disaster.2.desc: ""
+ fds_economic_disaster.2.option.a: ""
+ 
+ # Political Disaster
+ fds_political_disaster.1.title: "Political Collapse"
+ fds_political_disaster.1.desc: ""
+ fds_political_disaster.1.option.a: ""
+ 
+ fds_political_disaster.2.title: "Political Recovery"
+ fds_political_disaster.2.desc: ""
+ fds_political_disaster.2.option.a: ""
+ 
+ # Regulatory Disaster
+ fds_regulatory_disaster.1.title: "Regulatory Collapse"
+ fds_regulatory_disaster.1.desc: ""
+ fds_regulatory_disaster.1.option.a: ""
+ 
+ fds_regulatory_disaster.2.title: "Regulatory Restoration"
+ fds_regulatory_disaster.2.desc: ""
+ fds_regulatory_disaster.2.option.a: ""
  
  # Decisions
  fds_economy_selection_title: "Enact Economic Policy"
@@ -307,28 +1089,34 @@
  fds_conscription_selection_title: "Enact Conscription Policy"
  fds_conscription_selection_desc: "Change your conscription policy."
  
- fds_slavery_selection_title: "Enact Slavery Regulation"
+ fds_slavery_selection_title: "Pass Slavery Regulation"
  fds_slavery_selection_desc: "Change your slavery regulation."
  
- fds_gambling_selection_title: "Enact Gambling Regulation"
+ fds_gambling_selection_title: "Pass Gambling Regulation"
  fds_gambling_selection_desc: "Change your gambling regulation."
  
- fds_prostitution_selection_title: "Enact Prostitution Regulation"
+ fds_prostitution_selection_title: "Pass Prostitution Regulation"
  fds_prostitution_selection_desc: "Change your prostitution regulation."
  
- fds_firearms_selection_title: "Enact Firearms Regulation"
+ fds_firearms_selection_title: "Pass Firearms Regulation"
  fds_firearms_selection_desc: "Change your firearms regulation."
  
- fds_narcotics_selection_title: "Enact Narcotics Regulation"
+ fds_narcotics_selection_title: "Pass Narcotics Regulation"
  fds_narcotics_selection_desc: "Change your narcotics regulation."
  
- fds_scavenging_selection_title: "Enact Scavenging Regulation"
+ fds_scavenging_selection_title: "Pass Scavenging Regulation"
  fds_scavenging_selection_desc: "Change your scavenging regulation."
  
+ fds_hide_menus_title: "Hide Policies and Regulations"
+ fds_hide_menus_desc: "Toggle visibility of policy and regulation decisions."
+ 
+ fds_show_menus_title: "Show Policies and Regulations"
+ fds_show_menus_desc: "Toggle visibility of policy and regulation decisions."
+ 
  # Disasters
- FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING: "Changing this policy prematurely will cause a §YRegulatory Disaster§! to occur.\n\nPolicies and regulations can only be changed between 10 to 20 years after passing a change."
- FDS_QUICK_CHANGE_POLITICAL_DISASTER_WARNING: "Changing this policy prematurely will cause a §YPolitical Disaster§! to occur.\n\nPolicies and regulations can only be changed between 10 to 20 years after passing a change."
- FDS_QUICK_CHANGE_ECONOMIC_DISASTER_WARNING: "Changing this policy prematurely will cause a §YEconomic Disaster§! to occur.\n\nPolicies and regulations can only be changed between 10 to 20 years after passing a change."
+ FDS_QUICK_CHANGE_REGULATORY_DISASTER_WARNING: "Changing your policy now will cause a §YRegulatory Disaster§! to occur."
+ FDS_QUICK_CHANGE_POLITICAL_DISASTER_WARNING: "Changing your policy now will cause a §YPolitical Disaster§! to occur."
+ FDS_QUICK_CHANGE_ECONOMIC_DISASTER_WARNING: "Changing your policy now will cause a §YEconomic Disaster§! to occur."
  
  
  
