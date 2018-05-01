@@ -1,4 +1,7 @@
 ﻿l_english:
+ #-------------------------------------
+ # Generic
+ #-------------------------------------
  high_income_mission_title: "Reach High Income"
  high_income_mission_desc: "Secure funding for [Root.GetName] at a sufficient level for a healthy economy."
  
@@ -74,51 +77,103 @@
  radiation_adaptation_mission_title: "Radiation Adaptation"
  radiation_adaptation_mission_desc: "Control twenty irradiated provinces."
 
- settle_washington_mission_title: "Settle Washington"
- settle_washington_mission_desc: "Control all of Washington, settling the lands and claiming them as our own."
- 
+ #-------------------------------------
+ # NCR
+ #-------------------------------------
  secure_mojave_mission_title: "Secure the Mojave"
  secure_mojave_mission_desc: "Secure the border route to the Mojave."
+
+ secure_new_vegas_mission_title: "Secure New Vegas"
+ secure_new_vegas_mission_desc: "Secure the lands around and in New Vegas."
  
- attack_legion_mission_title: "Attack Caesar's Legion"
- attack_legion_mission_desc: "Attack and succeed in a war against Caesar's Legion."
- 
- push_out_legion_mission_title: "Push Out Caesar's Legion"
- push_out_legion_mission_desc: "Push Caesar's Legion out of the Mojave."
+ legion_retreat_mission_title: "Legion Retreat"
+ legion_retreat_mission_desc: "Declare war upon Caesar's Legion and push them back across the Colorado."
  
  eradicate_legion_mission_title: "Eradicate Caesar's Legion"
- eradicate_legion_mission_desc: "Eradicate the remnants of Caesar's Legion."
+ eradicate_legion_mission_desc: "Remove the remnants of Caesar's Legion."
  
- destroy_lost_hills_chapter_mission_title: "Destroy Lost Hills"
- destroy_lost_hills_chapter_mission_desc: "Destroy the Lost Hills Chapter of the Brotherhood of Steel."
+ secure_california_mission_title: "Secure California"
+ secure_california_mission_desc: "Secure the lands of California we do not possess."
+
+ capture_new_reno_mission_title: "Secure New Reno"
+ capture_new_reno_mission_desc: "Secure the lands of New Reno."
  
- annex_new_reno_mission_title: "Annex New Reno"
- annex_new_reno_mission_desc: "The city of New Reno has escaped our complete control for too long, let us take full control."
+ eradicate_lost_hills_mission_title: "Eradicate Lost Hills"
+ eradicate_lost_hills_mission_desc: "Eradicate the Lost Hills Chapter."
  
- annex_necropolis_mission_title: "Annex Necropolis"
- annex_necropolis_mission_desc: "Take over the city of Necropolis."
+ capture_boneyard_mission_title: "Secure the Boneyard"
+ capture_boneyard_mission_desc: "Secure the Boneyard of Los Angeles."
  
- secure_mojave: "Secure Mojave"
- desc_secure_mojave: ""
+ capture_necropolis_mission_title: "Secure the Necropolis"
+ capture_necropolis_mission_desc: "Secure the Necropolis from the ghouls."
  
- new_reno_profits: "New Reno Profits"
- desc_new_reno_profits: ""
+ capture_arroyo_mission_title: "Secure Arroyo"
+ capture_arroyo_mission_desc: "Take the lands of Arroyo."
  
- lost_hills_bunker: "Lost Hills Bunker"
- desc_lost_hills_bunker: ""
+ capture_mariposa_mission_title: "Secure Mariposa"
+ capture_mariposa_mission_desc: "Secure the ruined labratories found within Mariposa."
  
- ncr_success: "NCR Success"
- desc_ncr_success: ""
+ capture_the_den_mission_title: "Secure the Den"
+ capture_the_den_mission_desc: "Secure the Den and claim the raider's trove of goods."
+ 
+ capture_vault_city_mission_title: "Secure Vault City"
+ capture_vault_city_mission_desc: "Secure the Vault City and its proximal settlements."
+ 
+ capture_the_shi_mission_title: "Secure the Shi"
+ capture_the_shi_mission_desc: "Secure Shi-town and their mythical leader."
+ 
+ #-------------------------------------
+ # Legion
+ #-------------------------------------
+ 
+ #-------------------------------------
+ # New Vegas
+ #-------------------------------------
+ 
+ #-------------------------------------
+ # Institute
+ #-------------------------------------
+ 
+ #-------------------------------------
+ # Enclave
+ #-------------------------------------
+ 
+ #-------------------------------------
+ # Modifiers
+ #-------------------------------------
+ raider_trove: "Gold Trove"
+ desc_raider_trove: ""
+ 
+ vault_tec_gadgets: "Vault-tec Gadgets"
+ desc_vault_tec_gadgets: ""
+ 
+ shi_technology: "Shi Computers"
+ desc_shi_technology: ""
+ 
+ new_reno_casinos: "New Reno Casinos"
+ desc_new_reno_casinos: ""
+ 
+ follower_technology: "Follower Technology"
+ desc_follower_technology: ""
+ 
+ ghoul_technology: "Ghoulish Devices"
+ desc_ghoul_technology: ""
+ 
+ arroyo_spirituality: "Arroyo Spirituality"
+ desc_arroyo_spirituality: ""
+ 
+ fev_remnants: "FEV Remnants"
+ desc_fev_remnants: ""
+ 
+ brotherhood_technology: "Brotherhood Gadgets"
+ desc_brotherhood_technology: ""
  
  ncr_victory: "NCR Victory"
  desc_ncr_victory: ""
  
  ncr_domination: "NCR Domination"
  desc_ncr_domination: ""
- 
- necropolis_secrets: "Secrets of Necropolis"
- desc_necropolis_secrets: ""
- 
+
  radiation_adaptation: "Radiation Adaptation"
  desc_radiation_adaptation: "Allows the colonisation of §YIrradiated Wasteland§!."
  
@@ -185,6 +240,9 @@
  veteran_general: "Veteran General"
  desc_veteran_general: ""
  
+ #-------------------------------------
+ # Settlement
+ #-------------------------------------
  settle_washington_mission_title: "Settle Washington"
  settle_washington_mission_desc: "Control all of Washington, settling the lands and claiming them as our own."
 

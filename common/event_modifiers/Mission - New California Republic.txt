@@ -1,27 +1,43 @@
-secure_mojave = {
-    land_attrition = -0.05
-}
-
-new_reno_profits = {
-    global_tax_modifier = 0.05
-}
-
-lost_hills_bunker = {
-    defensiveness = 0.25
-}
-
-ncr_success = {
-    land_maintenance_modifier = -0.05
-}
-
 ncr_victory = {
     global_manpower_modifier = 0.1
 }
 
 ncr_domination = {
-    discipline = 0.05
+    discipline = 0.1
 }
 
-necropolis_secrets = {
-    advisor_cost = -0.05
+brotherhood_technology = {
+    idea_cost = -0.03
+}
+
+new_reno_casinos = {
+    global_tax_modifier = 0.05
+}
+
+follower_technology = {
+    technology_cost = -0.03
+}
+
+ghoul_technology = {
+    embracement_cost = -0.1
+}
+
+arroyo_spirituality = {
+    global_institution_spread = 0.1
+}
+
+fev_remnants = {
+    all_power_cost = -0.03
+}
+
+raider_trove = {
+    global_trade_goods_size_modifier = 0.05
+}
+
+vault_tec_gadgets = {
+    production_efficiency = 0.05
+}
+
+shi_technology = {
+    development_cost = -0.05
 }

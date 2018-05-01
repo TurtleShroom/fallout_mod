@@ -12,29 +12,114 @@ ncr_missions_slot_6 = {
 		required_missions = { }
         
 		trigger = {
-            calc_true_if = {
-                any_owned_province = {
-                    region = nevada_region
-                }
-                amount = 10
-            }
+            army_size_percentage = 1
             267 = {
                 has_influencing_fort = yes
             }
 		}
 		effect = {
-			add_country_modifier = {
-				name = secure_mojave
-				duration = -1
+            north_vegas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            goodsprings_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            new_vegas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            helios_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            clark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            nipton_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            east_vegas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            boulder_city_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            black_mountain_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            west_vegas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
     
-    attack_legion_mission = {
+    secure_new_vegas_mission = {
 		icon = mission_assemble_an_army
         
 		required_missions = { 
             secure_mojave_mission
+        }
+        
+		trigger = {
+            num_of_owned_provinces_with = {
+                value = 30
+                region = nevada_region
+            }
+		}
+		effect = {
+			arizona_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+    
+    legion_retreat_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { 
+            secure_new_vegas_mission
         }
         
 		trigger = {
@@ -48,37 +133,12 @@ ncr_missions_slot_6 = {
             }
 		}
 		effect = {
-			add_country_modifier = {
-				name = ncr_success
-				duration = -1
-			}
-		}
-	}
-    
-    push_out_legion_mission = {
-		icon = mission_war_chest
-        
-		required_missions = { 
-            attack_legion_mission
-        }
-        
-		trigger = {
-            OR = {
-                AND = {
-                    exists = CAE
-                    CAE = {
-                        NOT = {
-                            any_owned_province = {
-                                region = nevada_region
-                            }
-                        }
-                    }
+			CAE = {
+                every_owned_province = {
+                    add_permanent_claim = ROOT
                 }
-                NOT = { exists = CAE }
             }
-		}
-		effect = {
-			add_country_modifier = {
+            add_country_modifier = {
 				name = ncr_victory
 				duration = -1
 			}
@@ -89,7 +149,7 @@ ncr_missions_slot_6 = {
 		icon = mission_empire
         
 		required_missions = { 
-            push_out_legion_mission
+            legion_retreat_mission
         }
         
 		trigger = {
@@ -112,63 +172,217 @@ ncr_missions_slot_7 = {
         tag = NCR
     }
     
-    destroy_lost_hills_chapter_mission = {
-        icon = mission_build_up_to_force_limit
+    secure_california_mission = {
+		icon = mission_great_wall
+        
+		required_missions = { }
         
 		trigger = {
-            NOT = { exists = BOS }
-            maxson_state_area = {
-                owned_by = ROOT
-                is_core = ROOT
-                type = all
-            }
+            army_size_percentage = 1
+            manpower_percentage = 0.9
 		}
 		effect = {
-			add_country_modifier = {
-				name = lost_hills_bunker
-				duration = -1
+            california_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+                    is_empty = no
+				}
+				add_permanent_claim = ROOT
 			}
 		}
-    }
+	}
     
-    annex_new_reno_mission = {
-		icon = mission_war_chest
-
+    capture_new_reno_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
 		trigger = {
-            NOT = { exists = NRN }
             new_reno_area = {
+                type = all
                 owned_by = ROOT
                 is_core = ROOT
-                type = all
             }
             new_reno_outskirts_area = {
+                type = all
                 owned_by = ROOT
                 is_core = ROOT
-                type = all
             }
 		}
 		effect = {
-			add_country_modifier = {
-				name = new_reno_profits
+            add_country_modifier = {
+				name = new_reno_casinos
 				duration = -1
 			}
 		}
 	}
     
-    annex_necropolis_mission = {
-		icon = mission_conquer_50_development
-
+    eradicate_lost_hills_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
 		trigger = {
-            NOT = { exists = NEC }
-            necropolis_area = {
+            NOT = { exists = BOS }
+            maxson_state_area = {
+                type = all
                 owned_by = ROOT
                 is_core = ROOT
-                type = all
             }
 		}
 		effect = {
-			add_country_modifier = {
-				name = necropolis_secrets
+            add_country_modifier = {
+				name = brotherhood_technology
+				duration = -1
+			}
+		}
+	}
+    
+    capture_boneyard_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            boneyard_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = follower_technology
+				duration = -1
+			}
+		}
+	}
+    
+    capture_necropolis_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            necropolis_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = ghoul_technology
+				duration = -1
+			}
+		}
+	}
+}
+
+ncr_missions_slot_8 = {
+    slot = 8
+    has_country_shield = yes
+    
+    potential = {
+        tag = NCR
+    }
+    
+    capture_arroyo_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            arroyo_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = arroyo_spirituality
+				duration = -1
+			}
+		}
+	}
+    
+    capture_mariposa_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            mariposa_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = fev_remnants
+				duration = -1
+			}
+		}
+	}
+    
+    capture_the_den_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            the_den_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = raider_trove
+				duration = -1
+			}
+		}
+	}
+    
+    capture_vault_city_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            vault_city_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = vault_tec_gadgets
+				duration = -1
+			}
+		}
+	}
+    
+    capture_the_shi_mission = {
+		icon = mission_assemble_an_army
+        
+		required_missions = { }
+        
+		trigger = {
+            shi_town_area = {
+                type = all
+                owned_by = ROOT
+                is_core = ROOT
+            }
+		}
+		effect = {
+            add_country_modifier = {
+				name = shi_technology
 				duration = -1
 			}
 		}

@@ -1,34 +1,34 @@
-raider_missions_slot_6 = {
+vault_dweller_missions_slot_6 = {
     slot = 6
     has_country_shield = yes
     generic = yes
     
     potential = {
-        technology_group = tech_raider
+        technology_group = tech_vault_dweller
     }
     
     
 }
 
-raider_missions_slot_7 = {
+vault_dweller_missions_slot_7 = {
     slot = 7
     has_country_shield = yes
     generic = yes
     
     potential = {
-        technology_group = tech_raider
+        technology_group = tech_vault_dweller
     }
     
     
 }
 
-raider_missions_slot_8 = {
+vault_dweller_missions_slot_8 = {
     slot = 8
     has_country_shield = yes
     generic = yes
     
     potential = {
-        technology_group = tech_raider
+        technology_group = tech_vault_dweller
     }
     
     
