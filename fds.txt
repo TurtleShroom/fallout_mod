@@ -1,0 +1,45 @@
+# --- Policies ---
+# Economy
+Traditional
+Command
+Market
+Mixed
+
+# Law
+Democratic
+Oligarchic
+Autocratic
+
+# Justice
+State Courts
+Community Courts
+Secret Courts
+
+# Punishment
+Fines
+Imprisonment
+Execution
+Slavery (requires Slavery Allowed)
+
+# Innovation
+Individual
+Sponsored
+State
+
+# Conscription
+Volunteer
+Limited
+Full
+
+# --- Regulations ---
+Slavery
+Gambling
+Prostitution
+Firearms
+Narcotics
+Scavenging
+
+All regulations have the following options:
+- Allowed
+- Licensed
+- Forbidden

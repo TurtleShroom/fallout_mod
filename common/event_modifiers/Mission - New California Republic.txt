@@ -1,0 +1,27 @@
+secure_mojave = {
+    land_attrition = -0.05
+}
+
+new_reno_profits = {
+    global_tax_modifier = 0.05
+}
+
+lost_hills_bunker = {
+    defensiveness = 0.25
+}
+
+ncr_success = {
+    land_maintenance_modifier = -0.05
+}
+
+ncr_victory = {
+    global_manpower_modifier = 0.1
+}
+
+ncr_domination = {
+    discipline = 0.05
+}
+
+necropolis_secrets = {
+    advisor_cost = -0.05
+}

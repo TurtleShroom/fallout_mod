@@ -47,6 +47,25 @@ people_in_poverty = {
 }
 
 # Law
+tyranny_of_the_majority = {
+
+}
+
+cumbersome_bureaucracy = {
+
+}
+
+industrial_favours = {
+
+}
+
+elite_cabal = {
+
+}
+
+dictatorial_vision = {
+
+}
 
 # Justice
 

@@ -3,6 +3,7 @@ namespace = fds_justice
 #-----------------------------------------
 # State Courts
 #-----------------------------------------
+# Just Arbitration
 country_event = {
 	id = fds_justice.1
 	title = fds_justice.1.title
@@ -10,6 +11,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_state_courts = yes
 	}
 	
@@ -39,6 +41,7 @@ country_event = {
 	}
 }
 
+# Respected Courts
 country_event = {
 	id = fds_justice.2
 	title = fds_justice.2.title
@@ -46,6 +49,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_state_courts = yes
 	}
 	
@@ -75,6 +79,7 @@ country_event = {
 	}
 }
 
+# Judicial Scandal
 country_event = {
 	id = fds_justice.3
 	title = fds_justice.3.title
@@ -82,6 +87,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_state_courts = yes
 	}
 	
@@ -111,6 +117,7 @@ country_event = {
 	}
 }
 
+# Clogged Courts
 country_event = {
 	id = fds_justice.4
 	title = fds_justice.4.title
@@ -118,6 +125,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_state_courts = yes
 	}
 	
@@ -150,6 +158,7 @@ country_event = {
 #-----------------------------------------
 # Community Courts
 #-----------------------------------------
+# Communal Beatings
 country_event = {
 	id = fds_justice.5
 	title = fds_justice.5.title
@@ -157,6 +166,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_community_courts = yes
 	}
 	
@@ -186,6 +196,7 @@ country_event = {
 	}
 }
 
+# Communal Judgment
 country_event = {
 	id = fds_justice.6
 	title = fds_justice.6.title
@@ -193,6 +204,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_community_courts = yes
 	}
 	
@@ -222,6 +234,7 @@ country_event = {
 	}
 }
 
+# Arbitrary Justice
 country_event = {
 	id = fds_justice.7
 	title = fds_justice.7.title
@@ -229,6 +242,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_community_courts = yes
 	}
 	
@@ -258,6 +272,7 @@ country_event = {
 	}
 }
 
+# Reprehensible Violence
 country_event = {
 	id = fds_justice.8
 	title = fds_justice.8.title
@@ -265,6 +280,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_community_courts = yes
 	}
 	
@@ -297,6 +313,7 @@ country_event = {
 #-----------------------------------------
 # Secret Courts
 #-----------------------------------------
+# State Secrecy
 country_event = {
 	id = fds_justice.9
 	title = fds_justice.9.title
@@ -304,6 +321,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_secret_courts = yes
 	}
 	
@@ -333,6 +351,7 @@ country_event = {
 	}
 }
 
+# Supression of Rebellion
 country_event = {
 	id = fds_justice.10
 	title = fds_justice.10.title
@@ -340,6 +359,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_secret_courts = yes
 	}
 	
@@ -369,6 +389,7 @@ country_event = {
 	}
 }
 
+# Obscurantism
 country_event = {
 	id = fds_justice.11
 	title = fds_justice.11.title
@@ -376,6 +397,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_secret_courts = yes
 	}
 	
@@ -405,6 +427,7 @@ country_event = {
 	}
 }
 
+# State Censorship
 country_event = {
 	id = fds_justice.12
 	title = fds_justice.12.title
@@ -412,6 +435,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_secret_courts = yes
 	}
 	

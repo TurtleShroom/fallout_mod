@@ -12,6 +12,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+        always = no
         has_traditional_economy = yes
 	}
 	
@@ -54,6 +55,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_traditional_economy = yes
         NOT = { has_country_modifier = enterprising_individual } 
 	}
@@ -96,6 +98,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_traditional_economy = yes
         any_owned_province = {
             base_tax = 2
@@ -148,6 +151,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_traditional_economy = yes
         any_owned_province = {
             NOT = { has_province_modifier = slumlords }
@@ -200,6 +204,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_command_economy = yes
             has_mixed_economy = yes
@@ -245,6 +250,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_command_economy = yes
             has_mixed_economy = yes
@@ -290,6 +296,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_command_economy = yes
             has_mixed_economy = yes
@@ -335,6 +342,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_command_economy = yes
             has_mixed_economy = yes
@@ -383,6 +391,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_market_economy = yes
             has_mixed_economy = yes
@@ -428,6 +437,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_market_economy = yes
             has_mixed_economy = yes
@@ -473,6 +483,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_market_economy = yes
             has_mixed_economy = yes
@@ -518,6 +529,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         OR = {
             has_market_economy = yes
             has_mixed_economy = yes

@@ -8,10 +8,7 @@ economic_disaster = {
 	}
     
     can_stop = {
-		had_country_flag = {
-			flag = economic_disaster_active
-			days = 720
-		}
+		always = no
 	}
     
 	progress = {
@@ -21,13 +18,17 @@ economic_disaster = {
 	can_end = {
 		NOT = { num_of_revolts = 1 }
 		stability = 0
+        had_country_flag = {
+			flag = economic_disaster_active
+			days = 720
+		}
 	}
 	
 	modifier = {
         stability_cost_modifier = 1.0
-        global_unrest = 5
-        global_tax_modifier = -0.75
-        production_efficiency = -0.75
+        global_unrest = 10
+        global_tax_modifier = -0.9
+        production_efficiency = -0.9
 	}
 	
 	on_start = fds_economic_disaster.1
@@ -37,6 +38,8 @@ economic_disaster = {
 		events = {
 		}
 		random_events = { 
+            1000 = 0
+            100 = fds_economic_disaster.3
 		}
 	}
 }

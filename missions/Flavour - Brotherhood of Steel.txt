@@ -1,0 +1,10 @@
+brotherhood_of_steel_missions = {
+    slot = 6
+    has_country_shield = yes
+    
+    potential = {
+        always = yes
+    }
+    
+    
+}

@@ -1,0 +1,9 @@
+tribal_missions = {
+    slot = 6
+
+    potential = {
+        always = yes
+    }
+    
+    
+}

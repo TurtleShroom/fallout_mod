@@ -3,6 +3,7 @@ namespace = fds_punishment
 #-----------------------------------------
 # Fines
 #-----------------------------------------
+# Bulging Coffers
 country_event = {
 	id = fds_punishment.1
 	title = fds_punishment.1.title
@@ -10,6 +11,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_fine_punishment = yes
 	}
 	
@@ -39,6 +41,7 @@ country_event = {
 	}
 }
 
+# Vanity Projects
 country_event = {
 	id = fds_punishment.2
 	title = fds_punishment.2.title
@@ -46,6 +49,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_fine_punishment = yes
 	}
 	
@@ -75,6 +79,7 @@ country_event = {
 	}
 }
 
+# Corruption Accepted
 country_event = {
 	id = fds_punishment.3
 	title = fds_punishment.3.title
@@ -82,6 +87,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_fine_punishment = yes
 	}
 	
@@ -111,6 +117,7 @@ country_event = {
 	}
 }
 
+# Arbitrary Fines
 country_event = {
 	id = fds_punishment.4
 	title = fds_punishment.4.title
@@ -118,6 +125,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_fine_punishment = yes
 	}
 	
@@ -150,6 +158,7 @@ country_event = {
 #-----------------------------------------
 # Imprisonment
 #-----------------------------------------
+# Suburban Communities
 country_event = {
 	id = fds_punishment.5
 	title = fds_punishment.5.title
@@ -157,6 +166,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_imprisonment_punishment = yes
 	}
 	
@@ -186,6 +196,7 @@ country_event = {
 	}
 }
 
+# Criminality Drops!
 country_event = {
 	id = fds_punishment.6
 	title = fds_punishment.6.title
@@ -193,6 +204,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_imprisonment_punishment = yes
 	}
 	
@@ -222,6 +234,7 @@ country_event = {
 	}
 }
 
+# Prisons at Capacity
 country_event = {
 	id = fds_punishment.7
 	title = fds_punishment.7.title
@@ -229,6 +242,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_imprisonment_punishment = yes
 	}
 	
@@ -258,6 +272,7 @@ country_event = {
 	}
 }
 
+# Appalling Conditions
 country_event = {
 	id = fds_punishment.8
 	title = fds_punishment.8.title
@@ -265,6 +280,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_imprisonment_punishment = yes
 	}
 	
@@ -297,6 +313,7 @@ country_event = {
 #-----------------------------------------
 # Execution
 #-----------------------------------------
+# Safe and Secure
 country_event = {
 	id = fds_punishment.9
 	title = fds_punishment.9.title
@@ -304,6 +321,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_execution_punishment = yes
 	}
 	
@@ -333,6 +351,7 @@ country_event = {
 	}
 }
 
+# Revolt Crushed
 country_event = {
 	id = fds_punishment.10
 	title = fds_punishment.10.title
@@ -340,6 +359,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_execution_punishment = yes
 	}
 	
@@ -369,6 +389,7 @@ country_event = {
 	}
 }
 
+# Arbitrary Punishment
 country_event = {
 	id = fds_punishment.11
 	title = fds_punishment.11.title
@@ -376,6 +397,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_execution_punishment = yes
 	}
 	
@@ -405,6 +427,7 @@ country_event = {
 	}
 }
 
+# Irrevocable Actions
 country_event = {
 	id = fds_punishment.12
 	title = fds_punishment.12.title
@@ -412,6 +435,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_execution_punishment = yes
 	}
 	
@@ -444,6 +468,7 @@ country_event = {
 #-----------------------------------------
 # Slavery
 #-----------------------------------------
+# Soldiers in Chains
 country_event = {
 	id = fds_punishment.13
 	title = fds_punishment.13.title
@@ -451,6 +476,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_punishment = yes
 	}
 	
@@ -480,6 +506,7 @@ country_event = {
 	}
 }
 
+# Labour without Expense
 country_event = {
 	id = fds_punishment.14
 	title = fds_punishment.14.title
@@ -487,6 +514,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_punishment = yes
 	}
 	
@@ -516,6 +544,7 @@ country_event = {
 	}
 }
 
+# Slaver's Dilemna
 country_event = {
 	id = fds_punishment.15
 	title = fds_punishment.15.title
@@ -523,6 +552,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_punishment = yes
 	}
 	
@@ -552,6 +582,7 @@ country_event = {
 	}
 }
 
+# Dead to Rights
 country_event = {
 	id = fds_punishment.16
 	title = fds_punishment.16.title
@@ -559,6 +590,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_punishment = yes
 	}
 	

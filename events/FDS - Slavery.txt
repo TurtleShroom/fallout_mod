@@ -10,6 +10,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_allowed = yes
 	}
 	
@@ -46,6 +47,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_allowed = yes
 	}
 	
@@ -82,6 +84,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_allowed = yes
 	}
 	
@@ -118,6 +121,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_allowed = yes
 	}
 	
@@ -157,6 +161,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_licensed = yes
 	}
 	
@@ -193,6 +198,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_licensed = yes
 	}
 	
@@ -229,6 +235,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_licensed = yes
 	}
 	
@@ -265,6 +272,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_licensed = yes
 	}
 	
@@ -304,6 +312,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_forbidden = yes
 	}
 	
@@ -340,6 +349,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_forbidden = yes
 	}
 	
@@ -376,6 +386,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_forbidden = yes
 	}
 	
@@ -412,6 +423,7 @@ country_event = {
     picture = BOS_CHAT_eventPicture
 	
     trigger = {
+		always = no
         has_slavery_forbidden = yes
 	}
 	

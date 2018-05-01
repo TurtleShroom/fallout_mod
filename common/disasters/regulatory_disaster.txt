@@ -8,10 +8,7 @@ regulatory_disaster = {
 	}
     
     can_stop = {
-		had_country_flag = {
-			flag = regulatory_disaster_active
-			days = 720
-		}
+		always = no
 	}
     
 	progress = {
@@ -21,12 +18,16 @@ regulatory_disaster = {
 	can_end = {
 		NOT = { num_of_revolts = 1 }
 		stability = 0
+        had_country_flag = {
+			flag = regulatory_disaster_active
+			days = 720
+		}
 	}
 	
 	modifier = {
 		stability_cost_modifier = 1.0
-        global_unrest = 5
-        global_autonomy = 0.1
+        global_unrest = 10
+        global_autonomy = 0.2
 	}
 	
 	on_start = fds_regulatory_disaster.1
@@ -36,6 +37,8 @@ regulatory_disaster = {
 		events = {
 		}
 		random_events = { 
+            1000 = 0
+            100 = fds_regulatory_disaster.3
 		}
 	}
 }

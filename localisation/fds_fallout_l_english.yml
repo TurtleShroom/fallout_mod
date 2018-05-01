@@ -440,263 +440,263 @@
  desc_people_in_poverty: ""
  
  # Law Events
- fds_law.1.title: ""
+ fds_law.1.title: "Citizen Representation"
  fds_law.1.desc: ""
  fds_law.1.option.a: ""
  
- fds_law.2.title: ""
+ fds_law.2.title: "Self-determination"
  fds_law.2.desc: ""
  fds_law.2.option.a: ""
  
- fds_law.3.title: ""
+ fds_law.3.title: "Tyranny of the Majority"
  fds_law.3.desc: ""
  fds_law.3.option.a: ""
  
- fds_law.4.title: ""
+ fds_law.4.title: "Cumbersome Bureaucracy"
  fds_law.4.desc: ""
  fds_law.4.option.a: ""
  
- fds_law.5.title: ""
+ fds_law.5.title: "Industrial Favours"
  fds_law.5.desc: ""
  fds_law.5.option.a: ""
  
- fds_law.6.title: ""
+ fds_law.6.title: "Cabal of Elites"
  fds_law.6.desc: ""
  fds_law.6.option.a: ""
  
- fds_law.7.title: ""
+ fds_law.7.title: "Misguided Judgments"
  fds_law.7.desc: ""
  fds_law.7.option.a: ""
  
- fds_law.8.title: ""
+ fds_law.8.title: "Fractured Cadre"
  fds_law.8.desc: ""
  fds_law.8.option.a: ""
  
- fds_law.9.title: ""
+ fds_law.9.title: "Dictatorial Vision"
  fds_law.9.desc: ""
  fds_law.9.option.a: ""
  
- fds_law.10.title: ""
+ fds_law.10.title: "Glory Above All"
  fds_law.10.desc: ""
  fds_law.10.option.a: ""
  
- fds_law.11.title: ""
+ fds_law.11.title: "A Intolerable Recluse"
  fds_law.11.desc: ""
  fds_law.11.option.a: ""
  
- fds_law.12.title: ""
+ fds_law.12.title: "Grassroot Rebellion"
  fds_law.12.desc: ""
  fds_law.12.option.a: ""
  
  # Justice Events
- fds_justice.1.title: ""
+ fds_justice.1.title: "Just Arbitration"
  fds_justice.1.desc: ""
  fds_justice.1.option.a: ""
  
- fds_justice.2.title: ""
+ fds_justice.2.title: "Respected Courts"
  fds_justice.2.desc: ""
  fds_justice.2.option.a: ""
  
- fds_justice.3.title: ""
+ fds_justice.3.title: "Judicial Scandal"
  fds_justice.3.desc: ""
  fds_justice.3.option.a: ""
  
- fds_justice.4.title: ""
+ fds_justice.4.title: "Clogged Courts"
  fds_justice.4.desc: ""
  fds_justice.4.option.a: ""
  
- fds_justice.5.title: ""
+ fds_justice.5.title: "Communal Beatings"
  fds_justice.5.desc: ""
  fds_justice.5.option.a: ""
  
- fds_justice.6.title: ""
+ fds_justice.6.title: "Communal Judgment"
  fds_justice.6.desc: ""
  fds_justice.6.option.a: ""
  
- fds_justice.7.title: ""
+ fds_justice.7.title: "Arbitrary Justice"
  fds_justice.7.desc: ""
  fds_justice.7.option.a: ""
  
- fds_justice.8.title: ""
+ fds_justice.8.title: "Reprehensible Violence"
  fds_justice.8.desc: ""
  fds_justice.8.option.a: ""
  
- fds_justice.9.title: ""
+ fds_justice.9.title: "State Secrecy"
  fds_justice.9.desc: ""
  fds_justice.9.option.a: ""
  
- fds_justice.10.title: ""
+ fds_justice.10.title: "Supression of Rebellion"
  fds_justice.10.desc: ""
  fds_justice.10.option.a: ""
  
- fds_justice.11.title: ""
+ fds_justice.11.title: "Obscurantism"
  fds_justice.11.desc: ""
  fds_justice.11.option.a: ""
  
- fds_justice.12.title: ""
+ fds_justice.12.title: "State Censorship"
  fds_justice.12.desc: ""
  fds_justice.12.option.a: ""
  
  # Punishment Events
- fds_punishment.1.title: ""
+ fds_punishment.1.title: "Bulging Coffers"
  fds_punishment.1.desc: ""
  fds_punishment.1.option.a: ""
  
- fds_punishment.2.title: ""
+ fds_punishment.2.title: "Vanity Projects"
  fds_punishment.2.desc: ""
  fds_punishment.2.option.a: ""
  
- fds_punishment.3.title: ""
+ fds_punishment.3.title: "Corruption Accepted"
  fds_punishment.3.desc: ""
  fds_punishment.3.option.a: ""
  
- fds_punishment.4.title: ""
+ fds_punishment.4.title: "Arbitrary Fines"
  fds_punishment.4.desc: ""
  fds_punishment.4.option.a: ""
  
- fds_punishment.5.title: ""
+ fds_punishment.5.title: "Suburban Communities"
  fds_punishment.5.desc: ""
  fds_punishment.5.option.a: ""
  
- fds_punishment.6.title: ""
+ fds_punishment.6.title: "Criminality Drops!"
  fds_punishment.6.desc: ""
  fds_punishment.6.option.a: ""
  
- fds_punishment.7.title: ""
+ fds_punishment.7.title: "Prisons at Capacity"
  fds_punishment.7.desc: ""
  fds_punishment.7.option.a: ""
  
- fds_punishment.8.title: ""
+ fds_punishment.8.title: "Appalling Conditions"
  fds_punishment.8.desc: ""
  fds_punishment.8.option.a: ""
  
- fds_punishment.9.title: ""
+ fds_punishment.9.title: "Safe and Secure"
  fds_punishment.9.desc: ""
  fds_punishment.9.option.a: ""
  
- fds_punishment.10.title: ""
+ fds_punishment.10.title: "Revolt Crushed"
  fds_punishment.10.desc: ""
  fds_punishment.10.option.a: ""
  
- fds_punishment.11.title: ""
+ fds_punishment.11.title: "Arbitrary Punishment"
  fds_punishment.11.desc: ""
  fds_punishment.11.option.a: ""
  
- fds_punishment.12.title: ""
+ fds_punishment.12.title: "Irrevocable Actions"
  fds_punishment.12.desc: ""
  fds_punishment.12.option.a: ""
  
- fds_punishment.13.title: ""
+ fds_punishment.13.title: "Soldiers in Chains"
  fds_punishment.13.desc: ""
  fds_punishment.13.option.a: ""
  
- fds_punishment.14.title: ""
+ fds_punishment.14.title: "Labour without Expense"
  fds_punishment.14.desc: ""
  fds_punishment.14.option.a: ""
  
- fds_punishment.15.title: ""
+ fds_punishment.15.title: "Slaver's Dilemna"
  fds_punishment.15.desc: ""
  fds_punishment.15.option.a: ""
  
- fds_punishment.16.title: ""
+ fds_punishment.16.title: "Dead to Rights"
  fds_punishment.16.desc: ""
  fds_punishment.16.option.a: ""
  
  # Innovation Events
- fds_innovation.1.title: ""
+ fds_innovation.1.title: "Eureka!"
  fds_innovation.1.desc: ""
  fds_innovation.1.option.a: ""
  
- fds_innovation.2.title: ""
+ fds_innovation.2.title: "Entrepreneurship"
  fds_innovation.2.desc: ""
  fds_innovation.2.option.a: ""
  
- fds_innovation.3.title: ""
+ fds_innovation.3.title: "Lack of Innovation"
  fds_innovation.3.desc: ""
  fds_innovation.3.option.a: ""
  
- fds_innovation.4.title: ""
+ fds_innovation.4.title: "Brain Drain"
  fds_innovation.4.desc: ""
  fds_innovation.4.option.a: ""
  
- fds_innovation.5.title: ""
+ fds_innovation.5.title: "Sponsored Success"
  fds_innovation.5.desc: ""
  fds_innovation.5.option.a: ""
  
- fds_innovation.6.title: ""
+ fds_innovation.6.title: "Aspiring Gradutes"
  fds_innovation.6.desc: ""
  fds_innovation.6.option.a: ""
  
- fds_innovation.7.title: ""
+ fds_innovation.7.title: "Swindle Merchants"
  fds_innovation.7.desc: ""
  fds_innovation.7.option.a: ""
  
- fds_innovation.8.title: ""
+ fds_innovation.8.title: "Academic Layabouts"
  fds_innovation.8.desc: ""
  fds_innovation.8.option.a: ""
  
- fds_innovation.9.title: ""
+ fds_innovation.9.title: "State Investments"
  fds_innovation.9.desc: ""
  fds_innovation.9.option.a: ""
  
- fds_innovation.10.title: ""
+ fds_innovation.10.title: "Research Success"
  fds_innovation.10.desc: ""
  fds_innovation.10.option.a: ""
  
- fds_innovation.11.title: ""
+ fds_innovation.11.title: "Innovation Deprioritized"
  fds_innovation.11.desc: ""
  fds_innovation.11.option.a: ""
  
- fds_innovation.12.title: ""
+ fds_innovation.12.title: "Rigid Thinkers"
  fds_innovation.12.desc: ""
  fds_innovation.12.option.a: ""
  
  # Conscription Events
- fds_conscription.1.title: ""
+ fds_conscription.1.title: "Eager Beavers"
  fds_conscription.1.desc: ""
  fds_conscription.1.option.a: ""
  
- fds_conscription.2.title: ""
+ fds_conscription.2.title: "Soldiers of a Caliber"
  fds_conscription.2.desc: ""
  fds_conscription.2.option.a: ""
  
- fds_conscription.3.title: ""
+ fds_conscription.3.title: "Absconders"
  fds_conscription.3.desc: ""
  fds_conscription.3.option.a: ""
  
- fds_conscription.4.title: ""
+ fds_conscription.4.title: "Men without Mettle"
  fds_conscription.4.desc: ""
  fds_conscription.4.option.a: ""
  
- fds_conscription.5.title: ""
+ fds_conscription.5.title: "Wartime Spirit"
  fds_conscription.5.desc: ""
  fds_conscription.5.option.a: ""
  
- fds_conscription.6.title: ""
+ fds_conscription.6.title: "Homeland Defence"
  fds_conscription.6.desc: ""
  fds_conscription.6.option.a: ""
  
- fds_conscription.7.title: ""
+ fds_conscription.7.title: "Morale Slackens"
  fds_conscription.7.desc: ""
  fds_conscription.7.option.a: ""
  
- fds_conscription.8.title: ""
+ fds_conscription.8.title: "Rushed Training"
  fds_conscription.8.desc: ""
  fds_conscription.8.option.a: ""
  
- fds_conscription.9.title: ""
+ fds_conscription.9.title: "All Will Serve"
  fds_conscription.9.desc: ""
  fds_conscription.9.option.a: ""
  
- fds_conscription.10.title: ""
+ fds_conscription.10.title: "Diamond in the Rough"
  fds_conscription.10.desc: ""
  fds_conscription.10.option.a: ""
  
- fds_conscription.11.title: ""
+ fds_conscription.11.title: "The Invalid and the Babe"
  fds_conscription.11.desc: ""
  fds_conscription.11.option.a: ""
  
- fds_conscription.12.title: ""
+ fds_conscription.12.title: "Societal Collapse"
  fds_conscription.12.desc: ""
  fds_conscription.12.option.a: ""
  
@@ -996,79 +996,94 @@
  
  # Reset
  fds_reset.1.title: "Economic Reforms"
- fds_reset.1.desc: ""
- fds_reset.1.option.a: ""
+ fds_reset.1.desc: "Society is now accepting of reform in the economic sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our economic policy."
+ fds_reset.1.option.a: "Excellent"
  
  fds_reset.2.title: "Law Reforms"
- fds_reset.2.desc: ""
- fds_reset.2.option.a: ""
+ fds_reset.2.desc: "Society is now accepting of reform in the law sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our law policy."
+ fds_reset.2.option.a: "Excellent"
  
  fds_reset.3.title: "Judicial Reforms"
- fds_reset.3.desc: ""
- fds_reset.3.option.a: ""
+ fds_reset.3.desc: "Society is now accepting of reform in the judiciary sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our justicial policy."
+ fds_reset.3.option.a: "Excellent"
  
  fds_reset.4.title: "Punishment Reforms"
- fds_reset.4.desc: ""
- fds_reset.4.option.a: ""
+ fds_reset.4.desc: "Society is now accepting of reform in the punishment sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our punishment policy."
+ fds_reset.4.option.a: "Excellent"
  
  fds_reset.5.title: "Innovation Reforms"
- fds_reset.5.desc: ""
- fds_reset.5.option.a: ""
+ fds_reset.5.desc: "Society is now accepting of reform in the innovation sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our innovation policy."
+ fds_reset.5.option.a: "Excellent"
  
  fds_reset.6.title: "Conscription Reforms"
- fds_reset.6.desc: ""
- fds_reset.6.option.a: ""
+ fds_reset.6.desc: "Society is now accepting of reform in the conscription sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our conscription policy."
+ fds_reset.6.option.a: "Excellent"
  
  fds_reset.7.title: "Slavery Reforms"
- fds_reset.7.desc: ""
- fds_reset.7.option.a: ""
+ fds_reset.7.desc: "Society is now accepting of reform in the slavery sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our slavery regulation."
+ fds_reset.7.option.a: "Excellent"
  
  fds_reset.8.title: "Gambling Reforms"
- fds_reset.8.desc: ""
- fds_reset.8.option.a: ""
+ fds_reset.8.desc: "Society is now accepting of reform in the gambling sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our slavery gambling."
+ fds_reset.8.option.a: "Excellent"
  
  fds_reset.9.title: "Prostitution Reforms"
- fds_reset.9.desc: ""
- fds_reset.9.option.a: ""
+ fds_reset.9.desc: "Society is now accepting of reform in the prostitution sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our prostitution regulation."
+ fds_reset.9.option.a: "Excellent"
  
- fds_reset.10.title: "Firearm Reforms"
- fds_reset.10.desc: ""
- fds_reset.10.option.a: ""
+ fds_reset.10.title: "Firearms Reforms"
+ fds_reset.10.desc: "Society is now accepting of reform in the firearms sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our firearms regulation."
+ fds_reset.10.option.a: "Excellent"
  
  fds_reset.11.title: "Narcotics Reforms"
- fds_reset.11.desc: ""
- fds_reset.11.option.a: ""
+ fds_reset.11.desc: "Society is now accepting of reform in the narcotics sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our narcotics regulation."
+ fds_reset.11.option.a: "Excellent"
  
  fds_reset.12.title: "Scavenging Reforms"
- fds_reset.12.desc: ""
- fds_reset.12.option.a: ""
+ fds_reset.12.desc: "Society is now accepting of reform in the scavenging sector. If [Root.Monarch.GetName] wishes to, [Root.Monarch.GetHeShe] may reform our scavenging regulation."
+ fds_reset.12.option.a: "Excellent"
  
  # Economic Disaster
  fds_economic_disaster.1.title: "Economic Collapse"
- fds_economic_disaster.1.desc: ""
- fds_economic_disaster.1.option.a: ""
+ fds_economic_disaster.1.desc: "Rapid changes to our economic system have caused a minor economic collapse. This has upset the people of [Root.GetName], who have taken to the streets and made their discontent known."
+ fds_economic_disaster.1.option.a: "Oh no!"
  
  fds_economic_disaster.2.title: "Economic Recovery"
- fds_economic_disaster.2.desc: ""
- fds_economic_disaster.2.option.a: ""
+ fds_economic_disaster.2.desc: "[Root.GetName] has weathered the collapse, and through blood and sweat, restored order to the fractured people of [Root.GetName]."
+ fds_economic_disaster.2.option.a: "Hurrah"
+ 
+ fds_economic_disaster.3.title: "Citizen Revolt"
+ fds_economic_disaster.3.desc: "A group of citizens have risen up in anger over our economic woes. They must be silenced lest their sentiments spread elsewhere."
+ fds_economic_disaster.3.option.a: "Pay them to keep quiet"
+ fds_economic_disaster.3.option.b: "Crush them!"
  
  # Political Disaster
  fds_political_disaster.1.title: "Political Collapse"
- fds_political_disaster.1.desc: ""
- fds_political_disaster.1.option.a: ""
+ fds_political_disaster.1.desc: "Rapid changes to a notable policy have caused a political collapse. This has upset the people of [Root.GetName], who have taken to the streets and made their discontent known."
+ fds_political_disaster.1.option.a: "Oh no!"
  
  fds_political_disaster.2.title: "Political Recovery"
- fds_political_disaster.2.desc: ""
- fds_political_disaster.2.option.a: ""
+ fds_political_disaster.2.desc: "[Root.GetName] has weathered the collapse, and through blood and sweat, restored order to the fractured people of [Root.GetName]."
+ fds_political_disaster.2.option.a: "Hurrah"
+ 
+ fds_political_disaster.3.title: "Citizen Revolt"
+ fds_political_disaster.3.desc: "A group of citizens have risen up in anger over our political woes. They must be silenced lest their sentiments spread elsewhere."
+ fds_political_disaster.3.option.a: "Pay them to keep quiet"
+ fds_political_disaster.3.option.b: "Crush them!"
  
  # Regulatory Disaster
  fds_regulatory_disaster.1.title: "Regulatory Collapse"
- fds_regulatory_disaster.1.desc: ""
- fds_regulatory_disaster.1.option.a: ""
+ fds_regulatory_disaster.1.desc: "Rapid changes to a notable regulation have caused a regulatory collapse. This has upset the people of [Root.GetName], who have taken to the streets and made their discontent known."
+ fds_regulatory_disaster.1.option.a: "Oh no!"
  
  fds_regulatory_disaster.2.title: "Regulatory Restoration"
- fds_regulatory_disaster.2.desc: ""
- fds_regulatory_disaster.2.option.a: ""
+ fds_regulatory_disaster.2.desc: "[Root.GetName] has weathered the collapse, and through blood and sweat, restored order to the fractured people of [Root.GetName]."
+ fds_regulatory_disaster.2.option.a: "Hurrah"
+ 
+ fds_regulatory_disaster.3.title: "Citizen Revolt"
+ fds_regulatory_disaster.3.desc: "A group of citizens have risen up in anger over our regulatory woes. They must be silenced lest their sentiments spread elsewhere."
+ fds_regulatory_disaster.3.option.a: "Pay them to keep quiet"
+ fds_regulatory_disaster.3.option.b: "Crush them!"
  
  # Decisions
  fds_economy_selection_title: "Enact Economic Policy"

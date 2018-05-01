@@ -8,10 +8,7 @@ political_disaster = {
 	}
     
     can_stop = {
-		had_country_flag = {
-			flag = political_disaster_active
-			days = 720
-		}
+		always = no
 	}
     
 	progress = {
@@ -21,11 +18,15 @@ political_disaster = {
 	can_end = {
 		NOT = { num_of_revolts = 1 }
 		stability = 0
+        had_country_flag = {
+			flag = political_disaster_active
+			days = 720
+		}
 	}
 	
 	modifier = {
 		stability_cost_modifier = 1.0
-        global_unrest = 5
+        global_unrest = 10
         advisor_cost = 1.0
 	}
 	
@@ -35,7 +36,9 @@ political_disaster = {
 	on_monthly = {
 		events = {
 		}
-		random_events = { 
+		random_events = {
+            1000 = 0
+            100 = fds_political_disaster.3
 		}
 	}
 }
