@@ -125,6 +125,17 @@
  #-------------------------------------
  # Legion
  #-------------------------------------
+ prepare_forces_mission_title: "Prepare Forces"
+ prepare_forces_mission_desc: "Prepare our legionary forces for battle over Hoover Dam."
+ 
+ control_new_vegas_mission_title: "Secure New Vegas"
+ control_new_vegas_mission_desc: "Secure control of Hoover Dam and New Vegas for the Legion."
+ 
+ ncr_retreat_mission_title: "NCR Retreat"
+ ncr_retreat_mission_desc: "Crush NCR forces and force their retreat back to Shady Sands."
+ 
+ eradicate_ncr_mission_title: "Eradicate the NCR"
+ eradicate_ncr_mission_desc: "Eradicate all traces of the NCR from the wasteland."
  
  #-------------------------------------
  # New Vegas
@@ -141,6 +152,12 @@
  #-------------------------------------
  # Modifiers
  #-------------------------------------
+ legion_victory: "Legion Victory"
+ desc_legion_victory: ""
+ 
+ legion_domination: "Legion Domination"
+ desc_legion_domination: ""
+ 
  raider_trove: "Gold Trove"
  desc_raider_trove: ""
  
