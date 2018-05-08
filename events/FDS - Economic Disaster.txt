@@ -29,7 +29,7 @@ country_event = {
 	
 	immediate = {
 		clr_country_flag = economic_disaster_active
-		clr_country_flag = fds_disaster_allowed
+		clr_country_flag = fds_economic_disaster_allowed
 		clr_country_flag = changed_policy_early
 	}
 	

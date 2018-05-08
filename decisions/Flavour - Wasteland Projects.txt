@@ -88,7 +88,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -250
 			set_global_flag = cleaned_freeside
-			country_event = { id = FALLOUT_FREESIDE.1 }
+			country_event = { id = freeside.1 }
 		}
 		
 		ai_will_do = {
